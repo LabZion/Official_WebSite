@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import Logo from "../../static/images/logo_build.png"
+import Logo from "../../static/images/logo_security_2.png"
 import {Image} from "react-bootstrap";
 
 function Footer() {
@@ -12,12 +12,12 @@ function Footer() {
         <Container className="Footer">
             <Container>
                 <Router>
-                    <Row className="footerLine">
-                        <Col md={2}></Col>
-                        <Col md={8}>
+                    <Row>
+                        <Col md={1}></Col>
+                        <Col md={10}>
                             <Row>
                                 <Col style={{paddingLeft:'1.5em'}}>
-                                    <Row><Image style={{height:'2em',marginLeft:0}} src={Logo}/></Row>
+                                    <Row><Image style={{height:'4em',marginLeft:0}} src={Logo}/></Row>
                                     <Row><span className="footerText">© 2020 TW BuildSecurityIn</span></Row>
                                 </Col>
                                 <Col>

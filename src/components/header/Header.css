@@ -10,7 +10,7 @@
 }
 
 .logo-img {
-    height: 2em;
+    height: 3em;
     margin-right: 1em;
 }
 
@@ -33,6 +33,6 @@
 }
 
 .headerTitleSpan:hover {
-    color: rgb(75, 166, 127);
+    color: #0530ad;
 }
 

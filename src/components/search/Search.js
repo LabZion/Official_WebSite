@@ -22,14 +22,14 @@ class Search extends Component {
 
     render() {
         return (
-            <Container className="Search" style={{width: '12em', padding: 0, margin: 0, marginRight: '1em'}}>
+            <Container className="Search" style={{width: '16em', padding: 0, margin: 0, marginRight: '1em'}}>
                 <Row style={{padding: 0, margin: 0, width: '100%'}}>
                     <Col style={{paddingLeft: 0, paddingRight: 0}}>
                         <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
                             <InputGroup>
                                 <FormControl
-                                    style={{borderTopLeftRadius: '10em', borderBottomLeftRadius: '10em', height: '2em',borderRight:'none'}}
-                                    placeholder="请输入搜索内容"
+                                    style={{height: '2em',border: "none"}}
+                                    placeholder="Type something to search"
                                     aria-label="search"
                                     aria-describedby="basic-addon2"
                                     onChange={this.onSearchKeyChange.bind(this)}
@@ -51,13 +51,10 @@ class Search extends Component {
             state: {key: this.state.key}
         };
         return <Button variant="outline-secondary" style={{
-            borderTopRightRadius: '10em',
-            borderBottomRightRadius: '10em',
             height: '2em',
             lineHeight: '1em',
-            border: '1px solid #ced4da',
-            borderLeft:'none',
-            color:'gray'
+            color: 'gray',
+            border: "none",
         }}><Link to={path}>{this.renderSearchIcon()}</Link></Button>;
     }
 

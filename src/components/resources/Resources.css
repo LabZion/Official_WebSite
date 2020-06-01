@@ -1,0 +1,23 @@
+.Resources {
+    background: #fff;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.icon-header {
+}
+
+.readResource {
+    color: #fff;
+}
+
+.span-login {
+    color: #000;
+}
+
+.mr-auto > a {
+    color: #000;
+}
+

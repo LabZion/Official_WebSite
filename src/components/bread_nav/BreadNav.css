@@ -1,0 +1,34 @@
+.BreadNav {
+    background: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.SplashContainer {
+    text-align: left;
+    padding: 0;
+}
+
+.banner-title {
+    font-size: 4em;
+    display: block;
+}
+
+.bannerContainer {
+    height: 20em;
+    background: url("../../static/images/banner1.webp");
+    padding-top: 2em;
+}
+
+.icon-header {
+}
+
+
+.span-login {
+    color: #000;
+}
+
+.mr-auto > a {
+    color: #000;
+}

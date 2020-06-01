@@ -1,13 +1,8 @@
 .Footer {
-    padding-bottom:1em;
+    padding-bottom:4em;
     background: #fff;
     color: #000;
-    border-top: 1px solid #f0f1f3;
-}
 
-.footerLine {
-    margin-top: 1em;
-    padding-top: 0.5em;
 }
 
 .footerText {
