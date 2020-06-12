@@ -15,7 +15,7 @@ class LatestPosts extends Component {
     render() {
         return (
             <Fragment>
-                <Container style={{background: "#0530ad", paddingTop: '2em', paddingBottom: '2em'}}>
+                <Container style={{background: "rgb(223,102,159)", paddingTop: '2em', paddingBottom: '2em'}}>
                     <Row>
                         <Col md={1}></Col>
                         <Col md={10} style={{textAlign: "left"}}>

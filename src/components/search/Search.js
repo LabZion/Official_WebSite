@@ -25,7 +25,7 @@ class Search extends Component {
             <Container className="Search" style={{width: '16em', padding: 0, margin: 0, marginRight: '1em'}}>
                 <Row style={{padding: 0, margin: 0, width: '100%'}}>
                     <Col style={{paddingLeft: 0, paddingRight: 0}}>
-                        <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
+                        <Navbar bg="rgb(90,186,204)" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
                             <InputGroup>
                                 <FormControl
                                     style={{height: '2em',border: "none"}}

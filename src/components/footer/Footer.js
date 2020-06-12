@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import Logo from "../../static/images/logo_security_2.png"
+import Logo from "../../static/images/logo_new.png"
 import {Image} from "react-bootstrap";
 
 function Footer() {

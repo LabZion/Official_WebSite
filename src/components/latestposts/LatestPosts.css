@@ -10,7 +10,7 @@
     color: #fff;
     text-align: left;
     padding: 1em;
-    border: solid 1px #0530ad;
+    border: solid 1px rgb(223,102,159);
 }
 
 .postItem:hover {

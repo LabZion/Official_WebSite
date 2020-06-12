@@ -14,7 +14,7 @@ class Contact extends Component {
     render() {
         return (
             <Fragment>
-                <Container style={{background: "#0530ad"}}>
+                <Container style={{background: "rgb(223,102,159)"}}>
                     <Row>
                         <Col md={1}></Col>
                         <Col md={10}>
