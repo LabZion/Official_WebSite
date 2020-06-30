@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {BrowserRouter as Router, Link} from "react-router-dom";
-import Logo from "../../static/images/logo_new.png"
+import Logo from "../../static/images/logo_large.png"
 import {Image} from "react-bootstrap";
 
 function Footer() {
@@ -16,9 +16,8 @@ function Footer() {
                         <Col md={1}></Col>
                         <Col md={10}>
                             <Row>
-                                <Col style={{paddingLeft:'1.5em'}}>
-                                    <Row><Image style={{height:'4em',marginLeft:0}} src={Logo}/></Row>
-                                    <Row><span className="footerText">© 2020 TW BuildSecurityIn</span></Row>
+                                <Col style={{paddingLeft: '1.5em'}}>
+                                    <Row><Image style={{height: '4em', marginLeft: 0}} src={Logo}/></Row>
                                 </Col>
                                 <Col>
 
@@ -31,6 +30,10 @@ function Footer() {
                                 <Col>
                                     <Row>SiteMap</Row>
                                     <Row><span className="footerText"><Link to="/home">Home</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/home">Solutions</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/home">Insights</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/home">Events</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/home">Blogs</Link></span></Row>
                                 </Col>
                                 <Col><Row>Focus</Row>
                                     <Row><span className="footerText">Weibo</span></Row>
@@ -40,8 +43,6 @@ function Footer() {
                                 <Col>
                                     <Row>Links</Row>
                                     <Row><a href={"https://www.thoughtworks.com/"}><span className="footerText">ThoughtWorks</span></a></Row>
-                                    <Row><a href={"https://github.com/nerososft/InSecurity"}><span className="footerText">Git</span></a></Row>
-                                    <Row><a href={"http://www.owasp.org.cn/"}><span className="footerText">OWASP 中国</span></a></Row>
                                 </Col>
                             </Row>
                         </Col>

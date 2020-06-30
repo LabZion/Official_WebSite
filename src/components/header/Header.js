@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import {Link} from "react-router-dom";
 import Image from "react-bootstrap/Image";
-import Logo from "../../static/images/logo_new.png"
+import Logo from "../../static/images/logo_large.png"
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import Search from "../search/Search";
