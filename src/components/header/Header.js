@@ -10,6 +10,9 @@ import Logo from "../../static/images/logo_large.png"
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import Search from "../search/Search";
+import {withTranslation} from 'react-i18next';
+import {Dropdown} from "react-bootstrap";
+
 
 class Header extends Component {
     constructor(props) {
@@ -30,24 +33,34 @@ class Header extends Component {
 
                                 <Link to="/column" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
                                     <Navbar.Brand className="icon-header" href="#home">
-                                        <strong className={"headerTitleSpan"}>INSIGHT</strong>
+                                        <strong className={"headerTitleSpan"}>{this.props.t('INSIGHT')}</strong>
                                     </Navbar.Brand>
                                 </Link>
 
                                 <Link to="/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
                                     <Navbar.Brand className="icon-header" href="#home">
-                                        <strong className={"headerTitleSpan"}>EVENTS</strong>
+                                        <strong className={"headerTitleSpan"}>{this.props.t('EVENTS')}</strong>
                                     </Navbar.Brand>
                                 </Link>
 
                                 <Link to="/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
                                     <Navbar.Brand className="icon-header" href="#home">
-                                        <strong className={"headerTitleSpan"}>BLOGS</strong>
+                                        <strong className={"headerTitleSpan"}>{this.props.t('BLOGS')}</strong>
                                     </Navbar.Brand>
                                 </Link>
 
                                 <Navbar.Collapse className="justify-content-end">
                                     <Search/>
+                                    <Dropdown>
+                                        <Dropdown.Toggle variant="trans" id="dropdown-basic">
+                                            {this.props.t('Language')}
+                                        </Dropdown.Toggle>
+
+                                        <Dropdown.Menu>
+                                            <Dropdown.Item onClick={() => this.changeLanguage('zh')}>简体中文</Dropdown.Item>
+                                            <Dropdown.Item onClick={() => this.changeLanguage('en')}>English</Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
                                 </Navbar.Collapse>
                             </Navbar>
                         </Col>
@@ -56,6 +69,10 @@ class Header extends Component {
             </Fragment>
         );
     }
+
+    changeLanguage(lng) {
+        this.props.i18n.changeLanguage(lng);
+    };
 
 
     componentWillReceiveProps(nextProps) {
@@ -66,5 +83,4 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(Header));

@@ -10,6 +10,7 @@ import {topics} from "../../actions/actions";
 import Button from "react-bootstrap/Button";
 import {FormControl, InputGroup} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import {withTranslation} from "react-i18next";
 
 class Search extends Component {
     constructor(props) {
@@ -29,7 +30,7 @@ class Search extends Component {
                             <InputGroup>
                                 <FormControl
                                     style={{height: '2em',border: "none"}}
-                                    placeholder="Type something to search"
+                                    placeholder={this.props.t('SEARCH')}
                                     aria-label="search"
                                     aria-describedby="basic-addon2"
                                     onChange={this.onSearchKeyChange.bind(this)}
@@ -86,5 +87,4 @@ const mapDispatchToProps = dispatch => bindActionCreators({
     topics
 }, dispatch);
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(Search);
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(Search));
