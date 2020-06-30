@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {Dropdown} from "react-bootstrap";
+import {withTranslation} from "react-i18next";
 
 class Menu extends Component {
     constructor(props) {
@@ -34,22 +35,22 @@ class Menu extends Component {
                                                          variant="success"
                                                          style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
-                                            Solutions & Services
+                                            {this.props.t('SOLUTION_SERVICE')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
-                                            Customer Cooperation
+                                            {this.props.t('CUSTOMER')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
-                                            About Us
+                                            {this.props.t('ABOUT_US')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
-                                            Contact Us
+                                            {this.props.t('CONTACT_US')}
                                         </Dropdown.Toggle>
                                     </Dropdown>
                                 </Navbar.Brand>
@@ -121,5 +122,4 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(Menu);
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(Menu));
