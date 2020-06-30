@@ -40,9 +40,9 @@ class Header extends Component {
                                     </Navbar.Brand>
                                 </Link>
 
-                                <Link to="/report" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                <Link to="/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
                                     <Navbar.Brand className="icon-header" href="#home">
-                                        <strong className={"headerTitleSpan"}>REPORTS</strong>
+                                        <strong className={"headerTitleSpan"}>BLOGS</strong>
                                     </Navbar.Brand>
                                 </Link>
 

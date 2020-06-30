@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import './Features.css';
+import './Menu.css';
 import Navbar from "react-bootstrap/Navbar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,7 +8,7 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {Dropdown} from "react-bootstrap";
 
-class Features extends Component {
+class Menu extends Component {
     constructor(props) {
         super(props);
         this.neum = {
@@ -40,11 +40,6 @@ class Features extends Component {
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
                                             Customer Cooperation
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'resources')}
-                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
-                                                         id="dropdown-basic">
-                                            Resources & Support
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
@@ -127,4 +122,4 @@ const mapStateToProps = state => ({});
 const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Features);
+export default connect(mapStateToProps, mapDispatchToProps)(Menu);

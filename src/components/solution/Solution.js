@@ -19,8 +19,7 @@ class Solution extends Component {
                     <Col md={1}></Col>
                     <Col md={10}>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '2em'}}>
-                            <h2>Security Solutions</h2>
-                            <Row>
+                            <Row style={{marginTop:'1em'}}>
                                 <Col md={3}>
                                     <Container style={{textAlign: 'center', marginTop: '0.5em'}}>
                                         <Image src={"https://1.cms.s81c.com/sites/default/files/2019-10-11/assess-risk-1.5-icon1.png"}/>

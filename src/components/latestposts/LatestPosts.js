@@ -19,8 +19,6 @@ class LatestPosts extends Component {
                     <Row>
                         <Col md={1}></Col>
                         <Col md={10} style={{textAlign: "left"}}>
-
-                            <h2 style={{color: "#fff"}}>Read Our Latest posts</h2>
                             <Row>
                                 <Col md={3} className={"postItem"}>
                                     <Container style={{padding: 0, height: "20em"}}>
