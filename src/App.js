@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Menu from "./components/menu/Menu";
 import SolutionPage from "./pages/solution_page/SolutionPage";
+import TeamMember from "./pages/team_member/TeamMember";
 
 function App() {
     return (
@@ -34,7 +35,7 @@ function App() {
                 <Route exact path="/case" component={SolutionPage}/>
                 <Route exact path="/company" component={SolutionPage}/>
                 <Route exact path="/contact" component={SolutionPage}/>
-                <Route exact path="/team/member" component={SolutionPage}/>
+                <Route exact path="/team/member" component={TeamMember}/>
                 <Route exact path="/open-source/synestia-os" component={SolutionPage}/>
             </Switch>
 
