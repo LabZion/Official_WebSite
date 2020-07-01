@@ -18,20 +18,20 @@ class Menu extends Component {
                 {
                     title: '行业',
                     items: [
-                        {title: '汽车', route: ''},
-                        {title: '金融与保险', route: ''},
-                        {title: '通信与云计算', route: ''},
-                        {title: '零售与互联网', route: ''},
-                        {title: '物流', route: ''}
+                        {title: '汽车', route: '/solution/car'},
+                        {title: '金融与保险', route: '/solution/financial'},
+                        {title: '通信与云计算', route: '/solution/cloud'},
+                        {title: '零售与互联网', route: '/solution/sales'},
+                        {title: '物流', route: '/solution/traffic'}
                     ]
                 }, {
                     title: '领域',
                     items: [
-                        {title: '数据安全', route: ''},
-                        {title: '身份安全', route: ''},
-                        {title: '嵌入式系统安全', route: ''},
-                        {title: '可信计算', route: ''},
-                        {title: '研发/内建安全', route: ''},
+                        {title: '数据安全', route: '/solution/data'},
+                        {title: '身份安全', route: '/solution/identify'},
+                        {title: '嵌入式系统安全', route: '/solution/embed'},
+                        {title: '可信计算', route: '/solution/trust'},
+                        {title: '研发/内建安全', route: '/solution/buildin'},
                     ]
                 }
             ], customer: [
@@ -75,8 +75,8 @@ class Menu extends Component {
                 {
                     title: '开源',
                     items: [
-                        {title: 'Linux内核hook框架', route: ''},
-                        {title: 'Synestia内核', route: ''},
+                        {title: 'Linux内核hook框架', route: '/open-source/hook-framework'},
+                        {title: 'Synestia内核', route: '/open-source/synestia-os'},
                     ]
                 }
             ], aboutUs: [
