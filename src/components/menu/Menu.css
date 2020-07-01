@@ -6,6 +6,11 @@
     border-bottom: 1px solid #f0f1f3;
 }
 
+.featureItemOn {
+    color: #0530ad;
+    font-weight: bolder;
+}
+
 .featureItem {
     color: rgb(74, 74, 74);
     font-size: 1em;
