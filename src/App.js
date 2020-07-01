@@ -16,7 +16,26 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/home" component={Home}/>
+                <Route exact path="/insight" component={SolutionPage}/>
+                <Route exact path="/event" component={SolutionPage}/>
+                <Route exact path="/blogs" component={SolutionPage}/>
                 <Route exact path="/solution" component={SolutionPage}/>
+                <Route exact path="/solution/car" component={SolutionPage}/>
+                <Route exact path="/solution/financial" component={SolutionPage}/>
+                <Route exact path="/solution/cloud" component={SolutionPage}/>
+                <Route exact path="/solution/sales" component={SolutionPage}/>
+                <Route exact path="/solution/traffic" component={SolutionPage}/>
+                <Route exact path="/solution/data" component={SolutionPage}/>
+                <Route exact path="/solution/identify" component={SolutionPage}/>
+                <Route exact path="/solution/embed" component={SolutionPage}/>
+                <Route exact path="/solution/trust" component={SolutionPage}/>
+                <Route exact path="/solution/buildin" component={SolutionPage}/>
+                <Route exact path="/open-source/hook-framework" component={SolutionPage}/>
+                <Route exact path="/case" component={SolutionPage}/>
+                <Route exact path="/company" component={SolutionPage}/>
+                <Route exact path="/contact" component={SolutionPage}/>
+                <Route exact path="/team/member" component={SolutionPage}/>
+                <Route exact path="/open-source/synestia-os" component={SolutionPage}/>
             </Switch>
 
             <Footer/>
