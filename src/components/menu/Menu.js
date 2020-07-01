@@ -38,37 +38,37 @@ class Menu extends Component {
                 {
                     title: 'CAR',
                     items: [
-                        {title: 'SAIC', route: ''},
-                        {title: 'DAIMLER', route: ''},
-                        {title: 'GAC', route: ''},
-                        {title: 'PORSCHE', route: ''},
+                        {title: 'SAIC', route: '/case'},
+                        {title: 'DAIMLER', route: '/case'},
+                        {title: 'GAC', route: '/case'},
+                        {title: 'PORSCHE', route: '/case'},
                     ]
                 }, {
                     title: 'FINANCIAL',
                     items: [
-                        {title: 'CMB', route: ''},
-                        {title: 'BOC', route: ''},
-                        {title: 'ZYBANK', route: ''},
-                        {title: 'LU', route: ''},
-                        {title: 'CM', route: ''},
-                        {title: 'HUMANA', route: ''},
+                        {title: 'CMB', route: '/case'},
+                        {title: 'BOC', route: '/case'},
+                        {title: 'ZYBANK', route: '/case'},
+                        {title: 'LU', route: '/case'},
+                        {title: 'CM', route: '/case'},
+                        {title: 'HUMANA', route: '/case'},
                     ]
                 }, {
                     title: 'CLOUD',
                     items: [
-                        {title: 'HUAWEI', route: ''},
+                        {title: 'HUAWEI', route: '/case'},
                     ]
                 }, {
                     title: 'SALES',
                     items: [
-                        {title: 'STARBUCKS', route: ''},
+                        {title: 'STARBUCKS', route: '/case'},
                     ]
                 },
                 {
                     title: 'LOGISTICS',
                     items: [
-                        {title: 'OOCL', route: ''},
-                        {title: 'LANDPORTGROUP', route: ''},
+                        {title: 'OOCL', route: '/case'},
+                        {title: 'LANDPORTGROUP', route: '/case'},
                     ]
                 }
             ], resource: [
