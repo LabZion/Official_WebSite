@@ -29,7 +29,7 @@ class TeamMember extends Component {
         return (
             <Container style={{padding: 0}} className="Home">
                 <BreadNav bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
-                          title={"The Security Team"}
+                          title={"The Security Business Union"}
                           subtitle={"Let's drive security into the fabric of your business together"}/>
                 <Row>
                     <Col md={1}/>
