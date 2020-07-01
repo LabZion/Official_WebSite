@@ -16,13 +16,14 @@ class BreadNav extends Component {
             <Fragment>
                 <Container className="BreadNav">
                     <Container className="SplashContainer">
-                        <Container className={"bannerContainer"}>
+                        <Container className={"bannerContainer"}
+                                   style={{background: this.props.bg}}>
                             <Row>
                                 <Col md={1}> </Col>
                                 <Col md={5}>
-                                    <Row>Security > Solution ></Row>
-                                    <Row style={{marginTop:'3em'}}><h1>Security strategy, risk and compliance services</h1></Row>
-                                    <Row><h5>Better manage your risks, compliance and governance by teaming with our services experts</h5></Row>
+                                    <Row>{this.props.bread}</Row>
+                                    <Row style={{marginTop: '3em'}}><h1>{this.props.title}</h1></Row>
+                                    <Row><h5>{this.props.subtitle}</h5></Row>
                                 </Col>
                             </Row>
                         </Container>

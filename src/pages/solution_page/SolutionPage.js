@@ -11,7 +11,12 @@ class SolutionPage extends Component {
     render() {
         return (
             <Container style={{padding: 0}} className="Home">
-                <BreadNav/>
+                <BreadNav
+                    bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
+                    bread={"Security / Solution / Car"}
+                    title={"xxxxx"}
+                    subtitle={"xxxxx"}
+                />
                 <Row>
 
                 </Row>

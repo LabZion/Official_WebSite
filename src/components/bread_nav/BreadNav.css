@@ -17,6 +17,7 @@
 
 .bannerContainer {
     height: 20em;
+    background-size: 100%;
     background: url("../../static/images/banner1.webp");
     padding-top: 2em;
 }
