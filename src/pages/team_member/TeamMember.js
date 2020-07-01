@@ -7,13 +7,23 @@ import FollowUs from "../../components/followus/FollowUs";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import {Col, Image, Row} from "react-bootstrap";
 import LaoWang from "../../static/images/members/laowang.jpeg"
+import Xingfeng from "../../static/images/members/xingfeng.png"
 
 const members = [
     {
         name: 'Zhangjun.Wang',
         title: 'Senior Kernel Engineer',
         address: 'Xi`An',
-        img: '../../static/images/members/laowang.jpeg',
+        img: LaoWang,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Xingfeng.Yang',
+        title: 'SynestiaOS Team',
+        address: 'Xi`An',
+        img: Xingfeng,
         github: 'http://github.com',
         youtube: 'http://github.com',
         twitter: 'http://github.com',
@@ -50,7 +60,7 @@ class TeamMember extends Component {
                 return <Col md={4} style={{padding: '1em'}}>
                     <Row>
                         <Col md={6} style={{padding: '1em'}}>
-                            <Image className={"head"} variant="top" src={LaoWang}/>
+                            <Image className={"head"} variant="top" src={item.img}/>
                         </Col>
                         <Col md={6} style={{padding: '2em', textAlign: "left", paddingLeft: '0.5em'}}>
                             <h4>{item.name}</h4>
