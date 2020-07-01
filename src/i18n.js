@@ -15,6 +15,7 @@ const resources = {
             "SEARCH": "Type something to search",
             "SOLUTION_SERVICE": "Solutions & Services",
             "CUSTOMER": "Customer Cooperation",
+            "RESOURCE":"Resource & Support",
             "ABOUT_US": "About Us",
             "CONTACT_US": "Contact Us",
         }
@@ -28,6 +29,7 @@ const resources = {
             "SEARCH": "输入内容进行搜索",
             "SOLUTION_SERVICE": "解决方案与服务",
             "CUSTOMER": "客户与合作",
+            "RESOURCE":"资源与支持",
             "ABOUT_US": "关于我们",
             "CONTACT_US": "联系我们",
         }

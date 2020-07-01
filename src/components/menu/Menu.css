@@ -8,6 +8,7 @@
 
 .featureItem {
     color: rgb(74, 74, 74);
+    font-size: 1em;
 }
 
 .featureItem:hover {

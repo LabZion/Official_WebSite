@@ -8,6 +8,7 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {Dropdown} from "react-bootstrap";
 import {withTranslation} from "react-i18next";
+import {Link} from "react-router-dom";
 
 class Menu extends Component {
     constructor(props) {
@@ -16,48 +17,99 @@ class Menu extends Component {
             solution: [
                 {
                     title: '行业',
-                    items: ['汽车', '金融与保险', '通信与云计算', '零售与互联网', '物流']
+                    items: [
+                        {title: '汽车', route: ''},
+                        {title: '金融与保险', route: ''},
+                        {title: '通信与云计算', route: ''},
+                        {title: '零售与互联网', route: ''},
+                        {title: '物流', route: ''}
+                    ]
                 }, {
                     title: '领域',
-                    items: ['数据安全', '身份安全', '嵌入式系统安全', '可信计算', '研发/内建安全']
+                    items: [
+                        {title: '数据安全', route: ''},
+                        {title: '身份安全', route: ''},
+                        {title: '嵌入式系统安全', route: ''},
+                        {title: '可信计算', route: ''},
+                        {title: '研发/内建安全', route: ''},
+                    ]
                 }
             ], customer: [
                 {
                     title: '汽车',
-                    items: ['上汽', '戴姆勒', '广汽', '保时捷', '物流']
+                    items: [
+                        {title: '上汽', route: ''},
+                        {title: '戴姆勒', route: ''},
+                        {title: '广汽', route: ''},
+                        {title: '保时捷', route: ''},
+                    ]
                 }, {
                     title: '金融',
-                    items: ['招商银行', '中国银行', '中原银行', '陆金所', '外汇交易所', 'Humana']
-                },
-                {
+                    items: [
+                        {title: '招商银行', route: ''},
+                        {title: '中国银行', route: ''},
+                        {title: '中原银行', route: ''},
+                        {title: '陆金所', route: ''},
+                        {title: '外汇交易所', route: ''},
+                        {title: 'Humana', route: ''},
+                    ]
+                }, {
                     title: '通信与云计算',
-                    items: ['华为']
-                },
-                {
+                    items: [
+                        {title: '华为', route: ''},
+                    ]
+                }, {
                     title: '零售与互联网',
-                    items: ['星巴克']
+                    items: [
+                        {title: '星巴克', route: ''},
+                    ]
                 },
                 {
                     title: '物流',
-                    items: ['东方海外', '陆路港']
+                    items: [
+                        {title: '东方海外', route: ''},
+                        {title: '陆路港', route: ''},
+                    ]
+                }
+            ], resource: [
+                {
+                    title: '开源',
+                    items: [
+                        {title: 'Linux内核hook框架', route: ''},
+                        {title: 'Synestia内核', route: ''},
+                    ]
                 }
             ], aboutUs: [
                 {
                     title: '公司',
-                    items: ['景愿', '发展历程', '投资者关系']
+                    items: [
+                        {title: '景愿', route: '/company'},
+                        {title: '发展历程', route: '/company'},
+                        {title: '投资者关系', route: '/company'},
+                    ]
                 },
                 {
                     title: '团队',
-                    items: ['成员']
+                    items: [
+                        {title: '成员', route: '/team/member'},
+                    ]
                 }
             ], contactUs: [
                 {
                     title: '中国区',
-                    items: ['西安', '北京', '成都', '武汉', '深圳']
+                    items: [
+                        {title: '西安', route: '/contact'},
+                        {title: '北京', route: '/contact'},
+                        {title: '成都', route: '/contact'},
+                        {title: '武汉', route: '/contact'},
+                        {title: '深圳', route: '/contact'},
+                    ]
                 },
                 {
                     title: '全球',
-                    items: ['柏林']
+                    items: [
+                        {title: '柏林', route: '/contact'},
+                    ]
                 }
             ]
         };
@@ -88,6 +140,11 @@ class Menu extends Component {
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
                                             {this.props.t('CUSTOMER')}
+                                        </Dropdown.Toggle>
+                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'resource')}
+                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         id="dropdown-basic">
+                                            {this.props.t('RESOURCE')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
@@ -143,7 +200,8 @@ class Menu extends Component {
                         <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', padding: '2em'}}>
                             {
                                 this.menu[this.state.selected].map((item, index) => {
-                                    return <Row className={"featureItem"} onMouseEnter={this.onItemEnterHandler.bind(this, index)}>{item.title}<span
+                                    return <Row className={"featureItem"}
+                                                onMouseEnter={this.onItemEnterHandler.bind(this, index)}><strong>{item.title}</strong><span
                                         style={{position: 'absolute', right: '2em'}}>></span></Row>
                                 })
                             }
@@ -152,7 +210,7 @@ class Menu extends Component {
                             <Row>
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
-                                        return <Col md={3} className={"featureItem"}>{item}</Col>
+                                        return <Col md={3} className={"featureItem"}><Link to={item.route} style={{color: '#000'}}>{item.title}</Link></Col>
                                     })
                                 }
                             </Row>
