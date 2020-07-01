@@ -185,7 +185,8 @@ class Menu extends Component {
     onMenuLeaveHandler(menu) {
         this.setState({
             isPanelShow: false,
-            selected: menu
+            selected: 'solution',
+            index: 0,
         });
     }
 
@@ -200,7 +201,7 @@ class Menu extends Component {
                         <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', padding: '2em'}}>
                             {
                                 this.menu[this.state.selected].map((item, index) => {
-                                    return <Row className={this.state.index === index ?"featureItemOn":"featureItem"}
+                                    return <Row className={this.state.index === index ? "featureItemOn" : "featureItem"}
                                                 onMouseEnter={this.onItemEnterHandler.bind(this, index)}><strong>{item.title}</strong><span
                                         style={{position: 'absolute', right: '2em'}}>></span></Row>
                                 })
