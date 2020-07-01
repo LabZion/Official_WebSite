@@ -38,20 +38,20 @@ class Menu extends Component {
                 {
                     title: 'CAR',
                     items: [
-                        {title: '上汽', route: ''},
+                        {title: 'SAIC', route: ''},
                         {title: 'DAIMLER', route: ''},
-                        {title: '广汽', route: ''},
-                        {title: '保时捷', route: ''},
+                        {title: 'GAC', route: ''},
+                        {title: 'PORSCHE', route: ''},
                     ]
                 }, {
                     title: 'FINANCIAL',
                     items: [
-                        {title: '招商银行', route: ''},
-                        {title: '中国银行', route: ''},
-                        {title: '中原银行', route: ''},
-                        {title: '陆金所', route: ''},
-                        {title: '外汇交易所', route: ''},
-                        {title: 'Humana', route: ''},
+                        {title: 'CMB', route: ''},
+                        {title: 'BOC', route: ''},
+                        {title: 'ZYBANK', route: ''},
+                        {title: 'LU', route: ''},
+                        {title: 'CM', route: ''},
+                        {title: 'HUMANA', route: ''},
                     ]
                 }, {
                     title: 'CLOUD',
@@ -68,15 +68,15 @@ class Menu extends Component {
                     title: 'LOGISTICS',
                     items: [
                         {title: 'OOCL', route: ''},
-                        {title: '陆路港', route: ''},
+                        {title: 'LANDPORTGROUP', route: ''},
                     ]
                 }
             ], resource: [
                 {
                     title: 'OPENSOURCE',
                     items: [
-                        {title: 'Linux内核hook框架', route: '/open-source/hook-framework'},
-                        {title: 'Synestia内核', route: '/open-source/synestia-os'},
+                        {title: 'HOOKFRAMEWORK', route: '/open-source/hook-framework'},
+                        {title: 'SYNESTIA', route: '/open-source/synestia-os'},
                     ]
                 }
             ], aboutUs: [
@@ -84,8 +84,8 @@ class Menu extends Component {
                     title: 'COMPANY',
                     items: [
                         {title: 'HOPE', route: '/company'},
-                        {title: '发展历程', route: '/company'},
-                        {title: '投资者关系', route: '/company'},
+                        {title: 'PATH', route: '/company'},
+                        {title: 'INVESTOR', route: '/company'},
                     ]
                 },
                 {
