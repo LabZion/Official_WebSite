@@ -12,12 +12,59 @@ import {withTranslation} from "react-i18next";
 class Menu extends Component {
     constructor(props) {
         super(props);
-        this.neum = {
-            solution: {}, customer: {}, resources: {}, aboutUs: {}, contacts: {}
+        this.menu = {
+            solution: [
+                {
+                    title: '行业',
+                    items: ['汽车', '金融与保险', '通信与云计算', '零售与互联网', '物流']
+                }, {
+                    title: '领域',
+                    items: ['数据安全', '身份安全', '嵌入式系统安全', '可信计算', '研发/内建安全']
+                }
+            ], customer: [
+                {
+                    title: '汽车',
+                    items: ['上汽', '戴姆勒', '广汽', '保时捷', '物流']
+                }, {
+                    title: '金融',
+                    items: ['招商银行', '中国银行', '中原银行', '陆金所', '外汇交易所', 'Humana']
+                },
+                {
+                    title: '通信与云计算',
+                    items: ['华为']
+                },
+                {
+                    title: '零售与互联网',
+                    items: ['星巴克']
+                },
+                {
+                    title: '物流',
+                    items: ['东方海外', '陆路港']
+                }
+            ], aboutUs: [
+                {
+                    title: '公司',
+                    items: ['景愿', '发展历程', '投资者关系']
+                },
+                {
+                    title: '团队',
+                    items: ['成员']
+                }
+            ], contactUs: [
+                {
+                    title: '中国区',
+                    items: ['西安', '北京', '成都', '武汉', '深圳']
+                },
+                {
+                    title: '全球',
+                    items: ['柏林']
+                }
+            ]
         };
         this.state = {
             isPanelShow: false,
-            selected: 'solution'
+            selected: 'solution',
+            index: 0,
         };
     }
 
@@ -64,6 +111,13 @@ class Menu extends Component {
         );
     }
 
+    onItemEnterHandler(index) {
+        this.setState({
+            isPanelShow: true,
+            index: index
+        });
+    }
+
     onMenuEnterHandler(menu) {
         this.setState({
             isPanelShow: true,
@@ -87,25 +141,20 @@ class Menu extends Component {
                 <Col md={10}>
                     <Row style={{borderTop: '1px solid #f0f1f3'}}>
                         <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', padding: '2em'}}>
-                            <Row className={"featureItem"}>Solution By Use Case<span style={{position: 'absolute', right: '2em'}}>></span></Row>
-                            <Row className={"featureItem"}>Solution By Industry<span style={{position: 'absolute', right: '2em'}}>></span></Row>
+                            {
+                                this.menu[this.state.selected].map((item, index) => {
+                                    return <Row className={"featureItem"} onMouseEnter={this.onItemEnterHandler.bind(this, index)}>{item.title}<span
+                                        style={{position: 'absolute', right: '2em'}}>></span></Row>
+                                })
+                            }
                         </Col>
                         <Col md={9} style={{textAlign: 'left', padding: '2em'}}>
                             <Row>
-                                <Col md={3} className={"featureItem"}>数据安全</Col>
-                                <Col md={3} className={"featureItem"}>身份安全</Col>
-                                <Col md={3} className={"featureItem"}>可信计算</Col>
-                                <Col md={3} className={"featureItem"}>内建安全</Col>
-                            </Row>
-                            <Row>
-                                <Col md={3} className={"featureItem"}>保时捷</Col>
-                                <Col md={3} className={"featureItem"}>华为</Col>
-                                <Col md={3} className={"featureItem"}>广汽</Col>
-                                <Col md={3} className={"featureItem"}>上汽</Col>
-                                <Col md={3} className={"featureItem"}>戴姆勒</Col>
-                                <Col md={3} className={"featureItem"}>招商银行</Col>
-                                <Col md={3} className={"featureItem"}>中原银行</Col>
-                                <Col md={3} className={"featureItem"}>步长制药</Col>
+                                {
+                                    this.menu[this.state.selected][this.state.index].items.map((item, index) => {
+                                        return <Col md={3} className={"featureItem"}>{item}</Col>
+                                    })
+                                }
                             </Row>
                         </Col>
                     </Row>
