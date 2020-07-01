@@ -12,6 +12,7 @@ const members = [
     {
         name: 'Zhangjun.Wang',
         title: 'Senior Kernel Engineer',
+        address: 'Xi`An',
         img: '../../static/images/members/laowang.jpeg',
         github: 'http://github.com',
         youtube: 'http://github.com',
@@ -54,6 +55,9 @@ class TeamMember extends Component {
                         <Col md={6} style={{padding: '2em', textAlign: "left", paddingLeft: '0.5em'}}>
                             <h4>{item.name}</h4>
                             <p>{item.title}</p>
+                            <p/>
+                            <p/>
+                            <p>{item.address}</p>
                             <Row>
                                 <Col style={{textAlign: 'left', marginTop: '1em'}}>
                                     <Col style={{width: '40px', display: "inline-block", padding: 0}}>
