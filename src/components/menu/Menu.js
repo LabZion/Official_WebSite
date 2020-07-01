@@ -16,35 +16,35 @@ class Menu extends Component {
         this.menu = {
             solution: [
                 {
-                    title: '行业',
+                    title: 'INDUSTRY',
                     items: [
-                        {title: '汽车', route: '/solution/car'},
-                        {title: '金融与保险', route: '/solution/financial'},
-                        {title: '通信与云计算', route: '/solution/cloud'},
-                        {title: '零售与互联网', route: '/solution/sales'},
-                        {title: '物流', route: '/solution/traffic'}
+                        {title: 'CAR', route: '/solution/car'},
+                        {title: 'FINANCIAL', route: '/solution/financial'},
+                        {title: 'CLOUD', route: '/solution/cloud'},
+                        {title: 'SALES', route: '/solution/sales'},
+                        {title: 'LOGISTICS', route: '/solution/traffic'}
                     ]
                 }, {
-                    title: '领域',
+                    title: 'SCOPE',
                     items: [
-                        {title: '数据安全', route: '/solution/data'},
-                        {title: '身份安全', route: '/solution/identify'},
-                        {title: '嵌入式系统安全', route: '/solution/embed'},
-                        {title: '可信计算', route: '/solution/trust'},
-                        {title: '研发/内建安全', route: '/solution/buildin'},
+                        {title: 'DATA', route: '/solution/data'},
+                        {title: 'IDENTIFY', route: '/solution/identify'},
+                        {title: 'EMBED', route: '/solution/embed'},
+                        {title: 'TRUST', route: '/solution/trust'},
+                        {title: 'BUILDIN', route: '/solution/buildin'},
                     ]
                 }
             ], customer: [
                 {
-                    title: '汽车',
+                    title: 'CAR',
                     items: [
                         {title: '上汽', route: ''},
-                        {title: '戴姆勒', route: ''},
+                        {title: 'DAIMLER', route: ''},
                         {title: '广汽', route: ''},
                         {title: '保时捷', route: ''},
                     ]
                 }, {
-                    title: '金融',
+                    title: 'FINANCIAL',
                     items: [
                         {title: '招商银行', route: ''},
                         {title: '中国银行', route: ''},
@@ -54,26 +54,26 @@ class Menu extends Component {
                         {title: 'Humana', route: ''},
                     ]
                 }, {
-                    title: '通信与云计算',
+                    title: 'CLOUD',
                     items: [
-                        {title: '华为', route: ''},
+                        {title: 'HUAWEI', route: ''},
                     ]
                 }, {
-                    title: '零售与互联网',
+                    title: 'SALES',
                     items: [
-                        {title: '星巴克', route: ''},
+                        {title: 'STARBUCKS', route: ''},
                     ]
                 },
                 {
-                    title: '物流',
+                    title: 'LOGISTICS',
                     items: [
-                        {title: '东方海外', route: ''},
+                        {title: 'OOCL', route: ''},
                         {title: '陆路港', route: ''},
                     ]
                 }
             ], resource: [
                 {
-                    title: '开源',
+                    title: 'OPENSOURCE',
                     items: [
                         {title: 'Linux内核hook框架', route: '/open-source/hook-framework'},
                         {title: 'Synestia内核', route: '/open-source/synestia-os'},
@@ -81,32 +81,32 @@ class Menu extends Component {
                 }
             ], aboutUs: [
                 {
-                    title: '公司',
+                    title: 'COMPANY',
                     items: [
-                        {title: '景愿', route: '/company'},
+                        {title: 'HOPE', route: '/company'},
                         {title: '发展历程', route: '/company'},
                         {title: '投资者关系', route: '/company'},
                     ]
                 },
                 {
-                    title: '团队',
+                    title: 'TEAM',
                     items: [
-                        {title: '成员', route: '/team/member'},
+                        {title: 'MEMBER', route: '/team/member'},
                     ]
                 }
             ], contactUs: [
                 {
-                    title: '中国区',
+                    title: 'CHINA',
                     items: [
-                        {title: '西安', route: '/contact'},
-                        {title: '北京', route: '/contact'},
-                        {title: '成都', route: '/contact'},
-                        {title: '武汉', route: '/contact'},
-                        {title: '深圳', route: '/contact'},
+                        {title: 'XIAN', route: '/contact'},
+                        {title: 'BEIJING', route: '/contact'},
+                        {title: 'CHENGDOU', route: '/contact'},
+                        {title: 'WUHAN', route: '/contact'},
+                        {title: 'SHENZHEN', route: '/contact'},
                     ]
                 },
                 {
-                    title: '全球',
+                    title: 'GLOBAL',
                     items: [
                         {title: '柏林', route: '/contact'},
                     ]
@@ -202,7 +202,7 @@ class Menu extends Component {
                             {
                                 this.menu[this.state.selected].map((item, index) => {
                                     return <Row className={this.state.index === index ? "featureItemOn" : "featureItem"}
-                                                onMouseEnter={this.onItemEnterHandler.bind(this, index)}><strong>{item.title}</strong><span
+                                                onMouseEnter={this.onItemEnterHandler.bind(this, index)}><strong>{this.props.t(item.title)}</strong><span
                                         style={{position: 'absolute', right: '2em'}}>></span></Row>
                                 })
                             }
@@ -211,7 +211,7 @@ class Menu extends Component {
                             <Row>
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
-                                        return <Col md={3} className={"featureItem"}><Link to={item.route} style={{color: '#000'}}>{item.title}</Link></Col>
+                                        return <Col md={3} className={"featureItem"}><Link to={item.route} style={{color: '#000'}}>{this.props.t(item.title)}</Link></Col>
                                     })
                                 }
                             </Row>
