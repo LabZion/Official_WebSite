@@ -11,9 +11,19 @@ import Xingfeng from "../../static/images/members/xingfeng.png"
 import Taoliu from "../../static/images/members/taoge.png"
 import XuanLiu from "../../static/images/members/xuanliu_shenzhen.jpeg"
 import YuBao from "../../static/images/members/Yuxia_Gao.jpeg"
+import NengCao from "../../static/images/members/nengcao.png"
 
 
 const members = [
+    {
+        name: 'Neng.Cao',
+        title: 'Consultant, Software Engineer',
+        address: 'Xi`An',
+        img: NengCao,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
     {
         name: 'Yuxia.Gao',
         title: 'Advisory, Consultant, Software Engineer',
