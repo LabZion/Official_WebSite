@@ -31,7 +31,7 @@ class LatestPosts extends Component {
                                     </Container>
                                     <Link className={"readBlogPost"}><p>Read the blog post</p></Link>
                                 </Col>
-                                <Col md={3} className={"postItem"} style={{color: "#fff", textAlign: "left", padding: "1em"}}>
+                                <Col md={3} className={"postItem"}>
                                     <Container style={{padding: 0, height: "20em"}}>
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
@@ -42,7 +42,7 @@ class LatestPosts extends Component {
                                     </Container>
                                     <Link className={"readBlogPost"}><p>Read the blog post</p></Link>
                                 </Col>
-                                <Col md={3} className={"postItem"} style={{color: "#fff", textAlign: "left", padding: "1em"}}>
+                                <Col md={3} className={"postItem"}>
                                     <Container style={{padding: 0, height: "20em"}}>
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
@@ -53,7 +53,7 @@ class LatestPosts extends Component {
                                     </Container>
                                     <Link className={"readBlogPost"}><p>Read the blog post</p></Link>
                                 </Col>
-                                <Col md={3} className={"postItem"} style={{color: "#fff", textAlign: "left", padding: "1em"}}>
+                                <Col md={3} className={"postItem"}>
                                     <Container style={{padding: 0, height: "20em"}}>
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
