@@ -17,8 +17,8 @@ import NengCao from "../../static/images/members/nengcao.png"
 const members = [
     {
         name: 'Neng.Cao',
-        title: 'Consultant, Software Engineer',
-        address: 'Xi`An',
+        title: 'Senior Consultant, Software Engineer',
+        address: 'WuHan',
         img: NengCao,
         github: 'http://github.com',
         youtube: 'http://github.com',
