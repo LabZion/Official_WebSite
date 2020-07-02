@@ -8,11 +8,12 @@ import BreadNav from "../../components/bread_nav/BreadNav";
 import {Col, Image, Row} from "react-bootstrap";
 import LaoWang from "../../static/images/members/laowang.jpeg"
 import Xingfeng from "../../static/images/members/xingfeng.png"
+import Taoliu from "../../static/images/members/taoge.png"
 
 const members = [
     {
         name: 'Zhangjun.Wang',
-        title: 'Senior Kernel Engineer',
+        title: 'SynestiaOS Team',
         address: 'Xi`An',
         img: LaoWang,
         github: 'http://github.com',
@@ -24,6 +25,15 @@ const members = [
         title: 'SynestiaOS Team',
         address: 'Xi`An',
         img: Xingfeng,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Tao.Liu',
+        title: 'SynestiaOS Team',
+        address: 'Xi`An',
+        img: Taoliu,
         github: 'http://github.com',
         youtube: 'http://github.com',
         twitter: 'http://github.com',
