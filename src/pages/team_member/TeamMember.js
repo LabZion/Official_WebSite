@@ -86,6 +86,7 @@ class TeamMember extends Component {
     };
 
     renderMembers() {
+        this.shuffle(members);
         return <Row>
             {members.map((item, index) => {
                 return <Col md={4} style={{padding: '1em'}}>
@@ -131,6 +132,14 @@ class TeamMember extends Component {
             })}
         </Row>;
     }
+
+    shuffle(array) {
+        let len = array.length;
+        for (let i = len - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    };
 
     componentWillMount() {
     }
