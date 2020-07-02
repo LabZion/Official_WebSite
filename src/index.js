@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import './i18n';
 import App from './App';
@@ -7,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from "react-redux";
+import {render} from 'react-snapshot';
 
 import {applyMiddleware, createStore} from 'redux'
 import InSecurityReducer from './reducers/reducers'
@@ -17,7 +17,7 @@ const store = createStore(
     applyMiddleware(thunk)
 );
 
-ReactDOM.render(
+render(
     <React.StrictMode>
         <Provider store={store}>
             <BrowserRouter>
