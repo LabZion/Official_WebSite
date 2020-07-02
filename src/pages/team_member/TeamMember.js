@@ -9,8 +9,29 @@ import {Col, Image, Row} from "react-bootstrap";
 import LaoWang from "../../static/images/members/laowang.jpeg"
 import Xingfeng from "../../static/images/members/xingfeng.png"
 import Taoliu from "../../static/images/members/taoge.png"
+import XuanLiu from "../../static/images/members/xuanliu_shenzhen.jpeg"
+import YuBao from "../../static/images/members/Yuxia_Gao.jpeg"
+
 
 const members = [
+    {
+        name: 'Yuxia.Gao',
+        title: 'Advisory, Consultant, Software Engineer',
+        address: 'Xi`An',
+        img: YuBao,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Xuan.Liu',
+        title: 'Consultant, Software Engineer',
+        address: 'Xi`An',
+        img: XuanLiu,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
     {
         name: 'Zhangjun.Wang',
         title: 'SynestiaOS Team',
