@@ -21,6 +21,15 @@ const members = [
         twitter: 'http://github.com',
     },
     {
+        name: 'Tao.Liu',
+        title: 'SynestiaOS Team',
+        address: 'Beijing',
+        img: Taoliu,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
         name: 'Xingfeng.Yang',
         title: 'SynestiaOS Team',
         address: 'Xi`An',
@@ -28,16 +37,7 @@ const members = [
         github: 'http://github.com',
         youtube: 'http://github.com',
         twitter: 'http://github.com',
-    },
-    {
-        name: 'Tao.Liu',
-        title: 'SynestiaOS Team',
-        address: 'Xi`An',
-        img: Taoliu,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
-    },
+    }
 ];
 
 class TeamMember extends Component {
