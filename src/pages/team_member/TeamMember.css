@@ -14,6 +14,11 @@
     fill: #999;
 }
 
+.m-cls-1:hover {
+    transition: fill .2s;
+    fill: rgb(223, 102, 159);
+}
+
 .m-cls-2 {
     fill: #fff;
     fill-rule: evenodd;
