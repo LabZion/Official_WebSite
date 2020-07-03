@@ -15,9 +15,24 @@
     display: block;
 }
 
-.bannerContainer {
+.bannerContainer1 {
     height: 28em;
     background: url("../../static/images/banner1.webp");
+    background-size: 100% 28em;
+    padding-top: 2em;
+}
+
+.bannerContainer2 {
+    height: 28em;
+    background: url("https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg");
+    background-size: 100% 28em;
+    padding-top: 2em;
+}
+
+.bannerContainer3 {
+    height: 28em;
+    background: url("https://dynamic.thoughtworks.com/landing_pages/hero_banner_image_desktop-d487b9e3df79ed74c168f7aeeead5393.jpeg");
+    background-size: 100% 28em;
     padding-top: 2em;
 }
 

@@ -216,7 +216,7 @@ class Menu extends Component {
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
                                         return <Col md={3} className={"featureItem"}><Link to={item.route}
-                                                                                           style={{color: '#000'}}>{this.props.t(item.title)}</Link></Col>
+                                                                                           class={"menu-item"}>{this.props.t(item.title)}</Link></Col>
                                     })
                                 }
                             </Row>

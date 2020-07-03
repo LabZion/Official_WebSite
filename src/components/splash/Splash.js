@@ -17,7 +17,7 @@ class Splash extends Component {
                     <Container className="SplashContainer">
                         <Carousel>
                             <Carousel.Item>
-                                <Container className={"bannerContainer"}>
+                                <Container className={"bannerContainer1"}>
                                     <Row>
                                         <Col md={1}></Col>
                                         <Col md={10}>
@@ -33,7 +33,7 @@ class Splash extends Component {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Container className={"bannerContainer"}>
+                                <Container className={"bannerContainer2"}>
                                     <Row>
                                         <Col md={1}></Col>
                                         <Col md={10}>
@@ -49,7 +49,7 @@ class Splash extends Component {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <Container className={"bannerContainer"}>
+                                <Container className={"bannerContainer3"}>
                                     <Row>
                                         <Col md={1}></Col>
                                         <Col md={10}>

@@ -7,7 +7,7 @@
 }
 
 .featureItemOn {
-    color: #0530ad;
+    color: rgb(223, 102, 159);
     font-weight: bolder;
 }
 
@@ -17,7 +17,16 @@
 }
 
 .featureItem:hover {
-    color: #0530ad;
+    color: rgb(223, 102, 159);
+    font-weight: bolder;
+}
+
+.menu-item {
+    color:#000
+}
+
+.menu-item:hover {
+    color: rgb(223, 102, 159);
     font-weight: bolder;
 }
 
