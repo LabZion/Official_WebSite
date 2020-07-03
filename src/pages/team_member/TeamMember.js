@@ -12,9 +12,29 @@ import Taoliu from "../../static/images/members/taoge.png"
 import XuanLiu from "../../static/images/members/xuanliu_shenzhen.jpeg"
 import YuBao from "../../static/images/members/Yuxia_Gao.jpeg"
 import NengCao from "../../static/images/members/nengcao.png"
+import LiangLiang from "../../static/images/members/liangliang.jpeg"
+import HaoLi from "../../static/images/members/haoli.jpg"
 
 
 const members = [
+    {
+        name: 'Hao.Li',
+        title: 'Lead Consultant',
+        address: 'WuHan',
+        img: HaoLi,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Liangliang.Liu',
+        title: 'Consultant, Software Engineer',
+        address: 'Xi`An',
+        img: LiangLiang,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
     {
         name: 'Neng.Cao',
         title: 'Senior Consultant, Software Engineer',
