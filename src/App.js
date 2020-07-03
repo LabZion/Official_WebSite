@@ -8,6 +8,9 @@ import Menu from "./components/menu/Menu";
 import SolutionPage from "./pages/solution_page/SolutionPage";
 import TeamMember from "./pages/team_member/TeamMember";
 import OpenSource from "./pages/opensource/OpenSource";
+import Insight from "./pages/insight/Insight";
+import Events from "./pages/events/Events";
+import Blogs from "./pages/blogs/Blogs";
 
 function App() {
     return (
@@ -18,9 +21,9 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/home" component={Home}/>
-                <Route exact path="/insight" component={SolutionPage}/>
-                <Route exact path="/event" component={SolutionPage}/>
-                <Route exact path="/blogs" component={SolutionPage}/>
+                <Route exact path="/insight" component={Insight}/>
+                <Route exact path="/event" component={Events}/>
+                <Route exact path="/blogs" component={Blogs}/>
                 <Route exact path="/solution" component={SolutionPage}/>
                 <Route exact path="/solution/car" component={SolutionPage}/>
                 <Route exact path="/solution/financial" component={SolutionPage}/>

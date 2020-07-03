@@ -108,7 +108,7 @@ class OpenSource extends Component {
                 return <Col md={6} style={{paddingTop: '1em', paddingBottom: '1em'}}>
                     <Row>
                         <Col md={4}>
-                            <Image style={{width: '100%',padding: '1em'}} src={item.logo}/>
+                            <Image style={{width: '100%', padding: '1em'}} src={item.logo}/>
                         </Col>
                         <Col md={8}>
                             <h2>{item.name}</h2>
