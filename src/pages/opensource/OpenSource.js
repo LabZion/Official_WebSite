@@ -8,7 +8,8 @@ import BreadNav from "../../components/bread_nav/BreadNav";
 import {Image, Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import KernelHookLogo from "../../static/images/kernelhookframework.png";
-import SynestiaOS from "../../static/images/os.jpeg";
+import JS from "../../static/images/js.png";
+import SynestiaOS from "../../static/images/os.png";
 import Du from "../../static/images/duvm.png";
 import TinyGL from "../../static/images/tinygl.png";
 import NDFS from "../../static/images/ndfs.png";
@@ -40,7 +41,7 @@ const opensources = [
         twitter: '',
     },
     {
-        logo: KernelHookLogo,
+        logo: JS,
         name: 'javascript-like-compiler',
         desc: 'This is a javascript like compilers, but much simpler. Code samples can be found in each part\'s testcase .Each part can be both compiled to a runnable program, or a library linked by others.',
         github: 'https://github.com/LabZion/javascript-like-compiler',
@@ -77,7 +78,7 @@ class OpenSource extends Component {
                 <Row style={{background: '#f4f4f4'}}>
                     <Col md={1}></Col>
                     <Col md={10}>
-                        <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '2em'}}>
+                        <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '1em'}}>
                             <h1>What we are building</h1>
                             <p>Our technologists bring successful, field-tested techniques and ideas from around the globe to open source solutions.
                                 Here are some highlights of our work across many domains including machine learning, security and privacy, global
@@ -89,7 +90,7 @@ class OpenSource extends Component {
                 <Row style={{background: '#f4f4f4'}}>
                     <Col md={1}></Col>
                     <Col md={10}>
-                        <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '2em'}}>
+                        <Container style={{textAlign: "left", paddingTop: '1em', paddingBottom: '2em'}}>
                             <Row>
                                 {this.renderOpenSources()}
                             </Row>
