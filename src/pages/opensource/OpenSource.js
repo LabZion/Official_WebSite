@@ -11,6 +11,8 @@ import KernelHookLogo from "../../static/images/kernelhookframework.png";
 import SynestiaOS from "../../static/images/os.jpeg";
 import Du from "../../static/images/duvm.png";
 import TinyGL from "../../static/images/tinygl.png";
+import NDFS from "../../static/images/ndfs.png";
+
 
 const opensources = [
     {
@@ -50,6 +52,14 @@ const opensources = [
         name: 'TinyGL',
         desc: 'A 3D soft raster renderer that does not rely on any third-party library, with a basic linear algebra library, model rendering, Phong\'s lighting, can be ported to most embedded systems.',
         github: 'https://github.com/LabZion/CenoGL',
+        youtube: '',
+        twitter: '',
+    },
+    {
+        logo: NDFS,
+        name: 'NDFS',
+        desc: 'Distributed File System',
+        github: 'https://github.com/LabZion/NDFS',
         youtube: '',
         twitter: '',
     },
@@ -97,7 +107,7 @@ class OpenSource extends Component {
                 return <Col md={6} style={{paddingTop: '1em', paddingBottom: '1em'}}>
                     <Row>
                         <Col md={4}>
-                            <Image style={{width: '100%', border: 'solid 3px #eee'}} src={item.logo}/>
+                            <Image style={{width: '100%',padding: '1em'}} src={item.logo}/>
                         </Col>
                         <Col md={8}>
                             <h2>{item.name}</h2>
