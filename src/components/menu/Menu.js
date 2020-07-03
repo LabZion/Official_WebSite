@@ -75,8 +75,12 @@ class Menu extends Component {
                 {
                     title: 'OPENSOURCE',
                     items: [
-                        {title: 'HOOKFRAMEWORK', route: '/open-source/hook-framework'},
-                        {title: 'SYNESTIA', route: '/open-source/synestia-os'},
+                        {title: 'HOOKFRAMEWORK', route: '/open-source'},
+                        {title: 'SYNESTIA', route: '/open-source'},
+                        {title: 'NDFS', route: '/open-source'},
+                        {title: 'TingGL', route: '/open-source'},
+                        {title: 'Du.rs', route: '/open-source'},
+                        {title: 'JavascriptLike Compiler', route: '/open-source'},
                     ]
                 }
             ], aboutUs: [
@@ -211,7 +215,8 @@ class Menu extends Component {
                             <Row>
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
-                                        return <Col md={3} className={"featureItem"}><Link to={item.route} style={{color: '#000'}}>{this.props.t(item.title)}</Link></Col>
+                                        return <Col md={3} className={"featureItem"}><Link to={item.route}
+                                                                                           style={{color: '#000'}}>{this.props.t(item.title)}</Link></Col>
                                     })
                                 }
                             </Row>
