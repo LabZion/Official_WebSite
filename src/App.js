@@ -32,8 +32,7 @@ function App() {
                 <Route exact path="/solution/embed" component={SolutionPage}/>
                 <Route exact path="/solution/trust" component={SolutionPage}/>
                 <Route exact path="/solution/buildin" component={SolutionPage}/>
-                <Route exact path="/open-source/hook-framework" component={OpenSource}/>
-                <Route exact path="/open-source/synestia-os" component={OpenSource}/>
+                <Route exact path="/open-source" component={OpenSource}/>
                 <Route exact path="/case" component={SolutionPage}/>
                 <Route exact path="/company" component={SolutionPage}/>
                 <Route exact path="/contact" component={SolutionPage}/>
