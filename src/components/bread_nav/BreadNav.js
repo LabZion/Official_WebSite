@@ -22,8 +22,8 @@ class BreadNav extends Component {
                                 <Col md={1}> </Col>
                                 <Col md={5}>
                                     <Row>{this.props.bread}</Row>
-                                    <Row style={{marginTop: '3em'}}><h1>{this.props.title}</h1></Row>
-                                    <Row><h5>{this.props.subtitle}</h5></Row>
+                                    <Row style={{marginTop: '3em'}}><h1 style={{fontSize: '3em'}}>{this.props.title}</h1></Row>
+                                    <Row><h3>{this.props.subtitle}</h3></Row>
                                 </Col>
                             </Row>
                         </Container>

@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import Menu from "./components/menu/Menu";
 import SolutionPage from "./pages/solution_page/SolutionPage";
 import TeamMember from "./pages/team_member/TeamMember";
+import OpenSource from "./pages/opensource/OpenSource";
 
 function App() {
     return (
@@ -31,12 +32,13 @@ function App() {
                 <Route exact path="/solution/embed" component={SolutionPage}/>
                 <Route exact path="/solution/trust" component={SolutionPage}/>
                 <Route exact path="/solution/buildin" component={SolutionPage}/>
-                <Route exact path="/open-source/hook-framework" component={SolutionPage}/>
+                <Route exact path="/open-source/hook-framework" component={OpenSource}/>
+                <Route exact path="/open-source/synestia-os" component={OpenSource}/>
                 <Route exact path="/case" component={SolutionPage}/>
                 <Route exact path="/company" component={SolutionPage}/>
                 <Route exact path="/contact" component={SolutionPage}/>
                 <Route exact path="/team/member" component={TeamMember}/>
-                <Route exact path="/open-source/synestia-os" component={SolutionPage}/>
+
             </Switch>
 
             <Footer/>
