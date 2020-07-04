@@ -28,7 +28,7 @@ class Solution extends Component {
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
                                             demands a
-                                            partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and
+                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and
                                             Risk
                                             services team is that trusted resource.</p>
                                     </Container>
@@ -40,7 +40,7 @@ class Solution extends Component {
                                     <Container style={{padding: 0, marginTop: '1em'}}>
                                         <h4><strong>Protect your digital assets, users and data</strong></h4>
                                         <p>To help you build a foundation of trust in your interactions, you should enable the right user to have the
-                                            right access to the right data. IBM Security Digital Trust solutions can help.</p>
+                                            right access to the right data. ThoughtWorks Security Digital Trust solutions can help.</p>
                                     </Container>
                                 </Col>
                                 <Col md={3}>
@@ -50,7 +50,7 @@ class Solution extends Component {
                                     <Container style={{padding: 0, marginTop: '1em'}}>
                                         <h4><strong>Manage your defenses against growing threats</strong></h4>
                                         <p>When every second counts, you need a unified defense to identify, orchestrate and automate your response to
-                                            threats. IBM Security Threat Management solutions help you thrive in the face of cyber uncertainty.</p>
+                                            threats. ThoughtWorks Security Threat Management solutions help you thrive in the face of cyber uncertainty.</p>
                                     </Container>
                                 </Col>
                                 <Col md={3}>
@@ -61,7 +61,7 @@ class Solution extends Component {
                                         <h4><strong>Modernize your security with an open, multicloud platform</strong></h4>
                                         <p>To protect your hybrid multicloud infrastructure in a world of complexity, you need to ensure the workload
                                             is
-                                            secure, from processes to technologies. IBM Security can help confidently secure your hybrid multicloud
+                                            secure, from processes to technologies. ThoughtWorks Security can help confidently secure your hybrid multicloud
                                             enterprise.</p>
                                     </Container>
                                 </Col>

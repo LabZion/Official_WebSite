@@ -75,7 +75,7 @@ class OpenSource extends Component {
                     title={"OpenSource"}
                     subtitle={"Our job is to foster a vibrant community where people have the freedom to make an extraordinary impact on the world through technology."}
                 />
-                <Row style={{background: '#f4f4f4'}}>
+                <Row style={{background: '#fff'}}>
                     <Col md={1}></Col>
                     <Col md={10}>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '1em'}}>

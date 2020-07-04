@@ -27,7 +27,7 @@ class Resources extends Component {
                                     <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
                                     <h4><strong>lign your security strategy with your business</strong></h4>
                                     <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
-                                        partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and Risk
+                                        partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and Risk
                                         services team is that trusted resource.</p>
                                     <Link className={"readResource"}><p>Learn more.</p></Link>
                                 </Col>
@@ -35,7 +35,7 @@ class Resources extends Component {
                                     <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
                                     <h4><strong>lign your security strategy with your business</strong></h4>
                                     <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
-                                        partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and Risk
+                                        partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and Risk
                                         services team is that trusted resource.</p>
                                     <Link className={"readResource"}><p>Learn more.</p></Link>
                                 </Col>
@@ -43,7 +43,7 @@ class Resources extends Component {
                                     <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
                                     <h4><strong>lign your security strategy with your business</strong></h4>
                                     <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
-                                        partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and Risk
+                                        partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and Risk
                                         services team is that trusted resource.</p>
                                     <Link className={"readResource"}><p>Learn more.</p></Link>
                                 </Col>
@@ -51,7 +51,7 @@ class Resources extends Component {
                                     <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
                                     <h4><strong>lign your security strategy with your business</strong></h4>
                                     <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
-                                        partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and Risk
+                                        partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and Risk
                                         services team is that trusted resource.</p>
                                     <Link className={"readResource"}><p>Learn more.</p></Link>
                                 </Col>

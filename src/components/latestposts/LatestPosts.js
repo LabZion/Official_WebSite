@@ -25,7 +25,7 @@ class LatestPosts extends Component {
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
                                             demands a
-                                            partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and
+                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and
                                             Risk
                                             services team is that trusted resource.</p>
                                     </Container>
@@ -36,7 +36,7 @@ class LatestPosts extends Component {
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
                                             demands a
-                                            partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and
+                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and
                                             Risk
                                             services team is that trusted resource.</p>
                                     </Container>
@@ -47,7 +47,7 @@ class LatestPosts extends Component {
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
                                             demands a
-                                            partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and
+                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and
                                             Risk
                                             services team is that trusted resource.</p>
                                     </Container>
@@ -58,7 +58,7 @@ class LatestPosts extends Component {
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
                                             demands a
-                                            partner with the expertise and resources to help you remotely or onsite. The IBM Security Strategy and
+                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and
                                             Risk
                                             services team is that trusted resource.</p>
                                     </Container>
