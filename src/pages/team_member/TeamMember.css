@@ -3,7 +3,7 @@
 }
 
 .head {
-    width: 100%;
+    width: 90%;
     height: 15em;
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);

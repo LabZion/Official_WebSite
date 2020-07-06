@@ -15,9 +15,58 @@ import NengCao from "../../static/images/members/nengcao.png"
 import LiangLiang from "../../static/images/members/liangliang.jpeg"
 import HaoLi from "../../static/images/members/haoli.jpg"
 import Luke from "../../static/images/members/luke.png"
-
+import Lvju from "../../static/images/members/lvju.jpeg"
+import LiWang from "../../static/images/members/liwang.png"
+import YiYang from "../../static/images/members/yiyang.jpeg"
+import ShiFu from "../../static/images/members/shifu.jpeg"
+import ShauiGao from "../../static/images/members/shuage.jpeg"
 
 const members = [
+    {
+        name: 'Shuai.Gao',
+        title: 'Senior Consultant',
+        address: 'Xi`An',
+        img: ShauiGao,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Shifu.Wu',
+        title: 'Senior Consultant',
+        address: 'ChengDu',
+        img: ShiFu,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Yi.Yang',
+        title: 'Senior Consultant',
+        address: 'ChengDu',
+        img: YiYang,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Li.Wang',
+        title: 'Senior Consultant',
+        address: 'Xi`An',
+        img: LiWang,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
+    {
+        name: 'Lvju.Wang',
+        title: 'Senior Consultant',
+        address: 'Xi`An',
+        img: Lvju,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
     {
         name: 'Lu.Yang',
         title: 'BU Head',
