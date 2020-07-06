@@ -20,8 +20,18 @@ import LiWang from "../../static/images/members/liwang.png"
 import YiYang from "../../static/images/members/yiyang.jpeg"
 import ShiFu from "../../static/images/members/shifu.jpeg"
 import ShauiGao from "../../static/images/members/shuage.jpeg"
+import Hubing from "../../static/images/members/liuhubing.jpg"
 
 const members = [
+    {
+        name: 'Hubing.Liu',
+        title: 'Consultant,IcC design engineer, Software Engineer',
+        address: 'Xi`An',
+        img: Hubing,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
     {
         name: 'Shuai.Gao',
         title: 'Senior Consultant',
@@ -59,7 +69,7 @@ const members = [
         twitter: 'http://github.com',
     },
     {
-        name: 'Lvju.Wang',
+        name: 'Lyuju.Wang',
         title: 'Senior Consultant',
         address: 'Xi`An',
         img: Lvju,
