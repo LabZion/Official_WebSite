@@ -21,8 +21,18 @@ import YiYang from "../../static/images/members/yiyang.jpeg"
 import ShiFu from "../../static/images/members/shifu.jpeg"
 import ShauiGao from "../../static/images/members/shuage.jpeg"
 import Hubing from "../../static/images/members/liuhubing.jpg"
+import Wangjing from "../../static/images/members/jingwang.jpeg"
 
 const members = [
+    {
+        name: 'Jing.Wang',
+        title: 'Senior Consultant',
+        address: 'Xi`An',
+        img: Wangjing,
+        github: 'http://github.com',
+        youtube: 'http://github.com',
+        twitter: 'http://github.com',
+    },
     {
         name: 'Hubing.Liu',
         title: 'Consultant,IcC design engineer, Software Engineer',
