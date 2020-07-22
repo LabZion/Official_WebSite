@@ -22,7 +22,7 @@ class Menu extends Component {
                         {title: 'FINANCIAL', route: '/solution', state: {params: 'financial'}},
                         {title: 'CLOUD', route: '/solution', state: {params: 'cloud'}},
                         {title: 'SALES', route: '/solution', state: {params: 'sales'}},
-                        {title: 'LOGISTICS', route: '/solution', state: {params: 'traffic'}}
+                        {title: 'LOGISTICS', route: '/solution', state: {params: 'logistics'}}
                     ]
                 }, {
                     title: 'SCOPE',
