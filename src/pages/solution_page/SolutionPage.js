@@ -10,7 +10,7 @@ import {Image, Row} from "react-bootstrap";
 
 const industry = {
     car: {
-        title: '',
+        title: '汽车',
         description: '',
         data: [
             {
@@ -28,7 +28,7 @@ const industry = {
             }]
     },
     financial: {
-        title: '金融安全',
+        title: '金融',
         description: '随着移动互联网、云计算等技术的发展，金融机构的业务环境愈加复杂，内部系统与外部空间的边界也愈加模糊。与此同时，网络攻击者的攻击手段却越来越丰富，攻击数量越来越多。面对0-Day、APT等新型攻击手段，传统安全以防御为核心的策略失效，金融机构的安全状况面临严峻挑战。',
         data: [
             {
@@ -49,7 +49,7 @@ const industry = {
         ]
     },
     cloud: {
-        title: '',
+        title: '通信与云计算',
         description: '',
         data: [
             {
@@ -74,7 +74,7 @@ const industry = {
         ]
     },
     sales: {
-        title: '',
+        title: '零售与互联网',
         description: '',
         data: [
             {
@@ -85,32 +85,32 @@ const industry = {
         ]
     },
     logistics: {
-        title: '',
+        title: '物流与仓储',
         description: '',
         data: []
     },
     data: {
-        title: '',
+        title: '数据安全',
         description: '',
         data: []
     },
     identify: {
-        title: '',
+        title: '身份安全',
         description: '',
         data: []
     },
     embed: {
-        title: '',
+        title: '嵌入式与操作系统',
         description: '',
         data: []
     },
     trust: {
-        title: '',
+        title: '可信计算',
         description: '',
         data: []
     },
     buildin: {
-        title: '',
+        title: '内建安全',
         description: '',
         data: []
     },
@@ -149,9 +149,9 @@ class SolutionPage extends Component {
             <Col md={10}>
                 <Row>
                     <Col md={8} style={{padding: '1em', textAlign: 'left', paddingRight: '10em'}}>
-                        <h3><span style={{color:'#fff',background:'rgb(223, 102, 159)',padding:'0.1em'}}>0x0{index + 1}</span>
+                        <h3 style={{marginTop:'1em'}}><span style={{color:'#fff',background:'rgb(223, 102, 159)',padding:'0.1em'}}>0x0{index + 1}</span>
                             <span style={{border:'solid 1px rgb(223, 102, 159)',padding:'2px',color:'rgb(223, 102, 159)'}}>{item.title}</span></h3>
-                        <h5 style={{lineHeight: '2em'}}>{item.description}</h5>
+                        <h5 style={{lineHeight: '1.5em',marginTop:'1.5em'}}>{item.description}</h5>
                     </Col>
                     <Col md={4} style={{padding: '1em', textAlign: 'right'}}>
                         <Image src={item.img} style={{width: '100%'}} rounded/>
