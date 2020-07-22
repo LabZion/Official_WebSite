@@ -84,14 +84,14 @@ class Menu extends Component {
                     ]
                 }
             ], aboutUs: [
-                {
-                    title: 'COMPANY',
-                    items: [
-                        {title: 'HOPE', route: '/company', state: {params: ''}},
-                        {title: 'PATH', route: '/company', state: {params: ''}},
-                        {title: 'INVESTOR', route: '/company', state: {params: ''}},
-                    ]
-                },
+                // {
+                //     title: 'COMPANY',
+                //     items: [
+                //         {title: 'HOPE', route: '/company', state: {params: ''}},
+                //         {title: 'PATH', route: '/company', state: {params: ''}},
+                //         {title: 'INVESTOR', route: '/company', state: {params: ''}},
+                //     ]
+                // },
                 {
                     title: 'TEAM',
                     items: [
@@ -140,11 +140,11 @@ class Menu extends Component {
                                                          id="dropdown-basic">
                                             {this.props.t('SOLUTION_SERVICE')}
                                         </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}
-                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
-                                                         id="dropdown-basic">
-                                            {this.props.t('CUSTOMER')}
-                                        </Dropdown.Toggle>
+                                        {/*<Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}*/}
+                                        {/*                 variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}*/}
+                                        {/*                 id="dropdown-basic">*/}
+                                        {/*    {this.props.t('CUSTOMER')}*/}
+                                        {/*</Dropdown.Toggle>*/}
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'resource')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
@@ -155,11 +155,11 @@ class Menu extends Component {
                                                          id="dropdown-basic">
                                             {this.props.t('ABOUT_US')}
                                         </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}
-                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
-                                                         id="dropdown-basic">
-                                            {this.props.t('CONTACT_US')}
-                                        </Dropdown.Toggle>
+                                        {/*<Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}*/}
+                                        {/*                 variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}*/}
+                                        {/*                 id="dropdown-basic">*/}
+                                        {/*    {this.props.t('CONTACT_US')}*/}
+                                        {/*</Dropdown.Toggle>*/}
                                     </Dropdown>
                                 </Navbar.Brand>
                             </Navbar>
