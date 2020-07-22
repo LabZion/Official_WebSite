@@ -129,7 +129,7 @@ class SolutionPage extends Component {
                     title={industry[solution].title}
                     subtitle={industry[solution].description}
                 />
-                <Row style={{background: 'rgb(223, 102, 159)', textAlign: 'center', padding: '2em'}}>
+                <Row style={{background: 'rgb(223, 102, 159)', textAlign: 'center', padding: '2em',marginBottom:'2em'}}>
                     <Col>
                         <h1 style={{textAlign: 'center', color: '#fafafc'}}>方案详情</h1>
                     </Col>
@@ -144,13 +144,14 @@ class SolutionPage extends Component {
     };
 
     renderSolutionBlock(item, index) {
-        return <Row style={{background: index % 2 === 0 ? '#fff' : '#fafafc', paddingTop: '3em', paddingBottom: '3em'}}>
+        return <Row style={{background: index % 2 === 0 ? '#fff' : '#fafafc', paddingTop: '1em', paddingBottom: '1em'}}>
             <Col md={1}></Col>
             <Col md={10}>
                 <Row>
                     <Col md={8} style={{padding: '1em', textAlign: 'left', paddingRight: '10em'}}>
-                        <h3>{index + 1} {item.title}</h3>
-                        <h6 style={{lineHeight: '2em'}}>{item.description}</h6>
+                        <h3><span style={{color:'#fff',background:'rgb(223, 102, 159)',padding:'0.1em'}}>0x0{index + 1}</span>
+                            <span style={{border:'solid 1px rgb(223, 102, 159)',padding:'2px',color:'rgb(223, 102, 159)'}}>{item.title}</span></h3>
+                        <h5 style={{lineHeight: '2em'}}>{item.description}</h5>
                     </Col>
                     <Col md={4} style={{padding: '1em', textAlign: 'right'}}>
                         <Image src={item.img} style={{width: '100%'}} rounded/>

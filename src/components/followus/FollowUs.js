@@ -19,6 +19,7 @@ class FollowUs extends Component {
                         <Col md={1}></Col>
                         <Col md={10} style={{textAlign: "left"}}>
                             <h2 style={{color: "#fff"}}>Follow Us</h2>
+                            <h2 style={{color: "#fff",float:'right'}}>+86-029-63389890</h2>
                         </Col>
                     </Row>
                 </Container>
