@@ -146,7 +146,7 @@ class SolutionPage extends Component {
     renderSolutionBlock(item, index) {
         return <Row style={{background: index % 2 === 0 ? '#fff' : '#fafafc', paddingTop: '1em', paddingBottom: '1em'}}>
             <Col md={1}></Col>
-            <Col md={10}>
+            <Col md={10} style={{paddingLeft:'2em',paddingRight:'2em'}}>
                 <Row>
                     <Col md={8} style={{padding: '1em', textAlign: 'left', paddingRight: '10em'}}>
                         <h3 style={{marginTop:'1em'}}><span style={{color:'#fff',background:'rgb(223, 102, 159)',padding:'0.1em'}}>0x0{index + 1}</span>
