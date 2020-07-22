@@ -75,7 +75,7 @@ const industry = {
     },
     sales: {
         title: '零售与互联网',
-        description: '',
+        description: '随着电子商务的快速扩张，零售商成为网络攻击的首要目标。零售商专注于无障碍个性化购物体验，有时亦意味着网络安全可能被人乘虚而入，加上越来越多人使用云端系统及web应用程序，使其容易成为攻击目标。由于开发、测试和维护稳固的网络安全措施需要时间及人力，继而影响到盈亏，所以不少零售商均将网络安全视为一项额外成本，可是这种思维方式在日后可能会换来更大代价。当客户资讯或其他重要的公司资料遭盗窃或勒索，招致的后果不仅是经济损失，更甚者可能为品牌声誉带来灾难性影响。',
         data: [
             {
                 title: '内建安全体系',
@@ -134,9 +134,10 @@ class SolutionPage extends Component {
                         <h1 style={{textAlign: 'center', color: '#fafafc'}}>方案详情</h1>
                     </Col>
                 </Row>
-                {industry[solution].data.map((item, index) => {
-                    return this.renderSolutionBlock(item, index);
-                })
+                {
+                    industry[solution].data.map((item, index) => {
+                        return this.renderSolutionBlock(item, index);
+                    })
                 }
                 <FollowUs/>
             </Container>
