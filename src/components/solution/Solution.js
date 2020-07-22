@@ -19,7 +19,7 @@ class Solution extends Component {
                     <Col md={1}></Col>
                     <Col md={10}>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '2em'}}>
-                            <Row style={{marginTop:'1em'}}>
+                            <Row style={{marginTop: '1em'}}>
                                 <Col md={3}>
                                     <Container style={{textAlign: 'center', marginTop: '0.5em'}}>
                                         <Image src={"https://1.cms.s81c.com/sites/default/files/2019-10-11/assess-risk-1.5-icon1.png"}/>
@@ -28,7 +28,8 @@ class Solution extends Component {
                                         <h4><strong>lign your security strategy with your business</strong></h4>
                                         <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
                                             demands a
-                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and
+                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security
+                                            Strategy and
                                             Risk
                                             services team is that trusted resource.</p>
                                     </Container>
@@ -50,7 +51,8 @@ class Solution extends Component {
                                     <Container style={{padding: 0, marginTop: '1em'}}>
                                         <h4><strong>Manage your defenses against growing threats</strong></h4>
                                         <p>When every second counts, you need a unified defense to identify, orchestrate and automate your response to
-                                            threats. ThoughtWorks Security Threat Management solutions help you thrive in the face of cyber uncertainty.</p>
+                                            threats. ThoughtWorks Security Threat Management solutions help you thrive in the face of cyber
+                                            uncertainty.</p>
                                     </Container>
                                 </Col>
                                 <Col md={3}>
@@ -61,7 +63,8 @@ class Solution extends Component {
                                         <h4><strong>Modernize your security with an open, multicloud platform</strong></h4>
                                         <p>To protect your hybrid multicloud infrastructure in a world of complexity, you need to ensure the workload
                                             is
-                                            secure, from processes to technologies. ThoughtWorks Security can help confidently secure your hybrid multicloud
+                                            secure, from processes to technologies. ThoughtWorks Security can help confidently secure your hybrid
+                                            multicloud
                                             enterprise.</p>
                                     </Container>
                                 </Col>

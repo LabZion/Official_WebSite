@@ -18,101 +18,101 @@ class Menu extends Component {
                 {
                     title: 'INDUSTRY',
                     items: [
-                        {title: 'CAR', route: '/solution/car'},
-                        {title: 'FINANCIAL', route: '/solution/financial'},
-                        {title: 'CLOUD', route: '/solution/cloud'},
-                        {title: 'SALES', route: '/solution/sales'},
-                        {title: 'LOGISTICS', route: '/solution/traffic'}
+                        {title: 'CAR', route: '/solution', state: {params: 'car'}},
+                        {title: 'FINANCIAL', route: '/solution', state: {params: 'financial'}},
+                        {title: 'CLOUD', route: '/solution', state: {params: 'cloud'}},
+                        {title: 'SALES', route: '/solution', state: {params: 'sales'}},
+                        {title: 'LOGISTICS', route: '/solution', state: {params: 'traffic'}}
                     ]
                 }, {
                     title: 'SCOPE',
                     items: [
-                        {title: 'DATA', route: '/solution/data'},
-                        {title: 'IDENTIFY', route: '/solution/identify'},
-                        {title: 'EMBED', route: '/solution/embed'},
-                        {title: 'TRUST', route: '/solution/trust'},
-                        {title: 'BUILDIN', route: '/solution/buildin'},
+                        {title: 'DATA', route: '/solution', state: {params: 'data'}},
+                        {title: 'IDENTIFY', route: '/solution', state: {params: 'identify'}},
+                        {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
+                        {title: 'TRUST', route: '/solution', state: {params: 'trust'}},
+                        {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
                     ]
                 }
             ], customer: [
                 {
                     title: 'CAR',
                     items: [
-                        {title: 'SAIC', route: '/case'},
-                        {title: 'DAIMLER', route: '/case'},
-                        {title: 'GAC', route: '/case'},
-                        {title: 'PORSCHE', route: '/case'},
+                        {title: 'SAIC', route: '/case', state: {params: ''}},
+                        {title: 'DAIMLER', route: '/case', state: {params: ''}},
+                        {title: 'GAC', route: '/case', state: {params: ''}},
+                        {title: 'PORSCHE', route: '/case', state: {params: ''}},
                     ]
                 }, {
                     title: 'FINANCIAL',
                     items: [
-                        {title: 'CMB', route: '/case'},
-                        {title: 'BOC', route: '/case'},
-                        {title: 'ZYBANK', route: '/case'},
-                        {title: 'LU', route: '/case'},
-                        {title: 'CM', route: '/case'},
-                        {title: 'HUMANA', route: '/case'},
+                        {title: 'CMB', route: '/case', state: {params: ''}},
+                        {title: 'BOC', route: '/case', state: {params: ''}},
+                        {title: 'ZYBANK', route: '/case', state: {params: ''}},
+                        {title: 'LU', route: '/case', state: {params: ''}},
+                        {title: 'CM', route: '/case', state: {params: ''}},
+                        {title: 'HUMANA', route: '/case', state: {params: ''}},
                     ]
                 }, {
                     title: 'CLOUD',
                     items: [
-                        {title: 'HUAWEI', route: '/case'},
+                        {title: 'HUAWEI', route: '/case', state: {params: ''}},
                     ]
                 }, {
                     title: 'SALES',
                     items: [
-                        {title: 'STARBUCKS', route: '/case'},
+                        {title: 'STARBUCKS', route: '/case', state: {params: ''}},
                     ]
                 },
                 {
                     title: 'LOGISTICS',
                     items: [
                         {title: 'OOCL', route: '/case'},
-                        {title: 'LANDPORTGROUP', route: '/case'},
+                        {title: 'LANDPORTGROUP', route: '/case', state: {params: ''}},
                     ]
                 }
             ], resource: [
                 {
                     title: 'OPENSOURCE',
                     items: [
-                        {title: 'HOOKFRAMEWORK', route: '/open-source'},
-                        {title: 'SYNESTIA', route: '/open-source'},
-                        {title: 'NDFS', route: '/open-source'},
-                        {title: 'TingGL', route: '/open-source'},
-                        {title: 'Du.rs', route: '/open-source'},
-                        {title: 'JavascriptLike Compiler', route: '/open-source'},
+                        {title: 'HOOKFRAMEWORK', route: '/open-source', state: {params: ''}},
+                        {title: 'SYNESTIA', route: '/open-source', state: {params: ''}},
+                        {title: 'NDFS', route: '/open-source', state: {params: ''}},
+                        {title: 'TingGL', route: '/open-source', state: {params: ''}},
+                        {title: 'Du.rs', route: '/open-source', state: {params: ''}},
+                        {title: 'JavascriptLike Compiler', route: '/open-source', state: {params: ''}},
                     ]
                 }
             ], aboutUs: [
                 {
                     title: 'COMPANY',
                     items: [
-                        {title: 'HOPE', route: '/company'},
-                        {title: 'PATH', route: '/company'},
-                        {title: 'INVESTOR', route: '/company'},
+                        {title: 'HOPE', route: '/company', state: {params: ''}},
+                        {title: 'PATH', route: '/company', state: {params: ''}},
+                        {title: 'INVESTOR', route: '/company', state: {params: ''}},
                     ]
                 },
                 {
                     title: 'TEAM',
                     items: [
-                        {title: 'MEMBER', route: '/team/member'},
+                        {title: 'MEMBER', route: '/team/member', state: {params: ''}},
                     ]
                 }
             ], contactUs: [
                 {
                     title: 'CHINA',
                     items: [
-                        {title: 'XIAN', route: '/contact'},
-                        {title: 'BEIJING', route: '/contact'},
-                        {title: 'CHENGDOU', route: '/contact'},
-                        {title: 'WUHAN', route: '/contact'},
-                        {title: 'SHENZHEN', route: '/contact'},
+                        {title: 'XIAN', route: '/contact', state: {params: ''}},
+                        {title: 'BEIJING', route: '/contact', state: {params: ''}},
+                        {title: 'CHENGDOU', route: '/contact', state: {params: ''}},
+                        {title: 'WUHAN', route: '/contact', state: {params: ''}},
+                        {title: 'SHENZHEN', route: '/contact', state: {params: ''}},
                     ]
                 },
                 {
                     title: 'GLOBAL',
                     items: [
-                        {title: '柏林', route: '/contact'},
+                        {title: '柏林', route: '/contact', state: {params: ''}},
                     ]
                 }
             ]
@@ -215,8 +215,10 @@ class Menu extends Component {
                             <Row>
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
-                                        return <Col md={3} className={"featureItem"}><Link to={item.route}
-                                                                                           class={"menu-item"}>{this.props.t(item.title)}</Link></Col>
+                                        return <Col md={3} className={"featureItem"}><Link to={{
+                                            pathname: item.route,
+                                            state: item.state,
+                                        }} class={"menu-item"}>{this.props.t(item.title)}</Link></Col>
                                     })
                                 }
                             </Row>

@@ -25,16 +25,6 @@ function App() {
                 <Route exact path="/event" component={Events}/>
                 <Route exact path="/blogs" component={Blogs}/>
                 <Route exact path="/solution" component={SolutionPage}/>
-                <Route exact path="/solution/car" component={SolutionPage}/>
-                <Route exact path="/solution/financial" component={SolutionPage}/>
-                <Route exact path="/solution/cloud" component={SolutionPage}/>
-                <Route exact path="/solution/sales" component={SolutionPage}/>
-                <Route exact path="/solution/traffic" component={SolutionPage}/>
-                <Route exact path="/solution/data" component={SolutionPage}/>
-                <Route exact path="/solution/identify" component={SolutionPage}/>
-                <Route exact path="/solution/embed" component={SolutionPage}/>
-                <Route exact path="/solution/trust" component={SolutionPage}/>
-                <Route exact path="/solution/buildin" component={SolutionPage}/>
                 <Route exact path="/open-source" component={OpenSource}/>
                 <Route exact path="/case" component={SolutionPage}/>
                 <Route exact path="/company" component={SolutionPage}/>
