@@ -215,10 +215,12 @@ class Menu extends Component {
                             <Row>
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
-                                        return <Col md={3} className={"featureItem"}><Link to={{
-                                            pathname: item.route,
-                                            state: item.state,
-                                        }} class={"menu-item"}>{this.props.t(item.title)}</Link></Col>
+                                        return <Col md={3} className={"featureItem"}>
+                                            <Link to={{
+                                                pathname: item.route,
+                                                state: item.state,
+                                            }} class={"menu-item"}>{this.props.t(item.title)}</Link>
+                                        </Col>
                                     })
                                 }
                             </Row>

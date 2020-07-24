@@ -170,7 +170,7 @@ class Events extends Component {
             return <Col md={4} sytle={{background: '#fff'}}>
                 <Link to={{
                     pathname: '/event-detail',
-                    state: {detail:item}
+                    state: {params: item}
                 }}>
                     <Image src={item.img} style={{width: '100%'}}/></Link>
                 <Container style={{paddingTop: '1em', paddingBottom: '0.1em', background: '#fff', marginBottom: '2em'}}>
