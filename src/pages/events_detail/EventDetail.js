@@ -13,7 +13,7 @@ const markdown = require("markdown").markdown;
 
 class EventDetail extends Component {
     render() {
-        let detail = this.props.location.state.params | {};
+        let detail = this.props.location.state.params;
         return (
             <Container style={{padding: 0}} className="EventDetail">
                 <Row style={{background: '#29292f'}}>
