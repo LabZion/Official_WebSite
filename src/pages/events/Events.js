@@ -7,33 +7,34 @@ import FollowUs from "../../components/followus/FollowUs";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import {Image, Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
+import {withTranslation} from "react-i18next";
 
 
 const events = {
     past: [
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
             videoUrl: '',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
             author: '李好·ThoughtWorks首席咨询师'
         },
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
             videoUrl: '',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
             author: '李好·ThoughtWorks首席咨询师'
         },
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
             videoUrl: '',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
             author: '李好·ThoughtWorks首席咨询师'
         },
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
             videoUrl: '',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
@@ -42,14 +43,14 @@ const events = {
     ],
     uncome: [
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
             title: '为什么新基建来了，我们还在聊中台？',
             address: 'zoom: 99999999',
             author: '李好',
             time: '2020-7-24 19:00',
         },
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
             title: '为什么新基建来了，我们还在聊中台？',
             address: 'zoom: 99999999',
             author: '李好',
@@ -65,7 +66,7 @@ class Events extends Component {
             <Container style={{padding: 0}} className="OpenSource">
                 <BreadNav
                     bg={"url('https://static.thoughtworks.com/images/news-banner.jpg')"}
-                    title={"Events"}
+                    title={this.props.t('EVENTS') +" & "+ this.props.t('INSIGHT')}
                     subtitle={"Knowledge should be for all, not just for the few. We believe in sharing what we learn, and regularly host and participate in thought-leadership events across the world."}
                 />
 
@@ -141,5 +142,4 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => bindActionCreators({}, dispatch);
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(Events);
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(Events));
