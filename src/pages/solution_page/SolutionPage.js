@@ -19,7 +19,7 @@ const industry = {
                 description: '当前车载智能终端（车机）应用日益广泛，智能汽车已是大势所趋。在汽车生态体系中，车机由不同的供应商提供，因此对安全漏洞的追踪和确认十分困难。而车厂对发现的漏洞只能采用人工逆向分析技术，存在人工分析慢，产品迭代慢，会出现误判等问题。ThoughtWorks安全团队通过和国内多家大型车企以及智能设备生成厂商多年合作，积累了一套对二进制自动化漏洞扫描以及加固的解决方案。解决了传统的二进制漏洞检测难度大，检测周期长的问题。同时研发了一套漏洞自动化修复框架，在准确和快速地检测出二进制文件中漏洞的同时，还可以自动化修复漏洞，为业界的智能设备产品公司在快速迭代的过程中保驾护航。',
             }, {
                 title: '自动驾驶',
-                img: 'https://github.com/LabZion/Official_WebSite/blob/master/public/picture/%E6%B1%BD%E8%BD%A6-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B61.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%B1%BD%E8%BD%A6-%E8%87%AA%E5%8A%A8%E9%A9%BE%E9%A9%B61.png',
                 description: '自动驾驶是近年来最为火热的方向之一，无论是新兴的互联网公司，还是传统的知名汽车制造商，都投入了大量资金和研发人力。自动驾驶平台是一个软硬件高度耦合的复杂系统，从硬件设计到软件开发，从系统底层到应用上层，从业务逻辑到算法分析，横跨了众多的专业领域，对从业公司入局自动驾驶有很高的技术要求。ThoughtWorks作为专业服务咨询公司，在自动驾驶落地所需的硬件驱动、系统底层、算法应用等领域有丰富的从业经验和成功案例，与多个国内外头部整车企业研发部门在V2X车机系统、ADAS研发效能平台、感知数据采集与处理标注平台方面，有着深厚的合作，可为您的自动驾驶研发提供能力支持和技术保障。',
             }, {
                 title: '数据隐私',
@@ -154,7 +154,7 @@ class SolutionPage extends Component {
                             <span style={{border:'solid 1px rgb(223, 102, 159)',padding:'2px',color:'rgb(223, 102, 159)'}}>{item.title}</span></h3>
                         <h5 style={{lineHeight: '1.5em',marginTop:'1.5em'}}>{item.description}</h5>
                     </Col>
-                    <Col md={4} style={{padding: '1em', textAlign: 'right'}}>
+                    <Col md={4} style={{padding: '1em', textAlign: 'right',paddingTop:'4em'}}>
                         <Image src={item.img} style={{width: '100%'}} rounded/>
                     </Col>
                 </Row>

@@ -9,11 +9,14 @@
 .featureItemOn {
     color: rgb(223, 102, 159);
     font-weight: bolder;
+    font-size: 1.2em;
+    margin-top: 0.2em;
 }
 
 .featureItem {
     color: rgb(74, 74, 74);
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-top: 0.2em;
 }
 
 .featureItem:hover {
