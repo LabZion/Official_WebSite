@@ -23,7 +23,7 @@ const industry = {
                 description: '自动驾驶是近年来最为火热的方向之一，无论是新兴的互联网公司，还是传统的知名汽车制造商，都投入了大量资金和研发人力。自动驾驶平台是一个软硬件高度耦合的复杂系统，从硬件设计到软件开发，从系统底层到应用上层，从业务逻辑到算法分析，横跨了众多的专业领域，对从业公司入局自动驾驶有很高的技术要求。ThoughtWorks作为专业服务咨询公司，在自动驾驶落地所需的硬件驱动、系统底层、算法应用等领域有丰富的从业经验和成功案例，与多个国内外头部整车企业研发部门在V2X车机系统、ADAS研发效能平台、感知数据采集与处理标注平台方面，有着深厚的合作，可为您的自动驾驶研发提供能力支持和技术保障。',
             }, {
                 title: '数据隐私',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%B1%BD%E8%BD%A6-%E6%95%B0%E6%8D%AE%E9%9A%90%E7%A7%81.png',
                 description: '对于跨国大型车企而言，不同区域车主数据可能保存在同一区域，因此会存在不同区域车主访问数据速度不一致的问题，另一方面不同地区数据管理法律法规对于数据安全的要求不同，隐私合规也是车企需要考虑的一个问题。数据隐私是ThoughtWorks安全团队的一个主攻方向，帮助客户更好地达到数据保护、隐私合规是我们的愿景。基于对不同地区法律法规（如网安法，等保合规，GDPR等）的了解，针对不同种类的数据，采用如加密、脱敏、合规迁移等不同的保护措施，结合具体的应用场景，为客户提供数据安全与隐私保护的解决方案。方案不仅仅涵盖技术实施，同时也包含了企业内部安全意识培训，安全流程建立等，进而为客户提供全套的解决方案。',
             }]
     },
@@ -33,7 +33,7 @@ const industry = {
         data: [
             {
                 title: '迭代安全',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C1.png',
                 description: '国内金融行业科技部门的一些团队已经采用了敏捷开发流程，但是迭代开发过程中相应的敏捷安全措施是空缺的，对于金融行业科技部门探索迭代内安全实践的需求，ThoughtWorks安全团队提供了调研及过程改进建议、开发团队成员及安全团队成员赋能两阶段的交付实践，提供了敏捷迭代安全内建实施指南以及内建安全赋能培训课程。使得客户在敏捷流程中安全实践得到落地实施，进而降低了应用安全风险，另一方面，开发团队安全意识能力得到提升。'
             },
             {
@@ -43,7 +43,7 @@ const industry = {
             },
             {
                 title: '交互式安全',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E4%B8%AD%E5%8E%9F%E9%93%B6%E8%A1%8C.png',
                 description: '针对金融行业内典型的业务场景，结合常⻅的安全问题和安全漏漏洞，ThoughtWorks安全团队形成一整套安全需求设计规范，提供交互式安全需求识别工具，便于研发人员根据需求描述自动化、自助化地生成安全需求；便于信息安全中心实现安全需求管控、维护的线上化、标准化；助⼒实现系统全⽣命周期、全流程⻆度同步考虑安全工作，强化安全前移目标的达成。'
             }
         ]
@@ -79,7 +79,7 @@ const industry = {
         data: [
             {
                 title: '内建安全体系',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%9B%B6%E5%94%AE%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91.png',
                 description: '全球餐饮连锁巨头通过数字化转型，拓展全球业务版图、打造智能化数字消费体验。在中国区打造适用中国市场和用户操作习惯的app，为近千万的活跃用户提供优质、温馨、独特的消费体验。其app提供移动支付、充值卡管理、会员管理等优化完善线下用户体验，同时采用个性化数字营销、实时计算等方式促进业务持续增长。Thoughtwork安全团队为客户构建内建安全体系(BSI，build security in)，将安全实践应用于软件开发的各个阶段，在响应业务快速变化的同时，安全为业务持续增长保驾护航。在app技术开发中，安全团队构建app安全基建，保证各个业务功能满足安全需求。'
             }
         ]
