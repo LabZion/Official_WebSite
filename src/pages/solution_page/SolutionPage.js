@@ -8,6 +8,7 @@ import BreadNav from "../../components/bread_nav/BreadNav";
 import Col from "react-bootstrap/Col";
 import {Image, Row} from "react-bootstrap";
 
+
 const industry = {
     car: {
         title: '汽车',
