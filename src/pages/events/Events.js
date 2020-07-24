@@ -59,7 +59,6 @@ const events = {
     ]
 };
 
-
 class Events extends Component {
     render() {
         return (

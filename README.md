@@ -1,6 +1,21 @@
 ## 
 It's a insecurity website.
 
+## deploy
+1. rm -rf build
+2. cd labzion.github.io
+3. rm -rf *
+4. cp ../CNAME .
+5. cd ..
+6. yarn build
+7. cd build
+8. cp -r * ../labzion.github.io
+9. cd ..
+10. cd labzion.github.io
+11. git add .
+12. git commit -m ""
+13. git push
+
 ## Available Scripts
 
 In the project directory, you can run:
