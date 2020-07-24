@@ -9,7 +9,6 @@ import Image from "react-bootstrap/Image";
 import Logo from "../../static/images/logo_large.png"
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import Search from "../search/Search";
 import {withTranslation} from 'react-i18next';
 import {Dropdown} from "react-bootstrap";
 

@@ -8,37 +8,81 @@ import BreadNav from "../../components/bread_nav/BreadNav";
 import {Image, Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import {withTranslation} from "react-i18next";
-
+import {Link} from "react-router-dom";
 
 const events = {
     past: [
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            videoUrl: '',
+            videoUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
-            author: '李好·ThoughtWorks首席咨询师'
+            author: '李好·ThoughtWorks首席咨询师',
+            authorDesc: 'ThoughtWorks 首席咨询师咨询师， 企业信息安全顾问，敏捷咨询师',
+            content: '##### 内容\n' +
+                '\n' +
+                '信息安全信息安全\n' +
+                '\n' +
+                '##### 大纲\n' +
+                '\n' +
+                '1. sql注入\n' +
+                '2. xss注入\n' +
+                '3. 威胁建模\n' +
+                '4. 安全展望',
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            videoUrl: '',
+            videoUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
-            author: '李好·ThoughtWorks首席咨询师'
+            author: '李好·ThoughtWorks首席咨询师',
+            authorDesc: 'ThoughtWorks 首席咨询师咨询师， 企业信息安全顾问，敏捷咨询师',
+            content: '##### 内容\n' +
+                '\n' +
+                '信息安全信息安全\n' +
+                '\n' +
+                '##### 大纲\n' +
+                '\n' +
+                '1. sql注入\n' +
+                '2. xss注入\n' +
+                '3. 威胁建模\n' +
+                '4. 安全展望',
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            videoUrl: '',
+            videoUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
-            author: '李好·ThoughtWorks首席咨询师'
+            author: '李好·ThoughtWorks首席咨询师',
+            authorDesc: 'ThoughtWorks 首席咨询师咨询师， 企业信息安全顾问，敏捷咨询师',
+            content: '##### 内容\n' +
+                '\n' +
+                '信息安全信息安全\n' +
+                '\n' +
+                '##### 大纲\n' +
+                '\n' +
+                '1. sql注入\n' +
+                '2. xss注入\n' +
+                '3. 威胁建模\n' +
+                '4. 安全展望',
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            videoUrl: '',
+            videoUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
-            author: '李好·ThoughtWorks首席咨询师'
+            author: '李好·ThoughtWorks首席咨询师',
+            authorDesc: 'ThoughtWorks 首席咨询师咨询师， 企业信息安全顾问，敏捷咨询师',
+            content: '##### 内容\n' +
+                '\n' +
+                '信息安全信息安全\n' +
+                '\n' +
+                '##### 大纲\n' +
+                '\n' +
+                '1. sql注入\n' +
+                '2. xss注入\n' +
+                '3. 威胁建模\n' +
+                '4. 安全展望',
         }
     ],
     uncome: [
@@ -62,10 +106,10 @@ const events = {
 class Events extends Component {
     render() {
         return (
-            <Container style={{padding: 0}} className="OpenSource">
+            <Container style={{padding: 0}} className="Events">
                 <BreadNav
                     bg={"url('https://static.thoughtworks.com/images/news-banner.jpg')"}
-                    title={this.props.t('EVENTS') +" & "+ this.props.t('INSIGHT')}
+                    title={this.props.t('EVENTS') + " & " + this.props.t('INSIGHT')}
                     subtitle={"Knowledge should be for all, not just for the few. We believe in sharing what we learn, and regularly host and participate in thought-leadership events across the world."}
                 />
 
@@ -124,7 +168,11 @@ class Events extends Component {
     renderPastVideos() {
         return events.past.map((item, index) => {
             return <Col md={4} sytle={{background: '#fff'}}>
-                <Image src={item.img} style={{width: '100%'}}/>
+                <Link to={{
+                    pathname: '/event-detail',
+                    state: {detail:item}
+                }}>
+                    <Image src={item.img} style={{width: '100%'}}/></Link>
                 <Container style={{paddingTop: '1em', paddingBottom: '0.1em', background: '#fff', marginBottom: '2em'}}>
                     <h5>{item.title}</h5>
                     <p>{item.author}</p>
