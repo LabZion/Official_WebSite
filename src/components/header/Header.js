@@ -23,8 +23,8 @@ class Header extends Component {
             <Fragment>
                 <Container className="Header">
                     <Row>
-                        <Col md={1}> </Col>
-                        <Col md={10}>
+                        <Col md={2}> </Col>
+                        <Col md={8}>
                             <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
                                 <Link to="/home" style={{fontWeight: 'bolder', margin: 0, padding: 0,marginRight:'2em'}}>
                                     <Image src={Logo} className="logo-img" rounded/>

@@ -17,8 +17,8 @@ class EventDetail extends Component {
         return (
             <Container style={{padding: 0}} className="EventDetail">
                 <Row style={{background: '#29292f'}}>
-                    <Col md={1}></Col>
-                    <Col md={10} style={{marginTop: '2em', background: '#29292f',color:'#fff'}}>
+                    <Col md={2}></Col>
+                    <Col md={8} style={{marginTop: '2em', background: '#29292f',color:'#fff'}}>
                         <Container style={{textAlign: "left", padding: 0, paddingTop: '1em', paddingBottom: '2em'}}>
                             <Player
                                 playsInline
@@ -32,8 +32,8 @@ class EventDetail extends Component {
                     </Col>
                 </Row>
                 <Row style={{background: '#fff',paddingBottom:'2em'}}>
-                    <Col md={1}></Col>
-                    <Col md={10} style={{marginTop: '2em', textAlign:'left'}}>
+                    <Col md={2}></Col>
+                    <Col md={8} style={{marginTop: '2em', textAlign:'left'}}>
                         <h3>内容介绍</h3>
                         <Container style={{padding:0}} dangerouslySetInnerHTML={{__html: markdown.toHTML(detail.content)}}>
                         </Container>

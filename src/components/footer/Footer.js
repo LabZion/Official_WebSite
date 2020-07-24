@@ -13,8 +13,8 @@ function Footer() {
             <Container>
                 <Router>
                     <Row>
-                        <Col md={1}/>
-                        <Col md={10}>
+                        <Col md={2}/>
+                        <Col md={8}>
                             <Row>
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>Info</Row>

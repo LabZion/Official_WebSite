@@ -17,8 +17,8 @@ class Case extends Component {
         return (
             <Fragment>
                 <Row>
-                    <Col md={1}></Col>
-                    <Col md={10}>
+                    <Col md={2}></Col>
+                    <Col md={8}>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '2em'}}>
                             <Row>
                                 <Col md={3}>

@@ -129,8 +129,8 @@ class Menu extends Component {
             <Fragment>
                 <Container className="Header">
                     <Row>
-                        <Col md={1}> </Col>
-                        <Col md={10} style={{padding: 0}}>
+                        <Col md={2}> </Col>
+                        <Col md={8} style={{padding: 0}}>
                             <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
                                 <Navbar.Brand className="icon-header" href="#home">
                                     <Dropdown>
@@ -199,8 +199,8 @@ class Menu extends Component {
         return this.state.isPanelShow ? <Container className={"menuContainer"}
                                                    onMouseLeave={this.onMenuLeaveHandler.bind(this, 'solution')}>
             <Row>
-                <Col md={1}> </Col>
-                <Col md={10}>
+                <Col md={2}> </Col>
+                <Col md={8}>
                     <Row style={{borderTop: '1px solid #f0f1f3'}}>
                         <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', padding: '2em'}}>
                             {

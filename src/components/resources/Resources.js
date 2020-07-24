@@ -18,8 +18,8 @@ class Resources extends Component {
             <Fragment>
                 <Container style={{background: "#000", paddingTop: '2em', paddingBottom: '2em'}}>
                     <Row>
-                        <Col md={1}></Col>
-                        <Col md={10} style={{textAlign: "left"}}>
+                        <Col md={2}></Col>
+                        <Col md={8} style={{textAlign: "left"}}>
 
                             <h2 style={{color: "#fff"}}>Read Our Latest posts</h2>
                             <Row>

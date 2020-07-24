@@ -147,15 +147,15 @@ class SolutionPage extends Component {
 
     renderSolutionBlock(item, index) {
         return <Row style={{background: index % 2 === 0 ? '#fff' : '#fafafc', paddingTop: '1em', paddingBottom: '1em'}}>
-            <Col md={1}></Col>
-            <Col md={10} style={{paddingLeft:'2em',paddingRight:'2em'}}>
+            <Col md={2}></Col>
+            <Col md={8} style={{paddingLeft:'2em',paddingRight:'2em'}}>
                 <Row>
-                    <Col md={8} style={{padding: '1em', textAlign: 'left', paddingRight: '10em'}}>
+                    <Col md={8} style={{padding: '1em', textAlign: 'left', paddingRight: '2em'}}>
                         <h3 style={{marginTop:'1em'}}><span style={{color:'#fff',background:'rgb(223, 102, 159)',padding:'0.1em'}}>0x0{index + 1}</span>
                             <span style={{border:'solid 1px rgb(223, 102, 159)',padding:'2px',color:'rgb(223, 102, 159)'}}>{item.title}</span></h3>
                         <h5 style={{lineHeight: '1.5em',marginTop:'1.5em'}}>{item.description}</h5>
                     </Col>
-                    <Col md={4} style={{padding: '1em', textAlign: 'right',paddingTop:'4em'}}>
+                    <Col md={4} style={{padding: '1em', textAlign: 'right',paddingTop:'7.5em'}}>
                         <Image src={item.img} style={{width: '100%'}} rounded/>
                     </Col>
                 </Row>

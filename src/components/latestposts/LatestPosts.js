@@ -17,8 +17,8 @@ class LatestPosts extends Component {
             <Fragment>
                 <Container style={{background: "rgb(223,102,159)", paddingTop: '2em', paddingBottom: '2em'}}>
                     <Row>
-                        <Col md={1}></Col>
-                        <Col md={10} style={{textAlign: "left"}}>
+                        <Col md={2}></Col>
+                        <Col md={8} style={{textAlign: "left"}}>
                             <Row>
                                 <Col md={3} className={"postItem"}>
                                     <Container style={{padding: 0, height: "20em"}}>

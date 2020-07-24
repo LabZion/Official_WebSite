@@ -76,8 +76,8 @@ class OpenSource extends Component {
                     subtitle={"Our job is to foster a vibrant community where people have the freedom to make an extraordinary impact on the world through technology."}
                 />
                 <Row style={{background: '#fff'}}>
-                    <Col md={1}></Col>
-                    <Col md={10}>
+                    <Col md={2}></Col>
+                    <Col md={8}>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '1em'}}>
                             <h1>What we are building</h1>
                             <p>Our technologists bring successful, field-tested techniques and ideas from around the globe to open source solutions.
@@ -87,9 +87,9 @@ class OpenSource extends Component {
                     </Col>
                 </Row>
 
-                <Row style={{background: '#f4f4f4'}}>
-                    <Col md={1}></Col>
-                    <Col md={10}>
+                <Row style={{background: '#fff'}}>
+                    <Col md={2}></Col>
+                    <Col md={8}>
                         <Container style={{textAlign: "left", paddingTop: '1em', paddingBottom: '2em'}}>
                             <Row>
                                 {this.renderOpenSources()}
@@ -105,11 +105,9 @@ class OpenSource extends Component {
     renderOpenSources() {
         return <Fragment>
             {opensources.map((item, index) => {
-                return <Col md={6} style={{paddingTop: '1em', paddingBottom: '1em'}}>
+                return <Col md={6} style={{paddingTop: '1em', paddingBottom: '1em',background:'#fff'}}>
                     <Row>
-                        <Col md={4}>
-                            <Image style={{width: '100%', padding: '1em'}} src={item.logo}/>
-                        </Col>
+
                         <Col md={8}>
                             <h2>{item.name}</h2>
                             <p>{item.desc}</p>
@@ -139,6 +137,9 @@ class OpenSource extends Component {
                                     </Col>
                                 </Col>
                             </Row>
+                        </Col>
+                        <Col md={4}>
+                            <Image style={{width: '100%', padding: '1em'}} src={item.logo}/>
                         </Col>
                     </Row>
                 </Col>

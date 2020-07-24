@@ -16,22 +16,20 @@ class Contact extends Component {
             <Fragment>
                 <Container style={{background: "rgb(223,102,159)"}}>
                     <Row>
-                        <Col md={1}></Col>
-                        <Col md={10}>
+                        <Col md={2}></Col>
+                        <Col md={8}>
                             <Row>
-                                <Col md={3} className={"contactItem"}>
+                                <Col md={4} className={"contactItem"}>
                                     <h3>If you are experiencing cybersecurity issues or an incident, contact us to help.</h3>
                                 </Col>
-                                <Col md={3} className={"contactItem"}>
+                                <Col md={4} className={"contactItem"}>
                                     <h3>China hotline</h3>
                                     <h3>+86-029-63389890</h3>
                                 </Col>
-                                <Col md={3} className={"contactItem"}>
+                                <Col md={4} className={"contactItem"}>
                                     <h3>Global hotline</h3>
                                     <h3>+86-029-63389890</h3>
                                 </Col>
-
-                                <Col md={3}></Col>
                             </Row>
                         </Col>
                     </Row>

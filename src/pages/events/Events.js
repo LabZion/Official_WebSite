@@ -114,8 +114,8 @@ class Events extends Component {
                 />
 
                 <Row style={{background: '#f4f4f4'}}>
-                    <Col md={1}></Col>
-                    <Col md={10} style={{marginTop: '2em'}}>
+                    <Col md={2}></Col>
+                    <Col md={8} style={{marginTop: '2em'}}>
                         <Row>
                             <Col md={8} style={{textAlign: 'left'}}>
                                 <h3>精选视频</h3>

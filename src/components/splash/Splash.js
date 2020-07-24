@@ -19,8 +19,8 @@ class Splash extends Component {
                             <Carousel.Item>
                                 <Container className={"bannerContainer1"}>
                                     <Row>
-                                        <Col md={1}></Col>
-                                        <Col md={10}>
+                                        <Col md={2}></Col>
+                                        <Col md={8}>
                                             <h1 className={"banner-title"}>ThoughtWorks Security</h1>
                                             <h3>Let's drive security into the fabric of your business together</h3>
                                         </Col>
@@ -35,8 +35,8 @@ class Splash extends Component {
                             <Carousel.Item>
                                 <Container className={"bannerContainer2"}>
                                     <Row>
-                                        <Col md={1}></Col>
-                                        <Col md={10}>
+                                        <Col md={2}></Col>
+                                        <Col md={8}>
                                             <h1 className={"banner-title"}>ThoughtWorks Security</h1>
                                             <h3>Let's drive security into the fabric of your business together</h3>
                                         </Col>
@@ -51,8 +51,8 @@ class Splash extends Component {
                             <Carousel.Item>
                                 <Container className={"bannerContainer3"}>
                                     <Row>
-                                        <Col md={1}></Col>
-                                        <Col md={10}>
+                                        <Col md={2}></Col>
+                                        <Col md={8}>
                                             <h1 className={"banner-title"}>ThoughtWorks Security</h1>
                                             <h3>Let's drive security into the fabric of your business together</h3>
                                         </Col>

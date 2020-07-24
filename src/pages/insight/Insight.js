@@ -20,8 +20,8 @@ class Insight extends Component {
                 />
 
                 <Row style={{background: '#f4f4f4'}}>
-                    <Col md={1}></Col>
-                    <Col md={10}>
+                    <Col md={2}></Col>
+                    <Col md={8}>
                         <Container style={{textAlign: "left", paddingTop: '1em', paddingBottom: '2em'}}>
                             <Row>
                             </Row>

@@ -183,8 +183,8 @@ class TeamMember extends Component {
                           title={"The Security Business Union"}
                           subtitle={"Let's drive security into the fabric of your business together"}/>
                 <Row>
-                    <Col md={1}/>
-                    <Col md={10}>
+                    <Col md={2}/>
+                    <Col md={8}>
                         {this.renderMembers()}
                     </Col>
                 </Row>
@@ -203,29 +203,29 @@ class TeamMember extends Component {
                         <Col md={6} style={{padding: '1em'}}>
                             <Image className={"head"} variant="top" src={item.img}/>
                         </Col>
-                        <Col md={6} style={{padding: '2em', textAlign: "left", paddingLeft: '0.5em'}}>
+                        <Col md={6} style={{ textAlign: "left", paddingLeft: '0.5em',marginTop:'1em'}}>
                             <h4>{item.name}</h4>
                             <p>{item.title}</p>
                             <p/>
                             <p/>
                             <p>{item.address}</p>
                             <Row>
-                                <Col style={{textAlign: 'left', marginTop: '1em'}}>
-                                    <Col style={{width: '40px', display: "inline-block", padding: 0}}>
+                                <Col style={{textAlign: 'left', marginTop: '0em'}}>
+                                    <Col style={{width: '30px', display: "inline-block", padding: 0}}>
                                         <svg id="youtube-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                             <circle className="m-cls-1" cx="20" cy="20" r="20"/>
                                             <path className="m-cls-2"
                                                   d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"/>
                                         </svg>
                                     </Col>
-                                    <Col style={{width: '40px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
+                                    <Col style={{width: '30px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
                                         <svg id="github-icon" viewBox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg">
                                             <path className="m-cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"/>
                                             <path className="m-cls-2"
                                                   d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"/>
                                         </svg>
                                     </Col>
-                                    <Col style={{width: '40px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
+                                    <Col style={{width: '30px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
                                         <svg id="twitter-icon" viewBox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg">
                                             <circle className="m-cls-1" cx="37.97" cy="37.97" r="37.97"/>
                                             <path className="m-cls-2"

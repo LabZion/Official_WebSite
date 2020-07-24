@@ -19,11 +19,11 @@ class BreadNav extends Component {
                         <Container className={"bannerContainer"}
                                    style={{background: this.props.bg}}>
                             <Row>
-                                <Col md={1}> </Col>
-                                <Col md={5}>
+                                <Col md={2}> </Col>
+                                <Col md={8}>
                                     <Row>{this.props.bread}</Row>
                                     <Row style={{marginTop: '1.5em'}}><h1 style={{fontSize: '2.5em'}}>{this.props.title}</h1></Row>
-                                    <Row><p>{this.props.subtitle}</p></Row>
+                                    <Row><h5>{this.props.subtitle}</h5></Row>
                                 </Col>
                             </Row>
                         </Container>
