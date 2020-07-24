@@ -27,30 +27,17 @@ class Header extends Component {
                         <Col md={1}> </Col>
                         <Col md={10}>
                             <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
-                                <Link to="/home" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                <Link to="/home" style={{fontWeight: 'bolder', margin: 0, padding: 0,marginRight:'2em'}}>
                                     <Image src={Logo} className="logo-img" rounded/>
                                 </Link>
 
-                                {/*<Link to="/insight" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>*/}
-                                {/*    <Navbar.Brand className="icon-header" href="#home">*/}
-                                {/*        <strong className={"headerTitleSpan"}>{this.props.t('INSIGHT')}</strong>*/}
-                                {/*    </Navbar.Brand>*/}
-                                {/*</Link>*/}
-
-                                {/*<Link to="/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>*/}
-                                {/*    <Navbar.Brand className="icon-header" href="#home">*/}
-                                {/*        <strong className={"headerTitleSpan"}>{this.props.t('EVENTS')}</strong>*/}
-                                {/*    </Navbar.Brand>*/}
-                                {/*</Link>*/}
-
-                                {/*<Link to="/blogs" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>*/}
-                                {/*    <Navbar.Brand className="icon-header" href="#home">*/}
-                                {/*        <strong className={"headerTitleSpan"}>{this.props.t('BLOGS')}</strong>*/}
-                                {/*    </Navbar.Brand>*/}
-                                {/*</Link>*/}
+                                <Link to="/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                    <Navbar.Brand className="icon-header">
+                                        <strong className={"headerTitleSpan"}>{this.props.t('EVENTS')} & {this.props.t('INSIGHT')}</strong>
+                                    </Navbar.Brand>
+                                </Link>
 
                                 <Navbar.Collapse className="justify-content-end">
-                                    <Search/>
                                     <Dropdown>
                                         <Dropdown.Toggle variant="trans" id="dropdown-basic">
                                             {this.props.t('Language')}
