@@ -164,6 +164,7 @@ class SolutionPage extends Component {
         </Row>
     }
 
+
     componentWillMount() {
     }
 }
