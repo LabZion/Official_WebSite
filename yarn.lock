@@ -7339,7 +7339,7 @@ markdown-escapes@^1.0.0:
 
 markdown@^0.5.0:
   version "0.5.0"
-  resolved "https://registry.npm.taobao.org/markdown/download/markdown-0.5.0.tgz#28205b565a8ae7592de207463d6637dc182722b2"
+  resolved "https://registry.yarnpkg.com/markdown/-/markdown-0.5.0.tgz#28205b565a8ae7592de207463d6637dc182722b2"
   integrity sha1-KCBbVlqK51kt4gdGPWY33BgnIrI=
   dependencies:
     nopt "~2.1.1"
