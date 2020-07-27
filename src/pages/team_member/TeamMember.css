@@ -4,8 +4,8 @@
 
 .head {
     width: 90%;
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%); !* Chrome, Safari, Opera *!*/
+    /*filter: grayscale(100%);*/
 }
 
 .m-cls-1 {

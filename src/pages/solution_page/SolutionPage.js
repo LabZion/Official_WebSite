@@ -98,7 +98,7 @@ const industry = {
     },
     identify: {
         title: '身份安全',
-        description: '',
+        description: ' Identity and Access Management (IAM) 是进行身份管理，访问控制的服务。IAM系统的可信目标是管理用户的身份与权限，给每一位用户赋予身份，该身份在访问系统的全身份周期都受到维护、授权、审计等。身份管理访问控制是每一个企业的企业安全都必须重视的一环，一个好的IAM系统，可以为企业带来更安全的服务，帮助企业提高生产力，安全地管理客户、合作伙伴、供应商、内部员工的身份与权限，可以提升用户的工作效率与降低运营成本。',
         data: []
     },
     embed: {
@@ -154,7 +154,7 @@ class SolutionPage extends Component {
                     <Col md={8} style={{padding: '1em', textAlign: 'left', paddingRight: '2em'}}>
                         <h3 style={{marginTop:'1em'}}><span style={{color:'#fff',background:'rgb(223, 102, 159)',padding:'0.1em'}}>0x0{index + 1}</span>
                             <span style={{border:'solid 1px rgb(223, 102, 159)',padding:'2px',color:'rgb(223, 102, 159)'}}>{item.title}</span></h3>
-                        <h5 style={{lineHeight: '1.5em',marginTop:'1.5em'}}>{item.description}</h5>
+                        <h5 style={{lineHeight: '1.5em',marginTop:'1.5em',marginRight:'8em'}}>{item.description}</h5>
                     </Col>
                     <Col md={4} style={{padding: '1em', textAlign: 'right',paddingTop:'7.5em'}}>
                         <Image src={item.img} style={{width: '100%'}} rounded/>

@@ -102,11 +102,11 @@ const events = {
             time: '2020-8-6 19:00',
         },
         {
-            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            title: '为什么新基建来了，我们还在聊中台？',
-            address: 'zoom: 99999999',
-            author: '李好',
-            time: '2020-7-24 19:00',
+            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85.png',
+            title: '新的topic正在酝酿中，敬请期待！',
+            address: 'zoom: 999 999 999',
+            author: 'Mr Zion',
+            time: '2023-1-1 19:00',
         }
     ]
 };
