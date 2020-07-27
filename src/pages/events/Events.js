@@ -96,10 +96,10 @@ const events = {
     uncome: [
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            title: '为什么新基建来了，我们还在聊中台？',
-            address: 'zoom: 99999999',
-            author: '李好',
-            time: '2020-7-24 19:00',
+            title: 'Linux调度器框架',
+            address: 'zoom: 783 022 4091',
+            author: '赵晨雨',
+            time: '2020-8-6 19:00',
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
