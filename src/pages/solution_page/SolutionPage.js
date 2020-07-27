@@ -154,7 +154,7 @@ class SolutionPage extends Component {
                     <Col md={8} style={{padding: '1em', textAlign: 'left', paddingRight: '2em'}}>
                         <h3 style={{marginTop:'1em'}}><span style={{color:'#fff',background:'rgb(223, 102, 159)',padding:'0.1em'}}>0x0{index + 1}</span>
                             <span style={{border:'solid 1px rgb(223, 102, 159)',padding:'2px',color:'rgb(223, 102, 159)'}}>{item.title}</span></h3>
-                        <h5 style={{lineHeight: '1.5em',marginTop:'1.5em',marginRight:'8em'}}>{item.description}</h5>
+                        <h5 style={{fontSize: '1em',lineHeight: '2em',marginTop:'2.5em',marginRight:'8em'}}>{item.description}</h5>
                     </Col>
                     <Col md={4} style={{padding: '1em', textAlign: 'right',paddingTop:'7.5em'}}>
                         <Image src={item.img} style={{width: '100%'}} rounded/>
