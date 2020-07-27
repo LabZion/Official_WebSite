@@ -56,21 +56,21 @@ const industry = {
         data: [
             {
                 title: '源码可信',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
                 description: '源码可信不仅是欧盟和国家的基本合规要求，也是软件规模极速扩张后面临的非常棘手的工程问题。一旦做不到源码级别的可信，后续安全检查和保障的工作量就会指数级别增长。ThoughtWorks安全团队利用自身在交付和运维领域的经验，帮助通信行业客户建立安全流水线，自动化代码分析，代码依赖管理，真正做到了one - track(单一代码溯源)，让安全防护和问题排查变得更高效和准确。'
             },
             {
                 title: '隐私保护',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A12.png',
                 description: '对于通信行业企业来说，用户隐私已经成为当前各类安全议题的常客，特别是欧盟颁布了GDPR（通用数据保护条例）。ThoughtWorks安全团队可以帮助客户搭建一套隐私管理平台来处理符合GDPR规范的隐私信息。该平台不仅可以自动化地处理用户隐私信息的登记和分类，还可以按照规范自动销毁用户信息，大大减少了人工处理隐私信息的工作量。GDPR作为目前最为严格个人隐私保护条例，合规意味着可以很方便地适应到全球其它地区的规范条例中。'
             },
             {
                 title: '终端数据安全',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A11.png',
                 description: '大于大型企业来说，企业创新和工作环境管控往往呈现一定程度的矛盾，如果在保护企业商业数据的同时最大限度保证员工的创新自由是一个很有趣的挑战。随着云计算的成熟，企业计算环境也变得空前的复杂。ThoughtWorks安全团队可以帮助客户开发一套终端环境管理平台，包括审计模块和数据处理中心，理念是以对用户透明的方式进行敏感数据管控，同时借用数据平台不断对搜集到的数据进行学习，可以随时响应变化。'
             }, {
                 title: '云安全',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A14.png',
                 description: '任何公有云最重要也是最核心的组件主要包括三个部分：计算，存储和身份，对应到亚马逊云就是EC2，S3和IAM。IAM作为云平台上的底层服务，管理着公司内外部的所有研发用户对资源和服务的操作权限。ThoughtWorks安全团队帮助客户搭建基于私有云平台建立的IAM底层服务，定制精细管理规则，通过SSO统一多部门和服务的登录入口，对标AWS和Azure的IAM，支撑大型企业内部所有云计算的需求，同时包装成产品对外进行输出，也就是针对企业的公有云搭建技术。'
             }
         ]
