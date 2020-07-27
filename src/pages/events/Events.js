@@ -95,7 +95,7 @@ const events = {
     ],
     uncome: [
         {
-            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
+            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/Linux%E8%B0%83%E5%BA%A6%E5%99%A8%E6%9E%B6%E6%9E%84.png',
             title: 'Linux调度器框架',
             address: 'zoom: 783 022 4091',
             author: '赵晨雨',
