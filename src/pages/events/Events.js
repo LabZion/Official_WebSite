@@ -13,34 +13,6 @@ import {Link} from "react-router-dom";
 const events = {
     past: [
         {
-            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            videoUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
-            time: '',
-            title: '为什么新基建来了，我们还在聊中台？',
-            author: '李好·ThoughtWorks首席咨询师',
-            authorDesc: 'ThoughtWorks 首席咨询师咨询师， 企业信息安全顾问，敏捷咨询师',
-            content: '##### 内容\n' +
-                '\n' +
-                '信息安全信息安全\n' +
-                '\n' +
-                '##### 大纲\n' +
-                '\n' +
-                '1. sql注入\n' +
-                '2. xss注入\n' +
-                '3. 威胁建模\n' +
-                '4. 安全展望',
-            resources: [
-                {
-                    name: 'xxx Slide 1',
-                    url: 'http://www.baidu.com'
-                },
-                {
-                    name: 'xxx Slide 2',
-                    url: 'http://www.baidu.com'
-                },
-            ]
-        },
-        {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/SSL%20and%20CA%E8%A7%86%E9%A2%91%E6%88%AA%E5%9B%BE.png',
             videoUrl: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/video/SSL_TLS+and+CA.mp4',
             time: '',
@@ -71,9 +43,9 @@ const events = {
         },
         {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E5%8C%BA%E5%9D%97%E9%93%BE%E8%A7%86%E9%A2%91%E6%88%AA%E5%9B%BE.png',
-            videoUrl: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/video/token%E8%87%AA%E9%89%B4%E6%9D%83%E7%9A%84%E7%8C%9C%E6%83%B3.mp4',
+            videoUrl: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/video/hash%E5%92%8C%E5%8C%BA%E5%9D%97%E9%93%BE.mp4',
             time: '',
-            title: '聊聊hash与区块链那些事',
+            title: '聊聊hash与区块链的那些事',
             author: '杨倚·ThoughtWorks资深咨询师',
             authorDesc: 'ThoughtWorks 资深咨询师， 企业信息安全顾问，敏捷咨询师',
             content: '##### 内容\n' +
@@ -97,9 +69,9 @@ const events = {
         },
         {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/Token%E8%87%AA%E9%89%B4%E6%9D%83%E8%A7%86%E9%A2%91%E6%88%AA%E5%9B%BE.png',
-            videoUrl: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/video/hash%E5%92%8C%E5%8C%BA%E5%9D%97%E9%93%BE.mp4',
+            videoUrl: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/video/token%E8%87%AA%E9%89%B4%E6%9D%83%E7%9A%84%E7%8C%9C%E6%83%B3.mp4',
             time: '',
-            title: 'Token自鉴权的猜想',
+            title: '关于Token自鉴权的一些猜想',
             author: '杨倚·ThoughtWorks资深咨询师',
             authorDesc: 'ThoughtWorks 资深咨询师， 企业信息安全顾问，敏捷咨询师',
             content: '##### 内容\n' +
@@ -121,22 +93,22 @@ const events = {
             ]
         }
     ],
-    // uncome: [
-    //     {
-    //         img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-    //         title: '为什么新基建来了，我们还在聊中台？',
-    //         address: 'zoom: 99999999',
-    //         author: '李好',
-    //         time: '2020-7-24 19:00',
-    //     },
-    //     {
-    //         img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-    //         title: '为什么新基建来了，我们还在聊中台？',
-    //         address: 'zoom: 99999999',
-    //         author: '李好',
-    //         time: '2020-7-24 19:00',
-    //     }
-    // ]
+    uncome: [
+        {
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
+            title: '为什么新基建来了，我们还在聊中台？',
+            address: 'zoom: 99999999',
+            author: '李好',
+            time: '2020-7-24 19:00',
+        },
+        {
+            img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
+            title: '为什么新基建来了，我们还在聊中台？',
+            address: 'zoom: 99999999',
+            author: '李好',
+            time: '2020-7-24 19:00',
+        }
+    ]
 };
 
 class Events extends Component {
