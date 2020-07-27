@@ -42,7 +42,7 @@ const events = {
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
-            videoUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
+            videoUrl: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/video/SSL_TLS+and+CA.mp4',
             time: '',
             title: '为什么新基建来了，我们还在聊中台？',
             author: '李好·ThoughtWorks首席咨询师',
