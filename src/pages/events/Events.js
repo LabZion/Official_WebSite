@@ -197,9 +197,9 @@ class Events extends Component {
                     paddingLeft: '0.5em'
                 }}>
                     <h6 style={{padding: 0, margin: 0}}>{item.title}</h6>
-                    <p style={{padding: 0, margin: 0, marginTop: '1em'}}>{item.address}</p>
-                    <p style={{padding: 0, margin: 0, marginTop: '1em'}}>
-                        <span>{item.author}</span>&nbsp;&nbsp;&nbsp;<span>{item.time}</span></p>
+                    <p style={{padding: 0, margin: 0, marginTop: '0.1em'}}>{item.address}</p>
+                    <span style={{padding: 0, margin: 0, marginTop: '0.1em'}}>
+                        <span>{item.author}</span>&nbsp;&nbsp;&nbsp;<span>{item.time}</span></span>
                 </Container>
             </Col>
         </Row>
