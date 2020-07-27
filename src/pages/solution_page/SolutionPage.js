@@ -35,12 +35,12 @@ const industry = {
         data: [
             {
                 title: '迭代安全',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C1.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C.png',
                 description: '国内金融行业科技部门的一些团队已经采用了敏捷开发流程，但是迭代开发过程中相应的敏捷安全措施是空缺的，对于金融行业科技部门探索迭代内安全实践的需求，ThoughtWorks安全团队提供了调研及过程改进建议、开发团队成员及安全团队成员赋能两阶段的交付实践，提供了敏捷迭代安全内建实施指南以及内建安全赋能培训课程。使得客户在敏捷流程中安全实践得到落地实施，进而降低了应用安全风险，另一方面，开发团队安全意识能力得到提升。'
             },
             {
                 title: '应用安全',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C.png',
                 description: '金融行业信息安全十分重要，尤其是客户信息，一旦客户信息发生泄漏，将会企业带来巨大的损失。金融企业中用户信息泄漏时有发生，反映出金融行业开发团队缺乏安全实践，应用存在安全隐患的风险较高，亟需采取措施作出改变。ThoughtWorks安全团队提供了敏捷项目内建安全指南以及BSI(内建安全体系)Master培养方案及课程，帮助提升开发团队的安全意识，培养出企业自己的BSIMaster种子教练，使得团队安全成熟度得到提升，从而提升应用安全质量。'
             },
             {
