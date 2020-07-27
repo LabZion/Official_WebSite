@@ -29,6 +29,16 @@ const events = {
                 '2. xss注入\n' +
                 '3. 威胁建模\n' +
                 '4. 安全展望',
+            resources: [
+                {
+                    name: 'xxx Slide 1',
+                    url: 'http://www.baidu.com'
+                },
+                {
+                    name: 'xxx Slide 2',
+                    url: 'http://www.baidu.com'
+                },
+            ]
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
@@ -47,6 +57,16 @@ const events = {
                 '2. xss注入\n' +
                 '3. 威胁建模\n' +
                 '4. 安全展望',
+            resources: [
+                {
+                    name: 'xxx Slide 1',
+                    url: 'http://www.baidu.com'
+                },
+                {
+                    name: 'xxx Slide 2',
+                    url: 'http://www.baidu.com'
+                },
+            ]
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
@@ -65,6 +85,16 @@ const events = {
                 '2. xss注入\n' +
                 '3. 威胁建模\n' +
                 '4. 安全展望',
+            resources: [
+                {
+                    name: 'xxx Slide 1',
+                    url: 'http://www.baidu.com'
+                },
+                {
+                    name: 'xxx Slide 2',
+                    url: 'http://www.baidu.com'
+                },
+            ]
         },
         {
             img: 'https://static001.infoq.cn/resource/image/c5/22/c5b1c098f463614dad2deab65f1aa422.jpg',
@@ -83,6 +113,16 @@ const events = {
                 '2. xss注入\n' +
                 '3. 威胁建模\n' +
                 '4. 安全展望',
+            resources: [
+                {
+                    name: 'xxx Slide 1',
+                    url: 'http://www.baidu.com'
+                },
+                {
+                    name: 'xxx Slide 2',
+                    url: 'http://www.baidu.com'
+                },
+            ]
         }
     ],
     uncome: [
