@@ -23,7 +23,7 @@ class BreadNav extends Component {
                                 <Col md={8}>
                                     <Row>{this.props.bread}</Row>
                                     <Row style={{marginTop: '1.5em'}}><h1 style={{fontSize: '2.5em'}}>{this.props.title}</h1></Row>
-                                    <Row><h5 style={{lineHeight: '1.5em',fontSize: '1.1em',marginRight: '20em'}}>{this.props.subtitle}</h5></Row>
+                                    <Row><h5 style={{lineHeight: '1.7em',fontSize: '1em',marginRight: '35em'}}>{this.props.subtitle}</h5></Row>
                                 </Col>
                             </Row>
                         </Container>
