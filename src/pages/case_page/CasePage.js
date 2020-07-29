@@ -12,7 +12,7 @@ import {Image, Row} from "react-bootstrap";
 const industry = {
     HUAWEI: {
         title: '华为',
-        description: 'Thoughtworks安全BU致力于数据安全、身份安全、可信计算、内建安全、嵌入式系统和内核安全的研究，拥有丰富的项目交付经验和强大的架构能力、开发能力、咨询能力，为客户提供咨询、交付、设计、数据及智能、智能物联网定制等服务，已经为包括汽车行业巨头、通信行业巨头以及国家大型银行提供全面的安全保护。',
+        description: 'Thoughtworks安全BU致力于数据安全、身份安全、可信计算、内建安全、嵌入式系统和内核安全的研究，拥有丰富的项目交付经验和强大的架构能力、开发能力、咨询能力，为客户提供咨询、交付、设计、数据及智能、智能物联网定制等服务，已经为包括汽车行业巨头、通信行业巨头以及国家大型银行等数十家企业提供全面的安全保护。',
         data: [
             {
                 title: '客户简介',
@@ -58,7 +58,7 @@ class CasePage extends Component {
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '1em'}}>
                             <h1>业务挑战</h1>
                             <p>随着公司业务逐步规划上云并面向互联网开放，传统企业网络安全边界开始变得模糊，安全高效的基于云的身份认证与访问控制平台将成为未来应用访问的“边界”，在这种情况下，传统喵喵喵企业内网的身份验证与IAM系统已无法满足业务上云后日益发展的需求。因为企业的业务场景极其复杂，内部私有云已无法支撑所有的业务系统，但市场上的公有云也无法满足企业内部的要求与限制。如何将内部云与公有云结合使用，符合企业内部的合规要求，使用公有云与私有云的能力是企业亟需解决的一个问题。</p>
-                            <img src='https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg'width='100%'></img>
+                            <img src='https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E4%BA%91%E5%AE%89%E5%85%A8.png'width='100%'></img>
                             <p style={{paddingTop:'2em'}}>吃鱼是喵喵喵私有云平台，来自内部和外部的研发人员都需要在这个平台上访问服务和资源。喵喵喵内部有一万多个部门和服务，每个部门和都可能访问吃鱼。另一方面，身份认证与访问控制系统建设过程中需要结合具体业务场景进行系统接入和部署，应用过程中需要按照实际情况进行配置和调整。且涉及到周边系统配合改造，业务逻辑复杂，开发难度高。</p>
                         </Container>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '1em'}}>
@@ -66,13 +66,13 @@ class CasePage extends Component {
                             <p>Thoughtworks安全BU将面向除了喵喵喵员工以外的合作伙伴、供应商、客户和消费者提供移动办公套件身份认证服务。服务包括标准的SAML/OAuth等Web、移动应用认证和授权协议，提供基于多因子和风险控制分析的强身份认证，集成社交账号和企业账号联邦认证，并实现多租户管理等。核心价值包括以下几点：</p>
                             <h5>SSO单点登录</h5>
                             <p>采用业内标准协议实现SSO单点登录,为企业所有部门提供统一的登录入口，打通部门间的认证壁垒，减少用户操作，提高生产效率。</p>
-                            <img src='https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg'width='100%'></img>
+                            <img src='https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/SSO.png'width='100%'></img>
                             <h5 style={{paddingTop:'2em'}}>IAM系统</h5>
                             <p>搭建IAM服务，精细管理研发人员在云平台上对各类资源和服务的访问权限，比如，规定某员工必须在指定IP下的特定时间段购买某种类型的虚拟机。</p>
-                            <img src='https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg'width='100%'></img>
+                            <img src='https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/IAM.png'width='100%'></img>
                             <h5 style={{paddingTop:'2em'}}>产品化</h5>
                             <p>在满足企业自身需求的基础上，将系统产品化，供更多的企业来使用身份认证和权限管理的服务。</p>
-                            <img src='https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg'width='100%'></img>
+                            <img src='https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E4%BA%A7%E5%93%81%E5%8C%96.png'width='100%'></img>
                         </Container>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '1em'}}>
                             <h1>客户价值</h1>
