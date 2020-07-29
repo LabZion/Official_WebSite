@@ -39,7 +39,7 @@ class CasePage extends Component {
             <Container style={{padding: 0}} className="Home">
                 <BreadNav
                     bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
-                    bread={"Security / Customer/ "+industry[solution].title}
+                    bread={"Security / Customer/ 3M"}
 
                     subtitle={industry[solution].description}
                 />
