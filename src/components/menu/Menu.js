@@ -202,20 +202,20 @@ class Menu extends Component {
                 <Col md={2}> </Col>
                 <Col md={8}>
                     <Row style={{borderTop: '1px solid #f0f1f3'}}>
-                        <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', padding: '2em'}}>
+                        <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', paddingBottom: '1em' }}>
                             {
                                 this.menu[this.state.selected].map((item, index) => {
-                                    return <Row className={this.state.index === index ? "featureItemOn" : "featureItem"}
+                                    return <Row style={{paddingTop:'0.5em'}} className={this.state.index === index ? "featureItemOn" : "featureItem"}
                                                 onMouseEnter={this.onItemEnterHandler.bind(this, index)}><strong>{this.props.t(item.title)}</strong><span
                                         style={{position: 'absolute', right: '2em'}}>></span></Row>
                                 })
                             }
                         </Col>
-                        <Col md={9} style={{textAlign: 'left', padding: '2em'}}>
+                        <Col md={9} style={{textAlign: 'left', paddingBottom: '1em' }}>
                             <Row>
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
-                                        return <Col md={3} className={"featureItem"}>
+                                        return <Col md={4} style={{paddingTop:'0.5em'}} className={"featureItem"}>
                                             <Link to={{
                                                 pathname: item.route,
                                                 state: item.state,
