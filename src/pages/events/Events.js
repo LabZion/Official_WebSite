@@ -153,10 +153,10 @@ class Events extends Component {
 
     renderUncomeEvent(item) {
         return <Row style={{marginBottom: '1em', background: '#fff', marginLeft: 0, padding: 0}}>
-            <Col md={6} style={{margin: 0, padding: 0}}>
+            <Col md={5} style={{margin: 0, padding: 0}}>
                 <Image src={item.img} style={{width: '100%'}}/>
             </Col>
-            <Col md={6} style={{margin: 0, padding: 0}}>
+            <Col md={7} style={{margin: 0, padding: 0}}>
                 <Container style={{
                     background: '#fff',
                     padding: 0,
