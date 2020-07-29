@@ -11,6 +11,7 @@ import OpenSource from "./pages/opensource/OpenSource";
 import Insight from "./pages/insight/Insight";
 import Events from "./pages/events/Events";
 import Blogs from "./pages/blogs/Blogs";
+import CasePage from "./pages/case_page/CasePage";
 import EventDetail from "./pages/events_detail/EventDetail";
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
                 <Route exact path="/blogs" component={Blogs}/>
                 <Route exact path="/solution" component={SolutionPage}/>
                 <Route exact path="/open-source" component={OpenSource}/>
-                <Route exact path="/case" component={SolutionPage}/>
+                <Route exact path="/case" component={CasePage}/>
                 <Route exact path="/company" component={SolutionPage}/>
                 <Route exact path="/contact" component={SolutionPage}/>
                 <Route exact path="/team/member" component={TeamMember}/>

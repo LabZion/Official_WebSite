@@ -140,11 +140,11 @@ class Menu extends Component {
                                                          id="dropdown-basic">
                                             {this.props.t('SOLUTION_SERVICE')}
                                         </Dropdown.Toggle>
-                                        {/*<Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}*/}
-                                        {/*                 variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}*/}
-                                        {/*                 id="dropdown-basic">*/}
-                                        {/*    {this.props.t('CUSTOMER')}*/}
-                                        {/*</Dropdown.Toggle>*/}
+                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}
+                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         id="dropdown-basic">
+                                            {this.props.t('CUSTOMER')}
+                                        </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'resource')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">

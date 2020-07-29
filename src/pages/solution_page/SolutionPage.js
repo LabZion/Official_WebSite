@@ -127,7 +127,7 @@ class SolutionPage extends Component {
             <Container style={{padding: 0}} className="Home">
                 <BreadNav
                     bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
-                    bread={"Security / Solution / Car"}
+                    bread={"Security / Solution /"+industry[solution].title}
                     title={industry[solution].title}
                     subtitle={industry[solution].description}
                 />
