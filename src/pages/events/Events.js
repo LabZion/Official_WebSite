@@ -32,12 +32,8 @@ const events = {
                 '5. 自签名证书',
             resources: [
                 {
-                    name: 'xxx Slide 1',
-                    url: 'http://www.baidu.com'
-                },
-                {
-                    name: 'xxx Slide 2',
-                    url: 'http://www.baidu.com'
+                    name: 'SSL and CA Slide',
+                    url: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/slides/SSL+and+CA.pptx'
                 },
             ]
         },
@@ -58,12 +54,8 @@ const events = {
                 '2. 区块链',
             resources: [
                 {
-                    name: 'xxx Slide 1',
-                    url: 'http://www.baidu.com'
-                },
-                {
-                    name: 'xxx Slide 2',
-                    url: 'http://www.baidu.com'
+                    name: 'hash and blockchain Slide',
+                    url: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/slides/Hash+and+Blockchain.pptx'
                 },
             ]
         },
@@ -83,12 +75,8 @@ const events = {
                 '1. Token自鉴权',
             resources: [
                 {
-                    name: 'xxx Slide 1',
-                    url: 'http://www.baidu.com'
-                },
-                {
-                    name: 'xxx Slide 2',
-                    url: 'http://www.baidu.com'
+                    name: 'Token自鉴权Slide',
+                    url: 'https://tw-chinasec-public.s3-ap-northeast-1.amazonaws.com/slides/token%E8%87%AA%E9%89%B4%E6%9D%83.pptx'
                 },
             ]
         }
@@ -103,7 +91,7 @@ const events = {
         },
         {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85.png',
-            title: '新的topic正在酝酿中，敬请期待！',
+            title: '敬请期待新的topic！',
             address: 'zoom: 999 999 999',
             author: 'Mr Zion',
             time: '2023-1-1 19:00',
@@ -153,10 +141,10 @@ class Events extends Component {
 
     renderUncomeEvent(item) {
         return <Row style={{marginBottom: '1em', background: '#fff', marginLeft: 0, padding: 0}}>
-            <Col md={5} style={{margin: 0, padding: 0}}>
-                <Image src={item.img} style={{width: '100%'}}/>
+            <Col md={4} style={{margin: 0, padding: 0}}>
+                <Image src={item.img} style={{width: '100%',height:'100%'}}/>
             </Col>
-            <Col md={7} style={{margin: 0, padding: 0}}>
+            <Col md={8} style={{margin: 0, padding: 0}}>
                 <Container style={{
                     background: '#fff',
                     padding: 0,
