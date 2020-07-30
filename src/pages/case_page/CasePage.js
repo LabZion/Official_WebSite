@@ -9,7 +9,6 @@ import {Row} from "react-bootstrap";
 
 const markdown = require("markdown").markdown;
 
-
 const cases = {
     SAIC: {
         title: '上汽',
