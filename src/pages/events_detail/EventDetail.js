@@ -3,7 +3,6 @@ import './EventDetail.css';
 import Container from "react-bootstrap/Container";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import FollowUs from "../../components/followus/FollowUs";
 import {Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import {withTranslation} from "react-i18next";
@@ -50,7 +49,6 @@ class EventDetail extends Component {
                         </Container>
                     </Col>
                 </Row>
-                <FollowUs/>
             </Container>
         );
     };

@@ -3,7 +3,6 @@ import './Events.css';
 import Container from "react-bootstrap/Container";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import FollowUs from "../../components/followus/FollowUs";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import {Image, Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
@@ -134,7 +133,6 @@ class Events extends Component {
                         </Row>
                     </Col>
                 </Row>
-                <FollowUs/>
             </Container>
         );
     };

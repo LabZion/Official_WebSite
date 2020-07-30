@@ -38,49 +38,49 @@ class Menu extends Component {
                 {
                     title: 'CAR',
                     items: [
-                        {title: 'SAIC', route: '/case', state: {params: ''}},
-                        {title: 'DAIMLER', route: '/case', state: {params: ''}},
-                        {title: 'GAC', route: '/case', state: {params: ''}},
-                        {title: 'PORSCHE', route: '/case', state: {params: ''}},
+                        {title: 'SAIC', route: '/case', state: {params: 'SAIC'}},
+                        {title: 'DAIMLER', route: '/case', state: {params: 'DAIMLER'}},
+                        {title: 'GAC', route: '/case', state: {params: 'GAC'}},
+                        {title: 'PORSCHE', route: '/case', state: {params: 'PORSCHE'}},
                     ]
                 }, {
                     title: 'FINANCIAL',
                     items: [
-                        {title: 'CMB', route: '/case', state: {params: ''}},
-                        {title: 'BOC', route: '/case', state: {params: ''}},
-                        {title: 'ZYBANK', route: '/case', state: {params: ''}},
-                        {title: 'LU', route: '/case', state: {params: ''}},
-                        {title: 'CM', route: '/case', state: {params: ''}},
-                        {title: 'HUMANA', route: '/case', state: {params: ''}},
+                        {title: 'CMB', route: '/case', state: {params: 'CMB'}},
+                        {title: 'BOC', route: '/case', state: {params: 'BOC'}},
+                        {title: 'ZYBANK', route: '/case', state: {params: 'ZYBANK'}},
+                        {title: 'LU', route: '/case', state: {params: 'LU'}},
+                        {title: 'CM', route: '/case', state: {params: 'CM'}},
+                        {title: 'HUMANA', route: '/case', state: {params: 'HUMANA'}},
                     ]
                 }, {
                     title: 'CLOUD',
                     items: [
-                        {title: 'HUAWEI', route: '/case', state: {params: ''}},
+                        {title: 'HUAWEI', route: '/case', state: {params: 'HUAWEI'}},
                     ]
                 }, {
                     title: 'SALES',
                     items: [
-                        {title: 'STARBUCKS', route: '/case', state: {params: ''}},
+                        {title: 'STARBUCKS', route: '/case', state: {params: 'SALES'}},
                     ]
                 },
                 {
                     title: 'LOGISTICS',
                     items: [
-                        {title: 'OOCL', route: '/case'},
-                        {title: 'LANDPORTGROUP', route: '/case', state: {params: ''}},
+                        {title: 'OOCL', route: '/case', state: {params: 'OOCL'}},
+                        {title: 'LANDPORTGROUP', route: '/case', state: {params: 'LANDPORTGROUP'}},
                     ]
                 }
             ], resource: [
                 {
                     title: 'OPENSOURCE',
                     items: [
-                        {title: 'HOOKFRAMEWORK', route: '/open-source', state: {params: ''}},
-                        {title: 'SYNESTIA', route: '/open-source', state: {params: ''}},
-                        {title: 'NDFS', route: '/open-source', state: {params: ''}},
-                        {title: 'TingGL', route: '/open-source', state: {params: ''}},
-                        {title: 'Du.rs', route: '/open-source', state: {params: ''}},
-                        {title: 'JavascriptLike Compiler', route: '/open-source', state: {params: ''}},
+                        {title: 'HOOKFRAMEWORK', route: '/open-source', state: {params: 'HOOKFRAMEWORK'}},
+                        {title: 'SYNESTIA', route: '/open-source', state: {params: 'SYNESTIA'}},
+                        {title: 'NDFS', route: '/open-source', state: {params: 'NDFS'}},
+                        {title: 'TingGL', route: '/open-source', state: {params: 'TingGL'}},
+                        {title: 'Du.rs', route: '/open-source', state: {params: 'Du.rs'}},
+                        {title: 'JavascriptLike Compiler', route: '/open-source', state: {params: 'Compiler'}},
                     ]
                 }
             ], aboutUs: [

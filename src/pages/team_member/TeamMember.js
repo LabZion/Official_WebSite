@@ -3,7 +3,6 @@ import './TeamMember.css';
 import Container from "react-bootstrap/Container";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import FollowUs from "../../components/followus/FollowUs";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import {Col, Image, Row} from "react-bootstrap";
 import LaoWang from "../../static/images/members/laowang.jpeg"
@@ -188,8 +187,6 @@ class TeamMember extends Component {
                         {this.renderMembers()}
                     </Col>
                 </Row>
-
-                <FollowUs/>
             </Container>
         );
     };

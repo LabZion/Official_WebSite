@@ -8,7 +8,6 @@ import Contact from "../../components/contact/Contact";
 import Solution from "../../components/solution/Solution";
 import LatestPosts from "../../components/latestposts/LatestPosts";
 import Resources from "../../components/resources/Resources";
-import FollowUs from "../../components/followus/FollowUs";
 import Case from "../../components/case/Case";
 
 class Home extends Component {
@@ -21,7 +20,6 @@ class Home extends Component {
                 <Case/>
                 <LatestPosts/>
                 <Resources/>
-                <FollowUs/>
             </Container>
         );
     };

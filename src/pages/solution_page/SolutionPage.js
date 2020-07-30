@@ -3,7 +3,6 @@ import './SolutionPage.css';
 import Container from "react-bootstrap/Container";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import FollowUs from "../../components/followus/FollowUs";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import Col from "react-bootstrap/Col";
 import {Image, Row} from "react-bootstrap";
@@ -131,17 +130,11 @@ class SolutionPage extends Component {
                     title={industry[solution].title}
                     subtitle={industry[solution].description}
                 />
-                <Row style={{background: 'rgb(223, 102, 159)', textAlign: 'center', padding: '2em',marginBottom:'2em'}}>
-                    <Col>
-                        <h1 style={{textAlign: 'center', color: '#fafafc'}}>方案详情</h1>
-                    </Col>
-                </Row>
                 {
                     industry[solution].data.map((item, index) => {
                         return this.renderSolutionBlock(item, index);
                     })
                 }
-                <FollowUs/>
             </Container>
         );
     };

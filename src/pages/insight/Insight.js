@@ -3,7 +3,6 @@ import './Insight.css';
 import Container from "react-bootstrap/Container";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import FollowUs from "../../components/followus/FollowUs";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import {Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
@@ -28,7 +27,6 @@ class Insight extends Component {
                         </Container>
                     </Col>
                 </Row>
-                <FollowUs/>
             </Container>
         );
     };

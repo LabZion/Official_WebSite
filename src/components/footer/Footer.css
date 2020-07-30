@@ -1,7 +1,9 @@
 .Footer {
-    padding-bottom: 1em;
     background: #fff;
     color: #000;
+    border-top: solid 1px #f1f1f1;
+    padding-bottom: 2em;
+    padding-top: 1em;
 }
 
 .footerTitle {
