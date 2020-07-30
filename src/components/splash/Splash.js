@@ -17,7 +17,7 @@ class Splash extends Component {
                     <Container className="SplashContainer">
                         <Carousel>
                             <Carousel.Item>
-                                <Container className={"bannerContainer1"}>
+                                <Container className={"bannerContainer2"}>
                                     <Row>
                                         <Col md={2}></Col>
                                         <Col md={8}>

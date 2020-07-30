@@ -16,14 +16,14 @@ class Resources extends Component {
     render() {
         return (
             <Fragment>
-                <Container style={{background: "#000", paddingTop: '2em', paddingBottom: '2em'}}>
+                <Container style={{background: "#f4f4f4", paddingTop: '2em', paddingBottom: '2em'}}>
                     <Row>
                         <Col md={2}></Col>
                         <Col md={8} style={{textAlign: "left"}}>
 
-                            <h2 style={{color: "#fff"}}>Read Our Latest posts</h2>
+                            <h2 style={{color: "#000"}}>Read Our Latest posts</h2>
                             <Row>
-                                <Col md={3} style={{color: "#fff", textAlign: "left", padding: "1em"}}>
+                                <Col md={4} style={{color: "#000", textAlign: "left", padding: "1em"}}>
                                     <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
                                     <h4><strong>lign your security strategy with your business</strong></h4>
                                     <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
@@ -31,7 +31,7 @@ class Resources extends Component {
                                         services team is that trusted resource.</p>
                                     <Link className={"readResource"}><p>Learn more.</p></Link>
                                 </Col>
-                                <Col md={3} style={{color: "#fff", textAlign: "left", padding: "1em"}}>
+                                <Col md={4} style={{color: "#000", textAlign: "left", padding: "1em"}}>
                                     <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
                                     <h4><strong>lign your security strategy with your business</strong></h4>
                                     <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
@@ -39,15 +39,7 @@ class Resources extends Component {
                                         services team is that trusted resource.</p>
                                     <Link className={"readResource"}><p>Learn more.</p></Link>
                                 </Col>
-                                <Col md={3} style={{color: "#fff", textAlign: "left", padding: "1em"}}>
-                                    <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
-                                    <h4><strong>lign your security strategy with your business</strong></h4>
-                                    <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
-                                        partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security Strategy and Risk
-                                        services team is that trusted resource.</p>
-                                    <Link className={"readResource"}><p>Learn more.</p></Link>
-                                </Col>
-                                <Col md={3} style={{color: "#fff", textAlign: "left", padding: "1em"}}>
+                                <Col md={4} style={{color: "#000", textAlign: "left", padding: "1em"}}>
                                     <Image style={{width: "100%"}} src={"https://1.cms.s81c.com/sites/default/files/2020-05-01/0600101_700x400.jpg"}/>
                                     <h4><strong>lign your security strategy with your business</strong></h4>
                                     <p>Building a custom security plan that is both industry-specific and aligned to your security maturity demands a
