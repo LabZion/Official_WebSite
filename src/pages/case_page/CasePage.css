@@ -5,7 +5,15 @@
 h1, h2, h3 {
     display: inline-block;
 }
-
+img[src*="#width-full"] {
+    width: 100%;
+}
+img[src*="#width-80"] {
+    width: 80%;
+}
+img[src*="#width-90"] {
+    width: 90%;
+}
 .Card-Title {
     margin-top: 43%;
     text-align: left;
