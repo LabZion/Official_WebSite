@@ -13,6 +13,7 @@ import Events from "./pages/events/Events";
 import Blogs from "./pages/blogs/Blogs";
 import CasePage from "./pages/case_page/CasePage";
 import EventDetail from "./pages/events_detail/EventDetail";
+import Privacy from "./pages/privacy/Privacy";
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
                 <Route exact path="/case" component={CasePage}/>
                 <Route exact path="/company" component={SolutionPage}/>
                 <Route exact path="/contact" component={SolutionPage}/>
+                <Route exact path="/privacy" component={Privacy}/>
                 <Route exact path="/team/member" component={TeamMember}/>
 
             </Switch>

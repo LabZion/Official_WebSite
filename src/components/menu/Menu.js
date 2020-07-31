@@ -115,6 +115,20 @@ class Menu extends Component {
                         {title: '柏林', route: '/contact', state: {params: ''}},
                     ]
                 }
+            ],blogs: [
+                {
+                    title: 'OS内核',
+                    items: [
+                        {title: '怎样Hack Linux的内核符号？', route: '/blogs', state: {params: '怎样Hack Linux的内核符号？'}},
+
+                    ]
+                },
+                {
+                    title: '安全',
+                    items: [
+                        {title: '怎样攻破Thoughtworks的官网', route: '/blogs', state: {params: ''}},
+                    ]
+                }
             ]
         };
         this.state = {
@@ -154,6 +168,12 @@ class Menu extends Component {
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
                                             {this.props.t('ABOUT_US')}
+                                        </Dropdown.Toggle>
+                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'blogs')}
+                                                         variant="success"
+                                                         style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         id="dropdown-basic">
+                                            {this.props.t('BLOGS')}
                                         </Dropdown.Toggle>
                                         {/*<Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}*/}
                                         {/*                 variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}*/}
