@@ -202,7 +202,7 @@ class Menu extends Component {
             <Row>
                 <Col md={2}> </Col>
                 <Col md={8}>
-                    <Row style={{borderTop: '1px solid #f0f1f3'}}>
+                    <Row style={{borderTop: '1px solid #f0f1f3',paddingLeft:'1em'}}>
                         <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', paddingBottom: '1em' }}>
                             {
                                 this.menu[this.state.selected].map((item, index) => {
