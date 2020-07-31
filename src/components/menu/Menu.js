@@ -115,15 +115,7 @@ class Menu extends Component {
                         {title: '柏林', route: '/contact', state: {params: ''}},
                     ]
                 }
-            ],insight: [
-                {
-                    title: '所有洞见',
-                    items: [
-                        {title: '博客', route: '/insight/blogs', state: {params: ''}},
-                        {title: '讲座', route: '/insight/event', state: {params: ''}},
-                    ]
-                }
-            ],
+            ]
         };
         this.state = {
             isPanelShow: false,
@@ -157,12 +149,6 @@ class Menu extends Component {
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
                                             {this.props.t('RESOURCE')}
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'insight')}
-                                                         variant="success"
-                                                         style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
-                                                         id="dropdown-basic">
-                                            {this.props.t('INSIGHT')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}

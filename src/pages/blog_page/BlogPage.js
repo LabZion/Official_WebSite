@@ -9,23 +9,25 @@ import Col from "react-bootstrap/Col";
 
 const markdown = require("markdown").markdown;
 
-
 class BlogPage extends Component {
-
     render() {
         let detail = this.props.location.state.params;
         return (
-            <Container style={{padding: 0}} className="OpenSource">
+            <Container style={{padding: 0}} className="BlogPage">
                 <BreadNav
                     bg={"url('https://dynamic.thoughtworks.com/landing_pages/hero_banner_image_desktop-e5bea60f1eaf14734c2dd2c07b404813.jpeg')"}
                     title={detail.title}
                     subtitle={detail.description}
                 />
 
-                <Row style={{background: '#f4f4f4'}}>
+                <Row style={{background: '#fff', paddingTop: '3em'}}>
                     <Col md={2}></Col>
                     <Col md={8} style={{textAlign: 'left'}}>
-                        <Container style={{padding: '3em'}}
+                        <Container>
+                            <h3>{detail.title}</h3>
+                            <p>{detail.author}</p>
+                        </Container>
+                        <Container className={"blog-container"}
                                    dangerouslySetInnerHTML={{__html: markdown.toHTML(detail.content)}}>
                         </Container>
                     </Col>

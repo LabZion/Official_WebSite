@@ -1,7 +1,18 @@
-.Blogs {
+.BlogPage {
     margin: 0em 0em 3em;
 }
 
 h1, h2, h3 {
     display: inline-block;
+}
+
+.blog-container{
+    margin-top: 2em;
+}
+
+.blog-container img {
+    padding: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
