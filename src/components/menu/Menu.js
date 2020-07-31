@@ -84,14 +84,14 @@ class Menu extends Component {
                     ]
                 }
             ], aboutUs: [
-                // {
-                //     title: 'COMPANY',
-                //     items: [
-                //         {title: 'HOPE', route: '/company', state: {params: ''}},
-                //         {title: 'PATH', route: '/company', state: {params: ''}},
-                //         {title: 'INVESTOR', route: '/company', state: {params: ''}},
-                //     ]
-                // },
+                {
+                    title: 'COMPANY',
+                    items: [
+                        {title: 'HOPE', route: '/company', state: {params: ''}},
+                        {title: 'PATH', route: '/company', state: {params: ''}},
+                        {title: 'INVESTOR', route: '/company', state: {params: ''}},
+                    ]
+                },
                 {
                     title: 'TEAM',
                     items: [
@@ -116,14 +116,6 @@ class Menu extends Component {
                     ]
                 }
             ],insight: [
-                // {
-                //     title: 'COMPANY',
-                //     items: [
-                //         {title: 'HOPE', route: '/company', state: {params: ''}},
-                //         {title: 'PATH', route: '/company', state: {params: ''}},
-                //         {title: 'INVESTOR', route: '/company', state: {params: ''}},
-                //     ]
-                // },
                 {
                     title: '所有洞见',
                     items: [

@@ -19,27 +19,28 @@ Linux内核是不是坚不可摧？答案是NO！尽管内核中存在诸多限�
  
 于是我们把目光放到了内核的Kallsyms功能上。这个功能是内核为了方便调试而引入的。当内核发生错误时会输出一系列Stacktrace，后者其实是一系列函数地址。有了Kallsyms，在输出Stacktrace的时候内核可以把地址解析成函数名输出，告诉开发人员错误发生在哪个函数的哪个位置：  
 
-![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog2.png)  
+我们的客户是中国四大汽车制造商之一，主要业务包括整车研发、生产和销售，正积极推进新能源汽车、互联网汽车的商业化，并开展智能驾驶等技术研究和产业化探索。  
 
-由于内核错误可能发生在任何地方，因此Kallsyms单独保存了一份函数符号和函数地址的对应关系，其中的符号数量远远多于export_symbols宏导出的符号量。即使内核开启了地址随机化(Address Space Layout Randomization)功能，Kallsyms也能在运行时解析到符号正确地址。如果在内核模块中想使用未导出的符号，可以使用Kallsyms提供的kallsyms_lookup_name函数将符号名解析到函数地址，再以函数指针的形式调用即可，如：  
+###业务挑战  
 
-![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog3.png)  
+当前车载智能终端（车机）应用日益广泛，智能汽车已是大势所趋。在整个汽车生态体系中，车机由不同的供应商提供，每个车机又由很多的组件组装而成。在这个由多个供应商组成的生态系统中，对安全漏洞的追踪和确认变的非常的困难。而且车机厂商大多关注于产品功能，忽视产品安全。而安全威胁会给智能汽车带来严重后果，甚至损害整车厂商品牌。对于造成厂而言，往往在最终拿到的只是一堆的二进制文件，那如何在没有源码的前提下，发现其中存在的漏洞，目前业界的做法都是采用人工逆向分析技术，去发现二进制中的漏洞。但是存在的问题是，当设备很多的时候，人工分析太慢，产品迭代太慢，还可能出现误判。企业急需打破安全监测供需瓶颈。  
 
-普通需求到这里就完事了，但是针对客户的特殊场景，稍微思考一下就会发现有很大缺陷。假如修复补丁中一共涉及到了数百个未导出的函数，我们则要在修复代码中把所有使用到这些函数的地方全部修改成函数指针调用的形式，工作量增加了不少。最简单的解决办法是内核加载修复模块时，单独走Kallsyms解析模块符号，而绕过export_symbols这个符号子集（前提是不引入新的内核安全风险)。  
+###解决方案  
 
-Linux内核模块的加载过程其实跟可执行程序加载动态链接库的过程是一样的。举个简单例子，在printf(“hello world”)中，我们其实并没有实现printf（由puts函数封装而来）。它实际是由Libc库实现。当我们运行HelloWorld程序的时候，操作系统会解析程序符号，载入依赖的动态链接库(每次加载的基址可能不同)，计算重定位符号地址，并把地址填回HelloWorld程序中。我们可以通过下图过程来验证：  
+ThoughtWorks安全BU通过和国内多家大型车企以及智能设备生成厂商的多年合作，利用积累的经验为客户提供了一套对二进制自动化漏洞扫描以及加固的解决方案。解决方案有2个亮点：  
 
-![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog4.png)  
+#####1、二进制漏洞自动化扫描  
 
-对于Linux内核模块而言，它本质上也是动态链接库，因此加载模块时必然存在解析符号地址的函数。于是我们的思路是，动态拦截该函数，重定向到我们的替换函数中，并在替换函数中添加Kallsyms查找符号地址的逻辑即可：左图为我们的替换函数，右图为内核原始函数。这样达到的效果是，我们可以在CVE修复代码中直接使用诸如d_absolute_path这样的未导出函数，而不用做任何函数指针形式的改造，便于漏洞修复过程的自动化。  
+首先会自动化的进行信息采集与评估，采用一些手段，自动化的从二进制的固件中分析出系统架构，组件列表，组件版本等信息。并且会自动化爬取对应的漏洞列表，以及补丁等信息。有了这些信息后，会依据符号执行，编译原理，二进制分析等，自动化的从固件中提取是否存在对应的漏洞，形成漏洞报告。  
 
-![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog5.png)  
+![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E4%B8%8A%E6%B1%BD%E6%A1%88%E4%BE%8B.png#width-80)  
 
-可能会有同学感兴趣我们是如何实现内核函数拦截的，即如何从find_symbol_in_section跳转到hook_find_symbol_in_section，这里以ARM64架构CPU为例简单说明。我们在内核的find_symbol_in_section函数开头插入了下图所示的汇编指令（以二进制形式修改内核代码区）。这里借用了x0寄存器作远距离跳转（从内核跳转到内核模块）。由于无条件跳转不应该产生任何副作用（即栈帧和寄存器不能改变），因此我们需要先保存x0的值到栈上，远跳转后再恢复x0内容。
- ldr指令从.addr(low)和.addr(high)中把跳板函数地址装载进x0，注意到ARM64的地址长度为64位，而ARM64的指令长度为32位，因此跳板函数地址被折成低32位和高32位。进入跳板函数后先恢复x0寄存器值，再做近距离跳转（内核模块内部跳转），注意前图hook_find_symbol_in_section函数末尾有一行HOOK_FUNC_TEMPLATE(find_symbol_in_section)，即为宏定义的find_symbol_in_section的跳板函数。这样经过连续无条件跳转后，执行流被拦截到我们的HOOK函数中。  
- 
-![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog6.png)  
+#####2、漏洞自动化加固  
 
-此外顺便多提一下，上述使用Inline Hook技术的拦截方式跟CPU架构是强相关的，如果想实现ARM32或x86架构的函数拦截，则需要分别单独实现。
- 
+TW安全团队自主研发的加固框架，采用inline hook的技术，会对固件中确认存在的漏洞做修补，在固件运行时做漏洞动态拦截。该框架同时支持arm32和arm64的平台，支持如缺陷函数拦截、修复函数管理注册、内核符号导出、地址随机化绕过等功能。  
 
+![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E4%B8%8A%E6%B1%BD%E6%A1%88%E4%BE%8B2.png#width-80)  
+
+###客户价值  
+
+Thoughtworks安全BU对二进制自动化漏洞扫描以及加固的解决方案解决了传统的二进制漏洞检测难度大，检测周期长的问题。同时研发了一套漏洞自动化修复框架，在准确和快速的检测出二进制文件中漏洞的同时，还可以自动化的修复漏洞，为业界的智能设备产品公司在快速迭代的过程中保驾护航。
