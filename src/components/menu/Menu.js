@@ -22,55 +22,59 @@ class Menu extends Component {
                         {title: 'FINANCIAL', route: '/solution', state: {params: 'financial'}},
                         {title: 'CLOUD', route: '/solution', state: {params: 'cloud'}},
                         {title: 'SALES', route: '/solution', state: {params: 'sales'}},
-                        {title: 'LOGISTICS', route: '/solution', state: {params: 'logistics'}}
+                        //{title: 'LOGISTICS', route: '/solution', state: {params: 'logistics'}}
                     ]
-                }, {
-                    title: 'SCOPE',
-                    items: [
-                        {title: 'DATA', route: '/solution', state: {params: 'data'}},
-                        {title: 'IDENTIFY', route: '/solution', state: {params: 'identify'}},
-                        {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
-                        {title: 'TRUST', route: '/solution', state: {params: 'trust'}},
-                        {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
-                    ]
-                }
+                },
+                // {
+                //     title: 'SCOPE',
+                //     items: [
+                //         {title: 'DATA', route: '/solution', state: {params: 'data'}},
+                //         {title: 'IDENTIFY', route: '/solution', state: {params: 'identify'}},
+                //         {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
+                //         {title: 'TRUST', route: '/solution', state: {params: 'trust'}},
+                //         {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
+                //     ]
+                // }
             ], customer: [
                 {
                     title: 'CAR',
                     items: [
                         {title: 'SAIC', route: '/case', state: {params: 'SAIC'}},
-                        {title: 'DAIMLER', route: '/case', state: {params: 'DAIMLER'}},
-                        {title: 'GAC', route: '/case', state: {params: 'GAC'}},
-                        {title: 'PORSCHE', route: '/case', state: {params: 'PORSCHE'}},
+                        // {title: 'DAIMLER', route: '/case', state: {params: 'DAIMLER'}},
+                        // {title: 'GAC', route: '/case', state: {params: 'GAC'}},
+                        // {title: 'PORSCHE', route: '/case', state: {params: 'PORSCHE'}},
                     ]
-                }, {
-                    title: 'FINANCIAL',
-                    items: [
-                        {title: 'CMB', route: '/case', state: {params: 'CMB'}},
-                        {title: 'BOC', route: '/case', state: {params: 'BOC'}},
-                        {title: 'ZYBANK', route: '/case', state: {params: 'ZYBANK'}},
-                        {title: 'LU', route: '/case', state: {params: 'LU'}},
-                        {title: 'CM', route: '/case', state: {params: 'CM'}},
-                        {title: 'HUMANA', route: '/case', state: {params: 'HUMANA'}},
-                    ]
-                }, {
+                },
+                // {
+                //     title: 'FINANCIAL',
+                //     items: [
+                //         {title: 'CMB', route: '/case', state: {params: 'CMB'}},
+                //         {title: 'BOC', route: '/case', state: {params: 'BOC'}},
+                //         {title: 'ZYBANK', route: '/case', state: {params: 'ZYBANK'}},
+                //         {title: 'LU', route: '/case', state: {params: 'LU'}},
+                //         {title: 'CM', route: '/case', state: {params: 'CM'}},
+                //         {title: 'HUMANA', route: '/case', state: {params: 'HUMANA'}},
+                //     ]
+                // },
+                {
                     title: 'CLOUD',
                     items: [
                         {title: 'HUAWEI', route: '/case', state: {params: 'HUAWEI'}},
                     ]
-                }, {
-                    title: 'SALES',
-                    items: [
-                        {title: 'STARBUCKS', route: '/case', state: {params: 'SALES'}},
-                    ]
                 },
-                {
-                    title: 'LOGISTICS',
-                    items: [
-                        {title: 'OOCL', route: '/case', state: {params: 'OOCL'}},
-                        {title: 'LANDPORTGROUP', route: '/case', state: {params: 'LANDPORTGROUP'}},
-                    ]
-                }
+                // {
+                //     title: 'SALES',
+                //     items: [
+                //         {title: 'STARBUCKS', route: '/case', state: {params: 'SALES'}},
+                //     ]
+                // },
+                // {
+                //     title: 'LOGISTICS',
+                //     items: [
+                //         {title: 'OOCL', route: '/case', state: {params: 'OOCL'}},
+                //         {title: 'LANDPORTGROUP', route: '/case', state: {params: 'LANDPORTGROUP'}},
+                //     ]
+                // }
             ], resource: [
                 {
                     title: 'OPENSOURCE',
@@ -155,12 +159,11 @@ class Menu extends Component {
                                                          id="dropdown-basic">
                                             {this.props.t('ABOUT_US')}
                                         </Dropdown.Toggle>
-
-                                        {/*<Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}*/}
-                                        {/*                 variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}*/}
-                                        {/*                 id="dropdown-basic">*/}
-                                        {/*    {this.props.t('CONTACT_US')}*/}
-                                        {/*</Dropdown.Toggle>*/}
+                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}
+                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         id="dropdown-basic">
+                                            {this.props.t('CONTACT_US')}
+                                        </Dropdown.Toggle>
                                     </Dropdown>
                                 </Navbar.Brand>
                             </Navbar>

@@ -19,26 +19,28 @@ function Footer() {
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>Info</Row>
                                     <Row><span className="footerText">Terms</span></Row>
-                                    <Row><span className="footerText">Privacy</span></Row>
+                                    <Row><span className="footerText"><Link to="/privacy">Privacy</Link></span></Row>
                                     <Row><span className="footerText">Contract</span></Row>
                                 </Col>
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>SiteMap</Row>
                                     <Row><span className="footerText"><Link to="/home">Home</Link></span></Row>
                                     <Row><span className="footerText"><Link to="/home">Solutions</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/home">Insights</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/home">Events</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/home">Blogs</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/event">Insights</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/event">Events</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/blogs">Blogs</Link></span></Row>
                                 </Col>
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>Community</Row>
-                                    <Row><span className="footerText">Events</span></Row>
-                                    <Row><span className="footerText">Blogs</span></Row>
-                                    <Row><span className="footerText">Insights</span></Row>
+                                    <Row><span className="footerText"><Link to="/event">Events</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/blogs">Blogs</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/event">Insights</Link></span></Row>
                                 </Col>
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>Links</Row>
                                     <Row><a href={"https://www.thoughtworks.com/"}><span className="footerText">ThoughtWorks</span></a></Row>
+                                    <Row><a href={"https://insights.thoughtworks.cn/"}><span className="footerText">ThoughtWorks洞见</span></a></Row>
+                                    <Row><a href={"https://www.thoughtworks.com/cn/radar"}><span className="footerText">ThoughtWorks技术雷达</span></a></Row>
                                 </Col>
                                 <Col md={4}>
                                     <Row className={"footerTitle"}>Get the Security newsletter</Row>
