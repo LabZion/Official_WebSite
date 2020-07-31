@@ -104,7 +104,7 @@ class Events extends Component {
             <Container style={{padding: 0}} className="Events">
                 <BreadNav
                     bg={"url('https://static.thoughtworks.com/images/news-banner.jpg')"}
-                    title={this.props.t('EVENTS') + " & " + this.props.t('INSIGHT')}
+                    title={'讲座'}
                     subtitle={"Knowledge should be for all, not just for the few. We believe in sharing what we learn, and regularly host and participate in thought-leadership events across the world."}
                 />
 

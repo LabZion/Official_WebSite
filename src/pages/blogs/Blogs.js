@@ -4,14 +4,18 @@ import Container from "react-bootstrap/Container";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import BreadNav from "../../components/bread_nav/BreadNav";
-import {Row} from "react-bootstrap";
+import {Image, Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
+import {Link} from "react-router-dom";
 
 const markdown = require("markdown").markdown;
 
-const blogs ={
-    '怎样Hack Linux的内核符号？':{
-        title:'怎样Hack Linux的内核符号？',
+const blogs = {
+    blog:[
+     {
+        img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog1.png',
+        title: '怎样Hack Linux的内核符号？',
+        author: '刘涛·ThoughtWorks资深咨询师',
         description:'Inline Hook技术能够帮助我们完成函数的动态拦截和跳转，但要实现缺陷函数的自动化热修复则会面临更加复杂的挑战。本文从一个实际例子出发，阐述了在对二进制形式的Linux固件做自动化安全加固的时遇到的技术难题和解决办法。',
         content:'\n' +
             'Linux内核是不是坚不可摧？答案是NO！尽管内核中存在诸多限制，但你只需要稍微花点心思，也可以想办法突破它们。下面我们将通过一个例子来展示这趟有趣的旅程。  \n' +
@@ -58,41 +62,58 @@ const blogs ={
             '此外顺便多提一下，上述使用Inline Hook技术的拦截方式跟CPU架构是强相关的，如果想实现ARM32或x86架构的函数拦截，则需要分别单独实现。\n' +
             ' \n' +
             '\n'
-    },'怎样攻破Thoughtworks的官网':{
-        title: '怎样攻破Thoughtworks的官网',
-        description: '怎样攻破Thoughtworks的官网',
-        content: '怎样攻破Thoughtworks的官网'
-    }
+    }, {
+        img: 'http://inews.gtimg.com/newsapp_bt/0/10303276488/1000/0',
+        title: '怎样攻破Thoughtworks官网',
+        author: '武云封·ThoughtWorks菜鸟咨询师',
+        description: 'Thoughtworks的菜鸟工程师武云封教你破解Thoughtworks官网，只要998，童叟无欺，货真价实!!!',
+        content:'想攻破？几个菜啊，喝成这样'
+    },
+        ]
 };
 class Blogs extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            selectedCaseIndex: 0
-        }
-    }
-
     render() {
-        let blogName = this.props.location.state.params;
         return (
-            <Container style={{padding: 0}} className="OpenSource">
+            <Container style={{padding: 0}} className="Blogs">
                 <BreadNav
                     bg={"url('https://dynamic.thoughtworks.com/landing_pages/hero_banner_image_desktop-e5bea60f1eaf14734c2dd2c07b404813.jpeg')"}
-                    title={blogs[blogName].title}
-                    subtitle={blogs[blogName].description}
+                    title={"博客"}
+                    subtitle={"Knowledge should be for all, not just for the few. We believe in sharing what we learn, and regularly host and participate in thought-leadership events across the world."}
                 />
-
                 <Row style={{background: '#f4f4f4'}}>
                     <Col md={2}></Col>
-                    <Col md={8} style={{textAlign: 'left'}}>
-                        <Container style={{padding: '3em'}}
-                                   dangerouslySetInnerHTML={{__html: markdown.toHTML(blogs[blogName].content)}}>
-                        </Container>
+                    <Col md={8} style={{marginTop: '2em'}}>
+                        <Row>
+                            <Col md={12} style={{textAlign: 'left'}}>
+                                <h3>精选博客</h3>
+                                <Container style={{textAlign: "left", padding: 0, paddingTop: '1em', paddingBottom: '2em'}}>
+                                    <Row>
+                                        {this.renderBlogs()}
+                                    </Row>
+                                </Container>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>
         );
     };
+
+    renderBlogs() {
+        return blogs.blog.map((item, index) => {
+            return <Col md={6} sytle={{background: '#fff'}}>
+                <Link to={{
+                    pathname: '/blog-detail',
+                    state: {params: item}
+                }}>
+                    <Image src={item.img} style={{width: '100%',height:'60%'}}/></Link>
+                <Container style={{paddingTop: '1em', paddingBottom: '0.1em', background: '#fff', marginBottom: '2em'}}>
+                    <h5>{item.title}</h5>
+                    <p>{item.author}</p>
+                </Container>
+            </Col>
+        });
+    }
 
     componentWillMount() {
     }

@@ -115,21 +115,23 @@ class Menu extends Component {
                         {title: '柏林', route: '/contact', state: {params: ''}},
                     ]
                 }
-            ],blogs: [
+            ],insight: [
+                // {
+                //     title: 'COMPANY',
+                //     items: [
+                //         {title: 'HOPE', route: '/company', state: {params: ''}},
+                //         {title: 'PATH', route: '/company', state: {params: ''}},
+                //         {title: 'INVESTOR', route: '/company', state: {params: ''}},
+                //     ]
+                // },
                 {
-                    title: 'OS内核',
+                    title: '所有洞见',
                     items: [
-                        {title: '怎样Hack Linux的内核符号？', route: '/blogs', state: {params: '怎样Hack Linux的内核符号？'}},
-
-                    ]
-                },
-                {
-                    title: '安全',
-                    items: [
-                        {title: '怎样攻破Thoughtworks的官网', route: '/blogs', state: {params: '怎样攻破Thoughtworks的官网'}},
+                        {title: '博客', route: '/insight/blogs', state: {params: ''}},
+                        {title: '讲座', route: '/insight/event', state: {params: ''}},
                     ]
                 }
-            ]
+            ],
         };
         this.state = {
             isPanelShow: false,
@@ -164,17 +166,18 @@ class Menu extends Component {
                                                          id="dropdown-basic">
                                             {this.props.t('RESOURCE')}
                                         </Dropdown.Toggle>
+                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'insight')}
+                                                         variant="success"
+                                                         style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         id="dropdown-basic">
+                                            {this.props.t('INSIGHT')}
+                                        </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
                                                          variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
                                                          id="dropdown-basic">
                                             {this.props.t('ABOUT_US')}
                                         </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'blogs')}
-                                                         variant="success"
-                                                         style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
-                                                         id="dropdown-basic">
-                                            {this.props.t('BLOGS')}
-                                        </Dropdown.Toggle>
+
                                         {/*<Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}*/}
                                         {/*                 variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}*/}
                                         {/*                 id="dropdown-basic">*/}
