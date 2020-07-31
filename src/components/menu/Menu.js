@@ -126,7 +126,7 @@ class Menu extends Component {
                 {
                     title: '安全',
                     items: [
-                        {title: '怎样攻破Thoughtworks的官网', route: '/blogs', state: {params: ''}},
+                        {title: '怎样攻破Thoughtworks的官网', route: '/blogs', state: {params: '怎样攻破Thoughtworks的官网'}},
                     ]
                 }
             ]
