@@ -35,46 +35,14 @@ class Menu extends Component {
                 //         {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
                 //     ]
                 // }
-            ], customer: [
-                {
-                    title: 'CAR',
-                    items: [
-                        {title: 'SAIC', route: '/case', state: {params: 'SAIC'}},
-                        // {title: 'DAIMLER', route: '/case', state: {params: 'DAIMLER'}},
-                        // {title: 'GAC', route: '/case', state: {params: 'GAC'}},
-                        // {title: 'PORSCHE', route: '/case', state: {params: 'PORSCHE'}},
-                    ]
-                },
-                // {
-                //     title: 'FINANCIAL',
-                //     items: [
-                //         {title: 'CMB', route: '/case', state: {params: 'CMB'}},
-                //         {title: 'BOC', route: '/case', state: {params: 'BOC'}},
-                //         {title: 'ZYBANK', route: '/case', state: {params: 'ZYBANK'}},
-                //         {title: 'LU', route: '/case', state: {params: 'LU'}},
-                //         {title: 'CM', route: '/case', state: {params: 'CM'}},
-                //         {title: 'HUMANA', route: '/case', state: {params: 'HUMANA'}},
-                //     ]
-                // },
-                {
-                    title: 'CLOUD',
-                    items: [
-                        {title: 'HUAWEI', route: '/case', state: {params: 'HUAWEI'}},
-                    ]
-                },
-                // {
-                //     title: 'SALES',
-                //     items: [
-                //         {title: 'STARBUCKS', route: '/case', state: {params: 'SALES'}},
-                //     ]
-                // },
-                // {
-                //     title: 'LOGISTICS',
-                //     items: [
-                //         {title: 'OOCL', route: '/case', state: {params: 'OOCL'}},
-                //         {title: 'LANDPORTGROUP', route: '/case', state: {params: 'LANDPORTGROUP'}},
-                //     ]
-                // }
+            ], customer: [{
+                title:'CUSTOMER',
+                items:[
+                    {title: 'CAR',route: '/cases', state: {params: 'car'}},
+                    {title: 'CLOUD',route: '/cases', state: {params: 'cloud'}}
+                ]
+            }
+
             ], resource: [
                 {
                     title: 'OPENSOURCE',

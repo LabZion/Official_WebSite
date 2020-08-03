@@ -33,7 +33,7 @@ function App() {
                 <Route exact path="/blog-detail" component={BlogPage}/>
                 <Route exact path="/solution" component={SolutionPage}/>
                 <Route exact path="/open-source" component={OpenSource}/>
-                <Route exact path="/case" component={CasePage}/>
+                <Route exact path="/case-detail" component={CasePage}/>
                 <Route exact path="/contact" component={SolutionPage}/>
                 <Route exact path="/privacy" component={Privacy}/>
                 <Route exact path="/company" component={Company}/>
