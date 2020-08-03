@@ -1,7 +1,9 @@
 .Events {
     margin: 0em 0em 3em;
 }
-
+img[src*="#width-full"] {
+    width: 100%;
+}
 h1, h2, h3 {
     display: inline-block;
 }

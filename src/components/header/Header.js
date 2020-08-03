@@ -30,13 +30,13 @@ class Header extends Component {
                                     <Image src={Logo} className="logo-img" rounded/>
                                 </Link>
 
-                                <Link to="/insight/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                <Link to="/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
                                     <Navbar.Brand className="icon-header">
                                         <strong className={"headerTitleSpan"}>{this.props.t('EVENTS')} & {this.props.t('INSIGHT')}</strong>
                                     </Navbar.Brand>
                                 </Link>
 
-                                <Link to="/insight/blogs" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                <Link to="/blogs" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
                                     <Navbar.Brand className="icon-header">
                                         <strong className={"headerTitleSpan"}>{this.props.t('BLOGS')}</strong>
                                     </Navbar.Brand>

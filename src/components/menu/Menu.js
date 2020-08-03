@@ -38,10 +38,10 @@ class Menu extends Component {
             ], customer: [{
                 title:'CUSTOMER',
                 items:[
-                    {title: 'CAR',route: '/cases', state: {params: 'car'}},
-                    {title: 'CLOUD',route: '/cases', state: {params: 'cloud'}}
+                    {title: 'CARINDUSTRY',route: '/cases', state: {params: 'car'}},
+                    {title: 'CLOUDINDUSTRY',route: '/cases', state: {params: 'cloud'}},
                 ]
-            }
+            },
 
             ], resource: [
                 {
