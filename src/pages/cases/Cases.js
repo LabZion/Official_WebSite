@@ -16,6 +16,7 @@ const cases = {
         data: [
             {
                 customer: '某汽车行业巨头',
+                img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
                 description: '我们的客户是中国四大汽车制造商之一，主要业务包括整车研发、生产和销售，正积极推进新能源汽车、互联网汽车的商业化，并开展智能驾驶等技术研究和产业化探索。',
                 content:'## 某汽车行业巨头车机安全漏洞扫描及加固案例  \n' +
                     '>  \n' +
