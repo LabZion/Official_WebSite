@@ -1,0 +1,18 @@
+.Cases {
+    margin: 0em 0em 3em;
+}
+
+
+img[src*="#width-full"] {
+    width: 100%;
+}
+img[src*="#width-80"] {
+    width: 80%;
+}
+img[src*="#width-90"] {
+    width: 90%;
+}
+
+h1, h2, h3 {
+    display: inline-block;
+}
