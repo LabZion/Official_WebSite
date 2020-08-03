@@ -59,6 +59,7 @@ const resources = {
             "SYNESTIA": "Synestia OS",
             "PATH": "Developing Path",
             "INVESTOR": "Investor Relations",
+            "GENERAL":"General Introduction",
         }
     },
     zh: {
@@ -115,6 +116,7 @@ const resources = {
             "SYNESTIA": "Synestia内核",
             "PATH": "发展历程",
             "INVESTOR": "投资者关系",
+            "GENERAL":"概况",
         }
     }
 };

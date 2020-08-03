@@ -34,7 +34,6 @@ function App() {
                 <Route exact path="/solution" component={SolutionPage}/>
                 <Route exact path="/open-source" component={OpenSource}/>
                 <Route exact path="/case" component={CasePage}/>
-                <Route exact path="/company" component={SolutionPage}/>
                 <Route exact path="/contact" component={SolutionPage}/>
                 <Route exact path="/privacy" component={Privacy}/>
                 <Route exact path="/company" component={Company}/>

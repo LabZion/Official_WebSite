@@ -91,9 +91,8 @@ class Menu extends Component {
                 {
                     title: 'COMPANY',
                     items: [
-                        {title: 'HOPE', route: '/company', state: {params: ''}},
-                        {title: 'PATH', route: '/company', state: {params: ''}},
-                        {title: 'INVESTOR', route: '/company', state: {params: ''}},
+                        {title: 'GENERAL', route: '/company', state: {params: ''}},
+
                     ]
                 },
                 {
