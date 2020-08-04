@@ -25,7 +25,7 @@ function Footer() {
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>SiteMap</Row>
                                     <Row><span className="footerText"><Link to="/home">Home</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/home">Solutions</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/open-source">Resourses</Link></span></Row>
                                     <Row><span className="footerText"><Link to="/event">Insights</Link></span></Row>
                                     <Row><span className="footerText"><Link to="/event">Events</Link></span></Row>
                                     <Row><span className="footerText"><Link to="/blogs">Blogs</Link></span></Row>
