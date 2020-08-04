@@ -128,6 +128,15 @@ class Menu extends Component {
                                                          id="dropdown-basic">
                                             {this.props.t('ABOUT_US')}
                                         </Dropdown.Toggle>
+                                        <Link to="/contact-us" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                        <Dropdown.Toggle variant="success" style={{
+                                            background: 'transparent',
+                                            color: '#4a4a4a',
+                                            border: 'none'
+                                        }} id="dropdown-basic">
+                                            {this.props.t('CONTACT_US')}
+                                        </Dropdown.Toggle>
+                                        </Link>
                                     </Dropdown>
 
                                 </Navbar.Brand>

@@ -22,11 +22,11 @@ class CasePage extends Component {
                     title={caseName.customer}
                     subtitle={caseName.description}
                 />
-                <Row style={{background: '#fff',paddingTop:'2em',paddingBottom:'2em'}}>
+                <Row style={{background: '#fff', paddingTop: '2em', paddingBottom: '2em'}}>
                     <Col md={2}></Col>
-                    <Col md={7} style={{textAlign: 'left'}}>
-                        <Container style={{paddingLeft: '5em'}}
-                                   dangerouslySetInnerHTML={{__html: markdown.toHTML(caseName.content)}}>
+                    <Col md={8} style={{textAlign: 'left'}}>
+                        <Container
+                            dangerouslySetInnerHTML={{__html: markdown.toHTML(caseName.content)}}>
                         </Container>
                     </Col>
                 </Row>
