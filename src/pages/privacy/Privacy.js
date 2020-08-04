@@ -450,7 +450,7 @@ const privacyContent = {
 class Privacy extends Component {
     render() {
         return (
-            <Container style={{padding: 0}} className="OpenSource">
+            <Container style={{padding: 0}} className="Privacy">
 
                 <Row style={{background: '#f4f4f4'}}>
                     <Col md={2}></Col>

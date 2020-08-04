@@ -59,6 +59,7 @@ const resources = {
             "SYNESTIA": "Synestia OS",
             "PATH": "Developing Path",
             "INVESTOR": "Investor Relations",
+            "GENERAL":"General Introduction",
         }
     },
     zh: {
@@ -75,8 +76,10 @@ const resources = {
             "CONTACT_US": "联系我们",
             "INDUSTRY": "行业",
             "CAR": "汽车",
+            "CARINDUSTRY": "汽车企业",
             "FINANCIAL": "金融与保险",
             "CLOUD": "通信与云计算",
+            "CLOUDINDUSTRY": "通信企业",
             "SALES": "零售与互联网",
             "LOGISTICS": "物流",
             "SCOPE": "领域",
@@ -115,6 +118,7 @@ const resources = {
             "SYNESTIA": "Synestia内核",
             "PATH": "发展历程",
             "INVESTOR": "投资者关系",
+            "GENERAL":"概况",
         }
     }
 };

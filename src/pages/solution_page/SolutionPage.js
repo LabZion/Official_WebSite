@@ -123,7 +123,7 @@ class SolutionPage extends Component {
         let solution = this.props.location.state.params;
 
         return (
-            <Container style={{padding: 0}} className="Home">
+            <Container style={{padding: 0}} className="SolutionPage">
                 <BreadNav
                     bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
                     bread={"Security / Solution /"+industry[solution].title}

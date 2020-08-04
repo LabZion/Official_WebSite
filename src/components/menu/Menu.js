@@ -35,46 +35,14 @@ class Menu extends Component {
                 //         {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
                 //     ]
                 // }
-            ], customer: [
-                {
-                    title: 'CAR',
-                    items: [
-                        {title: 'SAIC', route: '/case', state: {params: 'SAIC'}},
-                        // {title: 'DAIMLER', route: '/case', state: {params: 'DAIMLER'}},
-                        // {title: 'GAC', route: '/case', state: {params: 'GAC'}},
-                        // {title: 'PORSCHE', route: '/case', state: {params: 'PORSCHE'}},
-                    ]
-                },
-                // {
-                //     title: 'FINANCIAL',
-                //     items: [
-                //         {title: 'CMB', route: '/case', state: {params: 'CMB'}},
-                //         {title: 'BOC', route: '/case', state: {params: 'BOC'}},
-                //         {title: 'ZYBANK', route: '/case', state: {params: 'ZYBANK'}},
-                //         {title: 'LU', route: '/case', state: {params: 'LU'}},
-                //         {title: 'CM', route: '/case', state: {params: 'CM'}},
-                //         {title: 'HUMANA', route: '/case', state: {params: 'HUMANA'}},
-                //     ]
-                // },
-                {
-                    title: 'CLOUD',
-                    items: [
-                        {title: 'HUAWEI', route: '/case', state: {params: 'HUAWEI'}},
-                    ]
-                },
-                // {
-                //     title: 'SALES',
-                //     items: [
-                //         {title: 'STARBUCKS', route: '/case', state: {params: 'SALES'}},
-                //     ]
-                // },
-                // {
-                //     title: 'LOGISTICS',
-                //     items: [
-                //         {title: 'OOCL', route: '/case', state: {params: 'OOCL'}},
-                //         {title: 'LANDPORTGROUP', route: '/case', state: {params: 'LANDPORTGROUP'}},
-                //     ]
-                // }
+            ], customer: [{
+                title: 'CUSTOMER',
+                items: [
+                    {title: 'CARINDUSTRY', route: '/cases', state: {params: 'car'}},
+                    {title: 'CLOUDINDUSTRY', route: '/cases', state: {params: 'cloud'}},
+                ]
+            },
+
             ], resource: [
                 {
                     title: 'OPENSOURCE',
@@ -91,9 +59,8 @@ class Menu extends Component {
                 {
                     title: 'COMPANY',
                     items: [
-                        {title: 'HOPE', route: '/company', state: {params: ''}},
-                        {title: 'PATH', route: '/company', state: {params: ''}},
-                        {title: 'INVESTOR', route: '/company', state: {params: ''}},
+                        {title: 'GENERAL', route: '/company', state: {params: ''}},
+
                     ]
                 },
                 {
@@ -103,22 +70,8 @@ class Menu extends Component {
                     ]
                 }
             ], contactUs: [
-                {
-                    title: 'CHINA',
-                    items: [
-                        {title: 'XIAN', route: '/contact', state: {params: ''}},
-                        {title: 'BEIJING', route: '/contact', state: {params: ''}},
-                        {title: 'CHENGDOU', route: '/contact', state: {params: ''}},
-                        {title: 'WUHAN', route: '/contact', state: {params: ''}},
-                        {title: 'SHENZHEN', route: '/contact', state: {params: ''}},
-                    ]
-                },
-                {
-                    title: 'GLOBAL',
-                    items: [
-                        {title: '柏林', route: '/contact', state: {params: ''}},
-                    ]
-                }
+                {},
+                {}
             ]
         };
         this.state = {
@@ -140,31 +93,43 @@ class Menu extends Component {
                                     <Dropdown>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'solution')}
                                                          variant="success"
-                                                         style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         style={{
+                                                             background: 'transparent',
+                                                             color: '#4a4a4a',
+                                                             border: 'none'
+                                                         }}
                                                          id="dropdown-basic">
                                             {this.props.t('SOLUTION_SERVICE')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}
-                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         variant="success" style={{
+                                            background: 'transparent',
+                                            color: '#4a4a4a',
+                                            border: 'none'
+                                        }}
                                                          id="dropdown-basic">
                                             {this.props.t('CUSTOMER')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'resource')}
-                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         variant="success" style={{
+                                            background: 'transparent',
+                                            color: '#4a4a4a',
+                                            border: 'none'
+                                        }}
                                                          id="dropdown-basic">
                                             {this.props.t('RESOURCE')}
                                         </Dropdown.Toggle>
                                         <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
-                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
+                                                         variant="success" style={{
+                                            background: 'transparent',
+                                            color: '#4a4a4a',
+                                            border: 'none'
+                                        }}
                                                          id="dropdown-basic">
                                             {this.props.t('ABOUT_US')}
                                         </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'contactUs')}
-                                                         variant="success" style={{background: 'transparent', color: '#4a4a4a', border: 'none'}}
-                                                         id="dropdown-basic">
-                                            {this.props.t('CONTACT_US')}
-                                        </Dropdown.Toggle>
                                     </Dropdown>
+
                                 </Navbar.Brand>
                             </Navbar>
 
@@ -205,21 +170,22 @@ class Menu extends Component {
             <Row>
                 <Col md={2}> </Col>
                 <Col md={8}>
-                    <Row style={{borderTop: '1px solid #f0f1f3',paddingLeft:'1em'}}>
-                        <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', paddingBottom: '1em' }}>
+                    <Row style={{borderTop: '1px solid #f0f1f3', paddingLeft: '1em'}}>
+                        <Col md={3} style={{textAlign: 'left', borderRight: '1px solid #f0f1f3', paddingBottom: '1em'}}>
                             {
                                 this.menu[this.state.selected].map((item, index) => {
-                                    return <Row style={{paddingTop:'0.5em'}} className={this.state.index === index ? "featureItemOn" : "featureItem"}
+                                    return <Row style={{paddingTop: '0.5em'}}
+                                                className={this.state.index === index ? "featureItemOn" : "featureItem"}
                                                 onMouseEnter={this.onItemEnterHandler.bind(this, index)}><strong>{this.props.t(item.title)}</strong><span
                                         style={{position: 'absolute', right: '2em'}}>></span></Row>
                                 })
                             }
                         </Col>
-                        <Col md={9} style={{textAlign: 'left', paddingBottom: '1em' }}>
+                        <Col md={9} style={{textAlign: 'left', paddingBottom: '1em'}}>
                             <Row>
                                 {
                                     this.menu[this.state.selected][this.state.index].items.map((item, index) => {
-                                        return <Col md={4} style={{paddingTop:'0.5em'}} className={"featureItem"}>
+                                        return <Col md={4} style={{paddingTop: '0.5em'}} className={"featureItem"}>
                                             <Link to={{
                                                 pathname: item.route,
                                                 state: item.state,
