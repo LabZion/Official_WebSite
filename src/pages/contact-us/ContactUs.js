@@ -74,7 +74,7 @@ class ContactUs extends Component {
                                 </FormGroup>
                                 <div style={{backgroud: '#000000', height: '3em',}}>
                                     <FormCheck style={{display: 'inline-block'}}></FormCheck>
-                                    <label>我们尊重你的隐私，并将根据 <a href={'https://security.thoughtworks.cn/privacy'}>隐私政策 </a>对相应数据进行保密和处理。</label>
+                                    <label>我们尊重您的隐私，并将根据 <a href={'https://security.thoughtworks.cn/privacy'}>隐私政策 </a>对相应数据进行保密和处理。</label>
                                 </div>
                                 <input type="submit" className={'btn-info btn-lg '} value="提交"/>
                                 <br/><br/>
