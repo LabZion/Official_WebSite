@@ -42,12 +42,6 @@ class Header extends Component {
                                     </Navbar.Brand>
                                 </Link>
 
-                                <Link to="/contact-us" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
-                                    <Navbar.Brand className="icon-header">
-                                        <strong className={"headerTitleSpan"}>{this.props.t('CONTACT_US')}</strong>
-                                    </Navbar.Brand>
-                                </Link>
-
                                 <Navbar.Collapse className="justify-content-end">
                                     <Dropdown>
                                         <Dropdown.Toggle variant="trans" id="dropdown-basic">
