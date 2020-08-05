@@ -41,8 +41,8 @@ class Case extends Component {
 
                 <Row style={{background: "#fff",}}>
                     <Col md={2}></Col>
-                    <Col md={8} style={{marginLeft:'1em'}}>
-                        <Container style={{textAlign: "left",  paddingBottom: '2em',}}>
+                    <Col md={8} style={{marginLeft: '1em'}}>
+                        <Container style={{textAlign: "left", paddingBottom: '2em',}}>
                             <Row>
                                 <Col md={4}>
                                     <div style={{
@@ -95,7 +95,7 @@ class Case extends Component {
                                         }}><p>Learn more.</p></Link>
                                     </div>
                                 </Col>
-                                <Col md={4} >
+                                <Col md={4}>
                                     <div style={{
                                         width: '100%',
                                         background: '#fff',
@@ -140,7 +140,7 @@ class Case extends Component {
                                         }}><p>Learn more.</p></Link>
                                     </div>
                                 </Col>
-                                <Col md={4} >
+                                <Col md={4}>
                                     <div style={{
                                         width: '100%',
                                         background: '#fff',

@@ -81,13 +81,13 @@ class Company extends Component {
                         </Container>
                     </Col>
                 </Row>
-                <Row>
-                    <Col md={6}>
+                <Row >
+                    <Col md={6} style={{padding:'0'}}>
                         <img
                             src={'https://dynamic.thoughtworks.com/landing_pages/side_by_side_large_image_desktop-b81a229a037dc5d64ee28e97623c04dc.jpeg'}
                             width={'100%'} height={'100%'}></img>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <Container style={{background:'#fafafc',textAlign: "left",height:'100%',width:'100%',padding:'6em 4em'}}>
                             <h1 >成为客户和他们宏大志向的杰出伙伴</h1><br/><br/>
                             <p style={{fontSize: '1.2em',lineHeight:'1.8em'}}>我们的项目经验使我们与众不同，并且我们的运作方式并不是一直一成不变。
@@ -97,26 +97,26 @@ class Company extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <Container style={{background:'#fafafc',textAlign: "left",height:'100%',width:'100%',padding:'6em 4em'}}>
                             <h1 >革新科技产业</h1><br/><br/>
                             <p style={{fontSize: '1.2em',lineHeight:'1.8em'}}>我们努力以身作则，成为技术行业的榜样。 这是一项重大责任，但这是我们所珍视的。
                                 我们相信这是可以鞭策行业做的更好的一种方法：培养技术人才和社区。推进技术水平提升并为实践能力设定基准。</p>
                         </Container>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <img
                             src={'https://dynamic.thoughtworks.com/landing_pages/side_by_side_large_image_desktop-ac9205c82ea845a1ed1b49d246a81b0b.jpeg'}
                             width={'100%'} height={'100%'}></img>
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <img
                             src={'https://dynamic.thoughtworks.com/landing_pages/side_by_side_large_image_desktop-2ca2dd027e202ba9472db537a9a1784b.jpeg'}
                             width={'100%'} height={'100%'}></img>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <Container style={{background:'#fafafc',textAlign: "left",height:'100%',width:'100%',padding:'6em 4em'}}>
                             <h1 >促进积极的社会改变，倡导科技公平的未来</h1><br/><br/>
                             <p style={{fontSize: '1.2em',lineHeight:'1.8em'}}>我们的社会影响战略是本着团结慈善的精神，跟志趣相投的社会组织一起，放大他们的效应。
@@ -128,7 +128,7 @@ class Company extends Component {
                 </Row>
                 <Row>
 
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <Container style={{background:'#fafafc',textAlign: "left",height:'100%',width:'100%',padding:'6em 4em'}}>
                             <h1 >为多元和热情的科技从业者，培育一个生机勃勃的社区</h1><br/><br/>
                             <p style={{fontSize: '1.2em',lineHeight:'1.8em'}}>技术是我们的共同点，我们相信，无论您是什么样的身份，都应该得到尊重，友善和平等的成功机会。
@@ -136,19 +136,19 @@ class Company extends Component {
                                 的社区，因为我们相信每个人都应该展现真实的自我，并且复杂问题的最佳解决方案在于汇集不同的思维和经验。</p>
                         </Container>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <img
                             src={'https://dynamic.thoughtworks.com/landing_pages/side_by_side_large_image_desktop-b4abbcd8adc03fd7e56d2aa4aa9406c3.jpeg'}
                             width={'100%'} height={'100%'}></img>
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <img
                             src={'https://dynamic.thoughtworks.com/landing_pages/side_by_side_large_image_desktop-f327ba4242cb38594b26d51dd5f6c51c.jpeg'}
                             width={'100%'} height={'100%'}></img>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} style={{padding:'0'}}>
                         <Container style={{background:'#fafafc',textAlign: "left",height:'100%',width:'100%',padding:'6em 4em'}}>
                             <h1 >永续经营，持续成长</h1>
                             <br/><br/>
