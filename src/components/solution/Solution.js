@@ -18,20 +18,20 @@ class Solution extends Component {
                 <Row style={{background: '#f4f4f4'}}>
                     <Col md={2}></Col>
                     <Col md={8}>
+
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '2em'}}>
+                            <h2>解决方案与服务</h2>
+                            <br/><br/>
                             <Row style={{marginTop: '1em'}}>
                                 <Col md={3}>
                                     <Container style={{textAlign: 'center', marginTop: '0.5em'}}>
                                         <Image src={"https://1.cms.s81c.com/sites/default/files/2019-10-11/assess-risk-1.5-icon1.png"}/>
                                     </Container>
                                     <Container style={{padding: 0, marginTop: '1em'}}>
-                                        <h4><strong>lign your security strategy with your business</strong></h4>
-                                        <p>Building a custom security plan that is both industry-specific and aligned to your security maturity
-                                            demands a
-                                            partner with the expertise and resources to help you remotely or onsite. The ThoughtWorks Security
-                                            Strategy and
-                                            Risk
-                                            services team is that trusted resource.</p>
+                                        <h4><strong>保护您的数据安全</strong></h4>
+                                        <br/>
+                                        <p>提供隐私数据合规、数据防泄漏、数据脱敏、数据安全迁移、系统审计支持、安全运维评估等方面的咨询与服务，
+                                            您可以获得一套高效可落地的隐私保护解决方案，为您的数据加上一道坚实的保险。</p>
                                     </Container>
                                 </Col>
                                 <Col md={3}>
@@ -39,9 +39,9 @@ class Solution extends Component {
                                         <Image src={"https://1.cms.s81c.com/sites/default/files/2019-10-11/reduce-risk-1.5-icon2.png"}/>
                                     </Container>
                                     <Container style={{padding: 0, marginTop: '1em'}}>
-                                        <h4><strong>Protect your digital assets, users and data</strong></h4>
-                                        <p>To help you build a foundation of trust in your interactions, you should enable the right user to have the
-                                            right access to the right data. ThoughtWorks Security Digital Trust solutions can help.</p>
+                                        <h4><strong>保障您的身份资源</strong></h4><br/>
+                                        <p>提供更安全的身份访问认证，更精细的资源权限管控，更友好的操作权限定制化，更安全的云安全策略，
+                                            为企业带来更安全的服务，促进企业提高生产力，安全管理客户、合作伙伴、供应商、内部员工的身份与权限，提升用户的工作效率与降低运营成本。</p>
                                     </Container>
                                 </Col>
                                 <Col md={3}>
@@ -49,10 +49,10 @@ class Solution extends Component {
                                         <Image src={"https://1.cms.s81c.com/sites/default/files/2019-10-11/manage-risk-1.5-icon3.png"}/>
                                     </Container>
                                     <Container style={{padding: 0, marginTop: '1em'}}>
-                                        <h4><strong>Manage your defenses against growing threats</strong></h4>
-                                        <p>When every second counts, you need a unified defense to identify, orchestrate and automate your response to
-                                            threats. ThoughtWorks Security Threat Management solutions help you thrive in the face of cyber
-                                            uncertainty.</p>
+                                        <h4><strong>内建武装您的软件</strong></h4><br/>
+                                        <p>在整个软件开发生命周期中的每一个阶段引入安全的思考和实践，
+                                            遵循安全左移、职责共享的思想，帮助团队构建高度安全的软件，BSI中的指导、最佳实践、工具和流程是我们结合敏捷软件交付，
+                                            在内部用于构建更安全的产品和服务的实践。随着我们对云、物联网和人工智能等新业务技术的增长，我们也在不断更新BSI实践。</p>
                                     </Container>
                                 </Col>
                                 <Col md={3}>
@@ -60,12 +60,9 @@ class Solution extends Component {
                                         <Image src={"https://1.cms.s81c.com/sites/default/files/2019-10-11/assess-risk-1.5-icon1.png"}/>
                                     </Container>
                                     <Container style={{padding: 0, marginTop: '1em'}}>
-                                        <h4><strong>Modernize your security with an open, multicloud platform</strong></h4>
-                                        <p>To protect your hybrid multicloud infrastructure in a world of complexity, you need to ensure the workload
-                                            is
-                                            secure, from processes to technologies. ThoughtWorks Security can help confidently secure your hybrid
-                                            multicloud
-                                            enterprise.</p>
+                                        <h4><strong>平台助您万物互联</strong></h4><br/>
+                                        <p>在嵌入式系统安全研发领域深耕多年，研究方向包括嵌入式Linux内核/RTOS/SoC芯片，以及可信操作系统裁剪定制、
+                                            系统安全加固、系统监控、系统加密、通讯协议软硬件加密等。目前，自研的IOT-RTOS/Linux安全模块等的研发工作已接近尾声。</p>
                                     </Container>
                                 </Col>
                             </Row>

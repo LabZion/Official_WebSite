@@ -36,7 +36,7 @@ class Menu extends Component {
                 //     ]
                 // }
             ], customer: [{
-                title: 'CUSTOMER',
+                title: 'INDUSTRY',
                 items: [
                     {title: 'CARINDUSTRY', route: '/cases', state: {params: 'car'}},
                     {title: 'CLOUDINDUSTRY', route: '/cases', state: {params: 'cloud'}},
@@ -128,17 +128,16 @@ class Menu extends Component {
                                                          id="dropdown-basic">
                                             {this.props.t('ABOUT_US')}
                                         </Dropdown.Toggle>
-                                        <Link to="/contact-us" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                        <Link to="/contact-us" style={{fontWeight: 'bolder', margin: 0, paddingTop: '0.8em '}}>
                                         <button variant="success" style={{
                                             background: 'transparent',
                                             fontWeight:'lighter',
                                             fontSize:'0.8em',
-                                            marginLeft:'1.2em',
                                             textDecoration:'none',
                                             display:'inline-block',
                                             color: '#4a4a4a',
                                             border: 'none'
-                                        }} id="dropdown-basic">
+                                        }} >
                                             {this.props.t('CONTACT_US')}
                                         </button>
                                         </Link>
