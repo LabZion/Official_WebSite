@@ -60,13 +60,8 @@ const blogs = {
                 '此外顺便多提一下，上述使用Inline Hook技术的拦截方式跟CPU架构是强相关的，如果想实现ARM32或x86架构的函数拦截，则需要分别单独实现。\n' +
                 ' \n' +
                 '\n'
-        }, {
-            img: 'http://inews.gtimg.com/newsapp_bt/0/10303276488/1000/0',
-            title: '怎样攻破Thoughtworks官网',
-            author: '武云封·ThoughtWorks菜鸟咨询师',
-            description: 'Thoughtworks的菜鸟工程师武云封教你破解Thoughtworks官网，只要998，童叟无欺，货真价实!!!',
-            content: '想攻破？几个菜啊，喝成这样'
         },
+
     ]
 };
 
