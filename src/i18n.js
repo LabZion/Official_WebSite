@@ -119,6 +119,7 @@ const resources = {
             "PATH": "发展历程",
             "INVESTOR": "投资者关系",
             "GENERAL":"概况",
+            "HOME":"首页",
         }
     }
 };

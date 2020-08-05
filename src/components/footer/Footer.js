@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {BrowserRouter as Router, Link} from "react-router-dom";
 import Logo from "../../static/images/logo_large.png"
+import {withTranslation} from 'react-i18next';
 import {Button, Form, Image} from "react-bootstrap";
 
 function Footer() {
@@ -16,19 +17,14 @@ function Footer() {
                         <Col md={2}/>
                         <Col md={8}>
                             <Row>
-                                <Col md={2}>
-                                    <Row className={"footerTitle"}>Info</Row>
-                                    <Row><span className="footerText">Terms</span></Row>
-                                    <Row><span className="footerText"><Link to="/privacy">Privacy</Link></span></Row>
-                                    <Row><span className="footerText">Contract</span></Row>
-                                </Col>
+
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>SiteMap</Row>
                                     <Row><span className="footerText"><Link to="/home">Home</Link></span></Row>
                                     <Row><span className="footerText"><Link to="/open-source">Resourses</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/event">Insights</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/event">Events</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/blogs">Blogs</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/company">Company</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/contact-us">Cotact Us</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/team/member">Team</Link></span></Row>
                                 </Col>
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>Community</Row>
@@ -42,49 +38,14 @@ function Footer() {
                                     <Row><a href={"https://insights.thoughtworks.cn/"}><span className="footerText">ThoughtWorks洞见</span></a></Row>
                                     <Row><a href={"https://www.thoughtworks.com/cn/radar"}><span className="footerText">ThoughtWorks技术雷达</span></a></Row>
                                 </Col>
-                                <Col md={4}>
-                                    <Row className={"footerTitle"}>Get the Security newsletter</Row>
-                                    <Row>
-                                        <Col md={8} style={{padding: 0, margin: 0}}>
-                                            <Form.Control type="email"
-                                                          style={{width: '100%', margin: 0, border: "solid 3px rgb(223,102,159)", borderRadius: 0}}
-                                                          placeholder="Enter email"/>
-                                        </Col>
-                                        <Col md={4} style={{padding: 0, margin: 0}}>
-                                            <Button variant="primary"
-                                                    style={{
-                                                        width: '100%',
-                                                        margin: 0,
-                                                        border: "solid 1px rgb(223,102,159)",
-                                                        borderRadius: 0,
-                                                        background: 'rgb(223,102,159)'
-                                                    }}
-                                                    type="submit">
-                                                Subscribe
-                                            </Button>
-                                        </Col>
-                                        <Form.Group controlId="formBasicCheckbox">
-                                            <Form.Check type="checkbox"
-                                                        style={{color: '#999', textAlign: 'left', marginTop: '0.2em'}}
-                                                        label="Yes, I would like to be contacted by The Security Team and ThoughtWorks for newsletters, promotions and events per the terms of ThoughtWorks’s Privacy Policy"/>
-                                        </Form.Group>
-                                    </Row>
-                                </Col>
-                            </Row>
-
-                            <Row style={{marginTop: '1em', padding: 0}}>
-                                <Col md={8}>
-                                    <Row><Image style={{height: '4em', marginLeft: 0}} src={Logo}/></Row>
-                                    <Row style={{color: '#999'}}>© 2020 ThoughtWorks, Inc. or its affiliates. Terms of Use • Privacy • Trademark
-                                        Guidelines</Row>
-                                </Col>
-                                <Col md={4} style={{padding: 0, margin: 0, textAlign: 'right'}}>
+                                <Col md={6} style={{padding: 0, margin: 0, textAlign: 'right'}}>
                                     <Col style={{width: '40px', display: "inline-block", padding: 0, marginRight: '1em'}}>
                                         <svg id="youtube-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+
                                             <circle className="cls-1" cx="20" cy="20" r="20"/>
                                             <path className="cls-2"
                                                   d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"/>
-                                        </svg>
+                                            </svg>
                                     </Col>
                                     <Col style={{width: '40px', display: "inline-block", padding: 0, marginRight: '1em'}}>
                                         <svg id="github-icon" viewBox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg">
@@ -102,6 +63,14 @@ function Footer() {
                                         </svg>
                                     </Col>
                                 </Col>
+                            </Row>
+                            <Row style={{marginTop: '1em', padding: 0}}>
+                                <Col md={12}>
+                                    <Row style={{display:'inline-block',float:'left'}}><Image style={{height: '4em', marginLeft: 0}} src={Logo}/> </Row>
+                                    <Row style={{color: '#999',display:'inline-block',float:'right',paddingTop:'1.5em'}}><a style={{color: '#999'}} href={'/privacy'}>Privacy
+                                        Guidelines </a>&nbsp;|   © 2020 ThoughtWorks, Inc. or its affiliates. </Row>
+                                </Col>
+
                             </Row>
                         </Col>
                     </Row>
