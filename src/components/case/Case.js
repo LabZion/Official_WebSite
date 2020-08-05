@@ -30,6 +30,10 @@ class Case extends Component {
                                     <Image style={{width: "100%"}}
                                            src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png"}/>
                                 </Col>
+                                <Col md={4}>
+                                    <Image style={{width: "100%"}}
+                                           src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A11.png"}/>
+                                </Col>
                             </Row>
                         </Container>
                     </Col>
@@ -37,11 +41,12 @@ class Case extends Component {
 
                 <Row style={{background: "#fff",}}>
                     <Col md={2}></Col>
-                    <Col md={8}>
-                        <Container style={{textAlign: "left", paddingLeft: '3em', paddingBottom: '2em',}}>
-                            <Row >
+                    <Col md={8} style={{marginLeft:'1em'}}>
+                        <Container style={{textAlign: "left",  paddingBottom: '2em',}}>
+                            <Row>
                                 <Col md={4}>
                                     <div style={{
+                                        width: '100%',
                                         background: '#fff',
                                         boxShadow: '0 5px 56px 0 rgb(35 30 29 / 12%)',
                                         marginTop: '-4em',
@@ -90,9 +95,9 @@ class Case extends Component {
                                         }}><p>Learn more.</p></Link>
                                     </div>
                                 </Col>
-                                <Col md={4} style={{paddingLeft:'2em'}}>
+                                <Col md={4} >
                                     <div style={{
-
+                                        width: '100%',
                                         background: '#fff',
                                         boxShadow: '0 5px 56px 0 rgb(35 30 29 / 12%)',
                                         marginTop: '-4em',
@@ -130,6 +135,60 @@ class Case extends Component {
                                                         '>Thoughtworks安全BU开发的身份认证及权限管理平台，拥有安全性高、扩展能力良好的特点，针对企业内部拥有多个子系统，员工使用各个系统时需要使用不同的用户信息登录，企业期望实现单点登录，统一认证入口的需求，以及企业需要细粒度管控员工对资源和服务的访问权限的需求，但不局限于云平台和公司规模，帮助企业实现高效、统一管理身份信息和权限信息，助力企业提高生产效率，适合于政府、运营商、企业、金融、军队、医疗、教育、制造业等大型企事业单位。\n' +
                                                         ' \n' +
                                                         '\n'
+                                                },
+                                            }
+                                        }}><p>Learn more.</p></Link>
+                                    </div>
+                                </Col>
+                                <Col md={4} >
+                                    <div style={{
+                                        width: '100%',
+                                        background: '#fff',
+                                        boxShadow: '0 5px 56px 0 rgb(35 30 29 / 12%)',
+                                        marginTop: '-4em',
+                                        paddingLeft: '2em'
+                                    }}>
+                                        <h4 style={{paddingTop: "1em"}}><strong>通信行业巨头</strong></h4>
+                                        <p style={{paddingRight: '1.2em'}}>我们提供了智能信息资产管控软件，通过定制化开发，帮助企业实现系统级别的监控与审计。</p>
+                                        <br/>
+                                        <Link to={{
+                                            pathname: '/case-detail',
+                                            state: {
+                                                params: {
+                                                    customer: '某通信行业巨头',
+                                                    img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
+                                                    description: '我们的客户是全球领先的下一代电信网络解决方案供应商，我们提供了智能信息资产管控软件，通过定制化开发，帮助企业实现系统级别的监控与审计。',
+                                                    content: '## 某通信行业巨头信息资产安全审计案例\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '> \n' +
+                                                        '\n' +
+                                                        '### 客户简介\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '我们的客户是全球领先的下一代电信网络解决方案供应商，致力于向客户提供创新的满足其需求的产品、服务和解决方案，为客户创造长期的价值和潜在的增长。在全球建立了100多个分支机构，营销及服务网络遍及全球，能够为客户提供快速、优质的服务。目前，产品和解决方案已经应用于全球100多个国家，以及31个全球前50强的运营商，服务全球超过10亿用户。\n' +
+                                                        '\n' +
+                                                        '### 业务挑战\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '一方面，客户的旧版本软件只能监控和审计特定软件，无法达到系统级别的监控，且使用体验影响开发人员的工作效率。另一方面，企业对内部软件有严格的安全标准，不愿使用业界现有软件，希望通过自研的方式根据业务需求定制化开发。其次，客户需要的软件需要兼容多PC平台，包括Linux、Windows、macOS。\n' +
+                                                        '\n' +
+                                                        '### 解决方案\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        'ThoughtWorks安全团队自主研发了智能信息资产管控软件系统。在用户态，支持关键信息资产的访问策略及资源敏感度自定义，支持信息资产的安全行为审计，支持敏感资产的非预期访问拦截。在内核态，通过自主研发的驱动程序，基于inline hook审计文件访问操作，基于netfilter审计网络数据包，扩展了操作系统的安全能力。\n' +
+                                                        '\n' +
+                                                        '### ![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/shenjianli.png)\n' +
+                                                        '\n' +
+                                                        '### 客户价值\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        'Thoughtworks安全BU研发的智能信息资产管控软件改进了客户的旧版本软件只能监控和审计特定软件，无法达到系统级别的监控的问题。另一方面，通过定制化开发来满足业务需求，提供了兼容多PC平台的软件，完美地解决了客户的问题。'
                                                 },
                                             }
                                         }}><p>Learn more.</p></Link>

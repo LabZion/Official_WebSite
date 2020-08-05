@@ -83,7 +83,7 @@ const cases = {
             },
             {
                 customer: '某通信行业巨头',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A11.png',
                 description: '我们的客户是全球领先的下一代电信网络解决方案供应商，我们提供了智能信息资产管控软件，通过定制化开发，帮助企业实现系统级别的监控与审计。',
                 content:'## 某通信行业巨头信息资产安全审计案例\n' +
                     '\n' +
@@ -109,7 +109,7 @@ const cases = {
                     '\n' +
                     'ThoughtWorks安全团队自主研发了智能信息资产管控软件系统。在用户态，支持关键信息资产的访问策略及资源敏感度自定义，支持信息资产的安全行为审计，支持敏感资产的非预期访问拦截。在内核态，通过自主研发的驱动程序，基于inline hook审计文件访问操作，基于netfilter审计网络数据包，扩展了操作系统的安全能力。\n' +
                     '\n' +
-                    '### ![img](https://lh5.googleusercontent.com/F-aRuSe8-C9B6WCc4OCJ2-v8Pfc5zifKzSdSN5JO-jjz3-LLxbgs0IOS_HgQOYK4dqeDT3ysl2ihck3fN6HUqjGRiP90OhHR7xTIxyRCEP14GWv1PkR-TEzCwiJedpSzHinDZZ1wrQA)\n' +
+                    '### ![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/shenjianli.png)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
