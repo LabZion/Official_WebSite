@@ -183,7 +183,7 @@ const cases = {
                 customer: '国内某医药企业',
                 img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/medicine.png',
                 description: '我们的客户是一家集医药研究、生产、销售和诊疗服务、教育、网络为一体的大型民营高科技企业。我们为客户量身定制了基础设施安全治理方案，同时提供不定期的安全咨询和设备升级计划，为企业的信息安全保驾护航。',
-                content:'## 某国内药企基础设施安全治理案例\n' +
+                content:'## 国内某药企基础设施安全治理案例\n' +
                     '\n' +
                     '\n' +
                     '\n' +
@@ -207,7 +207,7 @@ const cases = {
                     '\n' +
                     '我们发现客户的每台服务器都有两根网线，一条接到内网交换机，一条接外网交换机。而且没有对数据做任何保护，服务器之间也没有做隔离，如果一台服务器被攻破，其它的也都会暴露。\n' +
                     '\n' +
-                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/311.png)\n' +
+                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/311.png#width-90)\n' +
                     '\n' +
                     '\n' +
                     '\n' +
@@ -219,7 +219,7 @@ const cases = {
                     '\n' +
                     '​        使用VPN防火墙替换原来的防火墙，保障运维安全。原始的window远程桌面存在很多安全漏洞，比如永恒之蓝。使用VPN的方式，用户不能直接访问服务器，需要通过VPN拨号才能访问。\n' +
                     '\n' +
-                    '!![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/312.png)\n' +
+                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/312.png#width-90)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
