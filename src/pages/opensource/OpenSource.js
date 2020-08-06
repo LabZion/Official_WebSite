@@ -18,15 +18,17 @@ const opensources = [
     {
         logo: KernelHookLogo,
         name: 'kernel-hook-framework',
-        desc: 'Usually we want to hack a kernel function,to insert customized code before or after a certain kernel function been called, orto totally replace a function with new one. How can we manage that? ',
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        desc:'通常我们想要破解一个内核函数，在调用某个内核函数之前或之后插入自定义代码，或者用新的函数完全替换一个函数。 看看我们是如何处理的。',
+        // desc: 'Usually we want to hack a kernel function,to insert customized code before or after a certain kernel function been called, orto totally replace a function with new one. How can we manage that? ',
+        github: 'https://github.com/LabZion/kernel-hook-framework',
+        youtube: '',
+        twitter: '',
     },
     {
         logo: SynestiaOS,
         name: 'SynestiaOS',
-        desc: 'An open source, standards-based software platform for iot devices, including smartwatch, TVs and automotive infotainment platforms.',
+        desc:'一个基于标准的、适用于物联网设备（包括智能手表，电视和汽车信息娱乐平台）的开源软件平台。',
+        // desc: 'An open source, standards-based software platform for iot devices, including smartwatch, TVs and automotive infotainment platforms.',
         github: 'https://github.com/SynestiaOS',
         youtube: '',
         twitter: '',
@@ -34,7 +36,8 @@ const opensources = [
     {
         logo: Du,
         name: 'Du.rs',
-        desc: 'A Turing-complete virtual machine written in rust',
+        desc:'一个用rust写的图灵完备的虚拟机。',
+        // desc: 'A Turing-complete virtual machine written in rust',
         github: 'https://github.com/LabZion/Du.rs',
         youtube: '',
         twitter: '',
@@ -42,7 +45,8 @@ const opensources = [
     {
         logo: JS,
         name: 'javascript-like-compiler',
-        desc: 'This is a javascript like compilers, but much simpler. Code samples can be found in each part\'s testcase .Each part can be both compiled to a runnable program, or a library linked by others.',
+        desc:'这是一个类似于编译器但更为简单的javascript。你可以在每个部分的测试用例中找到代码示例。每个部分都可以编译为可运行的程序，或者由其他程序链接的库。',
+        // desc: 'This is a javascript like compilers, but much simpler. Code samples can be found in each part\'s testcase .Each part can be both compiled to a runnable program, or a library linked by others.',
         github: 'https://github.com/LabZion/javascript-like-compiler',
         youtube: '',
         twitter: '',
@@ -50,7 +54,8 @@ const opensources = [
     {
         logo: TinyGL,
         name: 'TinyGL',
-        desc: 'A 3D soft raster renderer that does not rely on any third-party library, with a basic linear algebra library, model rendering, Phong\'s lighting, can be ported to most embedded systems.',
+        desc:'一个不依赖任何第三方库的，有一个基本的线性代数库，模型渲染，冯氏照明的3D软光栅渲染器，可以移植到大多数嵌入式系统中。',
+        // desc: 'A 3D soft raster renderer that does not rely on any third-party library, with a basic linear algebra library, model rendering, Phong\'s lighting, can be ported to most embedded systems.',
         github: 'https://github.com/LabZion/CenoGL',
         youtube: '',
         twitter: '',
@@ -58,7 +63,8 @@ const opensources = [
     {
         logo: NDFS,
         name: 'NDFS',
-        desc: 'Distributed File System',
+        desc:'分布式文件系统。',
+        // desc: 'Distributed File System',
         github: 'https://github.com/LabZion/NDFS',
         youtube: '',
         twitter: '',
@@ -71,17 +77,19 @@ class OpenSource extends Component {
             <Container style={{padding: 0}} className="OpenSource">
                 <BreadNav
                     bg={"url('https://dynamic.thoughtworks.com/landing_pages/hero_banner_image_desktop-e9e23004b65de8cd06ff36fab01a936c.jpeg')"}
-                    title={"OpenSource"}
-                    subtitle={"Our job is to foster a vibrant community where people have the freedom to make an extraordinary impact on the world through technology."}
+                    title={"开源"}
+                    subtitle={"我们的目标是建立一个充满活力的社区，使人们可以通过技术自由对世界产生非凡的影响。"}
+                    // subtitle={"Our job is to foster a vibrant community where people have the freedom to make an extraordinary impact on the world through technology."}
                 />
                 <Row style={{background: '#fff'}}>
                     <Col md={2}></Col>
                     <Col md={8}>
                         <Container style={{textAlign: "left", paddingTop: '2em', paddingBottom: '1em'}}>
-                            <h1>What we are building</h1>
-                            <p>Our technologists bring successful, field-tested techniques and ideas from around the globe to open source solutions.
-                                Here are some highlights of our work across many domains including machine learning, security and privacy, global
-                                health, continuous delivery, monitoring, testing, and software development tools.</p>
+                            <h1>我们在构建什么</h1>
+                            <p>我们的技术人员将来自全球的成功的、经过领域检验的技术和思想带入开源解决方案。 以下是我们在诸多领域的一些成果，包括机器学习、安全性和隐私、全球健康、持续交付、监视、测试和软件开发工具。</p>
+                            {/*<p>Our technologists bring successful, field-tested techniques and ideas from around the globe to open source solutions.*/}
+                            {/*    Here are some highlights of our work across many domains including machine learning, security and privacy, global*/}
+                            {/*    health, continuous delivery, monitoring, testing, and software development tools.</p>*/}
                         </Container>
                     </Col>
                 </Row>

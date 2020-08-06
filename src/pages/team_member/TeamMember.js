@@ -180,7 +180,9 @@ class TeamMember extends Component {
             <Container style={{padding: 0}} className="Home">
                 <BreadNav bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
                           title={"The Security Business Union"}
-                          subtitle={"Let's drive security into the fabric of your business together"}/>
+                          subtitle={"ThoughtWorks安全团队，全称为ThoughtWorks中国区安全事业部，是⼀个专注于提供全栈、全链路的安全服务的组织。我们通过咨询、交付等专业服务的⽅式，实现安全的可信与透明化。帮助企业建⽴可持续的安全能⼒。" +
+                          "与其他提供安全服务的组织不同，ThoughtWorks安全团队将重心放在安全专项解决方案之中，强调以客户为导向，根据具体需求、场景识别安全挑战，从不同威胁和风险的角度提供定制化的服务。业务覆盖数据安全，" +
+                          "系统安全和平台安全。在⽅案咨询和交付的过程中，安全团队依托ThoughtWorks在⼯程、设计和创新方⾯丰富的经验，在应对企业级安全问题时更加灵活和专业。实现定制化、私有化、专业化的智能安全纵深服务。"}/>
                 <Row>
                     <Col md={2}/>
                     <Col md={8}>
