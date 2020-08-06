@@ -32,7 +32,7 @@ class Case extends Component {
                                 </Col>
                                 <Col md={4}>
                                     <Image style={{width: "100%"}}
-                                           src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A11.png"}/>
+                                           src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/medicine.png"}/>
                                 </Col>
                             </Row>
                         </Container>
@@ -92,7 +92,7 @@ class Case extends Component {
                                                         'Thoughtworks安全BU对二进制自动化漏洞扫描以及加固的解决方案解决了传统的二进制漏洞检测难度大，检测周期长的问题。同时研发了一套漏洞自动化修复框架，在准确和快速的检测出二进制文件中漏洞的同时，还可以自动化的修复漏洞，为业界的智能设备产品公司在快速迭代的过程中保驾护航。'
                                                 },
                                             }
-                                        }}><p ><i><b>了解更多</b></i></p></Link><br/>
+                                        }}><p><i><b>了解更多</b></i></p></Link><br/>
                                     </div>
                                 </Col>
                                 <Col md={4}>
@@ -137,7 +137,7 @@ class Case extends Component {
                                                         '\n'
                                                 },
                                             }
-                                        }}><p ><i><b>了解更多</b></i></p></Link><br/>
+                                        }}><p><i><b>了解更多</b></i></p></Link><br/>
                                     </div>
                                 </Col>
                                 <Col md={4}>
@@ -148,17 +148,16 @@ class Case extends Component {
                                         marginTop: '-4em',
                                         paddingLeft: '2em'
                                     }}>
-                                        <h4 style={{paddingTop: "1em"}}><strong>通信行业巨头</strong></h4>
-                                        <p style={{paddingRight: '1.2em'}}>我们提供了智能信息资产管控软件，通过定制化开发，帮助企业实现系统级别的监控与审计。</p>
-                                        <br/>
+                                        <h4 style={{paddingTop: "1em"}}><strong>国内某医药企业</strong></h4>
+                                        <p style={{paddingRight: '1.2em'}}>我们为客户量身定制了基础设施安全治理方案，同时提供不定期的安全咨询和设备升级计划，为企业的信息安全保驾护航。</p>
                                         <Link to={{
                                             pathname: '/case-detail',
                                             state: {
                                                 params: {
-                                                    customer: '某通信行业巨头',
-                                                    img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
-                                                    description: '我们的客户是全球领先的下一代电信网络解决方案供应商，我们提供了智能信息资产管控软件，通过定制化开发，帮助企业实现系统级别的监控与审计。',
-                                                    content: '## 某通信行业巨头信息资产安全审计案例\n' +
+                                                    customer: '国内某医药企业',
+                                                    img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/medicine.png',
+                                                    description: '我们的客户是一家集医药研究、生产、销售和诊疗服务、教育、网络为一体的大型民营高科技企业。我们为客户量身定制了基础设施安全治理方案，同时提供不定期的安全咨询和设备升级计划，为企业的信息安全保驾护航。',
+                                                    content: '## 国内某药企基础设施安全治理案例\n' +
                                                         '\n' +
                                                         '\n' +
                                                         '\n' +
@@ -168,30 +167,42 @@ class Case extends Component {
                                                         '\n' +
                                                         '\n' +
                                                         '\n' +
-                                                        '我们的客户是全球领先的下一代电信网络解决方案供应商，致力于向客户提供创新的满足其需求的产品、服务和解决方案，为客户创造长期的价值和潜在的增长。在全球建立了100多个分支机构，营销及服务网络遍及全球，能够为客户提供快速、优质的服务。目前，产品和解决方案已经应用于全球100多个国家，以及31个全球前50强的运营商，服务全球超过10亿用户。\n' +
+                                                        '我们的客户是一家集医药研究、生产、销售和诊疗服务、教育、网络为一体的大型民营高科技企业。随着中国的强大和崛起，我们的客户将进一步深化全球布局，通过产品并购和企业并购，迈向千亿市值公司的序列。\n' +
                                                         '\n' +
                                                         '### 业务挑战\n' +
                                                         '\n' +
                                                         '\n' +
                                                         '\n' +
-                                                        '一方面，客户的旧版本软件只能监控和审计特定软件，无法达到系统级别的监控，且使用体验影响开发人员的工作效率。另一方面，企业对内部软件有严格的安全标准，不愿使用业界现有软件，希望通过自研的方式根据业务需求定制化开发。其次，客户需要的软件需要兼容多PC平台，包括Linux、Windows、macOS。\n' +
+                                                        '近年以来，客户企业的基础设施与业务支撑系统受到了大量的来自互联网端的威胁，造成了一定的经济损失，2019年9月，由于遭受到 Sin Eater 病毒的攻击，客户企业的基础设施与系统发生了中断，直接威胁到了企业的正常运营，造成了经济损失与财务损失。2019年9月下旬，ThoughtWorks安全BU在接受到企业的邀请后，在现场进行了一些调查，根据这些调查与现场访谈的结果，我们认识到需要对网络基础设施到应用层与数据层都安全需要进行一次完整的评估，并设计与实施相应安全加固方案。\n' +
                                                         '\n' +
                                                         '### 解决方案\n' +
                                                         '\n' +
                                                         '\n' +
                                                         '\n' +
-                                                        'ThoughtWorks安全团队自主研发了智能信息资产管控软件系统。在用户态，支持关键信息资产的访问策略及资源敏感度自定义，支持信息资产的安全行为审计，支持敏感资产的非预期访问拦截。在内核态，通过自主研发的驱动程序，基于inline hook审计文件访问操作，基于netfilter审计网络数据包，扩展了操作系统的安全能力。\n' +
+                                                        '我们发现客户的每台服务器都有两根网线，一条接到内网交换机，一条接外网交换机。而且没有对数据做任何保护，服务器之间也没有做隔离，如果一台服务器被攻破，其它的也都会暴露。\n' +
                                                         '\n' +
-                                                        '### ![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/shenjianli.png)\n' +
+                                                        '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/311.png#width-90)\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '\n' +
+                                                        '我们对客户从网络、服务器、办公PC、安全设备、IT管理以及服务器漏洞几个方面对客户的IT建设做了全面的安全评估，并提出对应的改造方案。主要改造了以下几点：\n' +
+                                                        '\n' +
+                                                        '​        使用了专门的存储服务器，定期对数据做备份，即便服务器的数据被加密，也能很快的恢复数据。\n' +
+                                                        '\n' +
+                                                        '​        在核心交换机上配置VLAN，对服务器进行隔离，一台服务器被入侵不会影响到其它服务器，减少损失。\n' +
+                                                        '\n' +
+                                                        '​        使用VPN防火墙替换原来的防火墙，保障运维安全。原始的window远程桌面存在很多安全漏洞，比如永恒之蓝。使用VPN的方式，用户不能直接访问服务器，需要通过VPN拨号才能访问。\n' +
+                                                        '\n' +
+                                                        '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/312.png#width-90)\n' +
                                                         '\n' +
                                                         '### 客户价值\n' +
                                                         '\n' +
                                                         '\n' +
                                                         '\n' +
-                                                        'Thoughtworks安全BU研发的智能信息资产管控软件改进了客户的旧版本软件只能监控和审计特定软件，无法达到系统级别的监控的问题。另一方面，通过定制化开发来满足业务需求，提供了兼容多PC平台的软件，完美地解决了客户的问题。'
+                                                        'Thoughtworks安全BU不仅为客户量身定制了基础设施安全治理方案，同时提供不定期的安全咨询和设备升级计划，为企业的信息安全保驾护航。'
                                                 },
                                             }
-                                        }}><p ><i><b>了解更多</b></i></p></Link><br/>
+                                        }}><p><i><b>了解更多</b></i></p></Link><br/>
                                     </div>
                                 </Col>
 
