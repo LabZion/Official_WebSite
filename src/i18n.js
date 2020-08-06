@@ -60,6 +60,7 @@ const resources = {
             "PATH": "Developing Path",
             "INVESTOR": "Investor Relations",
             "GENERAL":"General Introduction",
+            "MEDICINEINDUSTRY": "medicine industry",
         }
     },
     zh: {
@@ -78,6 +79,7 @@ const resources = {
             "CAR": "汽车",
             "CARINDUSTRY": "汽车企业",
             "FINANCIAL": "金融与保险",
+            "MEDICINEINDUSTRY": "医药企业",
             "CLOUD": "通信与云计算",
             "CLOUDINDUSTRY": "通信企业",
             "SALES": "零售与互联网",

@@ -40,6 +40,7 @@ class Menu extends Component {
                 items: [
                     {title: 'CARINDUSTRY', route: '/cases', state: {params: 'car'}},
                     {title: 'CLOUDINDUSTRY', route: '/cases', state: {params: 'cloud'}},
+                    {title: 'MEDICINEINDUSTRY', route: '/cases', state: {params: 'medicine'}},
                 ]
             },
 
