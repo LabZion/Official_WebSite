@@ -30,13 +30,13 @@ function Footer() {
 
                                 </Col>
                                 <Col md={2}>
-                                    <Row className={"footerTitle"}>Community</Row>
+                                    <Row className={"footerTitle"}>社区</Row>
                                     <Row><span className="footerText"><Link to="/event">活动</Link></span></Row>
                                     <Row><span className="footerText"><Link to="/blogs">博客</Link></span></Row>
                                     <Row><span className="footerText"><Link to="/event">洞见</Link></span></Row>
                                 </Col>
                                 <Col md={2}>
-                                    <Row className={"footerTitle"}>Links</Row>
+                                    <Row className={"footerTitle"}>友情链接</Row>
                                     <Row><a href={"https://www.thoughtworks.com/"}><span
                                         className="footerText">ThoughtWorks</span></a></Row>
                                     <Row><a href={"https://insights.thoughtworks.cn/"}><span
