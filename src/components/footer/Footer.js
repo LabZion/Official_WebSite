@@ -19,20 +19,21 @@ function Footer() {
                             <Row>
 
                                 <Col md={2}>
-                                    <Row className={"footerTitle"}>SiteMap</Row>
-                                    <Row><span className="footerText"><Link to="/home">Home</Link></span></Row>
+                                    <Row className={"footerTitle"}>导航</Row>
+                                    <Row><span className="footerText"><Link to="/home">主页</Link></span></Row>
                                     <Row><span className="footerText"><Link
-                                        to="/open-source">Resourses</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/company">Company</Link></span></Row>
+                                        to="/open-source">开源</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/company">公司</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/team/member">安全团队</Link></span></Row>
                                     <Row><span className="footerText"><Link
-                                        to="/contact-us">Cotact Us</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/team/member">Team</Link></span></Row>
+                                        to="/contact-us">联系我们</Link></span></Row>
+
                                 </Col>
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>Community</Row>
-                                    <Row><span className="footerText"><Link to="/event">Events</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/blogs">Blogs</Link></span></Row>
-                                    <Row><span className="footerText"><Link to="/event">Insights</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/event">活动</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/blogs">博客</Link></span></Row>
+                                    <Row><span className="footerText"><Link to="/event">洞见</Link></span></Row>
                                 </Col>
                                 <Col md={2}>
                                     <Row className={"footerTitle"}>Links</Row>
