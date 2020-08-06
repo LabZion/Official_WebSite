@@ -18,7 +18,7 @@ const cases = {
                 customer: '国内某汽车行业巨头',
                 img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
                 description: '我们的客户是中国四大汽车制造商之一，我们提供了二进制自动化漏洞扫描以及加固的解决方案,为业界的智能设备产品公司在快速迭代的过程中保驾护航。',
-                content:'## 某汽车行业巨头车机安全漏洞扫描及加固案例  \n' +
+                content:'## 国内某汽车行业巨头车机安全漏洞扫描及加固案例  \n' +
                     '>  \n' +
                     '###客户简介  \n' +
                     '\n' +
@@ -97,6 +97,44 @@ const cases = {
                     '\n' +
                     '\n' +
                     'Thoughtworks安全BU在对客户的数据进行迁移的过程中克服了Ldap与Dynamodb异构数据库的切换、Serverless下的mTLS实现、Serverless下的JMS异步消费、数据同步中的exactly once保证等问题，为不同地区与国家的数据合规、跨区域数据的透明迁移、AWS Global与CN的数据异地备份等问题积累了丰富的经验，在不影响客户现有业务的同时，在严格符合相关国家法律的基础上，完美实现了数据迁移的工作。'
+            },
+            {
+                customer: '国内某汽车行业巨头',
+                img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                description: '我们的客户是国内产业链最为完整的汽车集团之一，我们提供了一个从框架设计，到落地，到工具化的DevSecOps整体解决方案，将IT安全防护融入整个生命周期中，助力企业保证交付质量，提升开发速度。',
+                content:'\n' +
+                    '\n' +
+                    '## 国内某汽车行业巨头安全流水线升级案例\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    '> \n' +
+                    '\n' +
+                    '### 客户简介\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    '我们的客户是国内排名前列的大型汽车制造商，主要经营汽车整车及零部件设计与制造，汽车销售与物流，汽车金融、保险及相关服务。是国内产业链最为完整的汽车集团之一，也是国内汽车行业首家拥有保险、保险经纪、汽车金融、融资租赁、财务等多块金融行业牌照的企业集团。\n' +
+                    '\n' +
+                    '### 业务挑战\n' +
+                    '\n' +
+                    '一套完整的DevOps流水线可以保证交付质量，提升开发速度，同时也成为跨部门合作的桥梁。不过，如果想充分发挥DevOps的敏捷性和响应力，就必须将IT安全防护融入整个生命周期中。而客户的安全流水线存在以下问题:流水线运行环境方面，Jenkins/SonarQube/Nexus运行在Docker环境，稳定性以及维护性偏弱；静态代码和依赖包的安全管控方面，缺乏代码安全静态分析，缺乏动态安全检查，代码扫描多样性不够；DevOps流水线的监控方面，对流水线构建的异常行为未能及时警告，欠缺更多异常定位信息。\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    '### 解决方案\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    '结合Thoughtworks安全BU在DevOps的经验和安全实践，安全团队致力于打造一个从框架设计，到落地，到工具化的DevSecOps整体解决方案。方案分为四个阶段：第一阶段完成了流水线的迁移，第二阶段实现了DevOps的升级，第三阶段设计了安全需求识别平台的用户交互平台，第四阶段梳理了业务场景与安全需求。\n' +
+                    '\n' +
+                    '![13](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/cases/13.png)\n' +
+                    '\n' +
+                    '### 客户价值\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    'Thoughtworks安全BU为客户打造一个从框架设计，到落地，到工具化的DevSecOps整体解决方案，将IT安全防护融入整个生命周期中，助力企业保证交付质量，提升开发速度。'
             },
         ]
     },
