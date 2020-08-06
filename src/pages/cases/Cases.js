@@ -100,7 +100,7 @@ const cases = {
             },
             {
                 customer: '国内某汽车行业巨头',
-                img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/liushuixian.png',
                 description: '我们的客户是国内产业链最为完整的汽车集团之一，我们提供了一个从框架设计，到落地，到工具化的DevSecOps整体解决方案，将IT安全防护融入整个生命周期中，助力企业保证交付质量，提升开发速度。',
                 content:'\n' +
                     '\n' +
@@ -309,7 +309,7 @@ class Cases extends Component {
                     pathname: '/case-detail',
                     state: {params: item}
                 }}>
-                    <Image src={item.img} style={{width: '100%'}}/></Link>
+                    <Image src={item.img} style={{width: '100%',height:'60%'}}/></Link>
                 <Container style={{paddingTop: '1em', paddingBottom: '0.1em', background: '#fff', marginBottom: '2em'}}>
                     <h5>{item.customer}</h5>
                     <p>{item.description}</p>
