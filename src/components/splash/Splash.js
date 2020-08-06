@@ -22,15 +22,17 @@ class Splash extends Component {
                                         <Col md={2}></Col>
                                         <Col md={8}>
                                             <h1 className={"banner-title"}>ThoughtWorks Security</h1>
-                                            <h3>Let's drive security into the fabric of your business together</h3>
+                                            <br/>
+                                            <h3>让我们将安全品质注入您的商业世界，让您的资产固若金汤。</h3>
+                                            {/*<h3>Let's drive security into the fabric of your business together</h3>*/}
                                         </Col>
                                     </Row>
                                 </Container>
 
-                                <Carousel.Caption>
-                                    <h3>ThoughtWorks Security</h3>
-                                    <p>Let's drive security into the fabric of your business together</p>
-                                </Carousel.Caption>
+                                {/*<Carousel.Caption>*/}
+                                {/*    <h3>ThoughtWorks Security</h3>*/}
+                                {/*    <p>Let's drive security into the fabric of your business together</p>*/}
+                                {/*</Carousel.Caption>*/}
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Container className={"bannerContainer2"}>
@@ -38,15 +40,17 @@ class Splash extends Component {
                                         <Col md={2}></Col>
                                         <Col md={8}>
                                             <h1 className={"banner-title"}>ThoughtWorks Security</h1>
-                                            <h3>Let's drive security into the fabric of your business together</h3>
+                                            <br/>
+                                            <h3>让我们将安全品质注入您的商业世界，让您的资产固若金汤。</h3>
+                                            {/*<h3>Let's drive security into the fabric of your business together</h3>*/}
                                         </Col>
                                     </Row>
                                 </Container>
 
-                                <Carousel.Caption>
-                                    <h3>ThoughtWorks Security</h3>
-                                    <p>Let's drive security into the fabric of your business together</p>
-                                </Carousel.Caption>
+                                {/*<Carousel.Caption>*/}
+                                {/*    <h3>ThoughtWorks Security</h3>*/}
+                                {/*    <p>Let's drive security into the fabric of your business together</p>*/}
+                                {/*</Carousel.Caption>*/}
                             </Carousel.Item>
                             <Carousel.Item>
                                 <Container className={"bannerContainer3"}>
@@ -54,15 +58,17 @@ class Splash extends Component {
                                         <Col md={2}></Col>
                                         <Col md={8}>
                                             <h1 className={"banner-title"}>ThoughtWorks Security</h1>
-                                            <h3>Let's drive security into the fabric of your business together</h3>
+                                            <br/>
+                                            <h3>让我们将安全品质注入您的商业世界，让您的资产固若金汤。</h3>
+                                            {/*<h3>Let's drive security into the fabric of your business together</h3>*/}
                                         </Col>
                                     </Row>
                                 </Container>
 
-                                <Carousel.Caption>
-                                    <h3>ThoughtWorks Security</h3>
-                                    <p>Let's drive security into the fabric of your business together</p>
-                                </Carousel.Caption>
+                                {/*<Carousel.Caption>*/}
+                                {/*    <h3>ThoughtWorks Security</h3>*/}
+                                {/*    <p>Let's drive security into the fabric of your business together</p>*/}
+                                {/*</Carousel.Caption>*/}
                             </Carousel.Item>
                         </Carousel>
                     </Container>

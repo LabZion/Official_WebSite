@@ -92,7 +92,7 @@ class Case extends Component {
                                                         'Thoughtworks安全BU对二进制自动化漏洞扫描以及加固的解决方案解决了传统的二进制漏洞检测难度大，检测周期长的问题。同时研发了一套漏洞自动化修复框架，在准确和快速的检测出二进制文件中漏洞的同时，还可以自动化的修复漏洞，为业界的智能设备产品公司在快速迭代的过程中保驾护航。'
                                                 },
                                             }
-                                        }}><p>Learn more.</p></Link>
+                                        }}><p ><i><b>了解更多</b></i></p></Link><br/>
                                     </div>
                                 </Col>
                                 <Col md={4}>
@@ -137,7 +137,7 @@ class Case extends Component {
                                                         '\n'
                                                 },
                                             }
-                                        }}><p>Learn more.</p></Link>
+                                        }}><p ><i><b>了解更多</b></i></p></Link><br/>
                                     </div>
                                 </Col>
                                 <Col md={4}>
@@ -191,7 +191,7 @@ class Case extends Component {
                                                         'Thoughtworks安全BU研发的智能信息资产管控软件改进了客户的旧版本软件只能监控和审计特定软件，无法达到系统级别的监控的问题。另一方面，通过定制化开发来满足业务需求，提供了兼容多PC平台的软件，完美地解决了客户的问题。'
                                                 },
                                             }
-                                        }}><p>Learn more.</p></Link>
+                                        }}><p ><i><b>了解更多</b></i></p></Link><br/>
                                     </div>
                                 </Col>
 

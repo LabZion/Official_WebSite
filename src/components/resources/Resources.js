@@ -107,7 +107,7 @@ class Resources extends Component {
                                                             ' \n' +
                                                             '\n'
                                                     },}
-                                            }}><p>Learn more.</p></Link>
+                                            }}><p ><i><b>了解更多</b></i></p></Link><br/>
                                         </Container>
                                     </Col>
                                     <Col md={4} style={{paddingLeft:'2em'}}>
@@ -121,7 +121,6 @@ class Resources extends Component {
                                         }}>
                                             <h4 style={{paddingTop:'2em',paddingBottom:'1em'}}><strong>聊聊SSL/TLS和CA那些事？</strong></h4>
                                             {/*<p>想要了解对称与非对称加密的区别吗？还有SSL以及证书的作用吗？想知道如何自己给自己签发一个HTTPS证书吗？那就快点进来吧！     </p><br/><br/><br/>*/}
-                                            <br/>
                                             <Link to={{
                                                 pathname: '/event-detail',
                                                 state: {params: {
@@ -149,7 +148,7 @@ class Resources extends Component {
                                                             },
                                                         ]
                                                     },}
-                                            }}><p>Learn more.</p></Link>
+                                            }}><p ><i><b>了解更多</b></i></p></Link><br/>
                                         </Container>
                                     </Col>
                                     <Col md={4} style={{paddingLeft:'3em'}}>
@@ -186,7 +185,7 @@ class Resources extends Component {
                                                             },
                                                         ]
                                                     }}
-                                            }}><p>Learn more.</p></Link>
+                                            }}><p ><i><b>了解更多</b></i></p></Link><br/>
                                         </div>
                                     </Col>
                                 </Row>
