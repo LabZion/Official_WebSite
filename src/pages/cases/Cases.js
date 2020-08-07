@@ -152,7 +152,7 @@ const cases = {
     },
     cloud: {
         title: '通信企业',
-        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin2.jpg')",
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin4.jpeg')",
         description: '随着信息通信技术与社会各行业的深度融合，能源、交通、水利、金融、公共服务、政务等各行业、各领域的信息化程度不断提高，对关键信息基础设施的依赖也日益加深。一旦关键信息基础设施遭到破坏，无疑会对社会运行产生巨大影响。另一方面，随着我国云计算应用的日益普及，用户不再仅仅考虑“如何上云”，而更关注“如何安全上云”，受近些年来云安全时间频发的影响，用户对云上的安全需求越发迫切。',
         data: [
             {
