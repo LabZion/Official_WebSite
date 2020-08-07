@@ -53,7 +53,7 @@ const industry = {
     },
     cloud: {
         title: '通信与云计算',
-        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin.jpeg')",
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin4.jpeg')",
         description: '随着信息通信技术与社会各行业的深度融合，能源、交通、水利、金融、公共服务、政务等各行业、各领域的信息化程度不断提高，对关键信息基础设施的依赖也日益加深。一旦关键信息基础设施遭到破坏，无疑会对社会运行产生巨大影响。另一方面，随着我国云计算应用的日益普及，用户不再仅仅考虑“如何上云”，而更关注“如何安全上云”，受近些年来云安全时间频发的影响，用户对云上的安全需求越发迫切。',
         data: [
             {
@@ -96,7 +96,7 @@ const industry = {
     },
     data: {
         title: '数据安全',
-        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin.jpeg')",
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/bsi6.png')",
         description: '伴随欧盟的通用数据保护条例和新的网络安全法的颁布，数据安全已经成为每个企业和IT从业者都必须要关注的一个话题。依赖于传统控制论基础上的主动防御和合规理论正在逐渐丧失其领导地位，要解决数据安全的问题，需要有一个场景化的方式，体系化的方案。数据安全对于组织和个人来说都有价值且是必须的事情。Build Security In Our DNA, 企业需要不断增强自身在安全上的意识和理解。',
         data: [
             {
