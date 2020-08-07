@@ -11,7 +11,7 @@ import {Link} from "react-router-dom";
 const cases = {
     car: {
         title: '汽车企业',
-        img:'https://dynamic.thoughtworks.com/landing_pages/hero_banner_image_desktop-3f455d6dfe5e7180777c2f2fd751dfd5.jpeg',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/car.jpeg')",
         description: '智能网联汽车是未来创新热点和产业发展制高点，但是智能化、网联化程度的加深带来的是汽车日益凸显的信息安全问题，我国自2015年开始，也已经在智能网联汽车相关行业内积极推进信息安全研究工作，从标准、法规、行业报告到咨询、测试、认证、产品，逐步形成由政府及行业组织主导、汽车和信息安全企业积极推动的产业链发展态势。如何保障汽车驾驶安全，解决便捷性与安全性之间的矛盾成为智能网联汽车发展的重要环节。',
         data: [
             {
@@ -152,6 +152,7 @@ const cases = {
     },
     cloud: {
         title: '通信企业',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/bsi8.jpg')",
         description: '随着信息通信技术与社会各行业的深度融合，能源、交通、水利、金融、公共服务、政务等各行业、各领域的信息化程度不断提高，对关键信息基础设施的依赖也日益加深。一旦关键信息基础设施遭到破坏，无疑会对社会运行产生巨大影响。另一方面，随着我国云计算应用的日益普及，用户不再仅仅考虑“如何上云”，而更关注“如何安全上云”，受近些年来云安全时间频发的影响，用户对云上的安全需求越发迫切。',
         data: [
             {
@@ -324,6 +325,7 @@ const cases = {
     },
     medicine: {
         title: '医药企业',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/medicine.jpeg')",
         description: '在“互联网+”浪潮的席卷下，医药行业的信息化建设也开始驶入快车道。技术的进步，带来了效率的提升，却也埋下了数据安全的隐患。尤其是其他行业不时爆出的信息泄露事件，向医药行业敲响了信息安全的警钟。医药作为关乎民生与健康的重要行业，在巨大商业利益的驱使下，医药企业的数据库面临来自内部威胁和外部威胁的双重包夹。一旦发生数据泄露，不仅影响医药企业的公众形象，给医药企业造成重大经济损失，甚至还会损害患者的个人利益。',
         data: [
             {
@@ -392,7 +394,7 @@ class Cases extends Component {
         return (
             <Container style={{padding: 0}} className="Cases">
                 <BreadNav
-                    bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
+                    bg={cases[industry].img}
                     title={cases[industry].title}
                     subtitle={cases[industry].description}
                 />
