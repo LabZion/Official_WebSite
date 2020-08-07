@@ -96,7 +96,7 @@ const industry = {
     },
     data: {
         title: '数据安全',
-        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/bsi6.png')",
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin.jpeg')",
         description: '伴随欧盟的通用数据保护条例和新的网络安全法的颁布，数据安全已经成为每个企业和IT从业者都必须要关注的一个话题。依赖于传统控制论基础上的主动防御和合规理论正在逐渐丧失其领导地位，要解决数据安全的问题，需要有一个场景化的方式，体系化的方案。数据安全对于组织和个人来说都有价值且是必须的事情。Build Security In Our DNA, 企业需要不断增强自身在安全上的意识和理解。',
         data: [
             {
