@@ -82,11 +82,11 @@ const events = {
     ],
     uncome: [
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/Linux%E8%B0%83%E5%BA%A6%E5%99%A8%E6%9E%B6%E6%9E%84.png',
-            title: 'Linux调度器框架',
-            address: 'zoom: 783 022 4091',
-            author: '赵晨雨',
-            time: '2020-8-6 19:00',
+            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/session.png',
+            title: 'Welink认证项目分享',
+            address: 'zoom: 973 4849 5264 ',
+            author: '王力',
+            time: '2020-8-13 20:00',
         },
         {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85.png',
@@ -167,7 +167,7 @@ class Events extends Component {
                     pathname: '/event-detail',
                     state: {params: item}
                 }}>
-                    <Image src={item.img} style={{width: '100%'}}/></Link>
+                    <Image src={item.img} style={{width: '100%',height:'40%'}}/></Link>
                 <Container style={{paddingTop: '1em', paddingBottom: '0.1em', background: '#fff', marginBottom: '2em'}}>
                     <h5>{item.title}</h5>
                     <p>{item.author}</p>
