@@ -311,7 +311,7 @@ const cases = {
                     '\n' +
                     '### \n' +
                     '\n' +
-                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/24.png)\n' +
+                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/24.png#width-80)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
