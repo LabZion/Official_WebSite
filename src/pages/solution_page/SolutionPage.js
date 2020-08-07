@@ -113,7 +113,27 @@ const industry = {
     buildin: {
         title: '内建安全',
         description: 'BSI(Build Security In)是在整个软件开发生命周期中的每一个阶段引入安全的思考和实践，遵循安全左移、职责共享的思想，帮助团队构建高度安全的软件，满足不同方面的安全需求，并降低开发成本。BSI中的指导、最佳实践、工具和流程是我们结合敏捷软件交付，在内部用于构建更安全的产品和服务的实践。随着我们对云、物联网和人工智能等新业务技术的增长，我们也在不断更新BSI实践。',
-        data: []
+        data: [
+            {
+                title: '静态应用安全测试',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/SAST.png',
+                description: '源码安全扫描经过多年的发展，已经变得相当成熟，是广为人知的一个安全实践。\n' +
+                    '源码安全扫描，也叫做静态应用安全测试，英文Static Application Security Test，简称SAST，指通过工具对源代码进行安全检查，发现源代码里面的安全问题。\n' +
+                    'Thoughtwork安全团队遵循最佳实践的原则，一直在更新这个实践。一方面，得益于自动化，它可以让开发团队以更少的工作量付出，更快速地获取到关于源码安全质量的反馈，同时还降低了开发团队对于安全专业技能的要求。\n' +
+                    '另一方面，由于源码安全扫描最早可以在开发人员编写代码的时候就进行，因此安全问题能够相对更早的暴露出来，从而降低问题修复成本。\n'
+            },{
+                title: '依赖安全检查',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/yilaijiancha.png',
+                description: '现如今的应用程序里，有80%左右的源代码并不是开发团队自己写出来的，而是来自于应用程序所使用的第三方组件或者库。尽管我们可以采取很多措施，比如通过威胁建模、源码安全扫描等方法来确保团队自己开发的20%的源码的安全质量，但是对于剩下的这些不是由开发团队开发出来的、占比达到80%的依赖，它们如果存在安全漏洞，则同样可能导致整个应用程序受到影响。\n' +
+                    'Thoughtwork安全团队在依赖安全检查方面进行了深入的探索，除了确保自己写出来的代码的安全质量，同时关注依赖的安全性，可以主动排查它们是否有安全漏洞，并及时进行处理。\n\n'
+            },{
+                title: '动态应用安全测试\n',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/DAST.png',
+                description: '动态应用安全测试，英文全称叫做Dynamic Application Security Testing，简称DAST。它主要是用安全扫描工具来扮演黑客的角色，向目标应用程序发起各种各样的请求并观察应用程序返回的响应，并以此来判断应用程序是否存在安全漏洞。本质而言，这是一种黑盒测试方法。\n' +
+                    '动态应用安全测试中的“动态”两个字，是指这个测试在执行过程中，目标应用程序是处于运行状态的。随着测试输入的变化，应用程序的输出也在动态的变化，所以就被叫做了动态应用安全测试\n' +
+                    'Thoughtwork安全团队会在CI/CD 部署之后，随着持续部署的节奏，输出持续动态检查，确保每一次部署都通过主要的安全动态检查，实现安全左移。'
+            }
+        ]
     },
 };
 

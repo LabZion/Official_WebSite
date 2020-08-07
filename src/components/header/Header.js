@@ -22,38 +22,38 @@ class Header extends Component {
         return (
             <Fragment>
                 <Container className="Header">
-                    <Row>
+                    <Row style={{display:'absolute'}}>
                         <Col md={2}> </Col>
                         <Col md={8}>
                             <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
-                                <Link to="/home" style={{fontWeight: 'bolder', margin: 0, padding: 0,marginRight:'2em'}}>
+                                <Link to="/home" style={{fontWeight: 'bolder', margin: 0, padding: 0,}}>
                                     <Image src={Logo} className="logo-img" rounded/>
                                 </Link>
 
-                                <Link to="/event" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                <Link to="/event" style={{fontWeight: 'bolder', margin:0, padding: 0,marginLeft:'60%'}}>
                                     <Navbar.Brand className="icon-header">
                                         <strong className={"headerTitleSpan"}>{this.props.t('EVENTS')} & {this.props.t('INSIGHT')}</strong>
                                     </Navbar.Brand>
                                 </Link>
 
-                                <Link to="/blogs" style={{fontWeight: 'bolder', margin: 0, padding: 0}}>
+                                <Link to="/blogs" style={{fontWeight: 'bolder', float:'right',marginRight: '3em',paddingRight: 0}}>
                                     <Navbar.Brand className="icon-header">
-                                        <strong className={"headerTitleSpan"}>{this.props.t('BLOGS')}</strong>
+                                        <strong  className={"headerTitleSpan"}>{this.props.t('BLOGS')}</strong>
                                     </Navbar.Brand>
                                 </Link>
 
-                                <Navbar.Collapse className="justify-content-end">
-                                    <Dropdown>
-                                        <Dropdown.Toggle variant="trans" id="dropdown-basic">
-                                            {this.props.t('Language')}
-                                        </Dropdown.Toggle>
+                                {/*<Navbar.Collapse className="justify-content-end">*/}
+                                {/*    <Dropdown>*/}
+                                {/*        <Dropdown.Toggle variant="trans" id="dropdown-basic">*/}
+                                {/*            {this.props.t('Language')}*/}
+                                {/*        </Dropdown.Toggle>*/}
 
-                                        <Dropdown.Menu>
-                                            <Dropdown.Item onClick={() => this.changeLanguage('zh')}>简体中文</Dropdown.Item>
-                                            <Dropdown.Item onClick={() => this.changeLanguage('en')}>English</Dropdown.Item>
-                                        </Dropdown.Menu>
-                                    </Dropdown>
-                                </Navbar.Collapse>
+                                {/*        <Dropdown.Menu>*/}
+                                {/*            <Dropdown.Item onClick={() => this.changeLanguage('zh')}>简体中文</Dropdown.Item>*/}
+                                {/*            <Dropdown.Item onClick={() => this.changeLanguage('en')}>English</Dropdown.Item>*/}
+                                {/*        </Dropdown.Menu>*/}
+                                {/*    </Dropdown>*/}
+                                {/*</Navbar.Collapse>*/}
                             </Navbar>
                         </Col>
                     </Row>

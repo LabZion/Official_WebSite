@@ -82,7 +82,7 @@ const events = {
     ],
     uncome: [
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/session.png',
+            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/session.jpg',
             title: 'Welink认证项目分享',
             address: 'zoom: 973 4849 5264 ',
             author: '王力',

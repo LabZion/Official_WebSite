@@ -25,16 +25,16 @@ class Menu extends Component {
                         //{title: 'LOGISTICS', route: '/solution', state: {params: 'logistics'}}
                     ]
                 },
-                // {
-                //     title: 'SCOPE',
-                //     items: [
-                //         {title: 'DATA', route: '/solution', state: {params: 'data'}},
-                //         {title: 'IDENTIFY', route: '/solution', state: {params: 'identify'}},
-                //         {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
-                //         {title: 'TRUST', route: '/solution', state: {params: 'trust'}},
-                //         {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
-                //     ]
-                // }
+                {
+                    title: 'SCOPE',
+                    items: [
+                        // {title: 'DATA', route: '/solution', state: {params: 'data'}},
+                        // {title: 'IDENTIFY', route: '/solution', state: {params: 'identify'}},
+                        // {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
+                        // {title: 'TRUST', route: '/solution', state: {params: 'trust'}},
+                        {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
+                    ]
+                }
             ], customer: [{
                 title: 'INDUSTRY',
                 items: [
