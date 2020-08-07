@@ -11,7 +11,7 @@ import {Image, Row} from "react-bootstrap";
 const industry = {
     car: {
         title: '汽车',
-        img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/car.jpeg',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/car.jpeg')",
         description: '智能网联汽车是未来创新热点和产业发展制高点，但是智能化、网联化程度的加深带来的是汽车日益凸显的信息安全问题，我国自2015年开始，也已经在智能网联汽车相关行业内积极推进信息安全研究工作，从标准、法规、行业报告到咨询、测试、认证、产品，逐步形成由政府及行业组织主导、汽车和信息安全企业积极推动的产业链发展态势。如何保障汽车驾驶安全，解决便捷性与安全性之间的矛盾成为智能网联汽车发展的重要环节。',
         data: [
             {
@@ -31,7 +31,7 @@ const industry = {
     financial: {
 
         title: '金融',
-        img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/finance.jpeg',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/finance.jpeg')",
         description: '随着移动互联网、云计算等技术的发展，金融机构的业务环境愈加复杂，内部系统与外部空间的边界也愈加模糊。与此同时，网络攻击者的攻击手段却越来越丰富，攻击数量越来越多。面对0-Day、APT等新型攻击手段，传统安全以防御为核心的策略失效，金融机构的安全状况面临严峻挑战。',
         data: [
             {
@@ -53,7 +53,7 @@ const industry = {
     },
     cloud: {
         title: '通信与云计算',
-        img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin.jpeg',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin.jpeg')",
         description: '随着信息通信技术与社会各行业的深度融合，能源、交通、水利、金融、公共服务、政务等各行业、各领域的信息化程度不断提高，对关键信息基础设施的依赖也日益加深。一旦关键信息基础设施遭到破坏，无疑会对社会运行产生巨大影响。另一方面，随着我国云计算应用的日益普及，用户不再仅仅考虑“如何上云”，而更关注“如何安全上云”，受近些年来云安全时间频发的影响，用户对云上的安全需求越发迫切。',
         data: [
             {
@@ -79,7 +79,7 @@ const industry = {
     },
     sales: {
         title: '零售与互联网',
-        img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/sales.jpeg',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/sales.jpeg')",
         description: '随着电子商务的快速扩张，零售商成为网络攻击的首要目标。零售商专注于无障碍个性化购物体验，有时亦意味着网络安全可能被人乘虚而入，加上越来越多人使用云端系统及web应用程序，使其容易成为攻击目标。由于开发、测试和维护稳固的网络安全措施需要时间及人力，继而影响到盈亏，所以不少零售商均将网络安全视为一项额外成本，可是这种思维方式在日后可能会换来更大代价。当客户资讯或其他重要的公司资料遭盗窃或勒索，招致的后果不仅是经济损失，更甚者可能为品牌声誉带来灾难性影响。',
         data: [
             {
@@ -96,7 +96,7 @@ const industry = {
     },
     data: {
         title: '数据安全',
-        img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/datasecurity.jpeg',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/bsi2.jpg')",
         description: '伴随欧盟的通用数据保护条例和新的网络安全法的颁布，数据安全已经成为每个企业和IT从业者都必须要关注的一个话题。依赖于传统控制论基础上的主动防御和合规理论正在逐渐丧失其领导地位，要解决数据安全的问题，需要有一个场景化的方式，体系化的方案。数据安全对于组织和个人来说都有价值且是必须的事情。Build Security In Our DNA, 企业需要不断增强自身在安全上的意识和理解。',
         data: [
             {
@@ -131,7 +131,7 @@ const industry = {
     },
     buildin: {
         title: '内建安全',
-        img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/bsi.jpg',
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/bsi.jpg')",
         description: 'BSI(Build Security In)是在整个软件开发生命周期中的每一个阶段引入安全的思考和实践，遵循安全左移、职责共享的思想，帮助团队构建高度安全的软件，满足不同方面的安全需求，并降低开发成本。BSI中的指导、最佳实践、工具和流程是我们结合敏捷软件交付，在内部用于构建更安全的产品和服务的实践。随着我们对云、物联网和人工智能等新业务技术的增长，我们也在不断更新BSI实践。',
         data: [
             {
