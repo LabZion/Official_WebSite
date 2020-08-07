@@ -7,7 +7,6 @@
     /*-webkit-filter: grayscale(100%); !* Chrome, Safari, Opera *!*/
     /*filter: grayscale(100%);*/
 }
-
 .m-cls-1 {
     transition: fill .2s;
     fill: #999;

@@ -67,7 +67,7 @@ const cases = {
             {
                 customer: '国内某汽车行业巨头',
                 img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/liushuixian.png',
-                description: '我们的客户是国内产业链最为完整的汽车集团之一，我们提供了一个从框架设计，到落地，到工具化的DevSecOps整体解决方案，将IT安全防护融入整个生命周期中，助力企业保证交付质量，提升开发速度。',
+                description: '我们的客户是国内产业链最为完整的汽车集团之一，我们提供了一个从框架设计，到落地，到工具化的DevSecOps整体解决方案，将IT安全防护融入整个生命周期中。',
                 content:'\n' +
                     '\n' +
                     '## 国内某汽车行业巨头安全流水线升级案例\n' +
@@ -156,7 +156,7 @@ const cases = {
         data: [
             {
                 customer: '某通信行业巨头',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A14.png',
                 description: '我们的客户是全球领先的下一代电信网络解决方案供应商，我们提供了身份认证及权限管理方案，帮助企业实现高效、统一管理身份信息和权限信息，助力企业提高生产效率。',
                 content:'## 某通信行业巨头私有云平台身份认证与权限管理系统开发案例\n' +
                     '\n' +
@@ -280,6 +280,44 @@ const cases = {
                     '\n' +
                     '\n' +
                     'Thoughtworks安全BU安全团队经历5个月时间的努力，将客户企业内部的VPN连接从2个，扩展到同时支持40个，适用平台包括win7、win10，大大提升了员工的沟通效率和工作体验。'
+            },
+            {
+                customer: '某通信行业巨头',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
+                description: '我们的客户是全球领先的ICT（信息与通信）基础设施和智能终端提供商，我们提供了四步白盒验证方案帮助企业建立了统一的检验标准和流程，保证产品在CESG检查之前先在内部实现风险管控。',
+                content:'## 某通信行业巨头源码可信检验实施案例\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    '> \n' +
+                    '\n' +
+                    '### 客户简介\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    '我们的客户是全球领先的ICT（信息与通信）基础设施和智能终端提供商，拥有庞大的体量、数量众多的员工以及雄厚的研发实力，致力于向客户提供创新的满足其需求的产品、服务和解决方案，为客户创造长期的价值和潜在的增长。在170多个国家和地区部署了产品和服务，截至2011年，为50家最大的电信运营商中的45家提供服务，建设了1500多张网络，服务全世界三分之一的人口。\n' +
+                    '\n' +
+                    '### 业务挑战\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    '源码可信意思是指验证软件整个开发过程是否符合企业的内部规范，安全可信。验证过程包含编码规范、编译、构建、部署与发布。对于源码要进行代码规范验证，对于编辑构建要进行第三方依赖和一键部署验证，对于部署发布要进行一致性验证。华我们的客户出口欧洲的产品都要获得CSEC（英国通信电子安全小组）的证书，确保产品符合英国政府的安全标准。\n' +
+                    '\n' +
+                    '### 解决方案\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    'ThoughtWorks安全团队为了验证企业内部各产品是否满足可信要求，组织了白盒验证工作，从编码，构建，三方件，发布部署等四个方面对各产品进行了全方位、细粒度的验证。 对于编码阶段进行了代码静态检查和代码安全检查，对于三方件管理进行了编译脚本、安全编译选项以及二进制一致性的检查，对于构建步骤进行了优选三方件、生命周期管理、片段引用和升级管理的检查，对于发布部署阶段检查了是否通过制定平台发布以及软件包防篡改。\n' +
+                    '\n' +
+                    '### \n' +
+                    '\n' +
+                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/24.png)\n' +
+                    '\n' +
+                    '### 客户价值\n' +
+                    '\n' +
+                    '\n' +
+                    '\n' +
+                    'Thoughtworks安全BU提供的四步白盒验证方案帮助企业建立了统一的检验标准和流程，保证产品在CESG检查之前先在内部实现风险管控，在源头处对产品合规进行把控，减小企业风险与损失。'
             },
 
         ]

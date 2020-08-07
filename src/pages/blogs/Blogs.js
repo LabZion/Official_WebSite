@@ -72,7 +72,7 @@ class Blogs extends Component {
                 <BreadNav
                     bg={"url('https://dynamic.thoughtworks.com/landing_pages/hero_banner_image_desktop-e5bea60f1eaf14734c2dd2c07b404813.jpeg')"}
                     title={"博客"}
-                    subtitle={"知识不应该仅仅为少数人所拥有，而应该为所有人所拥有。我们将持续分享我们的所学，并定期主持和参加世界各地的思想交流活动。"}
+                    subtitle={"知识不应该仅仅为少数人所拥有，而应该为所有人所拥有。我们将持续分享我们的所思、所学，并定期组织和参加世界各地的思想交流活动。"}
                     // subtitle={"Knowledge should be for all, not just for the few. We believe in sharing what we learn, and regularly host and participate in thought-leadership events across the world."}
                 />
                 <Row style={{background: '#f4f4f4'}}>

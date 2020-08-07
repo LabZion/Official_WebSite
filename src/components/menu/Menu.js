@@ -178,9 +178,10 @@ class Menu extends Component {
     }
 
 
+
     renderMenuPanel() {
         return this.state.isPanelShow ? <Container className={"menuContainer"}
-                                                   onMouseLeave={this.onMenuLeaveHandler.bind(this, 'solution')}>
+                                                   onMouseLeave={this.onMenuLeaveHandler.bind(this, 'solution') }>
             <Row>
                 <Col md={2}> </Col>
                 <Col md={8}>
