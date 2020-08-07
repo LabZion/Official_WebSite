@@ -18,7 +18,7 @@ class CasePage extends Component {
         return (
             <Container style={{padding: 0}} className="CasePage">
                 <BreadNav
-                    bg={"url('https://static.thoughtworks.com/images/contact-us/contact-us-banner-1.jpg')"}
+                    bg={"url('https://dynamic.thoughtworks.com/landing_pages/hero_banner_image_desktop-e5bea60f1eaf14734c2dd2c07b404813.jpeg')"}
                     title={caseName.customer}
                     subtitle={caseName.description}
                 />
