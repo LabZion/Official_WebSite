@@ -179,7 +179,6 @@ const cases = {
                     '>![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/212.png#width-80)\n' +
                     '#####2、\tIAM系统\n' +
                     '  搭建IAM服务，精细管理研发人员在云平台上对各类资源和服务的访问权限，比如，规定某员工必须在指定IP下的特定时间段购买某种类型的虚拟机。\n' +
-                    '>![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/213.png#width-80)\n' +
                     '#####3、\t产品化\n' +
                     '在满足企业自身需求的基础上，将系统产品化，供更多的企业来使用身份认证和权限管理的服务。\n'+
                     '>![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/214.png#width-80)\n' +
