@@ -62,9 +62,9 @@ const blogs = {
                 '\n'
         },
         {
-            img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog1.png',
+            img: 'https://raw.githubusercontent.com/CenoOS/Ceno-RTOS/master/docs/assets/arch2.png',
             title: '怎样Hack Linux的内核符号？',
-            author: '杨兴峰·ThoughtWorks资深咨询师',
+            author: '杨兴峰·ThoughtWorks SynestiaOS开发',
             description: 'Inline Hook技术能够帮助我们完成函数的动态拦截和跳转，但要实现缺陷函数的自动化热修复则会面临更加复杂的挑战。本文从一个实际例子出发，阐述了在对二进制形式的Linux固件做自动化安全加固的时遇到的技术难题和解决办法。',
             content: ''
         },
