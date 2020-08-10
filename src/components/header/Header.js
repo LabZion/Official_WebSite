@@ -10,7 +10,6 @@ import Logo from "../../static/images/logo_large.png"
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {withTranslation} from 'react-i18next';
-import {Dropdown} from "react-bootstrap";
 
 
 class Header extends Component {
