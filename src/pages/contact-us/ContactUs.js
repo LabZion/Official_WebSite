@@ -98,6 +98,7 @@ class ContactUs extends Component {
                                     style={{fontSize: '3em'}}>{'联系我们'}</h1></Row>
                                 <br/><br/>
                                 <Row style={{display: 'flex', justifyContent: 'center', marginTop: '1.5em'}}>
+
                                     <span style={{float:'left'}} className="iconfont">&#xe501;</span>&nbsp;
                                     <p>+86 18618426569（业务咨询）</p>
                                     &nbsp;&nbsp;&nbsp;
