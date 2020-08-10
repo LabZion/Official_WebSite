@@ -121,7 +121,7 @@ const industry = {
     },
     embed: {
         title: '嵌入式系统与物联网',
-        img:"url('https://raw.githubusercontent.com/CenoOS/Ceno-RTOS/master/docs/assets/twitter_header_photo_1.png')",
+        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/rtos.png')",
         description: '近年来，互联网技术的发展，改变着电子设备、智能终端的形态、功能。嵌入式设备网络化、功能复杂化的趋势，以及嵌入式碎片化及其严重，各种个样的芯片型号，想要适配同样的代码在裸机环境下适配不同的硬件难度非常大。这也就会导致逻辑代码会过多依赖于底层软件。使得越来越多的、过去可以用裸奔实现的嵌入式产品，产生了应用操作系统的需求。芯片成本的连续下降，以及MCU性能和内存资源的迅速提高，又为大面积应用操作系统提供了物质基础。回顾裸机时代的开发，问题也渐渐显现出来。\n',
         data: [
             {
