@@ -121,8 +121,18 @@ const industry = {
     },
     embed: {
         title: '嵌入式系统与物联网',
-        description: '',
-        data: []
+        img:"url('https://raw.githubusercontent.com/CenoOS/Ceno-RTOS/master/docs/assets/twitter_header_photo_1.png')",
+        description: '近年来，互联网技术的发展，改变着电子设备、智能终端的形态、功能。嵌入式设备网络化、功能复杂化的趋势，以及嵌入式碎片化及其严重，各种个样的芯片型号，想要适配同样的代码在裸机环境下适配不同的硬件难度非常大。这也就会导致逻辑代码会过多依赖于底层软件。使得越来越多的、过去可以用裸奔实现的嵌入式产品，产生了应用操作系统的需求。芯片成本的连续下降，以及MCU性能和内存资源的迅速提高，又为大面积应用操作系统提供了物质基础。回顾裸机时代的开发，问题也渐渐显现出来。\n',
+        data: [
+            {
+                title: 'RTOS研发',
+                img: 'https://raw.githubusercontent.com/CenoOS/Ceno-RTOS/master/docs/assets/arch2.png',
+                description: '在嵌入式应用领域，很多场合对系统的实时性要求严格，因此操作系统的选择要基于实时系统。\n' +
+                    '\n' +
+                    'RTOS系统强调实时性、短时间内响应，满足物联网高速、实时、可确定性、可靠性等诸多优势，同时也是实时商用多任务os，追求系统资料的最大利用率，未来前途广阔；RTOS代码量少，是编写管理代码的最佳系统。相比通用linux系统，就包含调度、文件、网络、驱动等完整代码，而RTOS仅包含调度、同步、互斥、时钟等代码，并能根据应用需求实际增加，大大减少编写和管理工作量。' +
+                    'Thoughtworks安全团队在嵌入式系统安全研发深耕多年，研究方向包括嵌入式Linux内核/RTOS/SoC芯片，研究内容为可信操作系统裁剪定制，系统安全加固，系统监控，系统加密，通讯协议软硬件加密等。目前，自研的IOT-RTOS/Linux 安全模块等已经在研发阶段。'
+            },
+        ]
     },
     trust: {
         title: '可信计算',

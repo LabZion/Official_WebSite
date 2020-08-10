@@ -30,7 +30,7 @@ class Menu extends Component {
                     items: [
                         {title: 'DATA', route: '/solution', state: {params: 'data'}},
                         // {title: 'IDENTIFY', route: '/solution', state: {params: 'identify'}},
-                        // {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
+                        {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
                         // {title: 'TRUST', route: '/solution', state: {params: 'trust'}},
                         {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
                     ]

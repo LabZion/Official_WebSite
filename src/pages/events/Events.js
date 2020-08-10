@@ -164,7 +164,7 @@ class Events extends Component {
         return events.past.map((item, index) => {
             return <Col md={4} sytle={{background: '#fff'}}>
                 <Link to={{
-                    pathname: '/event-detail',
+                    pathname: '/#event-detail/',
                     state: {params: item}
                 }}>
                     <Image src={item.img} style={{width: '100%',height:'40%'}}/></Link>
