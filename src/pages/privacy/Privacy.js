@@ -467,6 +467,10 @@ class Privacy extends Component {
 
     componentWillMount() {
     }
+
+    componentDidMount() {
+        window.scrollBy(0,-8000);
+    }
 }
 
 const mapStateToProps = state => ({});
