@@ -12,7 +12,7 @@ const blogs = {
     blog: [
         {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog1.png',
-            title: '怎样Hack Linux的内核符号？',
+            title: '怎样Hack Linux的内核符号？\n',
             author: '刘涛·ThoughtWorks资深咨询师',
             description: 'Inline Hook技术能够帮助我们完成函数的动态拦截和跳转，但要实现缺陷函数的自动化热修复则会面临更加复杂的挑战。本文从一个实际例子出发，阐述了在对二进制形式的Linux固件做自动化安全加固的时遇到的技术难题和解决办法。',
             content: '\n' +
@@ -63,9 +63,9 @@ const blogs = {
         },
         {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blog-rtos.png',
-            title: '怎样Hack Linux的内核符号？',
+            title: '来自Security的操作系统故事一：一个RTOS的设计与实现',
             author: '杨兴峰·ThoughtWorks SynestiaOS开发',
-            description: 'Inline Hook技术能够帮助我们完成函数的动态拦截和跳转，但要实现缺陷函数的自动化热修复则会面临更加复杂的挑战。本文从一个实际例子出发，阐述了在对二进制形式的Linux固件做自动化安全加固的时遇到的技术难题和解决办法。',
+            description: '在嵌入式应用领域，很多场合对系统的实时性要求严格，因此操作系统的选择要基于实时系统,实时多任务操作系统,英文全称Real Time Operating System，简称RTOS。本文详细介绍了一个RTOS的设计与实现。',
             content: '## 写在前面\n' +
                 '\n' +
                 '近年来，互联网技术的发展，改变着电子设备、智能终端的形态、功能。嵌入式设备网络化、功能复杂化的趋势，以及嵌入式碎片化及其严重，各种个样的芯片型号，想要适配同样的代码在裸机环境下适配不同的硬件难度非常大。这也就会导致逻辑代码会过多依赖于底层软件。使得越来越多的、过去可以用裸奔实现的嵌入式产品，产生了应用操作系统的需求。芯片成本的连续下降，以及MCU性能和内存资源的迅速提高，又为大面积应用操作系统提供了物质基础。回顾裸机时代的开发，问题也渐渐显现出来。\n' +
@@ -82,11 +82,12 @@ const blogs = {
                 '\n' +
                 'RTOS可应用于任务复杂的场合，随着物联网的发展，未来的嵌入式产品必然向着更为复杂、连接性更强以及需要更丰富的用户界面，因此，一个好的RTOS变得不可或缺；本文旨在细述一个运行于CortexM上的RTOS实现的细节和过程,为实时内核爱好者与RTOS爱好者带来思考。\n' +
                 '\n' +
-                '## 启动\n' +
+                '## 启动  ' +
+                '\n' +
                 '\n' +
                 '### 中断向量表\n' +
                 '\n' +
-                '我们从中断向量表(既中断服务程序入口地址)开始，当中断或异常发生的时候，CPU自动将PC指向一个特定的地址，这个地址就是中断向量表。 Arm的中断向量表一般位于内存0x00000000-0x0000001C处， 结构如表:![rtos1](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos1.png)\n' +
+                '我们从中断向量表(既中断服务程序入口地址)开始，当中断或异常发生的时候，CPU自动将PC指向一个特定的地址，这个地址就是中断向量表。 Arm的中断向量表一般位于内存0x00000000-0x0000001C处， 结构如表:![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos1.png#width-full)\n' +
                 '\n' +
                 '***\n' +
                 '\n' +
@@ -96,7 +97,7 @@ const blogs = {
                 '\n' +
                 '当处理器启动时首先读取两个引脚，包括引脚boot0和引脚boot1，如表:\n' +
                 '\n' +
-                '![rtos2](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos2.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos2.png#width-full)\n' +
                 '\n' +
                 '处理器根据这两个引脚确定引导模式。然后，处理器将存储在地址0x00000000的值复制到Main Stack Pointer(MSP)，这一步基本上完成了Main Stack Pointer(MSP) 的初始化。接着处理器将存储在地址0x00000004的值复制到Program Counter(PC)。程序计数器始终保存下一个要由处理器执行的操作的内存地址，因此，在处理器启动后，处理器将立即开始执行reset handler。通常，reset handler首先执行一些硬件初始化，例如数据段和BSS段的初始化， 然后reset handler调用main()函数将控件传递给main函数。\n' +
                 '\n' +
@@ -104,11 +105,11 @@ const blogs = {
                 '\n' +
                 '但是，有时需要开发自定义引导加载程序(bootloader)，例如:需要加密固件并将其放在Internet上，以便客户可以升级固件。在这种情况下，必须编写自定义引导加载程序(bootloader)来解码加密的固件。下表是Arm Cortex-M处理器的内存映射:\n' +
                 '\n' +
-                '![rtos3](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos3.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos3.png#width-full)\n' +
                 '\n' +
                 '每个存储区的地址范围是固定的。接下来看一下代码区域:\n' +
                 '\n' +
-                '![rtos4](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos4.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos4.png#width-full)\n' +
                 '\n' +
                 '代码区域的范围是0x00000000到0x1FFFFFFF。顶部区域(0x1FFF0000-0x1FFFFFFF)是保留用于存储引导加载程序的ROM区域。中间区域是片内闪存。底部区域是可以物理映射到内部闪存，系统内存的区域。可以物理映射到内部闪存，系统内存和内部SRAM的区域。内部闪存，系统存储器和内部SRAM的起始地址也是固定的。具体来说，内部闪存的起始地址为0x08000000，系统内存的地址从0x1FFF0000开始。现在，我们回头再看一下引导模式。引导模式由引脚boot1和引脚boot0上的电压决定。\n' +
                 '\n' +
@@ -124,7 +125,7 @@ const blogs = {
                 '\n' +
                 '当链接器(Linker)将对象和库文件组合成单个可执行文件时，链接器脚本(Linker Script)提供两种关键类型的操作，如何对数据和代码段进行操作以及每个部分应放在内存中的位置进行操作。编程人员可以修改链接描述文件(Linker Script)以将代码放在目标引导内存中。例如这个项目中的链接描述文件:\n' +
                 '\n' +
-                '![rtos5](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos5.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos5.png#width-full)\n' +
                 '\n' +
                 '\n' +
                 '\n' +
@@ -132,7 +133,7 @@ const blogs = {
                 '\n' +
                 '然后，我们再看一下如何将值(Main Stack Pointer(SP)和Program Counter(PC))存在内存0x00000000地址和0x00000004地址，也就是启动代码，比如启动汇编文件中放置了这几个值，例如:\n' +
                 '\n' +
-                '![rtos6](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos6.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos6.png#width-full)\n' +
                 '\n' +
                 '代码中__initial_sp便是Stack Pointer(SP)，Reset_Handler便是Program Counter(PC)的初始值。\n' +
                 '\n' +
@@ -140,7 +141,7 @@ const blogs = {
                 '\n' +
                 '接下来我们看一下中断是如何在Arm Cortex-M微处理器上工作的，以及为什么需要中断，假设我们需要开发一个程序，按下按钮打开红色LED灯，有两种方法可以监视连接到按钮的输入引脚的逻辑状态，一种是轮询，另一种是中断，轮询方法就像是每隔几秒接起电话来查看是不是有电话打进来，中断方法就像等待电话铃响，显而易见，中断方法更高效。可以做任何事情，直到电话响了再把它接起来。下面是简化了的轮询代码:\n' +
                 '\n' +
-                '![rtos7](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos7.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos7.png#width-full)\n' +
                 '\n' +
                 '在这个循环中，程序不断读取连接到按钮的引脚，直到按键被按下，程序跳出循环，打开LED灯。轮询方法是一种忙等待的方法，处理器不停地读取输入直到按钮被按下，显然，轮询方法很简单但是低效。中断方法比轮询更高效，如果用户按下按钮，则产生称为中断请求的电信号，当处理器收到中断请求时，它会自动暂停正常程序的执行，并开始执行一个称为中断处理程序的特殊定义函数。在中断处理程序完成后，处理器从暂停的地方重新启动执行常规程序。\n' +
                 '\n' +
@@ -148,33 +149,33 @@ const blogs = {
                 '\n' +
                 '那么，NVIC(Nested Vectored Interrupt Controller)控制器如何使用中断号来查找中断向量表。 正如表:\n' +
                 '\n' +
-                '![rtos8](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos8.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos8.png#width-full)\n' +
                 '\n' +
                 '可以知道第一个四子节是MSP，第二个四字节是PC，对于ARM Cortex-M处理器，如果中断号为n，则指向中断n的中断服务程序的指针存储在中断向量表中的如下地址处:\n' +
                 '\n' +
-                '![rtos9](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos9.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos9.png#width-full)\n' +
                 '\n' +
                 '例如对于中断 `EXTI3_IRQn=9`，他的中断服务程序地址便存在地址\n' +
                 '\n' +
-                '![rtos10](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos10.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos10.png#width-full)\n' +
                 '\n' +
                 '这段描述放在内存里面便是:\n' +
                 '\n' +
-                '![rtos11](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos11.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos11.png#width-full)\n' +
                 '\n' +
                 '值得注意的是，中断号可以是负的，比如SysTick的中断号是-1，$SysTick_IRQn = -1$，他的中断服务程序地址便存在地址\n' +
                 '\n' +
-                '![rtos12](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos12.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos12.png#width-full)\n' +
                 '\n' +
                 '也就是说0x00000004到0x0000003C位置所存的中断服务函数地址所对应的中断服务函数的中断号都是负的，这十五个中断也叫做SystemExceptions。再往后就是厂商特定的中断服务，中断向量表的大小，在不同处理器芯片之间有差异。\n' +
                 '\n' +
                 '然后我们通过一个例子在看一下NVIC(Nested Vectored Interrupt Controller)是如何处理中断的，假设外部中断3(EXTI3)在这时到达，以及软件已经使能(Enable)了EXTI3中断，通过将中断允许寄存器中的相应位置1就可以使能中断，我们在前面定义了EXTI3的中断号是9，从中断使能寄存器看，外部中断3已经使能。中断优先级寄存器显示外部中断3的优先级设置为2。如表:\n' +
                 '\n' +
-                '![rtos13](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos13.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos13.png#width-full)\n' +
                 '\n' +
                 'NVIC(Nested Vectored Interrupt Controller)首先将1写入外部中断3的挂起位。然后NVIC(Nested Vectored Interrupt Controller)开始压栈过程，并压入8个寄存器来保护运行环境，如果使用了浮点单元(FPU)，那么更多的寄存器会在压栈(push)过程中压入。NVIC(Nested Vectored Interrupt Controller)首先将程序状态寄存器(xPSR)压栈，然后将程序计数器(Program Counter(PC))即r15压栈，然后将Link寄存器(LR)即r14压栈，然后是r12，r3，r2，r1，最后压入r0。需要注意的是Arm Cortex使用下降的栈。如表\n' +
                 '\n' +
-                '![rtos14](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos14.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos14.png#width-full)\n' +
                 '\n' +
                 '如果将32位推入栈，则栈指针(SP)将减少4，NVIC(Nested Vectored Interrupt Controller)将这八个寄存器压栈之后，栈大小会增加32字节，并且栈指针(SP)会减32。上面的压栈过程是由NVIC 控制器自动操作的，而不是用户代码。然后NVIC查找中断向量表找到外部中断3(中断号9)的起始地址，接着NVIC控制器将中断9的状态由挂起状态(pending)改为活动状态(active)。\n' +
                 '\n' +
@@ -182,11 +183,11 @@ const blogs = {
                 '\n' +
                 '然后再看一下出栈操作，首先NVIC弹出r0，然后是r1，r2，r3，r12，LR，PC，最后弹出程序状态寄存器xPSR。出栈操作完成之后，运行环境也就从栈中被恢复了。所有寄存器都有其原始值，就好像中断从未发生过一样。作为结果，处理器成功继续执行被外部中断3中断的用户程序。\n' +
                 '\n' +
-                '![rtos15](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos15.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos15.png#width-full)\n' +
                 '\n' +
                 '再看一下NVIC如何处理多中断，假设外部中断EXTI_3(中断号9)此时到达，NVIC首先将那八个寄存器压栈，然后让处理器执行中断9(EXTI_3)的处理程序，假设另一个中断请求(DMA1_Channel2)在中断9处理程序结束之后到达，此外，这个新的中断比当前的服务的中断具有更高的紧迫性，从上面的表可以看到，(DMA1_Channel2) 的优先级是3，而(EXTI_3)的是5，需要注意的是对于Arm Cortex 处理器，更低的优先级值实际上代表更高的紧迫性，于是，NVIC不得不响应这个新的中断，因为新的中断有更高的紧迫性，然后NVIC停止当前的中断服务程序，执行另一个压栈过程，再一次，它把另外8个寄存器放到栈里，如表\n' +
                 '\n' +
-                '![rtos16](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos16.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos16.png#width-full)\n' +
                 '\n' +
                 '需要注意的是两个寄存器集合有不同的值，前面的是用户程序的寄存器值，后面的是中断9(EXTI_3)的处理程序的寄存器值，压栈过程完成之后NVIC开始执行新中断的中断处理程序，也就是说停止当前中断去处理另一个中断，这个过程也叫做中断抢占(interrupt preemption)。\n' +
                 '\n' +
@@ -200,7 +201,7 @@ const blogs = {
                 '\n' +
                 '系统计时器是一个24位递减计数器，计数器从重载值递减到0，计数器递减到0后，系统计时器会复制存储在重载值寄存器里面的值，然后系统计时器再次开始倒计时，当计数器从1转换为0的时候会产生SysTick中断请求，那么SysTick中断的间隔便是:\n' +
                 '\n' +
-                '![rtos17](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos17.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos17.png#width-full)\n' +
                 '\n' +
                 '然后我们看一下SysTick控制和状态寄存器(SysTick_CTRL)，在该寄存器中只有4位是有用的，一个状态位和3个控制位，状态位(16位)是计数器标志位(COUNTFLAG)，三个控制位分别是时钟源选择位(Clock Source)，SysTick中断使能位(TICKINT)和定时器使能位(ENABLE)。正如前面所述，24位计时器从重载值向下降至0，当计数器从1降到0时，计数标志位(COUNTFLAG)设为1，\n' +
                 '\n' +
@@ -210,11 +211,11 @@ const blogs = {
                 '\n' +
                 '然后看一下初始化并启用系统计时器的代码:\n' +
                 '\n' +
-                '![rtos18](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos18.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos18.png#width-full)\n' +
                 '\n' +
                 '关于SysTick还需要知道的是重载值的计算，假设驱动定时器计数器的时钟源的频率为80MHz，我们希望每隔10ms产生一次SysTick中断，那么重载值就是:\n' +
                 '\n' +
-                '![rtos19](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos19.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos19.png#width-full)\n' +
                 '\n' +
                 '## 系统实现\n' +
                 '\n' +
@@ -222,7 +223,7 @@ const blogs = {
                 '\n' +
                 '我们都知道每个任务是一个函数，每个函数里面是一个死循环，如下:\n' +
                 '\n' +
-                '![rtos20](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos20.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos20.png#width-full)\n' +
                 '\n' +
                 '事实证明，在顺序结构下面，不可能简单的一个接一个的调用这些函数，因为大码不可能执行出第一个函数，也就是说后面的函数不可能被执行，我们的目的就是探索这种执行的可能性，也就是多任务处理。\n' +
                 '\n' +
@@ -232,33 +233,33 @@ const blogs = {
                 '\n' +
                 'RTOS内核的简单定义是:通过允许在单个CPU上运行多个后台循环(称为线程或任务)来扩展基本前台/后台架构的软件。对于多进程或者多线程的理解大致是这样，频繁地将CPU上下文从一个线程切换到另一个线程，以创建一个每个这样的线程都拥有整个CPU错觉。这两个定义都使用了术语“线程”，但是需要记住的是，这些线程本质上是来自前/后架构的后台循环。如图:\n' +
                 '\n' +
-                '![rtos21](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos21.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos21.png#width-full)\n' +
                 '\n' +
                 '现在我们回过头来解释为什么更改栈上的PC寄存器值是非法的，以及怎样做才能将上下文从一个线程干净的切换到另一个线程。为了说明这个问题，可以举一个例子，假设我们有两个任务，CPU先运行任务1，在常规中断抢占的情况下，NVIC可以保存任务1的寄存器并恢复相同任务1的寄存器，一切正常，但是手动修改返回地址位任务2时，CPU可以返回到任务2，但是仍然恢复当初为任务1保存的寄存器，这是非法的。\n' +
                 '\n' +
                 '所以，需要将不同线程的寄存器集分来，换句话说，为任务1保存的寄存器无法恢复为任务2，反之亦然。这意味着需要为每个线程使用私有的堆栈，似乎很复杂，实际上并非如此。我们可以很容易的将一个堆栈添加到一个线程，因为它实际上只不过是RAM中的一个区域和一个指向该堆栈当前顶部的指针。在C语言中，这样的存储区可以表示为uint32_t类型的数组(对于CPU的23位寄存器)加上堆栈指针。\n' +
                 '\n' +
-                '![rtos22](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos22.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos22.png#width-full)\n' +
                 '\n' +
                 '这样的话在主程序中就不需要再调用线程函数，相反，需要使用伪造的Cortex-M中断堆栈帧预填充每个线程的堆栈。目的是使堆栈看起来像在调用线程函数之前被中断抢占一样，因此，需要使用DataSheet中ARM异常帧布局作为模版。\n' +
                 '\n' +
                 '从堆栈的高内存地址端开始，因为ARM堆栈从高内存地址增长到低内存地址，此外需要注意的是ARM CPU要求ISR堆栈帧需要8字节对齐，最后ARM CPU使用“Full-Stack”，这意味着堆栈指针指向最后使用的堆栈条目，而不是第一个空闲条目。因此，要添加新的堆栈条目，首先将堆栈指针递减到第一个空闲位置，然后取消引用它以将值写入此位置。根据ARM异常帧布局，需要填充的第一个值是程序状态xPSR，这个只需要设置第24位就可以，该位对应ARM 的THUMB状态，表示ARM CPU使用THUMB指令集，实际上ARM 只支持THUMB指令集。由于历史原因，xPSR寄存器必须设置THUMB位。 即\n' +
                 '\n' +
-                '![rtos23](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos23.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos23.png#width-full)\n' +
                 '\n' +
                 '堆栈上的下一个值是PC(Program Counter)，这是中断的返回地址，它需要设置为线程函数说的地址。 C语言允许使用与获取变量地址完全相同的&运算符来获取函数的地址，它使用函数的address-of运算符来生成一个指向函数的指针，然后需要将它强制类型转换为uint32_t。\n' +
                 '\n' +
-                '![rtos24](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos24.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos24.png#width-full)\n' +
                 '\n' +
                 'ISR堆栈帧中的其他寄存器对于正确调用线程函数并不重要，因为县城不会返回，但是处于测试目的，可以使用寄存器编号对应的数字初始化堆栈，这有助于识别调试器中的堆栈帧。\n' +
                 '\n' +
-                '![rtos25](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos25.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos25.png#width-full)\n' +
                 '\n' +
                 '那么现在在SysTick结束时设置断点，将CPU SP寄存器的值修改为sp_stack_task_01就可以将CPU堆栈切换为私有task_01堆栈。要想将上下文切换为其他的线程，可以重复上述步骤。假设需要将上下文切换为另一个线程task_02。需要在更改CPU中的SP寄存器之前，将SP的值从CPU复制到sp_stack_task_01堆栈指针变量中，因为这实际上是task_01线程的当前堆栈顶部，因此需要更新堆栈指针切断这个线程，\n' +
                 '\n' +
                 ' 然后用task_02线程的堆栈顶部覆盖CPU SP寄存器来执行。如图:\n' +
                 '\n' +
-                '![rtos26](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos26.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos26.png#width-full)\n' +
                 '\n' +
                 '上面说明了为每个线程使用单独的私有堆栈的上下文切换的新方法，这种方法不再使用混合寄存器，相反，task_01线程的寄存器存储在sp_stack_task_01堆栈中，随后从相同的sp_stack_task_01堆栈恢复。 所有这些看起来很有希望作为线程上下文切换的方式，但是，我们还没有完全走出困境。剩下的问题是这种上下文切换仍然会破坏某些CPU寄存器，因为在恢复给定线程之前，CPU状态未正确恢复。\n' +
                 '\n' +
@@ -272,55 +273,55 @@ const blogs = {
                 '\n' +
                 '从前面的手动切换线程的过程中可以看到，每一个线程都需要私有堆栈指针SP，以及其他信息， 为了方便对它们进行管理，以及方便在后续扩展，我们定一个结构os_task来保存它们，在标准RTOS实现中，与线程相关的数据结构传统意义上称为线程控制快(TCB)，TCB中的信息大体分为两类:一类是线程的私有数据，包括PC(Program Counter)，SP(Statk Pointer)，其他寄存器(Context)如LR，R0-R3，R4-R7。第二类是这些TCB使用的其他数据例如，调度队列，锁，等待列表等。在我们的TCB里面，暂时需要线程启动函数，线程启动函数需要私有堆栈的内存和该堆栈的大小，以及线程在等待时需要放弃CPU，所以还需要timeout。调度时候的优先级priority。线程状态state，线程id等，\n' +
                 '\n' +
-                '![rtos27](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos27.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos27.png#width-full)\n' +
                 '\n' +
                 '对于线程启动函数taskHandler的，可以使用C语言里面指向函数的指针，在这里它是一个指向不带参数，并返回os_err_t的函数的指针，定义如下:\n' +
                 '\n' +
-                '![rtos28](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos28.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos28.png#width-full)\n' +
                 '\n' +
                 '接下来需要定义RTOS API，首先需要定义的第一个API是在每个线程的堆栈上构造寄存器上下文的函数， 传统上，这种RTOS服务称之为线程创建或者线程启动，我们使用os_task_开始，这个函数需要以下参数:一个指向TCB的指针，可以将这个参数命名为me，这可以作为一个编码约定。\n' +
                 '\n' +
-                '![rtos29](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos29.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos29.png#width-full)\n' +
                 '\n' +
                 '在这个函数中，需要建立初始堆栈指针，从中构建堆栈帧，正如前面提到，在Cortex-M上，堆栈从高地址向低地址增长，所以需要从堆栈内存的末尾开始，前面还提到，Cortex-M堆栈需要在8字节边界对齐，显然调用函数的用户可能并不会知道这些，所以假设所提供的堆栈内存的末位是正确对齐是不明智的。我们可以通过舍入地址来确保正确对齐，即除以8，然后整数乘以8。\n' +
                 '\n' +
-                '![rtos30](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos30.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos30.png#width-full)\n' +
                 '\n' +
                 '然后用上一小节中同样的方式填充堆栈帧，并将SP寄存器的值赋值为taskHandler，除此之外，可以填充额外寄存器R11- R4，最后在TCB中保存栈顶指针。此外，还可以添加一点额外的功能，比如用已知的位模式填充剩余的堆栈，例如使用0xDEADBEEF，这将使得很容易就能从内存中查看堆栈。方便调试。\n' +
                 '\n' +
-                '![rtos31](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos31.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos31.png#width-full)\n' +
                 '\n' +
                 '### 中断优先级与中断触发\n' +
                 '\n' +
                 '初始化完了线程，那么接下来的功能便是上下文切换，正如在上面章节中说到，上下文切换需要在在中断返回时发生，例如SysTick。原则上可以在那儿编写代码，但是这样的话需要将上下文切换添加到系统的每一个ISR中，这不仅是重复的，而且会破坏代码的整洁性，因为对于上下文切换，不能用标准C编码，而是需要一些特定于CPU的汇编代码来构建非常特定的堆栈帧以及操作CPU堆栈帧寄存器。但是，ARM Cortex-M提供了一种解决方案，允许仅在一个中断中编写上下文切换，然后根据需要从其他中断或者甚至从线程代码中有效地触发。在中断那一章我们通过在系统控制模块内的特殊寄存器中设置了一个位来触发了SysTick， 那么，我们可以使用同样的方式来针对另一个名为PendSV的异常，几乎所有的Cortex-M的RTOS都将其用于上下文切换，但是，PendSV并不是那么特别，原则上可以使用任何其他异常或中断来进行上下文切换。 我们可以修改内存地址0xE000ED04，这是系统控制块中的中断控制和状态寄存器。可以在DataSheet中查看到，通过设置位数28(即0x1后跟7个零)来触发PendSV异常，将该值写入ICSR寄存器以触发PendSV。\n' +
                 '\n' +
-                '![rtos32](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos32.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos32.png#width-full)\n' +
                 '\n' +
                 '但是这个时候我们给SysTick添加断点会发现，PendSV抢占了还处于Active状态的SysTick中断，显然，这不是我们想要的结果，我们希望SysTick_Handler 执行完成，而且只有在SysTick_Handler执行完成之后，PendSV_Handler才可以运行上下文切换，不过，幸运的是，Arm Cortex-M内核允许通过对每个异常相关的可调中断优先级来控制异常和中断之间如何相互抢占。具体而言，SysTick和PendSV的优先级由地址0xE000ED20的SYSPRI3寄存器控制，通过在内存中查看此寄存器，可以看到其中SysTick优先级为0xE0，且PendSV优先级为0x0。(需要注意的是更高优先级的数字意味着抢占的优先级更低)，这就是优先级为0的PendSV抢占优先级为E0的SysTick的原因。如果我们翻转它，那就是给SysTick优先级0和PendSV最低优先级E0，就可以得到我们需要的抢占顺序。这里有一点值得注意的是即使将FF写入PendSV相关的字节，该值还是会以E0的方式读回，这是因为ARM Cortex-M内核仅在优先级字节的最高位中实现中断优先级。TivaC MCU仅实现三个中断优先级位。其他Cortex-M MCU可能会实现更多位，例如STM32实现4个优先级位，因此如果将FF写入ST芯片，它将回读为F0。具体见 `interrupt_priority`，但是，对于今天，只需要记住PendSV需要具有所有异常和中断的最低中断优先级，可以通过将FF写入PendSV的优先级字节来设置。这涵盖ARM Cortex-M内核的所有可能版本。\n' +
                 '\n' +
                 'PendSV优先级设置需要在系统初始化期间进行，所以我们把它放在os_kernel_init()函数中。\n' +
                 '\n' +
-                '![rtos33](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos33.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos33.png#width-full)\n' +
                 '\n' +
                 '在RTOS实现中，推荐使用SYSPRI3寄存器的原始内存地址而不是CMSIS接口，因为在任何特定的ARM Cortex-M内核，例如Cortex-M0，M3，M4或者M7中，PendSV优先级都处于相同的地址，因此该代码将更加通用。在应用程序级代码中，通常应避免使用具有最低优先级的中断，因为要为PendSV保留最低级别。因此，在bsp.c中，需要将SysTick的优先级从最低级别提高到零:我们使用了特定的TivaC MCU(TM4C123gh6pm)，因此可以使用CMSIS函数NVIC_SetPriority()来设置SysTick异常的优先级。\n' +
                 '\n' +
-                '![rtos34](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos34.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos34.png#width-full)\n' +
                 '\n' +
                 '有了中断优先级，我们需要一个触发PendSV的功能，因为上下文切换的触发将与下一步调度哪个线程的决定密切相关。因此，此函数的名称将为os_sched()。\n' +
                 '\n' +
                 '要实现此调度服务，首先需要确定如何跟踪当前线程和下一个要执行的线程。这可以简单地编写为os_task_t对象的两个指针。osTaskCurr指针将指向当前线程，osTaskNext将指向要运行的下一个线程。 由于这些指针将在中断中使用，因此需要volatile，需要在星号后面放置“volatile”关键字，因为需要指针volatile。如果在星号之前放置了“volatile”，将得到一个指向volatile os_task_t结构的non-volatile指针，这并不是我们想要的。回到os_sched()函数的实现，它需要决定如何设置osTaskNext指针，我们先跳过这一步。\n' +
                 '\n' +
-                '![rtos35](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos35.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos35.png#width-full)\n' +
                 '\n' +
                 '现在，让我们简单地编写如何触发PendSV异常，但仅限于下一个线程实际上与当前线程不同时。此时，与所有RTOS服务一样，应该非常仔细地了解竞争条件(Race Condition)。这实际上是构建RTOS的最困难的方面。\n' +
                 '\n' +
                 '因为使用了os_sched()，这就导致产生很多围绕当前和下一个指针的ReacCondition的机会，所以需要通过禁用中断来阻止它们。有两种选择:禁用函数内部的中断，如下所示。\n' +
                 '\n' +
-                '![rtos36](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos36.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos36.png#width-full)\n' +
                 '\n' +
                 '或者，始终在已建立的临界区(Critical Section)中调用整个函数。\n' +
                 '\n' +
-                '![rtos37](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos37.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos37.png#width-full)\n' +
                 '\n' +
                 '推荐使用第二种方式，因为事实证明，当已经禁用了中断时，通常需要调用调度程序，因此在os_sched()内再次禁用和重新启用它们可能会有问题。\n' +
                 '\n' +
@@ -332,41 +333,41 @@ const blogs = {
                 '\n' +
                 'PendSV需要做的第一件事便是禁用中断，\n' +
                 '\n' +
-                '![rtos38](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos38.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos38.png#width-full)\n' +
                 '\n' +
                 '接下来，需要保存当前线程的堆栈上下文。但是需要小心，因为第一次没有线程运行，并且osTaskCurr指针将在复位时为0。因此需要在if语句中检查它。如果不是0则在if中将寄存器r4到r11压入到当前堆栈，压完寄存器后，需要将SP寄存器保存到当前线程的私有sp数据成员中。\n' +
                 '\n' +
-                '![rtos39](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos39.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos39.png#width-full)\n' +
                 '\n' +
                 '保存当前线程的上下文后，需要恢复要运行的下一个线程的上下文。因此，将SP寄存器设置为osTaskNext线程中私有sp的值。当正在更改当前线程时，将osTaskCurr指针设置为osTaskNext。\n' +
                 '\n' +
-                '![rtos40](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos40.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos40.png#width-full)\n' +
                 '\n' +
                 '最后，从新堆栈弹出寄存器r4到r11，重新使能中断，然后愉快地返回到下一个线程。\n' +
                 '\n' +
-                '![rtos41](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos41.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos41.png#width-full)\n' +
                 '\n' +
                 '这样就完成了上下文切换。如图\n' +
                 '\n' +
-                '![rtos42](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos42.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos42.png#width-full)\n' +
                 '\n' +
                 '### 轮训线程调度\n' +
                 '\n' +
                 '每个RTOS的核心都是调度程序，调度程序负责管理系统中线程的执行。到目前为止，在os_sched()函数内运行的下一个线程的调度仍然是手动的。如果对于特定的已知线程，我们可以extern 它们，然后通过if对应的条件来调度它们，但是显然，这样是不合理的，那么我们就需要一个数据结构来让他们可以被优雅的调度，一些RTOS将线程组织成一个链表，然后由调度程序遍历，我们使用一个简单暴力的解决方案，即将TCB存储在预先分配的数组os_task_t[]中。在调用os_task_create()的时候将线程加入到线程数组os_task_t[]中，所以，需要的第一件事是os_task_t[]数组，它的大小将为32 + 1个线程。还需要在变量osTaskNum中记住到目前为止已经有多少线程被保存。最后，调度程序需要记住os_task_t[]数组osTasks中的当前索引osTaskIndex，它将以循环递增。每次在os_task_create()中启动一个新线程时，指向该线程的“me”指针存储在os_task_t[]数数组中，\n' +
                 '\n' +
-                '![rtos43](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos43.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos43.png#width-full)\n' +
                 '\n' +
                 'os_task_num计数器将递增到下一个线程。需要注意的是，这里要判断一下，防止溢出。\n' +
                 '\n' +
                 '然后将真正的调度代码写在前面定义的os_sched()函数中，首先需要将当前线程索引osTaskIndex增加1， 为了防止溢出，还需要在它等于osTaskNum的时候重置为0，然后将osNextTask赋值为线程数组里的当前索引线程，就可以简单的做到循环调度。\n' +
                 '\n' +
-                '![rtos44](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos44.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos44.png#width-full)\n' +
                 '\n' +
                 '这种设计的优点是不再需要对应用程序中的线程进行硬编码，RTOS会在每次创建线程的时候将它注册到调度数组中。\n' +
                 '\n' +
                 '考虑现在的实现，第一次线程被切入运行，是发生在SysTick_Handler中，因为在那儿调用了os_sched()函数，而os_sched()函数对线程进行了调度，并出发了PendSV异常，然后在PendSV异常中实现了线程上下文切换。所以接下来需要的是在OS添加线程之后，先将第一个线程切入，然后再开启SysTick中断，让其调度。所以需要添加一个新的API os_run()，在该函数中配置SysTick中断，并调用os_sched()将第一个线程切入:\n' +
                 '\n' +
-                '![rtos45](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos45.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos45.png#width-full)\n' +
                 '\n' +
                 '这样的话就通过定时器，把调度器放在定时中，就实现了简单的线程循环调度。还是一种是时间片轮询调度方法，是一种比较简单易用的调度方式。但是这种类型的调度通常不利于实时应用。所以我们不会再讨论它。后面会实现一种更适合实时应用的优先级抢占调度方式。\n' +
                 '\n' +
@@ -374,7 +375,7 @@ const blogs = {
                 '\n' +
                 '现在可以在用户程序中通过简单的代码就可以初始化并执行多个线程，回到前面例子中提到的线程task_02:\n' +
                 '\n' +
-                '![rtos46](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos46.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos46.png#width-full)\n' +
                 '\n' +
                 '这是一个让开发板上红色的led亮一秒，灭一秒的程序，非常简单。但是，线程仍在delay_block数内使用原始轮询来做到延时。delay_block内部的愚蠢轮询是一种非常低效的CPU周期浪费，但是怎么能消除这种浪费呢？完成前面的工作之后，我们有了一个全新的工具:上下文切换。使用此工具，就可以用一种完全不同方式处理delay()函数。在延迟开始时，可以将上下文切换到其他线程，然后在延迟结束时将上下文切换回它，而不是启动循环轮询。在这两个上下文切换之间，线程将非常有效地阻塞，根本不消耗CPU周期。\n' +
                 '\n' +
@@ -382,13 +383,13 @@ const blogs = {
                 '\n' +
                 '运行轮询delay_block()函数的线程一直参与循环调度，这意味着它会被切入切出。相反，处于阻塞状态的线程永远不应该被调度。 它只是不准备运行。这意味着RTOS线程有一个新属性，它告诉调度程序线程是否就绪。这个属性便是前面TCB里面的state，它是个枚举变量，枚举如下:\n' +
                 '\n' +
-                '![rtos47](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos47.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos47.png#width-full)\n' +
                 '\n' +
                 '首次创建线程时，意味着为其分配了os_task_t对象和堆栈，它将变为休眠OS_STATE_DORMANT状态，在这种状态下，除非在其上调用了os_task_create()函数，否则它无法执行任何操作。在该调用之后，一个线程看起来就像是被中断抢占一样，所以它转换到生命周期的阶段，为OS_STATE_INTERRUPTED。最后，当线程被调度为运行时，它将转换为OS_STATE_RUNNING状态。过了一会儿，线程被调度出来并且另一个线程被调度，此时原始线程再次被抢占，状态为OS_STATE_PENDING。注意，在单CPU系统中，一次只能有一个线程处于运行状态。但是现在，一个正在运行的线程可以调用os_delay()函数，此时它会被阻塞，这意味着不准备运行。状态将转换为OS_STATE_BLOCKED。\n' +
                 '\n' +
                 '现在考虑一下延迟结束时线程从阻塞状态转换出来的情况，显然，这需要由RTOS集中管理，因为阻塞的线程无法执行任何操作，也就是它无法解除阻塞。这个中央RTOS服务需要定期通过SysTick中断激活，因此称为os_tick()，每次激活时，os_tick()都需要更新各个线程的延迟，并且需要解除延迟已经过去的线程的阻塞状态。\n' +
                 '\n' +
-                '![rtos48](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos48.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos48.png#width-full)\n' +
                 '\n' +
                 '有趣的是，线程状态在Blocked-->Preempted<---->Running-->Blcoked之间转换，如上图。这也就是说如果线程在处于阻塞状态时未处于就绪状态，则它必须在“抢占状态”和“正在运行”状态下处于“就绪”状态。事实上，当处于OS_STATE_READY状态时，这意味着在Preempted或Running中，线程已准备好并愿意运行。除非有时需要进行抢占以与其他已准备好并愿意运行的线程共享CPU。这就有了另一个奇怪的结果。也就是说，当前阻塞线程的系统是不完整的，并且必然需要一个始终准备好运行且不能阻塞的特殊线程。\n' +
                 '\n' +
@@ -396,11 +397,11 @@ const blogs = {
                 '\n' +
                 '回到实现，“空闲”线程osTaskIdle与os_task_01一样，osTaskIdle的线程里面是一个无限循环，它会调用一个回调函数task_idle_thread()，\n' +
                 '\n' +
-                '![rtos49](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos49.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos49.png#width-full)\n' +
                 '\n' +
                 '这样的话应用程序级代码将能够在其中做一些处理。就像任何其他线程一样，需要启动空闲线程。最方便的地方是os_init()。现在，有趣的部分是如何为空闲线程提供堆栈。一种选择是在RTOS中预先分配它，但是在这个级别不知道os_onIdle()回调将使用多少堆栈。因此，最好简单地将空闲堆栈分配推迟到应用程序，就像在os_task_create()函数中完成一样。\n' +
                 '\n' +
-                '![rtos50](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos50.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos50.png#width-full)\n' +
                 '\n' +
                 '### 再谈轮训线程调度\n' +
                 '\n' +
@@ -410,27 +411,27 @@ const blogs = {
                 '\n' +
                 'osReadySet位掩码的各种值对应于以下情况：位0，1和n-1设置，表示线程1，2和n准备好运行。只有位1集表示线程2准备运行。最后，零位表示系统的空闲状态。通过简单地在单个指令中将osReadySet与零进行比较，可以非常有效地在代码中检查这种情况。 首先，通过将osReadySet与零进行比较，快速检查空闲状态，在这种情况下，将osTaskIndex设置为空闲线程的索引，即零。否则，如果osReadySet不为零，则表示有一些可立即运行的线程。但是现在不能简单地选择下一个线程索引，因为线程可能还没准备好运行。相反，需要继续以循环方式进行，直到找到准备运行的非空闲线程。要检查线程N是否准备好运行，需要用一个仅设置了第N位的位掩码和osReadySet进行按位与运算。如果结果为零，则需要继续，因为这意味着该位未设置，因此相应的线程尚未准备好运行。此外，需要小心通过跳过索引0从循环调度中排除空闲线程。 所以，这是最终的算法。\n' +
                 '\n' +
-                '![rtos51](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos51.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos51.png#width-full)\n' +
                 '\n' +
                 '以循环方式递增osTaskIndex，但是需要在它等于osTaskNum的时候重置为1而不是零来跳过空闲线程。 只要osReadySet指定线程未准备好运行，就会继续前进。如图：\n' +
                 '\n' +
-                '![rtos52](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos52.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos52.png#width-full)\n' +
                 '\n' +
                 '在os_delay()中，需要禁用中断，并将delay时间存储在当前线程的超时计数器中。接下来，需要通过清除osReadySet位掩码中的相应位来使线程阻塞(即未准备好运行状态)。最后，需要调用调度程序立即将该上下文切换为其他线程。\n' +
                 '\n' +
-                '![rtos53](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos53.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos53.png#width-full)\n' +
                 '\n' +
                 '正如在前面所写的，os_sched()被设计为在禁用中断的情况下调用，并且在重新启用中断后立即进行上下文切换。还需要注意的一点是os_delay()禁止从空闲线程调用它，因为它永远不会进入阻塞状态。所以需要通过添加一个断言来完成此操作，即当前线程不是索引0处的空闲线程。\n' +
                 '\n' +
-                '![rtos54](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos54.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos54.png#width-full)\n' +
                 '\n' +
                 '再来看系统计时器如何更新各个线程的延迟。SysTick_Handler将调用os_tick()函数，该函数将减少所有非零超时计数器。当这些向下计数器中的任何一个达到零时，相应的线程将被解除阻塞并被调度。\n' +
                 '\n' +
-                '![rtos55](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos55.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos55.png#width-full)\n' +
                 '\n' +
                 'os_tick()的实现需要循环遍历所有线程，除了空闲线程，减少所有非零超时计数器。对于刚刚变为零的计数器的线程需要解除阻塞。正如前面TCB所看到的，在每个线程中有一个单独的超时计数器timeout将用来延迟运行。并且每个线程中的timeout相互独立。因此，os_tick()的代码将包含一个遍历所有线程的for循环，从索引1开始跳过空闲线程。在循环中，首先需要检查相应线程的超时计数器，如果它不是零，需要递减它。如果计数器变为零，则需要通过设置osReadySet位掩码中的相应位来使线程准备好运行。注意，此实现假定将从单个中断服务程序调用os_tick()，例如SysTick_Handler()。在这种情况下，不需要在os_tick()中禁用中断，因为ISR不能被线程抢占，因此任何意外更改超时计数器(仅在os_delay()中可能发生)是不可能的。此外，没有必要从os_tick()调用os_sched()，因为始终在SysTick_Handler的末尾调用调度程序来安排了任何未阻塞的线程。既此时的SysTick_Handler:\n' +
                 '\n' +
-                '![rtos56](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos56.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos56.png#width-full)\n' +
                 '\n' +
                 '### 优先级线程调度\n' +
                 '\n' +
@@ -442,13 +443,13 @@ const blogs = {
                 '\n' +
                 '接下来我们在RTOS中实现基于优先级的调度，优先级编号是一个整数，在前面的TCB中表现为priority， 范围从0到支持的最大线程数，在该RTOS中为32，在RTOS实现中，还需要重新设计os_task_t[]数组osTasks的使用。os_task_t[]数组osTasks包含指向已启动的所有线程对象的指针。在循环调度程序中，数组从索引0连续填充，索引0是为空闲线程保留的，直到osTaskNum。对于基于优先级的调度程序，区别在于os_task_t[]数组osTasks中的索引将是线程PRIORITIES，并且这些优先级不需要是连续的，这意味着os_task_t[]数组osTasks中可能存在间隙。\n' +
                 '\n' +
-                '![rtos57](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos57.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos57.png#width-full)\n' +
                 '\n' +
                 '此外，需要将用户指定的优先级保存到线程控制块中。即在初始化线程的时候设置TCB中的priority。\n' +
                 '\n' +
                 '现在，考虑一下使用osReadySet位掩码。对于基于优先级的调度，最有趣的是根据位掩码的当前值找到准备运行的最高优先级线程。此时，需要确定优先级编号方案。由于历史原因，可能遇到的许多RTOS（如NUCLEUS，ThreadX，MicroC / OS，embOS等）使用INVERSE优先级编号方案，其中优先级0对应于最高优先级线程，而较高优先级编号对应于LOWER优先级线程。不用说，反向优先级编号方案在讨论更高和更低线程优先级时导致不断混淆。但是当然可以使用简单的DIRECT优先级编号方案，其中优先级0对应于空闲线程，而较高优先级编号对应于较高优先级的线程。 我们使用这种简单的DIRECT优先级编号约定。找到准备运行的最高优先级线程的优先级编号的基本原则是将osReadySet位掩码中，从前面的0计数到第一个1位，并从总位数中32中减去它。比如对于 `osReadySet=0x4040810(0b00000100000001000000100000010000)`，表示优先级分别为5，12，19，27的线程准备好运行，那么根据我们的基本原则，前面有5个0，所以准备运行的最高优先级线程的优先级编号便是32-5 = 27;需要注意的是bit位等于priority减1，在优先级为N准备运行的线程的一般情况下，前导零的计数将为32减N，因此优先级数计算为32减去osReadySet位掩码中前导零的计数。\n' +
                 '\n' +
-                '![rtos58](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos58.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos58.png#width-full)\n' +
                 '\n' +
                 '有意思的是在数学上，在数字x中找到最大的一位的公式32-CLZ（x）是以2为底数x的对数的整数近似。所以我们可以实现一个LOG2（）宏\n' +
                 '\n' +
@@ -460,33 +461,33 @@ const blogs = {
                 '\n' +
                 '在os_tick()中，可以利用快速LOG2()操作，而不是迭代整个os_task_t []数组osTasks， 并且迭代可能存在大量未使用的优先级。具体来说，可以引入延迟线程的位掩码，类似于osReadySet，除了它保存延迟线程。在使用它时，需要删除不再需要的变量osTaskIndex和osTasksNum。使用osDelayedSet位掩码后，os_tick()函数将仅在位掩码中的1位上进行迭代，而不是扫描所有位。但是，因为需要从位掩码中删除已经处理的位，所以需要使用临时位掩码“workingSet”。只要workingSet设置了一些位就会循环，这意味着某些线程被延迟并需要在此时钟周期处理。\n' +
                 '\n' +
-                '![rtos59](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos59.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos59.png#width-full)\n' +
                 '\n' +
                 '首先使用快速LOG2()宏快速获取workingSet中最高位1位的编号，然后使用它来索引os_task_t []数组osTasks。将获得的线程指针保存在临时变量t中。接下来，递减此线程的超时计数器，如果它变为零，则通过在osReadySet位掩码中设置相应的优先级位，使线程准备好运行。同时，从osDelayedSet位掩码中删除相同的位，因为该线程不再被延迟。最后，始终从workingSet中删除相同的优先级位，因为它现在已被处理。为了避免明显的代码重复，可以引入一个临时变量\'bit\'，如上。\n' +
                 '\n' +
-                '![rtos60](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos60.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos60.png#width-full)\n' +
                 '\n' +
                 '在os_delay()函数中，需要将osTaskIndex变量替换为当前线程的优先级编号。除了从就绪集中删除优先级位之外，该函数还需要将相同的位添加到osDelayedSet，因为此线程现在被延迟。最后，为了避免代码重复，可以引入一个临时变量\'bit\'，就像上面的os_tick()一样。如图:\n' +
                 '\n' +
-                '![rtos61](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos61.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos61.png#width-full)\n' +
                 '\n' +
                 '这样就实现了基于优先级的抢占式调度，实际上通常只有少数高优先级的线程具有硬实时期限，而其他线程只有软实时要求。在这种情况下，可以将高优先级用于硬实时线程，并将所有软实时线程的优先级降低。基于优先级的抢占式调度的优点在于，高优先级线程始终可以立即抢占所有优先级较低的线程，因此高优先级线程对执行时间或优先级较低的线程周期的变化不敏感。由于所有这些原因，抢占式，基于优先级的调度程序成为常态，并且在大多数实时操作系统中至今得到支持。\n' +
                 '\n' +
                 '## 写在最后\n' +
                 '\n' +
-                '需要注意的是，以上文章提到的代码部分涉及到代码的目录结构，项目架构，构建工具链等，可能无法简单的从文章中简单的了解，具体可见笔者GitHub:https://github.com/CenoOS/CenoOS-IOT。文章部分内容做了简化，比如线程状态转换，调度对列，并未在文中详细道出，对于状态转换，只是隐式的实现了简单的就绪态，运行态和阻塞态，对于调度而是用简化的32比特位来代替调度对列。\n' +
+                '需要注意的是，以上文章提到的代码部分涉及到代码的目录结构，项目架构，构建工具链等，可能无法简单的从文章中简单的了解，具体可见笔者GitHub:[https://github.com/CenoOS/CenoOS-IOT](https://github.com/CenoOS/CenoOS-IOT)。文章部分内容做了简化，比如线程状态转换，调度对列，并未在文中详细道出，对于状态转换，只是隐式的实现了简单的就绪态，运行态和阻塞态，对于调度而是用简化的32比特位来代替调度对列。\n' +
                 '\n' +
-                '![rtos62](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos62.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos62.png#width-full)\n' +
                 '\n' +
-                '![rtos63](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos63.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos63.png#width-full)\n' +
                 '\n' +
-                '![rtos64](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos64.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos64.png#width-full)\n' +
                 '\n' +
-                '![rtos65](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos65.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos65.png#width-full)\n' +
                 '\n' +
-                '![rtos66](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos66.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos66.png#width-full)\n' +
                 '\n' +
-                '![rtos67](/Users/wuyunfeng/Desktop/Official_Website/Official_WebSite/public/picture/blogs/rtos67.png)\n' +
+                '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/rtos67.png#width-full)\n' +
                 '\n'
         },
 
