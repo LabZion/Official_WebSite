@@ -85,7 +85,7 @@ class Menu extends Component {
     render() {
         return (
             <Fragment>
-                <Container className="Header">
+                <Container className="Menu" onScroll={this.onMenuLeaveHandler.bind(this, 'solution')}>
                     <Row>
                         <Col md={2}> </Col>
                         <Col md={8} style={{padding: 0}}>
@@ -178,7 +178,6 @@ class Menu extends Component {
     }
 
 
-
     renderMenuPanel() {
         return this.state.isPanelShow ? <Container className={"menuContainer"}
                                                    onMouseLeave={this.onMenuLeaveHandler.bind(this, 'solution') }>
@@ -217,6 +216,10 @@ class Menu extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.onMenuLeaveHandler.bind(this,""), true);
     }
 }
 
