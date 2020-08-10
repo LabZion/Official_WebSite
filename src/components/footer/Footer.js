@@ -98,8 +98,7 @@ function Footer() {
                                         display: 'inline-block',
                                         float: 'right',
                                         paddingTop: '1.5em'
-                                    }}><a style={{color: '#999'}} href={'/privacy'}>Privacy
-                                        Guidelines </a>&nbsp;| © 2020 ThoughtWorks, Inc. or its affiliates. </Row>
+                                    }}><a style={{color: '#999'}} href={'/privacy'}>隐私条款 </a>&nbsp;| © 2020 ThoughtWorks, Inc. or its affiliates. </Row>
                                 </Col>
 
                             </Row>
