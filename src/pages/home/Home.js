@@ -33,7 +33,7 @@ class Home extends Component {
                                 <Row><h5 style={{
                                     lineHeight: '1.7em',
                                     fontSize: '1.2em'
-                                }}>{'Thoughtworks安全团队已经帮助通信、汽车、金融等数十个行业的企业提供了几十余种场景的安全解决方案，包括平台搭建、系统交付、内建安全培训、专业咨询等。'}</h5>
+                                }}>{'ThoughtWorks安全团队已经帮助通信、汽车、金融等数十个行业的企业提供了几十余种场景的安全解决方案，包括平台搭建、系统交付、内建安全培训、专业咨询等。'}</h5>
                                 </Row>
                             </Col>
                         </Row>
