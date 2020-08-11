@@ -64,7 +64,7 @@ const blogs = {
         {
             img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blog-rtos.png',
             title: '来自Security的操作系统故事一：一个RTOS的设计与实现',
-            author: '杨兴峰·ThoughtWorks SynestiaOS开发',
+            author: 'NeoYang·SynestiaOS Team Member',
             description: '在嵌入式应用领域，很多场合对系统的实时性要求严格，因此操作系统的选择要基于实时系统,实时多任务操作系统,英文全称Real Time Operating System，简称RTOS。本文详细介绍了一个RTOS的设计与实现。',
             content: '## 写在前面\n' +
                 '\n' +
