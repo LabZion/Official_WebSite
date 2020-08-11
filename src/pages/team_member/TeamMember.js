@@ -21,6 +21,8 @@ import ShiFu from "../../static/images/members/shifu.jpeg"
 import ShauiGao from "../../static/images/members/shuage.jpeg"
 import Hubing from "../../static/images/members/liuhubing.jpg"
 import Wangjing from "../../static/images/members/jingwang.jpeg"
+import ZhangBin from "../../static/images/members/zhangbin.jpg"
+import MaBo from "../../static/images/members/boma.jpg"
 
 const members = [
     {
@@ -28,18 +30,18 @@ const members = [
         title: 'Senior Consultant',
         address: 'Xi`An',
         img: Wangjing,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/xiaomidou-le',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Hubing.Liu',
         title: 'Consultant,IcC design engineer, Software Engineer',
         address: 'Xi`An',
         img: Hubing,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/liuhubing',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Shuai.Gao',
@@ -47,26 +49,26 @@ const members = [
         address: 'Xi`An',
         img: ShauiGao,
         github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Shifu.Wu',
         title: 'Senior Consultant',
         address: 'ChengDu',
         img: ShiFu,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/wooshifu',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Yi.Yang',
         title: 'Senior Consultant',
         address: 'ChengDu',
         img: YiYang,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/YiYangbuku',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Li.Wang',
@@ -74,17 +76,17 @@ const members = [
         address: 'Xi`An',
         img: LiWang,
         github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Lyuju.Wang',
         title: 'Senior Consultant',
         address: 'Xi`An',
         img: Lvju,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/xiaoxiaojuzi',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Lu.Yang',
@@ -92,44 +94,44 @@ const members = [
         address: 'Xi`An',
         img: Luke,
         github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Hao.Li',
         title: 'Lead Consultant',
         address: 'WuHan',
         img: HaoLi,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/haohaolee',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Liangliang.Liu',
         title: 'Consultant, Software Engineer',
         address: 'Xi`An',
         img: LiangLiang,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/LiangLliu',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Neng.Cao',
         title: 'Senior Consultant, Software Engineer',
         address: 'WuHan',
         img: NengCao,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/nengc',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Yuxia.Gao',
         title: 'Advisory, Consultant, Software Engineer',
         address: 'Xi`An',
         img: YuBao,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/yubao86',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Xuan.Liu',
@@ -137,17 +139,17 @@ const members = [
         address: 'Xi`An',
         img: XuanLiu,
         github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Zhangjun.Wang',
         title: 'SynestiaOS Team',
         address: 'Xi`An',
         img: LaoWang,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/wangzhangjun',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Tao.Liu',
@@ -155,17 +157,33 @@ const members = [
         address: 'Beijing',
         img: Taoliu,
         github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        youtube: '',
+        twitter: '',
+    },{
+        name: 'Bin.Zhang',
+        title: 'Senior Consultant',
+        address: 'ShenZhen',
+        img: ZhangBin,
+        github: 'http://github.com',
+        youtube: '',
+        twitter: '',
+    },{
+        name: 'Bo.Ma',
+        title: 'Senior Consultant',
+        address: 'Xi`An',
+        img: MaBo,
+        github: 'https://github.com/mabowner',
+        youtube: '',
+        twitter: '',
     },
     {
         name: 'Xingfeng.Yang',
         title: 'SynestiaOS Team',
         address: 'Xi`An',
         img: Xingfeng,
-        github: 'http://github.com',
-        youtube: 'http://github.com',
-        twitter: 'http://github.com',
+        github: 'https://github.com/nerososft',
+        youtube: '',
+        twitter: '',
     }
 ];
 
@@ -223,28 +241,37 @@ class TeamMember extends Component {
                             <p>{item.address}</p>
                             <Row>
                                 <Col style={{textAlign: 'left', marginTop: '0em'}}>
-                                    <Col style={{width: '30px', display: "inline-block", padding: 0}}>
-                                        <svg id="youtube-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                                            <circle className="m-cls-1" cx="20" cy="20" r="20"/>
-                                            <path className="m-cls-2"
-                                                  d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"/>
-                                        </svg>
-                                    </Col>
-                                    <Col style={{width: '30px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
-                                        <svg id="github-icon" viewBox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg">
-                                            <path className="m-cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"/>
-                                            <path className="m-cls-2"
-                                                  d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"/>
-                                        </svg>
-                                    </Col>
-                                    <Col style={{width: '30px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
-                                        <svg id="twitter-icon" viewBox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg">
-                                            <circle className="m-cls-1" cx="37.97" cy="37.97" r="37.97"/>
-                                            <path className="m-cls-2"
-                                                  d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z"
-                                                  data-name="Twitter" id="Twitter-2"/>
-                                        </svg>
-                                    </Col>
+                                    {item.youtube !== "" ?
+                                        <a href={item.youtube}>
+                                            <Col style={{width: '30px', display: "inline-block", padding: 0}}>
+                                                <svg id="youtube-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle className="m-cls-1" cx="20" cy="20" r="20"/>
+                                                    <path className="m-cls-2"
+                                                          d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"/>
+                                                </svg>
+                                            </Col>
+                                        </a> : null}
+                                    {item.github !== "" ?
+                                        <a href={item.github}>
+                                            <Col style={{width: '30px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
+                                                <svg id="github-icon" viewBox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg">
+                                                    <path className="m-cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"/>
+                                                    <path className="m-cls-2"
+                                                          d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"/>
+                                                </svg>
+                                            </Col>
+                                        </a> : null}
+                                    {item.twitter !== "" ?
+                                        <a href to={item.twitter}>
+                                            <Col style={{width: '30px', display: "inline-block", padding: 0, marginLeft: '1em'}}>
+                                                <svg id="twitter-icon" viewBox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle className="m-cls-1" cx="37.97" cy="37.97" r="37.97"/>
+                                                    <path className="m-cls-2"
+                                                          d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z"
+                                                          data-name="Twitter" id="Twitter-2"/>
+                                                </svg>
+                                            </Col>
+                                        </a> : null}
                                 </Col>
                             </Row>
                         </Col>
