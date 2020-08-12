@@ -21,9 +21,8 @@ class ContactUs extends Component {
             numberOfGuests: '',
             hearFromWhere: '',
             demand: '',
-            isAgreePrivacyPolicy:''
+            isAgreePrivacyPolicy: ''
         };
-
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -40,26 +39,21 @@ class ContactUs extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        if(this.state.isAgreePrivacyPolicy !=true){
+        if (this.state.isAgreePrivacyPolicy != true) {
             alert('请阅读隐私政策并选择同意。')
-        }
-        else{
+        } else {
             const data = new FormData(event.target);
             const xhr = new XMLHttpRequest();
             xhr.open(event.target.method, event.target.action);
             xhr.setRequestHeader("Accept", "application/json");
             xhr.send(data);
             alert("您的信息我们已经收到，我们会尽快联系您，请稍候！")
-            window.location='/contact-us';
+            window.location = '/contact-us';
         }
-
-
-
     }
 
     render() {
         return (
-
             // <iframe id="goldendata_form_jHeRJL"
             //         src="https://jinshuju.net/f/jHeRJL?background=white&banner=show&embedded=true&inner_redirect=false"
             //         width="100%" frameBorder={'0'} allowTransparency={'true'} height={'1124'}></iframe>
@@ -72,18 +66,19 @@ class ContactUs extends Component {
                     <Col md={8} style={{paddingTop: '3em'}}>
                         <p style={{textAlign: "center", fontSize: '1.6em'}}>请填写下方表格，以便我们可以及时回复您的咨询。
                         </p>
-                            <Row>
-                                <Col md={3}></Col>
-                                <Col md={7} style={{textAlign: "left"}}>
-                                    <h3>联系表</h3>
-                                    <br/>
-                                    <form onSubmit={this.handleSubmit} action="https://formspree.io/mvowyqyw"
-                                          method="POST">
+                        <Row>
+                            <Col md={3}></Col>
+                            <Col md={7} style={{textAlign: "left"}}>
+                                <h3>联系表</h3>
+                                <br/>
+                                <form onSubmit={this.handleSubmit} action="https://formspree.io/mvowyqyw"
+                                      method="POST">
                                     <label style={{display: 'inline-block'}}><b>请选择您要咨询的事项</b></label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  style={{width: '80%'}}>
-                                        <FormControl as="select" required="required" name="advisoryType" value={this.state.advisoryType}
-                                                     onChange={this.handleInputChange} >
+                                    <FormGroup style={{width: '80%'}}>
+                                        <FormControl as="select" required="required" name="advisoryType"
+                                                     value={this.state.advisoryType}
+                                                     onChange={this.handleInputChange}>
                                             <option>业务咨询</option>
                                             <option>应聘</option>
                                             <option>反馈</option>
@@ -93,65 +88,72 @@ class ContactUs extends Component {
                                     <label style={{display: 'inline-block'}}><b>您的姓名</b>
                                     </label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  validationState="success"
+                                    <FormGroup validationState="success"
                                                style={{width: '80%'}}>
-                                        <FormControl type="text" required="required" name="nameOfGuests" value={this.state.nameOfGuests}
-                                                     onChange={this.handleInputChange} />
+                                        <FormControl type="text" required="required" name="nameOfGuests"
+                                                     value={this.state.nameOfGuests}
+                                                     onChange={this.handleInputChange}/>
                                     </FormGroup>
                                     <label style={{display: 'inline-block'}}><b>公司/单位</b></label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  validationState="success"
+                                    <FormGroup validationState="success"
                                                style={{width: '80%'}}>
-                                        <FormControl type="text" required="required" name="companyOfGuests" value={this.state.companyOfGuests}
+                                        <FormControl type="text" required="required" name="companyOfGuests"
+                                                     value={this.state.companyOfGuests}
                                                      onChange={this.handleInputChange}/>
                                     </FormGroup>
                                     <label style={{display: 'inline-block'}}><b>职位</b></label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  validationState="success"
+                                    <FormGroup validationState="success"
                                                style={{width: '80%'}}>
-                                        <FormControl type="text" required="required" name="positionOfGuests" value={this.state.positionOfGuests}
+                                        <FormControl type="text" required="required" name="positionOfGuests"
+                                                     value={this.state.positionOfGuests}
                                                      onChange={this.handleInputChange}/>
                                     </FormGroup>
                                     <label style={{display: 'inline-block'}}><b>邮箱</b></label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  validationState="success"
+                                    <FormGroup validationState="success"
                                                style={{width: '80%'}}>
-                                        <FormControl type="email" required="required" name="emailOfGuests" value={this.state.emailOfGuests}
+                                        <FormControl type="email" required="required" name="emailOfGuests"
+                                                     value={this.state.emailOfGuests}
                                                      onChange={this.handleInputChange}/>
                                     </FormGroup>
                                     <label style={{display: 'inline-block'}}><b>电话</b></label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  validationState="success"
+                                    <FormGroup validationState="success"
                                                style={{width: '80%'}}>
-                                        <FormControl type="tel" required="required" title='手机号格式不正确' pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$"
+                                        <FormControl type="tel" required="required" title='手机号格式不正确'
+                                                     pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$"
                                                      name="numberOfGuests" value={this.state.numberOfGuests}
                                                      onChange={this.handleInputChange}/>
                                     </FormGroup>
                                     <label style={{display: 'inline-block'}}><b>您从哪里了解到我们？</b></label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  validationState="success"
+                                    <FormGroup validationState="success"
                                                style={{width: '80%'}}>
-                                        <FormControl type="text" required="required" name="hearFromWhere" value={this.state.hearFromWhere}
+                                        <FormControl type="text" required="required" name="hearFromWhere"
+                                                     value={this.state.hearFromWhere}
                                                      onChange={this.handleInputChange}/>
                                     </FormGroup>
                                     <label style={{display: 'inline-block'}}><b>您希望获取怎样的帮助</b></label>
                                     <label style={{color: 'red',}}>*</label>
-                                    <FormGroup  validationState="success"
+                                    <FormGroup validationState="success"
                                                style={{width: '80%'}}>
-                                        <FormControl as="textarea" rows="5" required="required" name="demand" value={this.state.demand}
+                                        <FormControl as="textarea" rows="5" required="required" name="demand"
+                                                     value={this.state.demand}
                                                      onChange={this.handleInputChange}/>
                                     </FormGroup>
                                     <div style={{backgroud: '#000000', height: '3em',}}>
-                                        <FormCheck style={{display: 'inline-block'}} name="isAgreePrivacyPolicy" checked={this.state.isAgreePrivacyPolicy}
+                                        <FormCheck style={{display: 'inline-block'}} name="isAgreePrivacyPolicy"
+                                                   checked={this.state.isAgreePrivacyPolicy}
                                                    onChange={this.handleInputChange}></FormCheck>
                                         <label>我们尊重您的隐私，并将根据 <a href={'/privacy'} target={'_blank'}>隐私政策 </a>对相应数据进行保密和处理。</label>
                                     </div>
                                     <input type="submit" className={'btn-info btn-lg '} value="提交"/>
-                        </form>
-                                    <br/><br/>
-                                </Col>
-
-                            </Row>
+                                </form>
+                                <br/><br/>
+                            </Col>
+                        </Row>
 
                     </Col>
                 </Row>
@@ -179,7 +181,6 @@ class ContactUs extends Component {
                                     <span style={{float: 'right'}} className="iconfont">&#xe503;</span>&nbsp;
                                     <p>北京、上海、西安、成都、武汉、深圳、北美</p>
                                 </Row>
-
                             </Col>
                         </Row>
                     </Container>
