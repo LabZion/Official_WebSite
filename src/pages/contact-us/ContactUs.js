@@ -12,6 +12,10 @@ import '../../static/iconfont/iconfont.css'
 class ContactUs extends Component {
     render() {
         return (
+
+            // <iframe id="goldendata_form_jHeRJL"
+            //         src="https://jinshuju.net/f/jHeRJL?background=white&banner=show&embedded=true&inner_redirect=false"
+            //         width="100%" frameBorder={'0'} allowTransparency={'true'} height={'1124'}></iframe>
             <Container style={{padding: 0}} className="ContactUs">
 
                 <Row style={{background: '#f4f4f4'}}>
@@ -19,17 +23,17 @@ class ContactUs extends Component {
                     <Col md={2}></Col>
 
                     <Col md={8} style={{paddingTop:'3em'}}>
-                        <p style={{textAlign: "center", fontSize: '1.6em'}}>请填写下方表格，以便我们将您的咨询发送给相应团队。
-                            您可以在此处查看我们的办公地点。</p>
+                        <p style={{textAlign: "center", fontSize: '1.6em'}}>请填写下方表格，以便我们可以及时回复您的咨询。
+                           </p>
                         <Row>
 
-                            <Col md={2}></Col>
-                            <Col md={8} style={{textAlign: "left"}}>
+                            <Col md={3}></Col>
+                            <Col md={7} style={{textAlign: "left"}}>
                                 <h3>联系表</h3>
                                 <br/>
                                 <label style={{display: 'inline-block'}}><b>请选择您要咨询的事项</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="exampleForm.ControlSelect1">
+                                <FormGroup controlId="exampleForm.ControlSelect1" style={{width:'80%'}}>
                                     <FormControl as="select">
                                         <option>业务咨询</option>
                                         <option>应聘</option>
@@ -39,42 +43,42 @@ class ContactUs extends Component {
                                 </FormGroup>
                                 <label style={{display: 'inline-block'}}><b>您的姓名</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="formValidationSuccess1" validationState="success">
+                                <FormGroup controlId="formValidationSuccess1" validationState="success" style={{width:'80%'}}>
                                     <FormControl type="text"/>
                                 </FormGroup>
                                 <label style={{display: 'inline-block'}}><b>公司/单位</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="formValidationSuccess1" validationState="success">
+                                <FormGroup controlId="formValidationSuccess1" validationState="success" style={{width:'80%'}}>
                                     <FormControl type="text"/>
                                 </FormGroup>
                                 <label style={{display: 'inline-block'}}><b>职位</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="formValidationSuccess1" validationState="success">
+                                <FormGroup controlId="formValidationSuccess1" validationState="success" style={{width:'80%'}}>
                                     <FormControl type="text"/>
                                 </FormGroup>
                                 <label style={{display: 'inline-block'}}><b>邮箱</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="formValidationSuccess1" validationState="success">
+                                <FormGroup controlId="formValidationSuccess1" validationState="success" style={{width:'80%'}}>
                                     <FormControl type="text"/>
                                 </FormGroup>
                                 <label style={{display: 'inline-block'}}><b>电话</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="formValidationSuccess1" validationState="success">
+                                <FormGroup controlId="formValidationSuccess1" validationState="success" style={{width:'80%'}}>
                                     <FormControl type="text"/>
                                 </FormGroup>
                                 <label style={{display: 'inline-block'}}><b>您从哪里了解到我们？</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="formValidationSuccess1" validationState="success">
+                                <FormGroup controlId="formValidationSuccess1" validationState="success" style={{width:'80%'}}>
                                     <FormControl type="text"/>
                                 </FormGroup>
                                 <label style={{display: 'inline-block'}}><b>您希望获取怎样的帮助</b></label>
                                 <label style={{color: 'red',}}>*</label>
-                                <FormGroup controlId="formValidationSuccess1" validationState="success">
-                                    <FormControl type="text"/>
+                                <FormGroup controlId="formValidationSuccess1" validationState="success" style={{width:'80%'}}>
+                                    <FormControl as="textarea" rows="5"/>
                                 </FormGroup>
                                 <div style={{backgroud: '#000000', height: '3em',}}>
                                     <FormCheck style={{display: 'inline-block'}}></FormCheck>
-                                    <label>我们尊重您的隐私，并将根据 <a href={'https://security.thoughtworks.cn/privacy'}>隐私政策 </a>对相应数据进行保密和处理。</label>
+                                    <label>我们尊重您的隐私，并将根据 <a href={'/privacy'} target={'_blank'}>隐私政策 </a>对相应数据进行保密和处理。</label>
                                 </div>
                                 <input type="submit" className={'btn-info btn-lg '} value="提交"/>
                                 <br/><br/>
