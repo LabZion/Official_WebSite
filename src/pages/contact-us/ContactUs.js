@@ -64,7 +64,7 @@ class ContactUs extends Component {
                     <Col md={2}></Col>
 
                     <Col md={8} style={{paddingTop: '3em'}}>
-                        <p style={{textAlign: "center", fontSize: '1.6em'}}>请填写下方表格，以便我们可以及时回复您的咨询。
+                        <p style={{textAlign: "center", fontSize: '1.2em'}}>我们真诚地期待您与我们取得联系，洽谈商业合作、应聘职位或留下宝贵的建议。
                         </p>
                         <Row>
                             <Col md={3}></Col>
@@ -149,7 +149,10 @@ class ContactUs extends Component {
                                                    onChange={this.handleInputChange}></FormCheck>
                                         <label>我们尊重您的隐私，并将根据 <a href={'/privacy'} target={'_blank'}>隐私政策 </a>对相应数据进行保密和处理。</label>
                                     </div>
-                                    <input type="submit" className={'btn-info btn-lg '} value="提交"/>
+                                    <div>
+                                        <input type="submit"  style={{borderRadius:'500px', background:'linear-gradient(#34a5f8, #088ef0)'}} className={'btn-primary  btn-lg'} value="提交"/>
+                                    </div>
+                                    
                                 </form>
                                 <br/><br/>
                             </Col>

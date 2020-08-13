@@ -231,15 +231,15 @@ class TeamMember extends Component {
                 return <Col md={4} style={{padding: '1em'}}>
                     <Row>
                         <Col md={6} style={{padding: '1em'}}>
-                            <Image className={"head"} variant="top" src={item.img}/>
+                            <Image style={{height:'85%'}} className={"head"} variant="top" src={item.img}/>
                         </Col>
-                        <Col md={6} style={{ textAlign: "left", paddingLeft: '0.5em',marginTop:'1em'}}>
+                        <Col md={6} style={{ textAlign: "left", paddingLeft: '0.5em',marginTop:'1em',height:'12em'}}>
                             <h4>{item.name}</h4>
                             <p>{item.title}</p>
                             <p/>
                             <p/>
                             <p>{item.address}</p>
-                            <Row>
+                            <Row style={{position:'absolute',bottom: '0'}}>
                                 <Col style={{textAlign: 'left', marginTop: '0em'}}>
                                     {item.youtube !== "" ?
                                         <a href={item.youtube}>

@@ -25,7 +25,7 @@ class CasePage extends Component {
                 <Row style={{background: '#fff', paddingTop: '2em', paddingBottom: '2em'}}>
                     <Col md={2}></Col>
                     <Col md={8} style={{textAlign: 'left'}}>
-                        <Container
+                        <Container  className={"cases-container"}
                             dangerouslySetInnerHTML={{__html: markdown.toHTML(caseName.content)}}>
                         </Container>
                     </Col>

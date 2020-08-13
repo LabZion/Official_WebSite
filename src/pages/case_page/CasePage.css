@@ -115,3 +115,8 @@ img[src*="#width-90"] {
     margin-right: 0.5em;
     position: relative;
 }
+
+.cases-container img {
+    display: block;
+    margin:0 auto;
+}
