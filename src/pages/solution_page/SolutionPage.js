@@ -170,7 +170,10 @@ const industry = {
 class SolutionPage extends Component {
 
     render() {
-        let solution = this.props.location.state.params;
+        let solution = 'financial';
+        if(this.props.location) {
+            solution = this.props.location.state.params;
+        }
 
         return (
             <Container style={{padding: 0}} className="SolutionPage">
