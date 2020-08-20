@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Noto Sans SC', 'Open Sans'
+  font-family: 'Noto Sans SC', 'Open Sans',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Noto Sans SC', 'Open Sans',
     monospace;
 }
