@@ -146,7 +146,7 @@ const industry = {
         data: [
             {
                 title: '静态应用安全测试',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/SAST.webp',
+                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/SAST.jpg',
                 description: '源码安全扫描经过多年的发展，已经变得相当成熟，是广为人知的一个安全实践。\n' +
                     '源码安全扫描，也叫做静态应用安全测试，英文Static Application Security Test，简称SAST，指通过工具对源代码进行安全检查，发现源代码里面的安全问题。\n' +
                     'ThoughtWorks安全团队遵循最佳实践的原则，一直在更新这个实践。一方面，得益于自动化，它可以让开发团队以更少的工作量付出，更快速地获取到关于源码安全质量的反馈，同时还降低了开发团队对于安全专业技能的要求。\n' +
