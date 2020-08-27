@@ -18,29 +18,29 @@ class Menu extends Component {
                 {
                     title: 'INDUSTRY',
                     items: [
-                        {title: 'CAR', route: '/solution', state: {params: 'car'}},
-                        {title: 'FINANCIAL', route: '/solution', state: {params: 'financial'}},
-                        {title: 'CLOUD', route: '/solution', state: {params: 'cloud'}},
-                        {title: 'SALES', route: '/solution', state: {params: 'sales'}},
+                        {title: 'CAR', route: '/solution/car', state: {params: 'car'}},
+                        {title: 'FINANCIAL', route: '/solution/financial', state: {params: 'financial'}},
+                        {title: 'CLOUD', route: '/solution/cloud', state: {params: 'cloud'}},
+                        {title: 'SALES', route: '/solution/sales', state: {params: 'sales'}},
                         //{title: 'LOGISTICS', route: '/solution', state: {params: 'logistics'}}
                     ]
                 },
                 {
                     title: 'SCOPE',
                     items: [
-                        {title: 'DATA', route: '/solution', state: {params: 'data'}},
+                        {title: 'DATA', route: '/solution/data', state: {params: 'data'}},
                         // {title: 'IDENTIFY', route: '/solution', state: {params: 'identify'}},
-                        {title: 'EMBED', route: '/solution', state: {params: 'embed'}},
+                        {title: 'EMBED', route: '/solution/embed', state: {params: 'embed'}},
                         // {title: 'TRUST', route: '/solution', state: {params: 'trust'}},
-                        {title: 'BUILDIN', route: '/solution', state: {params: 'buildin'}},
+                        {title: 'BUILDIN', route: '/solution/buildin', state: {params: 'buildin'}},
                     ]
                 }
             ], customer: [{
                 title: 'INDUSTRY',
                 items: [
-                    {title: 'CARINDUSTRY', route: '/cases', state: {params: 'car'}},
-                    {title: 'CLOUDINDUSTRY', route: '/cases', state: {params: 'cloud'}},
-                    {title: 'MEDICINEINDUSTRY', route: '/cases', state: {params: 'medicine'}},
+                    {title: 'CARINDUSTRY', route: '/cases/car', state: {params: 'car'}},
+                    {title: 'CLOUDINDUSTRY', route: '/cases/cloud', state: {params: 'cloud'}},
+                    {title: 'MEDICINEINDUSTRY', route: '/cases/medicine', state: {params: 'medicine'}},
                 ]
             },
 

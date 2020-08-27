@@ -30,13 +30,13 @@ function App() {
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/insight" component={Insight}/>
                 <Route exact path="/event" component={Events}/>
-                <Route exact path="/event-detail" component={EventDetail}/>
+                <Route exact path="/event-detail/:index" component={EventDetail}/>
                 <Route exact path="/blogs" component={Blogs}/>
-                <Route exact path="/blog-detail" component={BlogPage}/>
-                <Route exact path="/solution" component={SolutionPage}/>
+                <Route exact path="/blog-detail/:index" component={BlogPage}/>
+                <Route exact path="/solution/:solution" component={SolutionPage}/>
                 <Route exact path="/open-source" component={OpenSource}/>
-                <Route exact path="/cases" component={Cases}/>
-                <Route exact path="/case-detail" component={CasePage}/>
+                <Route exact path="/cases/:industry" component={Cases}/>
+                <Route exact path="/case-detail/:industry/:index" component={CasePage}/>
                 <Route exact path="/contact-us" component={ContactUs}/>
                 <Route exact path="/privacy" component={Privacy}/>
                 <Route exact path="/company" component={Company}/>

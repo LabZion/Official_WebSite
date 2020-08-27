@@ -8,12 +8,20 @@ import Col from "react-bootstrap/Col";
 import {withTranslation} from "react-i18next";
 import 'video-react/dist/video-react.css';
 import {Player} from 'video-react';
+import {events} from "../events/eventsData";
 
 const markdown = require("markdown").markdown;
 
 class EventDetail extends Component {
     render() {
-        let detail = this.props.location.state.params;
+
+
+        let index = 0;
+        if(this.props.match.params) {
+            index = this.props.match.params.index;
+        }
+
+        let detail = events.past[index];
         return (
             <Container style={{padding: 0}} className="EventDetail">
                 <Row style={{background: '#29292f'}}>

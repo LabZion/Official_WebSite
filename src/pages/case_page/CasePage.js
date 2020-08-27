@@ -6,6 +6,7 @@ import {connect} from "react-redux";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import Col from "react-bootstrap/Col";
 import {Row} from "react-bootstrap";
+import {cases} from "../cases/casesData";
 
 const markdown = require("markdown").markdown;
 
@@ -14,7 +15,15 @@ class CasePage extends Component {
 
 
     render() {
-        let caseName = this.props.location.state.params;
+        let index = 0;
+        let industry = 'car';
+        if(this.props.match.params) {
+            industry = this.props.match.params.industry;
+            index = this.props.match.params.index;
+        }
+
+        let caseName = cases[industry].data[index];
+
         return (
             <Container style={{padding: 0}} className="CasePage">
                 <BreadNav

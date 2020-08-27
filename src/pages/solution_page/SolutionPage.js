@@ -171,8 +171,8 @@ class SolutionPage extends Component {
 
     render() {
         let solution = 'financial';
-        if(this.props.location) {
-            solution = this.props.location.state.params;
+        if(this.props.match.params) {
+            solution = this.props.match.params.solution;
         }
 
         return (

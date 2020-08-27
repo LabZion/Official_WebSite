@@ -6,12 +6,21 @@ import {connect} from "react-redux";
 import BreadNav from "../../components/bread_nav/BreadNav";
 import {Row} from "react-bootstrap";
 import Col from "react-bootstrap/Col";
+import {blogs} from "../blogs/blogsData";
 
 const markdown = require("markdown").markdown;
 
 class BlogPage extends Component {
     render() {
-        let detail = this.props.location.state.params;
+
+
+        let index = 0;
+        if(this.props.match.params) {
+            index = this.props.match.params.index;
+        }
+
+        let detail = blogs.blog[index];
+
         return (
             <Container style={{padding: 0}} className="BlogPage">
                 <BreadNav
