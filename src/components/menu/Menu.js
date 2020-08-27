@@ -90,61 +90,68 @@ class Menu extends Component {
                         <Col md={2}> </Col>
                         <Col md={8} style={{padding: 0}}>
                             <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
-                                <Navbar.Brand className="icon-header" href="#home">
-                                    <Dropdown>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'solution')}
-                                                         variant="success"
-                                                         style={{
-                                                             background: 'transparent',
-                                                             color: '#4a4a4a',
-                                                             border: 'none'
-                                                         }}
-                                                         id="dropdown-basic">
-                                            {this.props.t('SOLUTION_SERVICE')}
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}
-                                                         variant="success" style={{
-                                            background: 'transparent',
-                                            color: '#4a4a4a',
-                                            border: 'none'
-                                        }}
-                                                         id="dropdown-basic">
-                                            {this.props.t('CUSTOMER')}
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'resource')}
-                                                         variant="success" style={{
-                                            background: 'transparent',
-                                            color: '#4a4a4a',
-                                            border: 'none'
-                                        }}
-                                                         id="dropdown-basic">
-                                            {this.props.t('RESOURCE')}
-                                        </Dropdown.Toggle>
-                                        <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
-                                                         variant="success" style={{
-                                            background: 'transparent',
-                                            color: '#4a4a4a',
-                                            border: 'none'
-                                        }}
-                                                         id="dropdown-basic">
-                                            {this.props.t('ABOUT_US')}
-                                        </Dropdown.Toggle>
+                                <Dropdown style={{display: 'inline'}}>
+                                    <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'solution')}
+                                                     variant="success"
+                                                     style={{
+                                                         background: 'transparent',
+                                                         color: '#4a4a4a',
+                                                         border: 'none'
+                                                     }}
+                                                     id="dropdown-basic">
+                                        {this.props.t('SOLUTION_SERVICE')}
+                                    </Dropdown.Toggle>
+                                </Dropdown>
+                                <Dropdown style={{display: 'inline'}}>
+                                    <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'customer')}
+                                                     variant="success" style={{
+                                        background: 'transparent',
+                                        color: '#4a4a4a',
+                                        border: 'none'
+                                    }}
+                                                     id="dropdown-basic">
+                                        {this.props.t('CUSTOMER')}
+                                    </Dropdown.Toggle>
+                                </Dropdown>
+                                <Dropdown style={{display: 'inline'}}>
+                                    <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'resource')}
+                                                     variant="success" style={{
+                                        background: 'transparent',
+                                        color: '#4a4a4a',
+                                        border: 'none'
+                                    }}
+                                                     id="dropdown-basic">
+                                        {this.props.t('RESOURCE')}
+                                    </Dropdown.Toggle>
+                                </Dropdown>
+                                <Dropdown style={{display: 'inline'}}>
+                                    <Dropdown.Toggle onMouseEnter={this.onMenuEnterHandler.bind(this, 'aboutUs')}
+                                                     variant="success" style={{
+                                        background: 'transparent',
+                                        color: '#4a4a4a',
+                                        border: 'none'
+                                    }}
+                                                     id="dropdown-basic">
+                                        {this.props.t('ABOUT_US')}
+                                    </Dropdown.Toggle>
+                                </Dropdown>
+                                <Dropdown style={{display: 'inline'}}>
+                                    <Navbar.Brand className="icon-header" href="#home">
                                         <Link to="/contact-us" style={{fontWeight: 'bolder', margin: 0, paddingTop: '0.8em '}}>
-                                        <button variant="success" style={{
-                                            background: 'transparent',
-                                            fontWeight:'lighter',
-                                            fontSize:'0.8em',
-                                            textDecoration:'none',
-                                            display:'inline-block',
-                                            color: '#4a4a4a',
-                                            border: 'none'
-                                        }} >
-                                            {this.props.t('CONTACT_US')}
-                                        </button>
+                                            <button variant="success" style={{
+                                                background: 'transparent',
+                                                fontWeight: 'lighter',
+                                                fontSize: '0.8em',
+                                                textDecoration: 'none',
+                                                display: 'inline-block',
+                                                color: '#4a4a4a',
+                                                border: 'none'
+                                            }}>
+                                                {this.props.t('CONTACT_US')}
+                                            </button>
                                         </Link>
-                                    </Dropdown>
-
-                                </Navbar.Brand>
+                                    </Navbar.Brand>
+                                </Dropdown>
                             </Navbar>
 
                             {this.renderMenuPanel()}
@@ -180,7 +187,7 @@ class Menu extends Component {
 
     renderMenuPanel() {
         return this.state.isPanelShow ? <Container className={"menuContainer"}
-                                                   onMouseLeave={this.onMenuLeaveHandler.bind(this, 'solution') }>
+                                                   onMouseLeave={this.onMenuLeaveHandler.bind(this, 'solution')}>
             <Row>
                 <Col md={2}> </Col>
                 <Col md={8}>
@@ -219,7 +226,7 @@ class Menu extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.onMenuLeaveHandler.bind(this,""), true);
+        window.addEventListener('scroll', this.onMenuLeaveHandler.bind(this, ""), true);
     }
 }
 
