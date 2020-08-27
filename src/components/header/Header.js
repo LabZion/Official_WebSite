@@ -24,12 +24,14 @@ class Header extends Component {
                     <Row style={{display:'absolute'}}>
                         <Col md={2}> </Col>
                         <Col md={8}>
-                            <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0}}>
+                            <Navbar bg="#fff" variant="light" style={{paddingLeft: 0, paddingRight: 0,justifyContent:'space-between'}}>
+                                <Container>
                                 <Link to="/home" style={{fontWeight: 'bolder', margin: 0, padding: 0,}}>
                                     <Image src={Logo} className="logo-img" rounded/>
-                                </Link>
+                                </Link> </Container>
 
-                                <Link to="/event" style={{fontWeight: 'bolder', margin:0, padding: 0,marginLeft:'60%'}}>
+
+                                <Link to="/event" style={{fontWeight: 'bolder', margin:0, padding: 0}}>
                                     <Navbar.Brand className="icon-header">
                                         <strong className={"headerTitleSpan"}>{this.props.t('EVENTS')} & {this.props.t('INSIGHT')}</strong>
                                     </Navbar.Brand>
@@ -40,6 +42,7 @@ class Header extends Component {
                                         <strong  className={"headerTitleSpan"}>{this.props.t('BLOGS')}</strong>
                                     </Navbar.Brand>
                                 </Link>
+
 
                                 {/*<Navbar.Collapse className="justify-content-end">*/}
                                 {/*    <Dropdown>*/}
