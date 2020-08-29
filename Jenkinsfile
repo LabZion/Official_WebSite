@@ -4,7 +4,7 @@ pipeline {
     agent {
         kubernetes {
             label 'jnlp-slave'
-            defaultContainer 'jnlp-container'
+            // defaultContainer 'jnlp-container'
             yamlFile 'jnlp.yaml'
         }
     }
