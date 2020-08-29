@@ -10,9 +10,9 @@ pipeline {
     }
 
     stages {
-        stage('Test stage') {
+        stage('Release Docker Image') {
             steps {
-                 echo 'Hello Jenkins'
+                 sh 'auto/release'
             }
         }
     }
