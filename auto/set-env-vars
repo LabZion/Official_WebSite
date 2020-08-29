@@ -1,0 +1,9 @@
+#! /bin/bash -ev
+
+AWS_REGION=${AWS_REGION:-ap-northeast-1}
+ECR_ID="729601114034"
+
+DOCKER_IMAGE="${ECR_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/official-website"
+BN=${BUILD_NUMBER:-0}
+GITHASH=$(git rev-parse --short HEAD)
+TAG="${GITHASH}.${BN}"
