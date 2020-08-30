@@ -5,24 +5,13 @@ metadata:
     app: jnlp-slave
   name: jnlp-slave
 spec:
-  volumes:
-    - name: workspace-volume
-      emptyDir: {}
   containers:
     - name: jnlp-container
       image: ninech/jnlp-slave-with-docker
       imagePullPolicy: IfNotPresent
-      args: ["$(JENKINS_SECRET)", "$(JENKINS_NAME)"]
       env:
         - name: DOCKER_HOST
           value: "tcp://localhost:2375"
-      resources:
-        limits:
-          cpu: 600m
-          memory: 2048Mi
-        requests:
-          cpu: 500m
-          memory: 1024Mi
 
     - name: "dind"
       image: docker:19.03.9-dind
@@ -32,10 +21,4 @@ spec:
           value: ""
       securityContext:
         privileged: true
-      resources:
-        limits:
-          cpu: 512m
-          memory: 1024Mi
-        requests:
-          cpu: 512m
-          memory: 512Mi
+      
