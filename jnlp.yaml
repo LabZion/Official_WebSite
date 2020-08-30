@@ -9,8 +9,3 @@ spec:
     - name: jnlp-container
       image: ninech/jnlp-slave-with-docker
       imagePullPolicy: IfNotPresent
-
-    - name: "dind"
-      image: docker:19.03.9-dind
-      imagePullPolicy: IfNotPresent
-      
