@@ -12,7 +12,6 @@ pipeline {
     stages {
         stage('Release Docker Image') {
             steps {
-                 sh 'sleep 20m'
                  sh 'auto/release'
             }
         }
