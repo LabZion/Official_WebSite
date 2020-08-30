@@ -6,39 +6,21 @@ metadata:
   name: jnlp-slave
 spec:
   volumes:
+    - name: docker-path
+      hostPath:
+        path: /var/run/docker.sock
     - name: workspace-volume
       emptyDir: {}
   containers:
     - name: jnlp-container
       image: ninech/jnlp-slave-with-docker
-      imagePullPolicy: IfNotPresent
-      args: ["$(JENKINS_SECRET)", "$(JENKINS_NAME)"]
       command:
         - cat
       tty: true
-      env:
-        - name: DOCKER_HOST
-          value: "tcp://localhost:2375"
-      resources:
-        limits:
-          cpu: 600m
-          memory: 2048Mi
-        requests:
-          cpu: 500m
-          memory: 1024Mi
-
-    - name: "dind"
-      image: docker:19.03.9-dind
-      imagePullPolicy: IfNotPresent
-      env:
-        - name: DOCKER_TLS_CERTDIR
-          value: ""
-      securityContext:
-        privileged: true
-      resources:
-        limits:
-          cpu: 512m
-          memory: 1024Mi
-        requests:
-          cpu: 512m
-          memory: 512Mi
+      volumeMounts:
+        - name: docker-path
+          mountPath: /var/run/docker.sock
+          readOnly: true
+        - name: workspace-volume
+          mountPath: /home/jenkins/agent
+          readOnly: false
