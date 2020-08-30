@@ -9,6 +9,17 @@ pipeline {
         }
     }
 
+    triggers {
+        GenericTrigger(causeString: 'Generic Cause',
+                genericVariables: [
+                        [defaultValue: '', key: 'branch', regexpFilter: '^(refs/heads/master)', value: '$.ref'],
+                        [defaultValue: '', key: 'repository', regexpFilter: '', value: '$.repository.full_name'],
+                ],
+                printPostContent: true,
+                token: 'offical-website'
+        )
+    }
+
     stages {
         stage('Release Docker Image') {
             steps {
