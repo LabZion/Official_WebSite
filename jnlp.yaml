@@ -5,7 +5,22 @@ metadata:
     app: jnlp-slave
   name: jnlp-slave
 spec:
+  volumes:
+    - name: docker-path
+      hostPath:
+        path: /var/run/docker.sock
+    - name: workspace-volume
+      emptyDir: {}
   containers:
     - name: jnlp-container
       image: ninech/jnlp-slave-with-docker
-      imagePullPolicy: IfNotPresent
+      command:
+        - cat
+      tty: true
+      volumeMounts:
+        - name: docker-path
+          mountPath: /var/run/docker.sock
+          readOnly: true
+        - name: workspace-volume
+          mountPath: /home/jenkins/agent
+          readOnly: false
