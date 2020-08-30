@@ -12,8 +12,12 @@ pipeline {
     stages {
         stage('Release Docker Image') {
             steps {
-                 sh 'sleep 20m'
-                 sh 'auto/release'
+                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId:'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+                    sh """
+                    auto/ecr-login ${USERNAME} ${PASSWORD}
+                    auto/release
+                    """
+                }
             }
         }
     }
