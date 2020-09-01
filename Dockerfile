@@ -11,8 +11,7 @@ RUN yarn install
 COPY src ./src
 COPY public ./public
 
-RUN groupadd appgroup && useradd appuser -G appgroup
+RUN yarn global add serve
+RUN yarn build
 
-USER appuser
-
-CMD ["yarn", "start"]
+CMD ["nohup", "serve", "-s", "build", "-l", "3000"]
