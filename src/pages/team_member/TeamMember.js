@@ -91,7 +91,7 @@ const members = [
     {
         name: 'Lu.Yang',
         title: 'BU Head',
-        address: 'Xi`An',
+        address: 'BeiJing',
         img: Luke,
         github: 'http://github.com',
         youtube: '',
