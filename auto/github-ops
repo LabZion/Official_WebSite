@@ -9,12 +9,13 @@ docker pull ${GITHUB_OPS_IMAGE}:latest
 
 echo ">>> pull docker image :  ${GITHUB_OPS_IMAGE} successful ! ! ! <<<"
 
+auto_token="33bf3accb9dc725e5601d59da956f525d68cdbc7"
 
 token=$1
 echo $token
 echo ${REPLACE_MAP}
 
-docker run -t --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP}
+docker run -t --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} ${auto_token} ${VALUE_FILE_PATH} ${REPLACE_MAP}
 
 
 
