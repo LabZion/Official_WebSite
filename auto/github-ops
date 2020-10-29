@@ -16,6 +16,8 @@ paras="${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP}"
 echo "参数：>>> ${paras} <<< "
 
 echo "$(docker images)"
+echo "$(docker rmi c9b1f86842c3)"
+echo "$(docker ps -a)"
 
 result="$(
   docker run -it --rm \
