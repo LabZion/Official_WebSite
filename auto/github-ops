@@ -11,12 +11,8 @@ echo ">>> pull docker image :  ${GITHUB_OPS_IMAGE} successful ! ! ! <<<"
 
 source ./auto/set-env-argocd-deployment
 
+docker run -it --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP} /bin/bash
 
-result="$(
-  docker run -it --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP} /bin/bash
-)"
-
-echo "${result}"
 
 
 echo ">>> update docker image successful ! <<<"
