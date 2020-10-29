@@ -4,5 +4,5 @@ USER_AND_REPO="WeiJiLab/argocd-deployment"
 
 VALUE_FILE_PATH="helm/chart/official-website/values-dev.yaml"
 
-REPLACE_MAP="\[image.tag=${TAG}\]"
+REPLACE_MAP="[image.tag=${TAG}]"
 
