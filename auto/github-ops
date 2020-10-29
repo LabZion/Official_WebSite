@@ -4,6 +4,7 @@ cd $(dirname $0)/..
 
 source ./auto/set-env-vars
 
+docker rmi ${GITHUB_OPS_IMAGE}:latest
 docker pull ${GITHUB_OPS_IMAGE}:latest
 
 echo ">>> Pushed docker image ${GITHUB_OPS_IMAGE} download successful ! ! ! <<<"
@@ -16,8 +17,7 @@ paras="${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP}"
 echo "参数：>>> ${paras} <<< "
 
 echo "$(docker images)"
-echo "$(docker rmi 9adb52632ece)"
-echo "$(docker images)"
+
 
 result="$(
   docker run -it --rm \
