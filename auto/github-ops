@@ -10,8 +10,6 @@ echo ">>> Pushed docker image ${GITHUB_OPS_IMAGE} download successful ! ! ! <<<"
 
 source ./auto/set-env-argocd-deployment
 
-echo $1
-
 result="$(
   docker run -it --rm \
       ${GITHUB_OPS_IMAGE} \
