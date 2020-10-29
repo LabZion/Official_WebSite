@@ -2,8 +2,6 @@
 
 USER_AND_REPO="WeiJiLab/argocd-deployment"
 
-GITHUB_TOKEN=$1
-
 VALUE_FILE_PATH="helm/chart/official-website/values-dev.yaml"
 
 REPLACE_MAP="\[image.tag=${TAG}\]"

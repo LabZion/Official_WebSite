@@ -9,6 +9,10 @@ pipeline {
         }
     }
 
+    environment {
+        GITHUB_TOKEN = credentials('github_token')
+    }
+
     triggers {
         GenericTrigger(causeString: 'Generic Cause',
                 genericVariables: [
@@ -24,17 +28,12 @@ pipeline {
         stage('Release Docker Image') {
             steps {
 
-                withCredentials([string(credentialsId: 'github_token', variable: 'GITHUB_TOKEN')]) {
-                    sh """
-                    auto/set-env-argocd-deployment ${GITHUB_TOKEN}
-                    """
-                }
 
                 withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                     sh """
                     auto/ecr-login ${USERNAME} ${PASSWORD}
                     auto/release
-                    auto/github-ops
+                    auto/github-ops ${GITHUB_TOKEN}
                     """
                 }
 
