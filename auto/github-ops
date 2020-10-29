@@ -6,30 +6,17 @@ source ./auto/set-env-vars
 
 docker pull ${GITHUB_OPS_IMAGE}:latest
 
-echo ">>> Pushed docker image ${GITHUB_OPS_IMAGE} download successful ! ! ! <<<"
+echo ">>> pull docker image :  ${GITHUB_OPS_IMAGE} successful ! ! ! <<<"
 
-
-echo "$(docker images)"
 
 source ./auto/set-env-argocd-deployment
 
-REPLACE_MAP="\[image.tag=${TAG}\]"
 
+result="$(
+  docker run -it --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP} /bin/bash
+)"
 
-paras="${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP}"
-echo "参数：>>> ${paras} <<< "
-
-
-
-
-#result="$(
-#  docker run -it --rm \
-#      ${GITHUB_OPS_IMAGE} \
-#      ${paras} \
-#      /bin/bash
-#)"
-
-#echo "${result}"
+echo "${result}"
 
 
 echo ">>> update docker image successful ! <<<"
