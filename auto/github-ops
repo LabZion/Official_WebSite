@@ -19,13 +19,14 @@ echo "参数：>>> ${paras} <<< "
 echo "$(docker images)"
 
 
-result="$(
-  docker run -it --rm \
-      ${GITHUB_OPS_IMAGE} \
-      ${paras} \
-      /bin/bash
-)"
+#result="$(
+#  docker run -it --rm \
+#      ${GITHUB_OPS_IMAGE} \
+#      ${paras} \
+#      /bin/bash
+#)"
 
-echo "${result}"
+#echo "${result}"
+
 
 echo ">>> update docker image successful ! <<<"

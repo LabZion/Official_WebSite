@@ -32,24 +32,25 @@ pipeline {
                     sh """
                     auto/ecr-login ${USERNAME} ${PASSWORD}
                     auto/release
-                    """
-                }
-
-            }
-        }
-
-        stage('update Docker Image Tag') {
-            steps {
-
-                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
-                    sh """
-                    auto/ecr-login ${USERNAME} ${PASSWORD}
                     auto/github-ops ${GITHUB_TOKEN}
                     """
                 }
 
             }
         }
+
+//        stage('update Docker Image Tag') {
+//            steps {
+//
+//                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+//                    sh """
+//                    auto/ecr-login ${USERNAME} ${PASSWORD}
+//                    auto/github-ops ${GITHUB_TOKEN}
+//                    """
+//                }
+//
+//            }
+//        }
 
     }
 }
