@@ -3,13 +3,15 @@
 cd $(dirname $0)/..
 
 source ./auto/set-env-vars
+source ./auto/set-env-argocd-deployment
 
 docker pull ${GITHUB_OPS_IMAGE}:latest
 
 echo ">>> pull docker image :  ${GITHUB_OPS_IMAGE} successful ! ! ! <<<"
 
 
-source ./auto/set-env-argocd-deployment
+token=$1
+echo $token
 
 docker run -it --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP} /bin/bash
 
