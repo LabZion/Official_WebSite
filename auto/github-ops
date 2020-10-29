@@ -12,6 +12,7 @@ echo ">>> pull docker image :  ${GITHUB_OPS_IMAGE} successful ! ! ! <<<"
 
 token=$1
 echo $token
+echo ${REPLACE_MAP}
 
 docker run -it --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP} /bin/bash
 
