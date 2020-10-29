@@ -10,7 +10,7 @@ pipeline {
     }
 
     environment {
-        GITHUB_TOKEN = credentials('github_token')
+        GITHUB_TOKEN = credentials('github-ops-token')
     }
 
     triggers {
