@@ -23,13 +23,23 @@ pipeline {
     stages {
         stage('Release Docker Image') {
             steps {
-                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId:'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+
+                withCredentials([string(credentialsId: 'github_token', variable: 'GITHUB_TOKEN')]) {
+                    sh """
+                    auto/set-env-argocd-deployment ${GITHUB_TOKEN}
+                    """
+                }
+
+                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                     sh """
                     auto/ecr-login ${USERNAME} ${PASSWORD}
                     auto/release
+                    auto/github-ops
                     """
                 }
+
             }
         }
+
     }
 }

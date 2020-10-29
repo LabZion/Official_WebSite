@@ -7,3 +7,5 @@ DOCKER_IMAGE="${ECR_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/official-website"
 BN=${BUILD_NUMBER:-0}
 GITHASH=$(git rev-parse --short HEAD)
 TAG="${GITHASH}.${BN}"
+
+GITHUB_OPS_IMAGE="${ECR_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/github-ops"

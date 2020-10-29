@@ -1,0 +1,26 @@
+#! /bin/bash -e
+
+cd $(dirname $0)/..
+
+source ./auto/set-env-vars
+
+docker pull ${GITHUB_OPS_IMAGE}:latest
+
+echo ">>> Pushed docker image ${GITHUB_OPS_IMAGE} download successful ! ! ! <<<"
+
+source ./auto/set-env-argocd-deployment
+
+
+result="$(
+  docker run -it --rm \
+      ${GITHUB_OPS_IMAGE} \
+      ${USER_AND_REPO} \
+      ${GITHUB_TOKEN} \
+      ${VALUE_FILE_PATH} \
+      ${REPLACE_MAP} \
+      /bin/bash
+)"
+
+echo "${result}"
+
+echo ">>> update docker image successful ! <<<"
