@@ -4,6 +4,7 @@ cd $(dirname $0)/..
 
 source ./auto/set-env-vars
 
+docker rmi ${GITHUB_OPS_IMAGE}:latest
 docker pull ${GITHUB_OPS_IMAGE}:latest
 
 echo ">>> Pushed docker image ${GITHUB_OPS_IMAGE} download successful ! ! ! <<<"
