@@ -11,14 +11,22 @@ echo ">>> Pushed docker image ${GITHUB_OPS_IMAGE} download successful ! ! ! <<<"
 
 source ./auto/set-env-argocd-deployment
 
-echo " $1 "
-echo " ${GITHUB_TOKEN} "
+token="55c1cdb28ae47b6764e14a1cf17f73c246f5b230"
+
+echo " 参数 "
+echo " USER_AND_REPO： ${USER_AND_REPO} "
+echo " VALUE_FILE_PATH： ${VALUE_FILE_PATH} "
+echo " REPLACE_MAP： ${REPLACE_MAP} "
+echo " token： ${token} "
+
+
+REPLACE_MAP="\[image.tag=${TAG}\]"
 
 result="$(
   docker run -it --rm \
       ${GITHUB_OPS_IMAGE} \
       ${USER_AND_REPO} \
-      $1 \
+      ${token} \
       ${VALUE_FILE_PATH} \
       ${REPLACE_MAP} \
       /bin/bash

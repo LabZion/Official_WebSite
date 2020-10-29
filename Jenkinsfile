@@ -33,7 +33,7 @@ pipeline {
                     sh """
                     auto/ecr-login ${USERNAME} ${PASSWORD}
                     auto/release
-                    auto/github-ops ${GITHUB_TOKEN}
+                    auto/github-ops
                     """
                 }
 
