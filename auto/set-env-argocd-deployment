@@ -1,4 +1,4 @@
-#! /bin/bash -e
+#!/bin/sh -e
 
 USER_AND_REPO="WeiJiLab/argocd-deployment"
 
