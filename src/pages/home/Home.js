@@ -61,7 +61,7 @@ class Home extends Component {
                                     <p>security-solution@thoughtworks.com</p>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <span className="iconfont">&#xe503;</span>&nbsp;
-                                    <p>北京、上海、西安、成都、武汉、深圳、北美</p>
+                                    <p>北京、上海、西安、成都、武汉、深圳、北美等</p>
                                 </Row>
 
                             </Col>
@@ -81,6 +81,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => ({
+
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
