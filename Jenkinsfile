@@ -8,18 +8,17 @@ pipeline {
         }
     }
 
-    environment {
-        GITHUB_TOKEN = credentials('github-ops-token')
-    }
-
     triggers {
-        GenericTrigger(causeString: 'Generic Cause',
-                genericVariables: [
-                        [defaultValue: '', key: 'branch', regexpFilter: '^(refs/heads/master)', value: '$.ref'],
-                        [defaultValue: '', key: 'repository', regexpFilter: '', value: '$.repository.full_name'],
-                ],
-                printPostContent: true,
-                token: 'offical-website'
+        GenericTrigger(
+            genericVariables: [
+              [key: 'ref', value: '$.ref'],
+              [key: 'repositoryURL', value: '$.repositoryURL'],
+              [key: 'branch', value: '$.branch']
+            ],
+            token: 'official-website' ,
+            causeString: '$ref' ,
+            printContributedVariables: true,
+            printPostContent: true
         )
     }
 
@@ -27,14 +26,10 @@ pipeline {
         stage('Release Docker Image') {
             steps {
 
-                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                     sh """
-                    auto/ecr-login ${USERNAME} ${PASSWORD}
+                    auto/ecr-login
                     auto/release
-                    auto/github-ops ${GITHUB_TOKEN}
                     """
-                }
-
             }
         }
 

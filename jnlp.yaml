@@ -5,6 +5,7 @@ metadata:
     app: jnlp-slave
   name: jnlp-slave
 spec:
+  serviceAccount: jenkins-operator-jenkins
   volumes:
   - name: docker-socket
     emptyDir: {}
