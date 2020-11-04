@@ -6,7 +6,10 @@ source ./auto/set-env-vars
 
 password="$( \
     docker run --rm \
-        -e AWS_DEFAULT_REGION=${AWS_REGION} \
+        -v "${AWS_WEB_IDENTITY_TOKEN_FILE}":"${AWS_WEB_IDENTITY_TOKEN_FILE}" \
+        -e AWS_ROLE_ARN \
+        -e AWS_WEB_IDENTITY_TOKEN_FILE \
+        -e AWS_REGION \
         amazon/aws-cli ecr get-login-password
 )"
 
