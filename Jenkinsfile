@@ -25,11 +25,13 @@ pipeline {
     stages {
         stage('Release Docker Image') {
             steps {
-
-                    sh """
-                    auto/ecr-login
-                    auto/release
-                    """
+                sh """
+                auto/ecr-login
+                auto/release
+                """
+                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'github-app-weijilab', usernameVariable: 'GH_APPID', passwordVariable: 'GH_TOKEN']]) {
+                    sh "auto/github-ops ${GH_TOKEN}"
+                }
             }
         }
 

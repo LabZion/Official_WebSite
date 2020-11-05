@@ -5,11 +5,7 @@ cd $(dirname $0)/..
 source ./auto/set-env-vars
 source ./auto/set-env-argocd-deployment
 
-docker pull ${GITHUB_OPS_IMAGE}:latest
-
-echo ">>> pull docker image :  ${GITHUB_OPS_IMAGE} successful ! ! ! <<<"
-
-docker run -t --rm ${GITHUB_OPS_IMAGE} ${USER_AND_REPO} $1 ${VALUE_FILE_PATH} ${REPLACE_MAP}
-
+docker run -t --rm "${GITHUB_OPS_IMAGE}:latest" "${USER_AND_REPO}" "$1" "${VALUE_FILE_PATH}" "${REPLACE_MAP}"
 
 echo ">>> update docker image successful ! <<<"
+
