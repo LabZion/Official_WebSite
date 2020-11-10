@@ -1,4 +1,4 @@
-FROM node
+FROM node:lts-alpine AS build
 
 WORKDIR /app
 
@@ -11,7 +11,10 @@ RUN yarn install
 COPY src ./src
 COPY public ./public
 
-RUN yarn global add serve
 RUN yarn build
 
-CMD ["nohup", "serve", "-s", "build", "-l", "3000"]
+FROM nginx:stable-alpine
+
+COPY --from=build /app/build /usr/share/nginx/html
+
+EXPOSE 80
