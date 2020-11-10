@@ -3,7 +3,7 @@
 pipeline {
     agent {
         kubernetes {
-            defaultContainer 'jnlp-docker'
+            defaultContainer 'kaniko-crane'
             yamlFile 'jnlp.yaml'
         }
     }
@@ -22,31 +22,44 @@ pipeline {
         )
     }
 
+    environment {
+        GITHASH = GIT_COMMIT.take(7)
+    }
+
     stages {
-        stage('Release Docker Image') {
+        stage('Build Docker Image') {
             steps {
-                sh """
-                auto/ecr-login
-                auto/release
-                """
-                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'github-app-weijilab', usernameVariable: 'GH_APPID', passwordVariable: 'GH_TOKEN']]) {
-                    sh "auto/github-ops ${GH_TOKEN}"
+                container('kaniko-crane') {
+                    sh 'auto/kaniko-build.sh'
                 }
             }
         }
 
-//        stage('update Docker Image Tag') {
-//            steps {
-//
-//                withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'aws-service-account', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
-//                    sh """
-//                    auto/ecr-login ${USERNAME} ${PASSWORD}
-//                    auto/github-ops ${GITHUB_TOKEN}
-//                    """
-//                }
-//
-//            }
-//        }
+        stage('Scan Docker Image') {
+            steps {
+                sh '''
+                echo "Scanning Images..."
+                ls -l image.tar
+                '''
+            }
+        }
 
+        stage('Push Docker Image') {
+            steps {
+                container('kaniko-crane') {
+                    sh 'auto/kaniko-push.sh'
+                }
+            }
+        }
+
+        stage('Update Image Tag in Github') {
+            steps {
+                container('gitops') {
+                    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'github-app-weijilab', usernameVariable: 'GH_APPID', passwordVariable: 'GH_TOKEN']]) {
+                        sh "auto/github-ops ${GH_TOKEN}"
+                    }
+                }
+            }
+        }
     }
 }
