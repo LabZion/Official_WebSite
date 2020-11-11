@@ -17,3 +17,10 @@ spec:
     tty: true
     command:
     - cat
+  - name: trivy
+    image: aquasec/trivy
+    entrypoint: ""
+    tty: true
+    command:
+    - cat
+

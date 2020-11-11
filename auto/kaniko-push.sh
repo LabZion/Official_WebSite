@@ -9,5 +9,5 @@ cat > ~/.docker/config.json <<EOF
     { "credsStore": "ecr-login" }
 EOF
 
-/kaniko/crane push image.tar ${DOCKER_IMAGE}:${TAG}
-/kaniko/crane push image.tar ${DOCKER_IMAGE}:latest
+/kaniko/crane push ${IMAGE_TAR} ${DOCKER_IMAGE}:${TAG}
+/kaniko/crane push ${IMAGE_TAR} ${DOCKER_IMAGE}:latest

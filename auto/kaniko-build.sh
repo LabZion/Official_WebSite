@@ -10,4 +10,4 @@ cat > ~/.docker/config.json <<EOF
 EOF
 
 /kaniko/executor --dockerfile=`pwd`/Dockerfile --context `pwd` \
-    --no-push --destination=${DOCKER_IMAGE}:${TAG} --tarPath image.tar
+    --no-push --destination=${DOCKER_IMAGE}:${TAG} --tarPath "${IMAGE_TAR}"

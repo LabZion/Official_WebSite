@@ -37,10 +37,9 @@ pipeline {
 
         stage('Scan Docker Image') {
             steps {
-                sh '''
-                echo "Scanning Images..."
-                ls -l image.tar
-                '''
+                container('trivy') {
+                    sh "auto/trivy.sh"
+                }
             }
         }
 

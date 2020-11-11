@@ -5,7 +5,6 @@ cd $(dirname $0)/..
 . ./auto/set-env-vars
 . ./auto/set-env-argocd-deployment
 
-#docker run -t --rm "${GITHUB_OPS_IMAGE}:latest" "${USER_AND_REPO}" "$1" "${VALUE_FILE_PATH}" "${REPLACE_MAP}"
 java -jar /app.jar "${USER_AND_REPO}" "$1" "${VALUE_FILE_PATH}" "${REPLACE_MAP}"
 
 echo ">>> update docker image successful ! <<<"
