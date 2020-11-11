@@ -17,4 +17,6 @@ FROM nginx:stable-alpine
 
 COPY --from=build /app/build /usr/share/nginx/html
 
+RUN apk --no-cache upgrade
+
 EXPOSE 80
