@@ -53,9 +53,9 @@ pipeline {
 
         stage('Update Image Tag in Github') {
             steps {
-                container('gitops') {
+                container('argocd-auto-sync') {
                     withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'github-app-weijilab', usernameVariable: 'GH_APPID', passwordVariable: 'GH_TOKEN']]) {
-                        sh "auto/github-ops ${GH_TOKEN}"
+                        sh "auto/argocd-auto-sync ${GH_TOKEN}"
                     }
                 }
             }

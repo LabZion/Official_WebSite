@@ -8,4 +8,4 @@ BN=${BUILD_NUMBER:-0}
 TAG="${GITHASH}.${BN}"
 IMAGE_TAR="image.tar"
 
-GITHUB_OPS_IMAGE="${ECR_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/github-ops"
+ARGOCD_AUTO_SYNC="${ECR_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/argocd-auto-sync"
