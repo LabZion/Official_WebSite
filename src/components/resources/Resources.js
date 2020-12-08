@@ -24,15 +24,15 @@ class Resources extends Component {
                             <h2 style={{color: "#000"}}>独特洞见</h2>
                             <Row>
                                 <Col md={4} style={{color: "#000", textAlign: "left", padding: "1em"}}>
-                                    <Image style={{width: "100%",height:'100%'}} src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/blogs/Linux%20Blog1.png"}/>
+                                    <Image style={{width: "100%",height:'100%'}} src={"https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/blogs/Linux%20Blog1.png"}/>
 
                                 </Col>
                                 <Col md={4} style={{color: "#000", textAlign: "left", padding: "1em"}}>
-                                    <Image style={{width: "100%",height:'100%'}} src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/SSL%20and%20CA%E8%A7%86%E9%A2%91%E6%88%AA%E5%9B%BE.png"}/>
+                                    <Image style={{width: "100%",height:'100%'}} src={"https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/SSL%20and%20CA%E8%A7%86%E9%A2%91%E6%88%AA%E5%9B%BE.png"}/>
 
                                 </Col>
                                 <Col md={4} style={{color: "#000", textAlign: "left", padding: "1em"}}>
-                                    <Image style={{width: "100%",height:'100%'}} src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/Token%E8%87%AA%E9%89%B4%E6%9D%83%E8%A7%86%E9%A2%91%E6%88%AA%E5%9B%BE.png"}/>
+                                    <Image style={{width: "100%",height:'100%'}} src={"https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/Token%E8%87%AA%E9%89%B4%E6%9D%83%E8%A7%86%E9%A2%91%E6%88%AA%E5%9B%BE.png"}/>
 
                                 </Col>
                             </Row>

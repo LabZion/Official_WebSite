@@ -1,12 +1,12 @@
 export const cases = {
     car: {
         title: '汽车企业',
-        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/car.jpeg')",
+        img:"url('https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/car.jpeg')",
         description: '智能网联汽车是未来创新热点和产业发展制高点，但是智能化、网联化程度的加深带来的是汽车日益凸显的信息安全问题，我国自2015年开始，也已经在智能网联汽车相关行业内积极推进信息安全研究工作，从标准、法规、行业报告到咨询、测试、认证、产品，逐步形成由政府及行业组织主导、汽车和信息安全企业积极推动的产业链发展态势。如何保障汽车驾驶安全，解决便捷性与安全性之间的矛盾成为智能网联汽车发展的重要环节。',
         data: [
             {
                 customer: '数据存储本地化案例',
-                img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E6%B1%BD%E8%BD%A6-%E6%95%B0%E6%8D%AE%E9%9A%90%E7%A7%81.png',
+                img:'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/%E6%B1%BD%E8%BD%A6-%E6%95%B0%E6%8D%AE%E9%9A%90%E7%A7%81.png',
                 description: '我们的客户是世界最大跑车制造商，我们在不影响客户现有业务的同时，在严格符合相关国家法律的基础上，设计了三阶段迁移的方案，完美实现了数据迁移的工作。',
                 content:
                     '\n' +
@@ -32,21 +32,21 @@ export const cases = {
                     '\n' +
                     'ThoughtWorks安全团队为客户设计了通过三个阶段来进行数据迁移的方案，在不影响现有业务的基础上对方案进行了实施。在第一阶段开始之前，我们对服务进行了虚拟化，将服务从机房上到了AWS上，然后将数据从IDAP改到DynamoDB。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/121.png)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/121.png)\n' +
                     '\n' +
                     '\n' +
                     '\n' +
                     '第一阶段，实现中国只读备份。当中国数据更新时，异步备份到中国，中国提供只读服务。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/122.png)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/122.png)\n' +
                     '\n' +
                     '第二阶段，实现中国读写备份。直接在中国进行数据读写，并将修改异步到国外，保证国外数据分析的完整性。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/123.png)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/123.png)\n' +
                     '\n' +
                     '第三阶段，达到合规就绪状态。当需要进行合规时，直接暂停中国数据到国外的备份。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/124.png)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/124.png)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
@@ -56,7 +56,7 @@ export const cases = {
             },
             {
                 customer: '安全流水线升级案例',
-                img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/liushuixian.png',
+                img:'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/liushuixian.png',
                 description: '我们的客户是国内产业链最为完整的汽车集团之一，我们提供了一个从框架设计，到落地，到工具化的DevSecOps整体解决方案，将IT安全防护融入整个生命周期中。',
                 content:'\n' +
                     '\n' +
@@ -83,7 +83,7 @@ export const cases = {
                     '\n' +
                     '结合ThoughtWorks安全团队在DevOps的经验和安全实践，安全团队致力于打造一个从框架设计，到落地，到工具化的DevSecOps整体解决方案。方案分为四个阶段：第一阶段完成了流水线的迁移，第二阶段实现了DevOps的升级，第三阶段设计了安全需求识别平台的用户交互平台，第四阶段梳理了业务场景与安全需求。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/13.png#width-80)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/13.png#width-80)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
@@ -93,7 +93,7 @@ export const cases = {
             },
             {
                 customer: '车机安全漏洞扫描及加固案例',
-                img:'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
+                img:'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png',
                 description: '我们的客户是中国四大汽车制造商之一，我们提供了二进制自动化漏洞扫描以及加固的解决方案,为业界的智能设备产品公司在快速迭代的过程中保驾护航。',
                 content:
                     '\n' +
@@ -123,13 +123,13 @@ export const cases = {
                     '\n' +
                     '首先会自动化地进行信息采集与评估，采用一些手段，自动化地从二进制的固件中分析出系统架构、组件列表、组件版本等信息。并且会自动化爬取对应的漏洞列表，以及补丁等信息。有了这些信息后，会依据符号执行，编译原理，二进制分析等，自动化地从固件中提取是否存在对应的漏洞，形成漏洞报告。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/111.png#width-80)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/111.png#width-80)\n' +
                     '\n' +
                     '##### 2、漏洞自动化加固\n' +
                     '\n' +
                     'ThoughtWorks安全团队自主研发的加固框架，采用inline hook的技术，会对固件中确认存在的漏洞做修补，在固件运行时做漏洞动态拦截。该框架同时支持ARM32和ARM64的平台，支持如缺陷函数拦截、修复函数管理注册、内核符号导出、地址随机化绕过等功能。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/112.png#width-80)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/112.png#width-80)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
@@ -141,12 +141,12 @@ export const cases = {
     },
     cloud: {
         title: '通信企业',
-        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/tongxin4.jpeg')",
+        img:"url('https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/tongxin4.jpeg')",
         description: '随着信息通信技术与社会各行业的深度融合，能源、交通、水利、金融、公共服务、政务等各行业、各领域的信息化程度不断提高，对关键信息基础设施的依赖也日益加深。一旦关键信息基础设施遭到破坏，无疑会对社会运行产生巨大影响。另一方面，随着我国云计算应用的日益普及，用户不再仅仅考虑“如何上云”，而更关注“如何安全上云”，受近些年来云安全时间频发的影响，用户对云上的安全需求越发迫切。',
         data: [
             {
                 customer: '私有云平台身份认证与权限管理系统开发案例',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A14.png',
+                img: 'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A14.png',
                 description: '我们的客户是全球领先的ICT（信息与通信）基础设施和智能终端提供商，我们提供了身份认证及权限管理方案，帮助企业实现高效、统一管理身份信息和权限信息，助力企业提高生产效率。',
                 content:
                     '\n' +
@@ -159,18 +159,18 @@ export const cases = {
                     '\n' +
                     '>###业务挑战\n' +
                     '>随着公司业务逐步规划上云并面向互联网开放，传统企业网络安全边界开始变得模糊，安全高效的基于云的身份认证与访问控制平台将成为未来应用访问的“边界”，在这种情况下，传统企业内网的身份验证与IAM系统已无法满足业务上云后日益发展的需求。因为企业的业务场景极其复杂，内部私有云已无法支撑所有的业务系统，但市场上的公有云也无法满足企业内部的要求与限制。如何将内部云与公有云结合使用，符合企业内部的合规要求，使用公有云与私有云的能力是企业亟需解决的一个问题。\n' +
-                    '>>![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/211.png#width-80)\n' +
+                    '>>![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/211.png#width-80)\n' +
                     '\n' +
                     '###解决方案\n' +
                     '>ThoughtWorks安全团队面向除了客户企业员工以外的合作伙伴、供应商、客户和消费者提供移动办公套件身份认证服务。服务包括标准的SAML/OAuth等Web、移动应用认证和授权协议，提供基于多因子和风险控制分析的强身份认证，集成社交账号和企业账号联邦认证，并实现多租户管理等。核心价值包括以下几点：\n' +
                     '#####1、\tSSO单点登录\n' +
                     '采用业内标准协议实现SSO单点登录,为企业所有部门提供统一的登录入口，打通部门间的认证壁垒，减少用户操作，提高生产效率。\n' +
-                    '>![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/212.png#width-80)\n' +
+                    '>![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/212.png#width-80)\n' +
                     '#####2、\tIAM系统\n' +
                     '  搭建IAM服务，精细管理研发人员在云平台上对各类资源和服务的访问权限，比如，规定某员工必须在指定IP下的特定时间段购买某种类型的虚拟机。\n' +
                     '#####3、\t产品化\n' +
                     '在满足企业自身需求的基础上，将系统产品化，供更多的企业来使用身份认证和权限管理的服务。\n'+
-                    '>![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/214.png#width-80)\n' +
+                    '>![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/214.png#width-80)\n' +
                     '###客户价值\n' +
                     '>ThoughtWorks安全团队开发的身份认证及权限管理平台，拥有安全性高、扩展能力良好的特点，针对企业内部拥有多个子系统，员工使用各个系统时需要使用不同的用户信息登录，企业期望实现单点登录，统一认证入口的需求，以及企业需要细粒度管控员工对资源和服务的访问权限的需求，但不局限于云平台和公司规模，帮助企业实现高效、统一管理身份信息和权限信息，助力企业提高生产效率，适合于政府、运营商、企业、金融、军队、医疗、教育、制造业等大型企事业单位。\n' +
                     ' \n' +
@@ -178,7 +178,7 @@ export const cases = {
             },
             {
                 customer: '信息资产安全审计案例',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A11.png',
+                img: 'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A11.png',
                 description: '我们的客户为政府及公共事业机构、金融、能源、交通、制造等企业客户，提供开放、灵活、安全的端管云协同ICT基础设施平台，我们提供了智能信息资产管控软件，通过定制化开发，帮助企业实现系统级别的监控与审计。',
                 content:
                     '\n' +
@@ -204,17 +204,17 @@ export const cases = {
                     '\n' +
                     'ThoughtWorks安全团队自主研发了智能信息资产管控软件系统。在用户态，支持关键信息资产的访问策略及资源敏感度自定义，支持信息资产的安全行为审计，支持敏感资产的非预期访问拦截。在内核态，通过自主研发的驱动程序，基于inline hook审计文件访问操作，基于netfilter审计网络数据包，扩展了操作系统的安全能力。\n' +
                     '\n' +
-                    '### ![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/221.png#width-90)\n' +
+                    '### ![img](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/221.png#width-90)\n' +
                     '\n' +
                     '​     \n' +
                     '\n' +
                     '我们为客户搭建了全新的系统，对企业内部的员工PC端进行管控。当员工访问文件、网络、USB、串口时，系统自动拦截不合法资源或操作。与此同时，我们设计的监控系统不局限于特定软件，而是系统级别地收集员工在PC端操作的行为和内容，发送到其他内部系统，用于对内部安全的审计。\n' +
                     '\n' +
-                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/222.png#width-90)\n' +
+                    '![img](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/222.png#width-90)\n' +
                     '\n' +
                     '具体而言，网络通信方面，我们实现了捕获网络包信息，上报所有连接信息给客户端用于审计；接收客户端规则，断开，转发指定网络的连接；开启和停止网络数据包信息捕获；透明代理，实现不同安全级别的网络跨区访问。文件系统方面，实现了监控本地计算机所有文件操作，上报详细信息给客户端用于审计；接收客户端规则，阻止对指定文件的文件操作；开启和关闭文件监控功能。串口设备方面，实现了监控捕获访问串口的进程ID等详细信息，上报给客户端用于审计；接收客户端规则，阻止指定进程访问串口；开启和关闭串口监控功能。USB设备方面，实现了监控捕获访问USB口的进程ID等详细信息，上报给客户端用于审计；接收客户端规则，阻止指定进程访问USB口；开启和关闭USB口监控功能。\n' +
                     '\n' +
-                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/223.png#width-90)\n' +
+                    '![img](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/223.png#width-90)\n' +
                     '\n' +
                     '\n' +
                     '\n' +
@@ -226,7 +226,7 @@ export const cases = {
             },
             {
                 customer: 'L2TP解除拨号限制技术案例',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A12.png',
+                img: 'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A12.png',
                 description: '我们的客户是全球领先的下一代电信网络解决方案供应商，我们帮助客户使企业内部的VPN连接从2个，扩展到同时支持40个，适用平台包括Windows7、Windows10，大大提升了员工的沟通效率和工作体验。',
                 content:
                     '\n' +
@@ -256,13 +256,13 @@ export const cases = {
                     '\n' +
                     '对不同操作系统版本的RAS模块进行逆向分析，找到连接数限制的条件。\n' +
                     '\n' +
-                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/231.png#width-90)\n' +
+                    '![img](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/231.png#width-90)\n' +
                     '\n' +
                     '##### 2、APIHook\n' +
                     '\n' +
                     '使用Windows的HOOK框架Detours对我们在第一阶段找到的连接数限制API进行ApiHook，突破连接数限制。\n' +
                     '\n' +
-                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/232.png#width-90)\n' +
+                    '![img](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/232.png#width-90)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
@@ -272,7 +272,7 @@ export const cases = {
             },
             {
                 customer: '源码可信检验实施案例',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
+                img: 'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png',
                 description: '我们的客户是全球领先的基础设施提供商，拥有庞大的体量、数量众多的员工以及雄厚的研发实力，我们提供了四步白盒验证方案帮助企业建立了统一的检验标准和流程，保证产品在CESG检查之前先在内部实现风险管控。',
                 content:
                     '\n' +
@@ -300,7 +300,7 @@ export const cases = {
                     '\n' +
                     '### \n' +
                     '\n' +
-                    '![img](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/24.png#width-80)\n' +
+                    '![img](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/24.png#width-80)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +
@@ -313,12 +313,12 @@ export const cases = {
     },
     medicine: {
         title: '医药企业',
-        img:"url('https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/medicine.jpeg')",
+        img:"url('https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/medicine.jpeg')",
         description: '在“互联网+”浪潮的席卷下，医药行业的信息化建设也开始驶入快车道。技术的进步，带来了效率的提升，却也埋下了数据安全的隐患。尤其是其他行业不时爆出的信息泄露事件，向医药行业敲响了信息安全的警钟。医药作为关乎民生与健康的重要行业，在巨大商业利益的驱使下，医药企业的数据库面临来自内部威胁和外部威胁的双重包夹。一旦发生数据泄露，不仅影响医药企业的公众形象，给医药企业造成重大经济损失，甚至还会损害患者的个人利益。',
         data: [
             {
                 customer: '基础设施安全治理案例',
-                img: 'https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/medicine.png',
+                img: 'https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/medicine.png',
                 description: '我们的客户是一家集医药研究、生产、销售和诊疗服务、教育、网络为一体的大型民营高科技企业。我们为客户量身定制了基础设施安全治理方案，同时提供不定期的安全咨询和设备升级计划，为企业的信息安全保驾护航。',
                 content:
                     '\n' +
@@ -344,7 +344,7 @@ export const cases = {
                     '\n' +
                     '我们发现客户的每台服务器都有两根网线，一条接到内网交换机，一条接外网交换机。而且没有对数据做任何保护，服务器之间也没有做隔离，如果一台服务器被攻破，其它的也都会暴露。\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/311.png#width-90)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/311.png#width-90)\n' +
                     '\n' +
                     '\n' +
                     '\n' +
@@ -361,7 +361,7 @@ export const cases = {
                     '\n' +
                     '\n' +
                     '\n' +
-                    '![Image text](https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/312.png#width-90)\n' +
+                    '![Image text](https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/312.png#width-90)\n' +
                     '\n' +
                     '### 客户价值\n' +
                     '\n' +

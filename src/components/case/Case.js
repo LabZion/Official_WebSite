@@ -24,16 +24,16 @@ class Case extends Component {
                             <Row style={{marginTop: '-8em'}}>
                                 <Col md={4}>
                                     <Image style={{width: "100%", zIndex: '-1'}}
-                                           src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png"}/>
+                                           src={"https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/src/static/images/%E8%BD%A6%E6%9C%BA%E5%AE%89%E5%85%A8.png"}/>
 
                                 </Col>
                                 <Col md={4}>
                                     <Image style={{width: "100%"}}
-                                           src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png"}/>
+                                           src={"https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/%E9%80%9A%E4%BF%A13.png"}/>
                                 </Col>
                                 <Col md={4}>
                                     <Image style={{width: "100%"}}
-                                           src={"https://raw.githubusercontent.com/LabZion/Official_WebSite/master/public/picture/cases/medicine.png"}/>
+                                           src={"https://raw.githubusercontent.com/WeiJiLab/Official_WebSite/master/public/picture/cases/medicine.png"}/>
                                 </Col>
                             </Row>
                         </Container>

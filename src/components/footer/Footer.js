@@ -58,7 +58,7 @@ function Footer() {
                                         </svg>
                                     </Col>
                                 </a>
-                                <a href={'https://github.com/LabZion'}>
+                                <a href={'https://github.com/WeiJiLab'}>
                                     <Col style={{
                                         width: '40px',
                                         display: "inline-block",
